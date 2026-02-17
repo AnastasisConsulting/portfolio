@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[INTERNAL] CUBEX^3 // Algorithm Brief</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dossier_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #00e4f5;
+            --accent-warm: #ff6b00;
+        }
+
+        .internal-tag {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--accent-cyan);
+        }
+
+        .algo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .algo-card {
+            border: 1px solid var(--border-color);
+            background: rgba(0, 228, 245, 0.03);
+            padding: 1.5rem;
+        }
+
+        .algo-card h3 {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            color: var(--text-bright);
+            letter-spacing: -0.01em;
+        }
+
+        .algo-meta {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-steel);
+            margin-bottom: 0.8rem;
+        }
+
+        .algo-card p {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .section-block {
+            margin-bottom: 3.5rem;
+        }
+
+        .section-block h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            color: var(--text-bright);
+        }
+
+        .section-block h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-cyan);
+            margin: 1.5rem 0 0.6rem;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.2rem 0.6rem;
+            border: 1px solid rgba(0, 228, 245, 0.3);
+            color: var(--accent-cyan);
+            font-family: var(--font-mono);
+            font-size: 0.55rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-right: 0.4rem;
+        }
+
+        .table-wrap {
+            border: 1px solid var(--border-color);
+            overflow-x: auto;
+            margin-top: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+
+        th,
+        td {
+            padding: 0.6rem 0.8rem;
+            border-bottom: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-cyan);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .code-block {
+            border: 1px solid var(--border-color);
+            background: rgba(0, 0, 0, 0.4);
+            padding: 1rem 1.2rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            line-height: 1.7;
+            margin-top: 1rem;
+        }
+
+        .pipeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .pipeline-step {
+            border-left: 2px solid var(--accent-warm);
+            background: rgba(255, 107, 0, 0.04);
+            padding: 1rem;
+        }
+
+        .pipeline-step h4 {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-warm);
+            margin-bottom: 0.4rem;
+        }
+
+        .note-box {
+            border: 1px solid rgba(0, 228, 245, 0.2);
+            padding: 1rem 1.2rem;
+            background: rgba(0, 228, 245, 0.05);
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .source-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .source-list li {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--accent-steel);
+            padding: 0.4rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">INTERNAL ONLY // DEE-TIER 2 // DO NOT DISTRIBUTE</div>
+
+    <div class="dossier-layout reveal active">
+        <aside class="dossier-sidebar">
+            <div style="margin-bottom: 2rem;">
+                <a href="docs.html"
+                    style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-cyan); text-decoration: none; display: flex; align-items: center; gap: 0.3rem;">
+                    <span>&larr;</span> RETURN TO SECURE ARCHIVE
+                </a>
+            </div>
+
+            <ul class="tree-view">
+                <li class="tree-folder">
+                    <div class="tree-folder-label">CubeX^3 Internal</div>
+                    <ul class="tree-children">
+                        <li class="tree-file"><a href="#index">Algorithm Index</a></li>
+                        <li class="tree-file"><a href="#rrr">Master Piecewise (RRR)</a></li>
+                        <li class="tree-file"><a href="#morale">Morale Hierarchy</a></li>
+                        <li class="tree-file"><a href="#board">Board Control</a></li>
+                        <li class="tree-file"><a href="#tensor">Tensor Field + Levels</a></li>
+                        <li class="tree-file"><a href="#stance">Stance Inference</a></li>
+                        <li class="tree-file"><a href="#sources">Source Files</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="dossier-main">
+            <header style="margin-bottom: 3rem;">
+                <div class="card-tag" style="color: var(--accent-cyan); border-color: var(--accent-cyan);">CORE IP
+                    // CUBEX^3</div>
+                <h1 style="font-size: 2.8rem; margin: 1rem 0;">Algorithm Brief</h1>
+                <p class="internal-tag">Summary of the internal CubeX^3 algorithm set</p>
+                <p style="color: var(--text-dim); margin-top: 1.2rem; max-width: 720px;">
+                    This page consolidates the algorithm notes from the CubeX^3 folder into a single, implementation
+                    friendly format. It is intended as a reference for engine design, AI evaluation, and morale
+                    mechanics integration.
+                </p>
+            </header>
+
+            <section id="index" class="section-block">
+                <h2>Algorithm Index</h2>
+                <div class="algo-grid">
+                    <div class="algo-card">
+                        <div class="algo-meta">ai leveling APD</div>
+                        <h3>Tensor Field + Tiered Features</h3>
+                        <p>Base feature set (v1-v4), tier unlock cadence, sparse board updates, and polarity-driven
+                            learning loop. Defines skill points as concurrent cube reads per feature.</p>
+                    </div>
+                    <div class="algo-card">
+                        <div class="algo-meta">Master Piecewise Risk Reward</div>
+                        <h3>RRR Evaluation Core</h3>
+                        <p>Risk, Reward, Relation evaluation across material, board control, and morale for turn-level
+                            scoring and AI posture selection.</p>
+                    </div>
+                    <div class="algo-card">
+                        <div class="algo-meta">Morale</div>
+                        <h3>Morale Hierarchy</h3>
+                        <p>Unit hierarchy rules for pawns, commanders, generals, and king. Defines morale loss
+                            propagation and dual scoring (AI and narrative).</p>
+                    </div>
+                    <div class="algo-card">
+                        <div class="algo-meta">Board control</div>
+                        <h3>CubeNode State</h3>
+                        <p>Board cube data structure for occupancy, threat status, and material weighting for control
+                            maps.</p>
+                    </div>
+                    <div class="algo-card">
+                        <div class="algo-meta">Tf_Algorithm</div>
+                        <h3>Hierarchy Swap + Stance Logic</h3>
+                        <p>Linked-chain morale engine, swap-based capture handling, mercenary masking, and stance
+                            inference from recent opponent RRR outputs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rrr" class="section-block">
+                <h2>Master Piecewise (RRR) Evaluation</h2>
+                <div class="note-box">
+                    <span class="badge">Risk</span>
+                    <span class="badge">Reward</span>
+                    <span class="badge">Relation</span>
+                    <p style="margin-top: 0.8rem;">Each turn computes three deltas. These map to Offense, Defense, and
+                        Strategy labels and drive the AI stance model.</p>
+                </div>
+
+                <div class="code-block">
+                    Risk = Opponent Material - Player Material
+                    Reward = Opponent Board Control - Player Board Control
+                    Relation = Opponent Morale - Player Morale
+                </div>
+
+                <h3>Scoring Bands</h3>
+                <p style="color: var(--text-dim);">The RRR values normalize to -1, 0, +1. Risk uses fixed thresholds.
+                    Reward and Relation share a configurable X threshold.</p>
+                <div class="code-block">
+                    Risk <= -4  => -1
+                    Risk between -3 and +3 => 0
+                    Risk >= +4  => +1
+
+                    Reward <= -X => -1
+                    Reward between -X and +X => 0
+                    Reward >= +X => +1
+
+                    Relation <= -X => -1
+                    Relation between -X and +X => 0
+                    Relation >= +X => +1
+                </div>
+
+                <h3>Material Scale Options</h3>
+                <p style="color: var(--text-dim);">Two material value scales appear in the notes. Align on one scale
+                    before final tuning. Scale B marks the king as infinite value.</p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Piece</th>
+                                <th>Scale A</th>
+                                <th>Scale B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>King</td>
+                                <td>40</td>
+                                <td>inf</td>
+                            </tr>
+                            <tr>
+                                <td>Queen</td>
+                                <td>12</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Fractal Knight</td>
+                                <td>9</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Bishop</td>
+                                <td>6</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>Knight</td>
+                                <td>4</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Rook</td>
+                                <td>7</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Pawn</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="morale" class="section-block">
+                <h2>Morale Hierarchy System</h2>
+                <p style="color: var(--text-dim);">Morale is hierarchical and cascades upward. Losses ripple from pawn
+                    to commander to general to king. Two channels are tracked: AI heuristic morale and narrative
+                    morale.</p>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Role</th>
+                                <th>Morale Value</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>King</td>
+                                <td>21</td>
+                                <td>Top of hierarchy, total morale drops to 0 on capture/checkmate.</td>
+                            </tr>
+                            <tr>
+                                <td>General</td>
+                                <td>10</td>
+                                <td>Gold General = Fractal Knight, Silver General = Queen.</td>
+                            </tr>
+                            <tr>
+                                <td>Commander</td>
+                                <td>3</td>
+                                <td>Right flank (gold) and left flank (silver) commanders.</td>
+                            </tr>
+                            <tr>
+                                <td>Pawn</td>
+                                <td>1</td>
+                                <td>Base morale. Loss subtracts from commander and general.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Linked Chain + Swap Logic</h3>
+                <div class="pipeline">
+                    <div class="pipeline-step">
+                        <h4>Linked Identity</h4>
+                        <p>Each unit stores commander and general IDs. Links are immutable across the match.</p>
+                    </div>
+                    <div class="pipeline-step">
+                        <h4>Capture Swap</h4>
+                        <p>Captured pieces move to a graveyard cache, retaining experience and stats.</p>
+                    </div>
+                    <div class="pipeline-step">
+                        <h4>Mercenary Mask</h4>
+                        <p>If leadership is missing, subordinates mask faction bonuses and revert to base morale.</p>
+                    </div>
+                    <div class="pipeline-step">
+                        <h4>Rescue</h4>
+                        <p>Restoring a leader un-masks subordinates and restores morale contributions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="board" class="section-block">
+                <h2>Board Control Model</h2>
+                <p style="color: var(--text-dim);">Board control scores count all unblocked valid moves for each piece
+                    each turn. Additional weighting includes checks and shielded clusters.</p>
+
+                <div class="code-block">
+                    Board Control = sum(valid moves of active pieces)
+                    + (material value of enemy piece in check)
+                    - (material value of player piece in check)
+                    + (material value of shielded friendly cluster)
+                    - (material value of shielded enemy cluster)
+                </div>
+
+                <h3>CubeNode State</h3>
+                <div class="code-block">
+                    CubeNode:
+                      - position (x,y,z)
+                      - isOccupied
+                      - occupying_piece
+                      - history (last 3 occupancies)
+                      - isThreatened / isThreatening
+                      - materialValue (dynamic weighting)
+                </div>
+            </section>
+
+            <section id="tensor" class="section-block">
+                <h2>Tensor Field + Tiered Feature System</h2>
+                <p style="color: var(--text-dim);">The AI evaluates a sparse tensor field of 512 cubes. Base features are
+                    always active, tiers add higher order pattern detectors, and skill points control how many cubes a
+                    feature can read simultaneously.</p>
+
+                <div class="code-block">
+                    Tf = Base[v1..v4] + T1[v1..v4] + T2[v1..v4] + T3[v1..v4]
+
+                    v1: piece enumeration
+                    v2: legal move generation
+                    v3: heuristic board value
+                    v4: action selection
+                </div>
+
+                <h3>Sparse Updates + Polarity</h3>
+                <p style="color: var(--text-dim);">Board cubes self report deltas only. The AI updates affected features
+                    and computes polarity from snapshot differences to strengthen or prune feature weights.</p>
+
+                <div class="code-block">
+                    Polarity = f(Delta Tf)
+                    Positive polarity -> reinforce features
+                    Negative polarity -> decay unused features
+                </div>
+            </section>
+
+            <section id="stance" class="section-block">
+                <h2>Stance Inference</h2>
+                <p style="color: var(--text-dim);">Recent RRR outputs are used to classify the opponent posture. The last
+                    three labels (Off/Def/Str) map to an aggression profile that biases future move selection.</p>
+
+                <div class="code-block">
+                    Example:
+                    Off +1, Off -1, Str 0 => moderately aggressive, mildly tactical
+                    Off +1, Off +1, Off +1 => hyper aggressive
+                    Off -1, Off -1, Off -1 => hyper retaliatory
+                </div>
+            </section>
+
+            <section id="sources" class="section-block">
+                <h2>Source Files</h2>
+                <ul class="source-list">
+                    <li>Cubex^3/ai leveling APD.txt</li>
+                    <li>Cubex^3/board control.txt</li>
+                    <li>Cubex^3/Master Piecwise Risk Reward.txt</li>
+                    <li>Cubex^3/Morale.txt</li>
+                    <li>Cubex^3/Tf_Algorithm.txt</li>
+                </ul>
+            </section>
+
+            <footer style="margin-top: 4rem;">
+                <a href="docs.html" class="btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.7rem;">Return to
+                    Secure Archive</a>
+                <p class="copyright">&copy; 2026 G-YNTHETIC LABS. ALL RIGHTS RESERVED.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tree-folder-label').forEach(label => {
+            label.addEventListener('click', () => {
+                label.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+
+</html>

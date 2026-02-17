@@ -1,0 +1,459 @@
+Algorithmic Mapping of Cognitive Diversity Using Symbolic and Systems Frameworks
+Symbolic Cognitive Architecture for Simulating Diverse Minds
+Introduction
+
+Modeling the human mind requires a structured framework that captures key cognitive functions and their interactions. A cognitive architecture is essentially a blueprint of the mind – both a theoretical model of mental structure and a computational instantiation of that theory
+en.wikipedia.org
+. In this research, we explore a symbolic cognition architecture based on a provided Symbolic Cognition Grid and Reality Model. This architecture defines a set of core cognitive domains (such as Self, Thought, Intent, etc.) and symbolic relations between them, forming a map of how ideas, feelings, and actions interconnect. The goal is to create a psychologically descriptive mapping that is rich enough to simulate different individuals’ internal cognitive makeups. We integrate insights from neuroscience (to ground these symbolic modules in brain function) and systems theory (to emphasize feedback loops, emergence, and dynamic interplay) in building this model. Importantly, we focus on theory-driven clarity over low-level technical detail – describing how the pieces fit together and vary across people, rather than delving into specific algorithms. The result is a framework for algorithmic simulation of diverse minds: one that can be tuned or “overlaid” with different parameters to reflect individual cognitive orientations, while preserving a universal core structure of cognition. In the following sections, we map out the model’s elements and relationships, examine variations in symbolic processing, highlight system dynamics and emergent phenomena, draw parallels to brain processes, and suggest extensions (missing components and modular filters) to enrich and customize the architecture.
+Core Symbolic Cognitive Domains and Relationships
+
+Figure: A conceptual “Reality Model” diagram highlighting four principal cognitive domains – Self, Intent, World, and Experience – arranged in a loop around a central shared reality. Arrows between these domains represent key cognitive processes: Thought (connecting Self to Intent), Action (Intent to World), Expression (World to Experience), and Interpretation (Experience back to Self). This cycle illustrates how an individual’s inner world and the external environment continuously influence each other via cognition.
+
+At the heart of the symbolic cognition framework is a set of interconnected domains of mind. The provided Symbolic Cognition Grid defines nine core cognitive domains and labels the relationship from each domain to each other domain (including itself). The domains can be listed as: Self, Thought, Intent, Action, World, Expression, Experience, Interpretation, and Memory. Each represents a facet of cognition or reality, and each directed pair of domains is assigned a symbolic meaning. Table 1 summarizes these domains and their roles:
+
+    Self: The agent’s identity and self-concept. It encapsulates self-awareness and personal essence. (Ex: Self → Self is labeled “Identity”, indicating self-definition
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    Thought: Conscious cognition, reasoning, and ideas. This domain handles reflective thinking and mental modeling. (Ex: Thought → Thought = “Idea”, capturing the generation of new ideas
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    Intent: Goals, motivations, and will. Intent drives purpose and decision to act. (Ex: Intent → Self = “Purpose”, meaning one’s intentions shape their sense of purpose
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    Action: Behavior and execution. This covers physical or decision actions taken in the world. (Ex: Action → World = “Effect” – actions have effects on the external world
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    World: The external environment and context (including physical, social, cultural elements of reality). (Ex: World → Action = “Feedback”, as the world returns feedback in response to one’s actions
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    Expression: Communication and outward expression of internal state (language, art, signals). (Ex: Expression → Thought = “Language”, since expression provides language for thought
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    Experience: The subjective conscious experience – sensations, feelings, and trials an individual undergoes. (Ex: Self → Experience = “Emotion”, indicating one’s selfhood elicits emotional experience
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    Interpretation: Meaning-making processes – how experiences and information are understood, including biases and framing. (Ex: World → Interpretation = “Worldview”, meaning our interpretation of the world forms a worldview
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+    Memory: Storage and recall of information and past experiences (forming narratives and knowledge base). (Ex: Self → Memory = “Narrative”, as one’s sense of self is encoded in autobiographical memory as a personal narrative
+    file-pat2g9e4lxguxbx9nalwxs
+    .)
+
+Table 1. Core Cognitive Domains and Their Functions
+Domain	Role in Cognition (Examples of Symbolic Relations)
+Self	Identity, self-concept, and self-awareness (e.g. Self→Self: Identity).
+Thought	Deliberation, reasoning, ideas (e.g. Self→Thought: Reflection).
+Intent	Goals, desires, will to act (e.g. Thought→Intent: Motive).
+Action	Behavior, execution of decisions (e.g. Intent→Action: Commitment).
+World	External environment and context (e.g. Action→World: Effect).
+Expression	Communication, language, artistic expression (e.g. Thought→Expression: Clarity).
+Experience	Subjective experience, sensations, emotions (e.g. World→Experience: Event).
+Interpretation	Meaning-making, understanding, bias (e.g. Experience→Interpretation: Wisdom).
+Memory	Memory storage and recall, learning (e.g. Experience→Memory: Emotion).
+
+Every pair of domains is connected by a bidirectional relationship, each direction given a meaningful label in the Symbolic Grid Atlas. For instance, the link from Self to Thought is labeled “Reflection”, denoting that one’s selfhood generates reflective thoughts
+file-pat2g9e4lxguxbx9nalwxs
+. In the opposite direction, Thought to Self is “Introspection”, meaning thoughts inform one’s self-understanding
+file-pat2g9e4lxguxbx9nalwxs
+. This exemplifies a self-referential loop: the Self influences Thought and, in turn, Thought feeds back into Self, fostering self-awareness. Another example: Self → Interpretation is labeled “Bias” (our sense of self can bias how we interpret things
+file-pat2g9e4lxguxbx9nalwxs
+), whereas Interpretation → Self is “Belief” (our interpretive conclusions form beliefs that become part of self-concept
+file-pat2g9e4lxguxbx9nalwxs
+). Similarly, Action and World form a loop: Action → World yields an Effect on the environment, and World → Action provides Feedback that informs future actions
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. In total, the grid defines 81 such mappings (9×9), effectively a comprehensive graph of cognitive elements and their interrelations. Each directed edge denotes a symbolic cognitive process – for example, Thought → World: Perception signifies that our thoughts frame how we perceive the world
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+, and World → Thought: Stimulus indicates external stimuli entering cognition.
+
+Crucially, this symbolic map is coherent and structured: the domains serve as modules of the mind, and the labeled links describe pathways of influence or information flow between modules. Together, they form an integrated cognitive system. The earlier Reality Model diagram (Figure above) highlights a simplified high-level loop: Self → Intent (via Thought) → World (via Action) → Experience (via Expression) → back to Self (via Interpretation). This loop anchors the person in a cycle of acting in the world and interpreting what happens, grounding the symbolic architecture in an ongoing engagement with reality. Surrounding that core loop, additional domains like Memory and Expression enrich the picture: for instance, experiences feed into Memory (forming emotional recollections or “History”), and memory in turn influences how we interpret new events (through patterns and context)
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. Overall, the symbolic cognition structure provides a theory-driven schema of the mind’s components and their relationships, setting the stage for building an algorithmic simulation on top of it.
+Algorithmic Representation for Diverse Cognitive Architectures
+
+Having mapped the cognitive elements and their connections, we now consider how to implement this structure algorithmically and use it to simulate different individuals’ minds. In an algorithmic model, each domain can be represented as a module (or data structure) maintaining certain state (e.g. the Self module holds identity traits, the Intent module holds active goals, etc.), and each labeled relation can be implemented as a function or transformation that takes output from one module and influences another. Essentially, the symbolic grid forms a directed graph of processing. An algorithmic cognitive architecture would cycle information through this graph, updating the state of each module in discrete steps or continuously. For example, a simulation step might involve: the current state of Self (identity and mood) influences Thought via a Reflection function; those Thoughts generate an Intent (via Motive/Reason); Intent drives Action outputs; Action alters the World state; the World’s changes feed into Experience (Stimuli and Events); Experience updates Interpretation (making meaning, possibly introducing Bias or Wisdom); Interpretation then updates Self (forming new Beliefs or self-judgments). In parallel, Memory modules record events (e.g. consequences of Action, emotional tones of Experience) and retrieve past information (influencing Thought and Interpretation). By iterating this cycle, the algorithm would simulate a stream of cognitive activity. Importantly, all individuals would share this same core architecture – the same set of modules and connections – reflecting universal cognitive functions.
+
+The diversity across individuals can be captured by parameterizing the architecture. Each person can be simulated by a unique profile of parameters that tweak how the modules operate or how strongly the links influence each other. Research in cognitive modeling supports this approach: by adjusting parameters in a symbolic cognitive architecture, one can induce systematic variations in behavior corresponding to individual differences
+cdn.aaai.org
+cdn.aaai.org
+. For instance, Eva Hudlicka and colleagues describe a method of translating individual difference profiles (personality traits, cognitive style, affective state) into specific architectural parameters that bias the architecture’s output in characteristic ways
+cdn.aaai.org
+. In their framework, changing these parameters caused consistent variations in simulated agents’ performance, successfully mimicking distinct human behaviors
+cdn.aaai.org
+cdn.aaai.org
+. We can adopt a similar strategy: define adjustable settings for the symbolic cognition model such as strength of certain links, thresholds or propensities in modules, or selective filters on information. By tuning these, we effectively create different “minds” within the same overall architecture.
+
+What kinds of parameters might differ? Consider a few examples:
+
+    Cognitive Style and Orientation: One individual might be more introspective (high weight on the Self→Thought “Reflection” link and Thought→Self “Introspection”), resulting in a richly self-reflective loop, whereas another is more action-oriented (stronger Intent→Action drive and weaker self-reflection). These settings would cause the first individual’s simulation to spend more time analyzing internally before acting, while the second moves quickly to external action.
+
+    Emotional Reactivity: We can modulate how strongly Experience (especially emotional experience) feeds back into Interpretation and Memory. A more emotionally reactive profile might amplify the Experience→Interpretation link (labelled “Wisdom” or emotional meaning) and Experience→Memory: Emotion, meaning each event leaves a strong emotional memory trace and heavily colors the person’s interpretive lens. Another less reactive (more phlegmatic) profile might dampen these links, resulting in a cooler, more rational processing of events.
+
+    Bias and Worldview: The Interpretation module is critical for subjective reality. By adjusting biases, we alter how incoming information is filtered. For example, a person with an optimistic outlook might have a “positive bias filter” (perhaps a lower weight on negative bias formation and higher weight on positive reframing), whereas a pessimistic or anxious individual might strongly favor negative interpretations (high weight on bias links that focus on threats or self-doubt). Such differences echo real cognitive variations – e.g. someone high in neuroticism or with social anxiety may interpret ambiguous events more negatively, which in simulation could be achieved by parameter settings in the Interpretation domain. Indeed, psychology recognizes that humans vary in consistent ways: intelligence, cognitive style (analytical vs intuitive), personality traits, and mood states all influence how we think and decide
+    cdn.aaai.org
+    . By incorporating these factors as parameters, the model can generate a range of behaviors from “leaps of genius” to “specific biases, suboptimal behaviors, or errors” – the kinds of idiosyncrasies that make each human unique
+    cdn.aaai.org
+    cdn.aaai.org
+    .
+
+Notably, each person effectively has a unique mental framework or schema through which they see the world. In psychology, this idea is captured by personal construct theory, which holds that individuals interpret their experiences via personal cognitive constructs (their own set of mental categories and assumptions). George Kelly’s work suggested that every person develops a unique framework of constructs – essentially a lens – from which they perceive reality
+verywellmind.com
+. Two people can thus experience the same external “World” but interpret it very differently because their internal symbolic grids (their biases, beliefs, memories, etc.) are configured differently. Our model aligns with this notion: the shared World module in the architecture represents the objective environment or shared reality, but what each simulated mind perceives and makes of it will depend on its internal parameter configuration. For example, consider a simple scenario: both Person A and Person B receive the same feedback from a colleague (a World → Experience: Event). Person A, with an optimistic interpretive bias, might process this via Experience→Interpretation and Interpretation→Self as constructive criticism, updating their self-concept with a growth mindset (“I learned something”; Interpretation→Experience: Wisdom). Person B, with a more defensive bias, might interpret the same event as a personal attack (Experience→Interpretation: Threat, essentially a bias) and update Self with hurt or lowered confidence (Interpretation→Self: Belief like “I’m not good at this”). Over time, these small differences accumulate into divergent worldviews and self-narratives. This illustrates how variations in symbolic processing and orientation affect one’s interaction with shared reality. Each individual’s cognitive architecture, while built from the same components, can yield a subjective reality – a personalized interpretation of the objective world.
+
+From an algorithmic standpoint, implementing such differences means each agent in the simulation carries its own set of weights or rules for the connections in the grid. The architecture can be thought of as modular and parameterized. This allows us to “plug in” different settings easily. Indeed, Hudlicka’s methodology (termed MAMID – Methodology for Analysis and Modeling of Individual Differences) emphasizes a flexible mapping of psychological factors onto architecture parameters, so that newly emerging data or theories can be quickly incorporated
+cdn.aaai.org
+cdn.aaai.org
+. In practical terms, an AI simulation could include a library of profiles (e.g. a “risk-seeking extravert” profile vs a “cautious introvert” profile), each specifying values for relevant parameters (reaction thresholds, memory retention biases, emotional weighting, etc.). The core algorithm uses the same cognitive map for all agents, but reads in a profile to customize the agent. This way, diverse cognitive architectures are simulated without needing entirely different algorithms for each agent – a single unified model can generate a spectrum of behaviors by simple tweaks. This approach mirrors how human cognition has universal fundamentals (perception, memory, learning, etc.) but each person is a unique blend of these processes. It also aligns with AI research that aims to imbue agents with personality or individual differences to make them more realistic. By explicitly modeling differences, we ensure the simulation captures the “range of variations in behaviors exhibited by humans” rather than producing one-size-fits-all behavior
+cdn.aaai.org
+cdn.aaai.org
+.
+Systems Theory Perspective: Feedback, Dynamics, and Emergence
+
+A key benefit of structuring cognition as an interconnected system is that it naturally lends itself to systems theory analysis. The symbolic cognition model is not a simple feed-forward chain but a closed-loop system with many feedback cycles. Systems theory tells us to examine not just the components, but their interdependence, feedback, and emergent properties. In our model, feedback loops abound. The most apparent is the cognitive-behavioral loop involving environment: an individual’s Actions affect the World, and changes in the World provide Feedback that influences subsequent perceptions and actions
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. This loop is how we learn from consequences and adjust to our environment – a classic example of a feedback mechanism maintaining adaptation. Another critical loop is the self-referential loop: Self → Thought → Self (reflection and introspection) or Self → Interpretation → Self (forming beliefs about oneself). These loops mean the system is recursive – it can observe and modify itself. As Douglas Hofstadter famously proposed, consciousness and self-awareness might emerge from such strange loops of self-reference, where the mind builds a self-model that includes itself as a component. In his view, the “self” is a feedback-driven construct – the self emerges from self-referential patterns that loop through the brain’s abstract representations of itself
+en.wikiversity.org
+. In our framework, the presence of introspective loops provides a structural placeholder for that phenomenon: the model allows a simulated mind to “think about its own thoughts” or “interpret its own experiences,” enabling higher-order awareness.
+
+With multiple loops interacting, the architecture behaves like a complex dynamic system. Changes in one module ripple through others in iterative cycles. For example, consider how a small tweak in Interpretation (say, interpreting a neutral event more negatively) can feed into Self (shifting self-belief), which might lower Intent (less motivation), which then changes Action outputs and thus the World outcomes, potentially confirming the negative interpretation – forming a reinforcing feedback cycle. Systems theory highlights that such positive feedback loops can lead to runaway effects or stable attractors in system behavior. A real-world illustration is seen in mood disorders: a negative feedback loop between emotion, memory, and interpretation can cause a persistent negative worldview. Neuroscientific research on depression indicates exactly this – a “positive feedback loop” in the brain’s emotion-cognition circuitry contributes to persistent hyperactivity of the amygdala (fear/emotion center) and reinforcement of negative interpretations
+frontiersin.org
+. In depression, biased interpretations (“I’m worthless”) lead to rumination and memory recall of negative events, which further strengthens the bias, in a self-perpetuating loop
+frontiersin.org
+frontiersin.org
+. Our symbolic model can capture this dynamic: if the parameters for bias and negative memory weighting are set high, the simulation would show a stable pattern of negative self-interpretation feeding itself – essentially an emergent property of the feedback structure. Conversely, negative feedback loops (in control theory sense) can stabilize the system. For instance, World → Action: Feedback provides error-correction; if an action yields bad outcomes, the world’s feedback (e.g. pain, failure signal) can cause the agent to reduce that action, maintaining equilibrium.
+
+Emergence is another crucial concept from systems theory. Emergent properties are those that are not predictable from the individual components alone, but arise from their interactions
+worthylab.org
+. Cognitive scientists increasingly view mind and behavior as emergent phenomena of neural networks and mental modules interacting
+worthylab.org
+worthylab.org
+. In our symbolic architecture, we expect higher-level qualities – like a stable personality, or a worldview, or creativity – to emerge from the iterative interplay of simpler processes. For example, identity (Self) is not something stored in one place; it emerges from the ongoing narrative woven by Self, Memory, and Interpretation in concert. The grid includes Self→Memory: Narrative and Memory→Self: Legacy, hinting that one’s identity is continuously constructed by recalling past experiences and integrating them
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. This aligns with neuroscience views that personal identity arises from constructing a life narrative via many brain regions communicating. The brain’s default mode network (DMN), which links regions of the medial prefrontal and parietal cortex, is known to engage when we introspect and recall autobiographical memories. The self-construction hypothesis in neuroscience suggests the DMN is actively involved in creating a coherent, continuous narrative of our lives, constantly re-evaluating past experiences and weaving them into our self-concept
+mdpi.com
+. This is precisely an emergent process: no single neuron “stores” the narrative; it’s the emergent story from many memory retrievals and interpretations. Similarly, worldview in our model emerges from repeated Interpretation of World inputs over time. The grid shows World↔Interpretation: Worldview in both directions
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+, implying a iterative refinement – interactions with the world shape one’s worldview, which in turn filters new interactions. Over many cycles, a stable worldview (e.g. optimistic, cynical, spiritual, scientific, etc.) crystallizes as an emergent property. You cannot point to one moment or one link that alone produces it; it’s the cumulative result of many interpretation loops. In general, the symbolic architecture will exhibit pattern formation: simple rules at the micro level (each link’s transformation) can yield complex, hard-to-predict patterns at the macro level (like consistent habits, personality traits, ideological stances). This is akin to how in a flock of birds, each bird following simple local rules leads to the emergent pattern of flocking behavior – here each cognitive module following its rule leads to the emergent mind.
+
+Systems theory also emphasizes homeostasis and adaptation via feedback. Our model can capture adaptation through learning loops. For instance, Thought → Experience: Learning and Experience → Thought: Insight
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+form a learning cycle where experiences update the knowledge/thoughts, and updated thoughts allow deeper future experiences. This resembles a feedback mechanism that can improve the system’s performance (negative feedback reducing error, or positive feedback reinforcing useful patterns). Another dynamic principle is self-organization. With multiple feedback loops, the model may self-organize into certain stable states. For example, an initial random configuration of beliefs and biases could, after many simulation cycles, settle into a consistent set of beliefs (an attractor state) – representing the individual finding a stable identity or worldview. This is analogous to a complex system finding an equilibrium or recurring oscillation. In neural terms, cognition has been described as settling into attractor networks for known concepts or attitudes. If we were running this symbolic simulation stochastically, we might see attractors corresponding to, say, a consistent optimistic outlook or a consistent pessimistic outlook. Small perturbations (new experiences) might only temporarily move the system, but it returns to its attractor (confirming its worldview), unless the perturbation is large enough to shift it to a new pattern (akin to a phase transition – e.g. a major life event causing a profound change in personality or worldview).
+
+In summary, analyzing the architecture with systems theory lenses reveals that it is a dynamic, cyclical, and adaptive system. Feedback loops connect the inner world with external reality and also connect cognitive processes internally in recursive fashion. These loops enable emergent phenomena – properties like self-awareness, identity, biases, and worldviews – that are more than the sum of the parts. The interactions are nonlinear (e.g. interpretation bias can dramatically skew overall behavior), which means the system can show complex behaviors such as resilience, tipping points, or oscillations. All of this is highly consistent with modern cognitive science views. As one recent review puts it, cognition relies on flexible organization of neural activity, and many aspects of this organization can be seen as emergent properties of interactive neural networks
+worthylab.org
+. The symbolic model we describe is essentially a high-level abstraction of that idea: each symbolic relation could correspond to an underlying neural network, and their interplay produces cognitive function. By embracing the systems perspective, we ensure the model highlights feedback, adaptation, and emergent outcomes, which are crucial for realistically simulating cognitive architectures.
+Neuroscience Analogies and Alignments
+
+To strengthen the model’s foundation, we map various symbolic components to neuroscience-informed analogs. While our framework is symbolic (conceptual), it should resonate with how the brain actually implements cognition. This not only validates the model’s plausibility but also enriches it – suggesting additional constraints or interactions inspired by brain science.
+
+Memory and Encoding: In the symbolic grid, Memory plays a central role in linking past and present (Memory interacts with all other domains, e.g. Memory↔Thought: Recall, Memory↔Experience: Reminiscence, Memory↔Interpretation: Pattern
+file-pat2g9e4lxguxbx9nalwxs
+). Neuroscience tells us that memory is not a single unit but a distributed process. The hippocampus and medial temporal lobe are crucial for encoding and retrieving episodic memories, working in concert with the prefrontal cortex
+en.wikipedia.org
+. Notably, memory is reconstructive rather than a perfect record. As the Wikipedia definition of reconstructive memory states, remembering is “influenced by various other cognitive processes including perception, imagination, motivation, and beliefs”
+en.wikipedia.org
+. In other words, when we recall an event, we are reassembling it using bits of stored information plus our current schemas and mental state. This aligns with our model’s inclusion of Interpretation and Bias in memory links: e.g. Memory → Interpretation: Contextualization (memories help interpret current events by providing context) and Interpretation → Memory: Pattern (we tend to remember things in patterns consistent with our interpretations)
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. The brain similarly shows that recall is influenced by schemas and current cues
+en.wikipedia.org
+en.wikipedia.org
+. Memory encoding, as described in neuroscience, involves constructive processes that can introduce distortions
+en.wikipedia.org
+– for example, we might fill in gaps in our memory with logical inferences or with information from others (the “misinformation effect”). In our symbolic terms, World knowledge and social influence could be additional inputs to Memory; indeed the reconstructive process is subject to intervening cognitive functions and social influences leading to errors during reconstruction
+en.wikipedia.org
+. Our model could capture this by having, say, social context from the World feed into Memory encoding (perhaps via the World→Memory “History” link), and by allowing Interpretation (which includes social biases or personal schemas) to shape what is stored. Thus, the symbolic node “Memory” can be seen as analogous to the brain’s memory systems (hippocampus for episodic memory, cortex for long-term storage), and the presence of links with Interpretation, Experience, World, etc., mirrors the way memory encoding/retrieval is interwoven with emotion, context, and meaning in the brain. The medial prefrontal cortex (mPFC), part of the default mode network, is thought to use schemas (organized knowledge) to help recall by filling in gaps
+en.wikipedia.org
+– in our grid, that corresponds to Interpretation (beliefs, schemas) assisting Memory (Interpretation → Memory: “Contextualization”). The model even labels Memory→Self: Legacy, echoing how memory forms the narrative of who we are (neuroscience calls this autobiographical memory, which also engages the mPFC and posterior cingulate in the DMN). This alignment suggests the model’s structure is broadly consistent with neural architecture: memory links to many parts because in the brain memory retrieval engages widespread networks linking sensory, emotional, and conceptual areas
+en.wikipedia.org
+mdpi.com
+.
+
+Emotion and Experience: Emotions appear in the model as aspects of Experience (e.g. Self→Experience: Emotion
+file-pat2g9e4lxguxbx9nalwxs
+, Experience→Memory: Emotion
+file-pat2g9e4lxguxbx9nalwxs
+) and as coloring Interpretation (Interpretation→Intent: Bias might include emotional bias
+file-pat2g9e4lxguxbx9nalwxs
+). In the brain, the limbic system (including the amygdala) is central to emotion processing and tagging memories with emotional significance. For example, the amygdala responds to emotionally salient stimuli and can enhance the encoding of those events into memory (often through its interaction with the hippocampus). Our model’s Experience → Memory: Emotion link captures that emotional experiences influence what gets stored and how
+file-pat2g9e4lxguxbx9nalwxs
+. Conversely, Memory → Experience: Reminiscence is when a memory recall itself evokes a renewed emotional experience
+file-pat2g9e4lxguxbx9nalwxs
+(like remembering a sad event makes you feel sad again), which is exactly how PTSD flashbacks or nostalgic joy work in the brain – recalling a memory reactivates the emotional circuits that were engaged originally. The neuroscience of emotion-memory supports this bidirectional influence: the amygdala and hippocampus are strongly interconnected, and amygdala activation can both strengthen memory encoding and be triggered by memory retrieval
+frontiersin.org
+frontiersin.org
+. A striking example from neuroscience is how emotion bias and memory bias manifest in depression. Studies show that individuals with major depression have an overactive amygdala and tend to recall more negative memories than positive ones
+frontiersin.org
+frontiersin.org
+. One theory (as described in a 2024 Frontiers study) posits a loop where excessive amygdala activity, driven by associative learning of negative stimuli, biases the hippocampal attractor networks toward negative memories while inhibiting positive memory retrieval
+frontiersin.org
+frontiersin.org
+. In our terms, this would be modeled by a very strong Experience (emotion) → Memory link for negative events, and a biased Memory → Interpretation that preferentially activates negative patterns, plus an Interpretation → Self that lowers self-worth. The ventromedial prefrontal cortex (vmPFC) is also involved, generalizing negative interpretations and linking concepts with negative affect
+frontiersin.org
+– analogous to our Interpretation domain applying a negative “spin” on incoming information (Interpretation → Expression: Spin, and Interpretation → World: Worldview could both reflect this negativity bias in framing
+file-pat2g9e4lxguxbx9nalwxs
+). Thus, the symbolic architecture’s treatment of emotion and bias aligns with neural circuit findings: a feedback loop between emotion (amygdala), memory (hippocampus), and interpretation (prefrontal cortex) can create an enduring bias
+frontiersin.org
+frontiersin.org
+.
+
+Moreover, the Experience domain in our model encompasses subjective feeling (“Experience→Self: Feeling”
+file-pat2g9e4lxguxbx9nalwxs
+). This relates to how the brain integrates body signals into emotion – Antonio Damasio’s somatic marker hypothesis, for instance, suggests that bodily states (via the autonomic nervous system) inform the brain’s feeling of emotion. The insula and somatosensory cortices monitor internal bodily states and contribute to the conscious feeling. We haven’t explicitly separated “body” in our model, but one could imagine the World domain includes one’s own body as part of the environment providing input (since “World” is broadly context including possibly the physical body). The link World → Experience: Exposure
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+could include exposure to bodily conditions. The model as given doesn’t detail this, but we note it as a possible extension (see missing elements later). Nonetheless, the interplay of Self, Experience, and Action can capture rudiments of embodiment: e.g. Action → Experience: Reaction
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+– if you act (say you touch a hot stove), the experience yields a pain reaction, which then updates your interpretation and memory.
+
+Perception and Thought: The process of perceiving the world is represented by World → Thought: Stimulus and Thought → World: Perception
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. This is an interesting bidirectional depiction – it suggests perception is not just a one-way input. Rather, the world provides raw stimuli, but our thoughts and expectations shape what we perceive. Neuroscience agrees: perception is an active, inferential process. The brain’s visual and sensory cortices interact with top-down signals from frontal and parietal regions that carry expectations or attention focus. This is often described in terms of predictive coding – higher-level predictions (our current thought or schema about the world) meet sensory input to form what we actually perceive. Our model embodies this by having Thought influence World (Perception) – i.e., what you expect or think predisposes how you interpret sensory data – and World influence Thought (Stimulus) – the data can update or challenge your mind. If we imagine implementing this, the Thought → World: Perception function could filter or modulate incoming stimuli based on current mental context (e.g. a fearful thought focuses attention on threats, literally influencing what features of the environment you notice). Meanwhile, World → Thought: Stimulus ensures new information can penetrate and update the thought stream. In neural terms, Thought might correspond to activity in the prefrontal cortex (executive attention, working memory) while World (stimulus) corresponds to activation in sensory cortices; the bidirectional link mirrors the known cortical feedback connections (e.g. prefrontal and parietal areas sending signals to visual cortex to direct attention). Attention itself is not explicitly labeled as a single node in our grid, but it emerges in these interactions: attention is essentially the mechanism by which Thought (goals, expectations) selects which World stimuli enter Experience. Many cognitive architectures treat attention as a core mechanism for gating information, and indeed key cognitive abilities include perception and attention as foundational processes
+link.springer.com
+. In our model, attention could be modeled as the weighting on the World→Thought Stimulus link – e.g. higher weight means more of the environment is allowed into cognition, whereas an inattentive state might have a low weight (stimuli don’t register unless very strong). If one were to refine the architecture, an explicit “Attention” module could sit between World and Thought to modulate that flow (see missing elements section). But even without that, the current structure is compatible with the neuroscience view that attention and perception are integrated processes linking external data with internal state
+link.springer.com
+.
+
+Intent, Action, and Habits: The model’s Intent domain corresponds to motivation and goal-setting. In the brain, goal-directed behavior involves the frontal lobes (especially dorsolateral prefrontal cortex for planning and decision-making) and is modulated by reward circuits (dopaminergic pathways linking midbrain and frontal cortex). Action in our model corresponds to the execution of behavior, which engages motor cortex and the motor planning circuits (including the basal ganglia and cerebellum for skill and habit execution). The grid has some suggestive entries: Action → Action: Momentum
+file-pat2g9e4lxguxbx9nalwxs
+implies that actions can become self-reinforcing (which sounds like how habits form – repeated actions gain momentum via the basal ganglia’s reinforcement learning). It also lists Action → Intent: Discipline (actions influencing intent through discipline)
+file-pat2g9e4lxguxbx9nalwxs
+, which might reflect how performing actions can strengthen one’s commitment or will, forming a feedback (for example, the act of practicing a skill regularly can solidify the intention to master it). Similarly, Intent → Action: Commitment
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+is straightforward – a strong intent leads to committed action (in neural terms, strong prefrontal resolve overcoming impulsive tendencies, perhaps involving top-down inhibition of distractions via frontal-striatal circuits). The World ↔ Action feedback was already discussed, but on a neural level, one can see it as the sensorimotor feedback loop where actions produce sensory consequences that are fed back to adjust future motor commands (cerebellum plays a big role in fine-tuning this feedback). So the symbolic Action loop captures both high-level psychological notions of consequences and the low-level idea of error correction. Notably, the model separates Intent and Action as distinct modules, which aligns with the idea of planning vs execution. The brain distinguishes goal-setting from habit execution – goal-setting is flexible and conscious (frontal cortex), whereas habit execution can become automatic (basal ganglia). If we were to simulate different individuals, one might have a high habit propensity (strong Action→Action Momentum, meaning they easily fall into routines) while another relies more on fresh intent each time (keeping Momentum low but Intent→Action Commitment high for deliberate action). These differences could parallel neural differences in reliance on habit systems vs goal-directed systems.
+
+Interpretation and Bias: We’ve touched on interpretation in several contexts (especially with bias and worldview). The Interpretation domain is essentially the meaning-making and value-assigning part of the mind. In the brain, this function is distributed but heavily involves the frontal cortex and the default mode network when it comes to making sense of social or complex information. It also draws on memory (temporal lobes) and emotion (limbic system) to flavor those interpretations. For instance, interpreting a remark from a friend requires understanding language (temporal lobe language areas), understanding social context (medial prefrontal cortex, part of DMN, for theory of mind), and matching it to past experiences (memory retrieval via hippocampus) to infer intent. Our model’s multiple links into Interpretation reflect this integrative role: Thought→Interpretation: Belief (our thoughts crystallize into beliefs about meaning)
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+; Experience→Interpretation: Wisdom (our raw experiences yield wisdom or lessons when interpreted)
+file-pat2g9e4lxguxbx9nalwxs
+; Expression→Interpretation: Framing (how something is expressed affects how we frame it in interpretation)
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. The label Interpretation → Interpretation: Judgment
+file-pat2g9e4lxguxbx9nalwxs
+even suggests a recursive aspect – interpretations can be self-reflective, judging themselves or refining themselves (which might correspond to critical thinking or meta-cognition about one’s own interpretations). Neurologically, this resonates with the concept of metacognition (thinking about thinking), often linked to the prefrontal cortex monitoring and evaluating cognitive processes. The presence of a self-referent loop in Interpretation hints that our model can handle things like doubt or revision of understanding (e.g. you interpret something one way, then reconsider and re-interpret your interpretation).
+
+Bias specifically has a strong presence in the model: “Bias” is explicitly the label for Self→Interpretation and Interpretation→Intent
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. This implies biases arise from the self (your identity, values can bias how you interpret) and biases in interpretation will affect what intentions you form (e.g. if you interpret someone’s action as hostile due to bias, your intention might become defensive or hostile in return). In cognitive science, cognitive biases are well-documented systematic deviations from rational judgment. Neuroscientifically, biases often come from the brain’s use of heuristics – shortcuts that usually help but can mislead. For example, the confirmation bias arises because recalling memory and interpreting information is easier for things that fit our existing beliefs (thanks to how memory associations and comfortable patterns in prefrontal cortex work). Our model’s Memory→Interpretation link (“Pattern”) and Interpretation→Memory (“Contextualization”) play into confirmation bias – we tend to notice patterns that confirm our context
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. Another bias, availability bias, comes from memory retrieval: vivid or recent memories (especially if emotional) come to mind easily, thus biasing our interpretation of risk. This is modeled by Experience→Memory: Emotion making emotional events more retrievable and Memory→Interpretation: Pattern meaning those readily available memories influence how we generalize patterns. Indeed, biases in humans have a basis in neural efficiency: “the brain relies on shortcuts all the time… using learned assumptions to make quick judgments”
+langlois.ca
+. These shortcuts can lead to “subjective decisions or conclusions” – essentially what we call biases
+langlois.ca
+. In AI systems, similar biases can appear because the algorithms inherit human biases from data or design
+langlois.ca
+. Our model explicitly includes bias as a variable, which is good from an ethical AI standpoint: by acknowledging bias as a part of the cognitive model, we can attempt to control or adjust it. We will return to this point in discussing modular overlays for ethical considerations. But it’s worth noting that by aligning bias with specific nodes/links (Interpretation, Self, etc.), we reflect current neuroscience understanding that biases are not random – they often stem from emotional circuits (amygdala) over-influencing reasoning, or from strong prior beliefs (stored in cortex) skewing perception
+frontiersin.org
+frontiersin.org
+. Imaging studies have pinpointed brain regions involved in biased processing: for example, biased attention and interpretation correlate with hyperactivity in ventromedial PFC and amygdala, and hypoactivity in dorsolateral PFC (which normally might counteract biases with logical reasoning)
+frontiersin.org
+frontiersin.org
+. This suggests that reducing bias might involve strengthening certain control processes – in our model, that could mean increasing the influence of the Thought domain (rational consideration) relative to the biased Interpretation impulses, or adding an override filter (which we discuss later as a modulatory overlay).
+
+Self and Identity: Finally, the concept of Self in our model – which encompasses identity and self-awareness – can be linked to neuroscience’s findings on self-related processing. The previously mentioned DMN (default mode network) is strongly associated with self-referential thought. Studies have shown that when people think about themselves (their traits, memories, future plans), the DMN (including medial prefrontal and posterior cingulate cortex) becomes active
+pmc.ncbi.nlm.nih.gov
+mdpi.com
+. This network is thought to be involved in constructing the narrative self and simulating possible futures (which involve the self). Our model’s numerous loops through Self reflect that the self is not isolated; it’s a hub receiving input from memory, experience, interpretation, etc. The DMN’s role in “continuous and dynamic construction of one’s sense of identity through personal narratives”
+mdpi.com
+resonates with the Self↔Memory narrative link we have and the Self↔Interpretation belief formation. The model is well-suited to simulate phenomena like the development of self-concept over time (as a person accumulates experiences and memories and interprets them in the context of self). From a neurological perspective, the fact that Self is connected to Thought (Introspection)
+file-pat2g9e4lxguxbx9nalwxs
+and Experience (Feeling)
+file-pat2g9e4lxguxbx9nalwxs
+is appropriate: introspection is essentially self-related thought (which activates DMN), and feeling is awareness of one’s internal states (which involves insula and midline structures). The model might not explicitly have a “brain region” for Self, but we can imagine the Self module as analogous to networks like the DMN that integrate across many experiences to give an ongoing sense of “me”. It’s also interesting that the grid lists Self→World: Presence
+file-pat2g9e4lxguxbx9nalwxs
+, implying that a strong sense of self projects a presence into the world (one’s way of being present), and World→Self: Context
+file-pat2g9e4lxguxbx9nalwxs
+, implying that the environment one is in becomes part of one’s identity context (e.g. cultural or social context shaping identity). This aligns with social neuroscience: our identity is indeed shaped by social context and environment (for instance, cultural values internalized, or roles we play in society). Neurons and circuits in the brain encode social self (e.g. overlapping representations for self and close others in the medial prefrontal cortex). The model has the flexibility to incorporate this by treating some aspects of World as “social others” and linking that to Self (presence and context).
+
+In summary, each part of the symbolic model finds correspondence in brain function: Memory with hippocampal-cortical networks, Thought with executive frontal processes, Intent with goal-oriented circuits, Action with motor and habit systems, World with sensory and contextual input, Expression with language and communication centers (Broca’s and Wernicke’s areas for language would align with Expression→Thought: Language
+file-pat2g9e4lxguxbx9nalwxs
+, Expression→World: Signaling
+file-pat2g9e4lxguxbx9nalwxs
+, etc.), Experience with limbic and sensory integration (the subjective feeling aspect), Interpretation with associative and default-mode networks integrating meaning, and Self with the brain’s self-referential networks. The symbolic labels even capture finer details like Language as the bridge from Expression to Thought (language is indeed the tool that shapes thought, and neuro-linguistic research shows language areas interact with thought processes), or Habits (Action→Action momentum) aligning with how repeated actions become encoded in the basal ganglia. The bias formation we discussed is an excellent example of neuroscience alignment: our model’s handling of bias via interpretation and memory tracks closely with research on cognitive biases emerging from limbic-prefrontal interactions
+frontiersin.org
+frontiersin.org
+. By integrating these analogies, we ensure the symbolic model is not a pure abstraction but rather a theory-driven reflection of actual cognitive systems. This not only validates the model but also guides improvements – if some symbolic relationship has a known neural counterpart, we can fine-tune the model to mimic known behavior of that counterpart. For instance, knowing that memory is reconstructive suggests our Memory module should not store perfect data but rather store gist plus let Interpretation fill gaps, which is exactly what the reconstructive memory definition implies
+en.wikipedia.org
+en.wikipedia.org
+. Thus, neuroscience provides both confirmation and detail for our architecture.
+
+Extending the Model: Missing Nodes and Relationships
+
+No model is complete, and it’s important to examine whether any crucial symbolic nodes or links are absent from our grid that, if added, could enrich the cognitive simulation. The provided Symbolic Cognition Grid is extensive, but a few areas stand out as potential missing elements or simplifications:
+
+    Attention and Perception as Explicit Modules: As noted, the model currently handles attention and perception implicitly through links (World→Thought and Thought→World). However, attention is such a fundamental cognitive process that a dedicated Attention module could be warranted. This module would act as a gate or spotlight, determining which aspects of the World are allowed into Thought (and perhaps modulating what part of Thought influences perception). Adding an Attention node could enrich the simulation by allowing selective focus, multitasking limits, or attentional biases to be modeled more transparently. For example, an “Attention → World” link could represent how our focus influences what in the environment we engage with (similar to how Interpretation → World: Worldview biases what we see in the world, but attention would be more immediate and sensory). In cognitive architectures, attention and perception are considered core abilities alongside memory and reasoning
+    link.springer.com
+    . Including an explicit attention mechanism would better align the model with those architectures and allow phenomena like inattentional blindness or selective attention to emerge (e.g. if the Attention node is overloaded or directed elsewhere, important stimuli might not reach Thought or Experience).
+
+    Unconscious/Subconscious Processes: The current grid mostly depicts conscious, symbolic relationships. Yet, a significant portion of cognition occurs below the level of awareness. Unconscious cognition involves perception, memory, and even decision influences that we are not aware of
+    en.wikipedia.org
+    . Examples include implicit biases, procedural memories, or priming effects. The model could be extended with a layer or nodes representing implicit processes. For instance, a “Subconscious” domain might feed into Interpretation or Action without going through conscious Thought. Alternatively, each link in the grid could be given an “explicit vs implicit” mode. Right now, everything is symbolic (hence likely explicit), but one could imagine that Self→Action: Habits might often operate implicitly (you perform habits without conscious intent). The grid does have “Habits” on Self→Action
+    file-pat2g9e4lxguxbx9nalwxs
+    file-pat2g9e4lxguxbx9nalwxs
+    and “Momentum” on Action→Action
+    file-pat2g9e4lxguxbx9nalwxs
+    which imply automation, but making the distinction clearer (conscious Action vs automatic habit action) could be useful. Including unconscious processes is tricky in a symbolic simulation but perhaps could be done by having certain processes bypass Thought/Interpretation. This extension would enrich psychological realism: for example, an unconscious bias could be modeled as a direct link from World to Interpretation (skipping conscious Thought) that colors interpretation before the person is even aware. Without an explicit representation, our model can still simulate bias, but it assumes all biases are computed in Interpretation consciously. In reality, biases often operate automatically (e.g. instant gut reactions). So adding some representation of System 1 (fast, automatic thought) versus System 2 (slow, deliberative thought) could be an enrichment. This dichotomy is the basis of dual-process theories of cognition (popularized by Daniel Kahneman’s Thinking, Fast and Slow). Perhaps our Experience domain partly covers gut-level responses (System 1) and Thought covers analytical reasoning (System 2). If so, clarifying that or adding nodes to represent it could improve the model’s descriptive power.
+
+    Metacognition and Executive Control: While the model includes introspection and reflection, we might consider whether a dedicated Metacognition node or Executive module is needed. Metacognition is the process of thinking about one’s own thinking – monitoring and controlling cognitive processes. In our grid, some of this is embedded (e.g. Thought→Self introspection is a form of monitoring, Interpretation→Interpretation judgment is like evaluating one’s interpretations). However, an explicit executive control could oversee the whole system, deciding where to allocate resources (ties to Attention as well) or which impulses to veto. Cognitive architectures like ACT-R or SOAR typically have a production-system that acts as a central executive to resolve conflicts. In a more abstract sense, our Intent domain might serve some executive function (since it guides goals). But if we feel something is missing in terms of decision arbitration or conflict resolution between modules, a meta-controller could be introduced. For example, if simultaneously one’s emotional Experience urges a quick Action but one’s rational Thought urges caution, which wins? In a person, this might be resolved by executive control processes in the prefrontal cortex. The model currently doesn’t specify conflict resolution—one would have to code it in the simulation logic. Introducing a symbolic node for it might not be necessary if handled procedurally, but it’s worth noting as a structural element that isn’t explicitly depicted.
+
+    Embodiment and Physiological State: The role of the body in cognition is not clearly delineated in the grid. “World” likely includes the body as part of the physical environment, but some theories (embodied cognition) treat the body as a distinct component shaping cognition. Adding a Body node could allow things like health, fatigue, or hormonal state to influence cognitive processes. For instance, a tired body could dampen Thought and Intent (low energy), or a surge of adrenaline (body state) could bypass to trigger Action (fight-or-flight response). We do have Emotion under Experience, which partly covers bodily feelings. “Experience→Self: Feeling” suggests interoceptive feelings (body signals informing self)
+    file-pat2g9e4lxguxbx9nalwxs
+    . If more granularity is needed (say we want to simulate how hunger affects decision-making), a Body/Physiology component could be useful. It would connect to Experience (sensations), perhaps directly to Intent (drives like hunger or pain create intent), and to World (the body in environment). This wasn’t part of the original symbolic set, but adding it would acknowledge humans are not just brains in vats – our cognition is deeply affected by our physical embodiment.
+
+    Social and Interpersonal Factors: The model treats “World” as a broad catch-all for external reality, which includes social interactions. However, one might consider introducing a separate Other or Social domain to emphasize interpersonal cognitive processes. Humans have specialized cognition for dealing with other agents (theory of mind, empathy, social learning). The World→Interpretation link labeled “Worldview” covers cultural worldview, but perhaps not the nuance of understanding specific others. If one wanted to enrich the model, adding nodes like “Other” or subdividing World into “Physical World” and “Social World” might help. For example, a Social domain could handle relationships, and we’d have Self↔Social (identity relative to others, e.g. roles), Social↔Experience (emotional experiences from interactions), Social↔Interpretation (attribution of others’ intentions, stereotypes perhaps), etc. This could allow simulation of how different individuals interpret social cues differently (one might see a friend’s nagging as caring, another as hostility – which currently could be modeled by bias in Interpretation, but a Social node might structure it better). Given AI ethics concerns, an explicit social cognition component might also be relevant when simulating interactions (to ensure empathy or fairness in interpretation of other agents).
+
+    Creativity/Imagination: The grid touches on idea generation (Thought→Thought: Idea
+    file-pat2g9e4lxguxbx9nalwxs
+    ) and has Expression→Expression: Echo (creative resonance perhaps)
+    file-pat2g9e4lxguxbx9nalwxs
+    , but creativity is not deeply explored. One might ask if there should be a node or mechanism for imagination – the ability to simulate scenarios (which the DMN does in the brain for planning or creativity). Perhaps the “Experience” domain can handle imagined experience, or the Thought domain can create imaginary Worlds. The model can already simulate some of this by simply allowing the Thought→World perception link to feed not only what is actually sensed but also imagined hypotheses (like hallucinations or daydreams if Thought strongly drives “World” internally). But if needed, a separate “Imagery” or “Simulation” module could be added that generates hypothetical scenarios (like an internal sandbox). This might enrich modeling of planning (testing out future possibilities mentally) or creative ideation. However, this might be too granular for a high-level map, as one could argue it’s part of Thought or part of the interplay of multiple nodes.
+
+Overall, the identified missing elements tend to fall into making implicit things explicit (Attention, unconscious processing, embodiment, social context, etc.). Evaluating their importance: If our aim is a psychologically descriptive yet concise model, we might keep these implicit. The current nine domains already cover a lot of ground with minimal elements. Each proposed addition would increase complexity, so we’d only include it if it significantly enhances the descriptive power or the fidelity of simulation. Among them, Attention and Unconscious processing seem most crucial – attention because it’s central to what information is processed (without modeling it, simulations might unrealistically assume all stimuli are processed equally), and unconscious processing because otherwise the model risks over-ascribing everything to conscious symbolism. We could address attention by refining the Thought-World link (perhaps splitting it into two links, Stimulus and Attentional Focus) and unconscious processes by allowing certain connections to bypass conscious nodes (for instance, a portion of World→Action could be reflexive, or World→Interpretation fast path for instinctual appraisal). Even without adding new nodes, we might annotate some existing links as “possibly implicit” to capture this.
+
+Another perspective: The model might benefit from explicitly representing Learning as a process. We have “Learning” as a label (Thought→Experience) which is interesting – it suggests our thoughts influence what we learn from experiences
+file-pat2g9e4lxguxbx9nalwxs
+file-pat2g9e4lxguxbx9nalwxs
+. Perhaps Experience→Thought: Insight is learning too
+file-pat2g9e4lxguxbx9nalwxs
+. But the actual mechanism of updating knowledge is not depicted. In an algorithmic simulation, learning would be the adjustment of internal models (like memory or interpretation rules) based on experience. We may not need a separate node, but we need to implement that logic. A missing link perhaps is a direct feedback from outcome to intent adjustment (though one could argue World→Action: Feedback handles learning from outcomes). If a domain for Error Detection or Reward were present, it could explicitly handle reinforcement learning aspects. However, adding that might be too technical for our theory-focused scope.
+
+In conclusion, while the provided symbolic grid is rich, incorporating attention control, implicit processing, and perhaps distinct social/physical context distinctions are promising ways to extend it. These would allow a more nuanced simulation: e.g., attention mechanisms could simulate multitasking limits or selective hearing; implicit processing could simulate gut reactions and subconscious biases (which often differ from a person’s conscious values, an important psychological phenomenon); and a social context node could simulate cultural or relational differences (for instance, modeling how being in a collectivist vs individualist culture overlay might change bias formation or interpretation style – more on overlays next). Evaluating whether these additions are necessary depends on the use-case of the model: if one aims to simulate human-like behavior in an AI, aspects like attention and bias are indeed necessary to avoid an overly rational agent. If the goal is more theoretical mapping, the simpler nine-node structure might suffice with careful explanation that some things (like attention) are subsumed in existing links. Nevertheless, recognizing these potential gaps is vital as it guides future refinement of the architecture, ensuring it becomes even more comprehensive and aligned with human cognition.
+Modular Filters and Overlays for Tailored Interpretive Layers
+
+One of the powerful ideas for this architecture is the ability to introduce “hot-swappable” filters or modular overlays that customize certain cognitive layers without rebuilding the whole system. These overlays act like plug-ins that modify how information is processed in the model, allowing us to simulate tailored interpretive frameworks (such as cultural worldviews, mood states, or ethical constraints) on top of the core cognitive functions.
+
+The core architecture provides the essential cognitive machinery (perception, memory, action, etc.), and overlays can be thought of as additional rule-sets or transformations applied at specific points in that machinery. Because they are modular, they can be toggled on/off or exchanged, enabling quick shifts in the agent’s perspective or mode of operation while preserving the underlying structure. This aligns with software engineering principles of modular design and also with AI ethics calls for transparency and control – by isolating biases or value systems in discrete modules, we can better understand and manage them
+langlois.ca
+.
+
+Here are some examples of potential overlays and how they would function:
+
+    Cultural Worldview Overlay: Culture profoundly influences how we interpret reality. We could implement an overlay on the Interpretation domain that introduces cultural schema. For example, an individual from Culture X might have an overlay that causes the Interpretation module to give extra weight to communal values when evaluating experiences (thus altering Interpretation → Intent: Judgment to favor group goals over individual ones). Another culture’s overlay might do the opposite. Since worldview is represented by World ↔ Interpretation, an overlay here could effectively pre-filter all incoming world information through cultural assumptions (for instance, interpreting a thumbs-up gesture differently depending on culture). By swapping out the cultural overlay, the agent’s core cognitive loops remain the same, but the meanings ascribed differ. This is akin to loading a new “belief system” into the same cognitive hardware. The importance of this is seen in AI ethics and global AI design: an AI’s decisions can be very different if it’s operating with one cultural context versus another, so being able to modularly adjust that is beneficial (and avoids hard-coding one perspective). Technically, this could be implemented as a lookup table or biases in the Interpretation processes – e.g., the overlay might say “if interpreting event of type E, incorporate assumption A”. Because it’s modular, one could conduct experiments: run the same scenario with different cultural overlays to see how interpretation changes the outcome, much like testing AI behavior across cultural settings for fairness.
+
+    Emotional/Mood Filter: Emotions can be overlaid as a general tone that biases multiple processes. Suppose we have a “Depression filter” overlay that simulates depressive cognition (beyond just static parameter tweaks). This overlay might, for instance, intercept signals in the Experience → Interpretation path to add a negative skew (so positive experiences are downplayed, negative ones magnified), and likewise intercept Memory recall to preferentially retrieve negative memories (affecting Memory → Thought: Recall or Memory → Interpretation: Pattern). It could also reduce the weight of positive feedback loops (maybe dampening World → Experience: Event joy signals). By contrast, an “Optimism filter” might do the opposite – emphasizing silver linings in Interpretation and recalling positive memories more. These filters can be toggled: one could apply the depression overlay to an agent and watch it process the world with pessimistic bias, then switch to optimism overlay and see a brighter outlook, all while the core structure (what information flows where) is unchanged. This approach mimics psychological reality: mood acts like a filter on cognition, but we are still the same person with the same memories and reasoning – it’s just the valence that shifts. It’s also ethically relevant in AI if we consider AI companions or therapeutic agents: being able to simulate or recognize such overlays could help in empathizing with human emotions.
+
+    Cognitive Style Overlay: Beyond culture and mood, there are cognitive style differences – say, analytical vs intuitive thinking. An overlay could target the Thought module’s mode of operation: an analytical overlay might enforce a step-by-step reasoning process (maybe requiring multiple thought iterations before Intent is formed), whereas an intuitive overlay might shortcut directly from Experience to Intent with minimal deliberation. This could be done by altering the routing: for intuitive, maybe bypass some of Thought and rely on Experience→Action: Trial (acting on gut) vs for analytical ensure Thought→Intent: Reason fully executes. Again, this is a modular choice – one could even dynamically swap it (simulate how the same person might behave under time pressure – under time pressure we often shift to intuition overlay because we can’t deliberate).
+
+    Ethical/Values Overlay: If we want AI or simulated agents to adhere to certain ethical principles, we could have an overlay that acts as a constraint filter. For instance, a “Do-No-Harm” overlay could intercept potential action decisions and filter out any that cause harm, or bias Interpretation to emphasize empathy. This might interact with Intent and Action: e.g., before an Intent gets converted to Action, the overlay checks it against a rule (like Asimov’s laws kind of idea) and either allows or overrides. Because it’s overlay, the core system still generates intents based on its goals, but the overlay can modify execution. In human terms, this could simulate a strong moral conviction layer – e.g., an overlay for a pacifist might intercept aggressive impulses coming from Interpretation of threat and prevent violent Action, replacing it with a non-violent response.
+
+The advantage of hot-swappable overlays is flexibility and clarity. If each overlay is kept separate, we can debug or adjust that aspect in isolation. For example, if an AI is showing biased decisions, we could examine the “bias overlay” or parameter and tweak it without rewriting the whole cognitive model. In human simulation, this means we can better pinpoint which factor is responsible for which behavior: Is the agent acting grumpy because of a core trait or just because we turned on a bad mood overlay? We can answer by toggling it. This modularity is in line with AI transparency principles – being able to trace outcomes to specific modules fosters accountability
+langlois.ca
+. In traditional AI, biases often creep in inadvertently
+langlois.ca
+, but here we intentionally model and encapsulate them, allowing mitigation. For instance, one suggestion in AI ethics is to incorporate psychological research on unconscious bias into AI design
+langlois.ca
+. A bias overlay does exactly that: it’s a component explicitly built from cognitive bias research (like known biases in human decision-making) and inserted in the AI’s cognitive loop. We can then adjust or remove it to see how decisions change, ideally steering towards fairness.
+
+In an algorithmic implementation, overlays could be implemented as additional functions that hook into the main cycle at defined points. For example, one could design the cognitive cycle to emit an event whenever Interpretation produces a meaning, and any active overlay can listen to that event and modify the data if needed (like a decorator pattern). Or if using a blackboard model, overlays could monitor the blackboard for certain content and alter it. The key is they are not baked into the fundamental architecture but are optional add-ons.
+
+Preserving core functions is vital – overlays shouldn’t break the basic cognitive operations. Think of it like how you can install plugins in a web browser: the browser’s core (rendering pages, following links) remains the same, but plugins can change the appearance or block certain content. Similarly, our cognitive architecture should reliably do perception, memory, reasoning, action selection according to its design; overlays just tweak the flavor or filter of those operations. This separation ensures that if you remove the overlay, you return to a baseline cognitive process (which might be a “neutral” or default personality). This also means multiple overlays could be combined if carefully done – e.g., one could simultaneously apply a cultural overlay and a mood overlay to simulate, say, a person from Culture X who is currently depressed. The outcome would be a combination of those biases – again akin to reality, where various factors overlay in our mind. The architecture should be robust enough that adding overlays doesn’t cause contradictions; if two overlays conflict (one biases positive, another biases negative), the architecture might need rules for precedence or blending.
+
+To illustrate concretely, consider testing interpretive layers: We present the same situation to several simulated agents – a compliment from a coworker. Agent A has no overlays (default). Agent B has a “low self-esteem filter” overlay. Agent C has a “cultural context where modesty is valued” overlay. Agent A might interpret the compliment at face value (“they appreciate my work” leading to positive feeling and motivation). Agent B, due to the self-esteem overlay, might interpret it skeptically or negatively (“they’re just saying that, I don’t really deserve it”), because the overlay biases Interpretation→Self to reinforce a negative self-belief. Agent C, because of cultural overlay, might interpret compliment as polite ritual and respond humbly or even feel uncomfortable (the overlay could bias Interpretation→Intent to avoid pride). The core cognitive steps – hearing the compliment (World→Experience), processing it, recalling past compliments (Memory), etc. – all happen for each agent. But the overlay steers the interpretive outcome. By swapping overlays, we can effectively simulate these different personal or cultural filters on reality.
+
+Finally, it’s worth noting that overlays facilitate experimentation and personalization. Researchers could quickly test how adding a certain cognitive bias changes outcomes, which is useful for studying decision-making. Designers of AI assistants could personalize the AI’s cognitive style to the user by loading different overlays (making it more empathetic, or more direct, depending on what the user prefers – without redesigning from scratch). This modularity also helps in maintaining core values: for instance, if we want any simulated agent to never violate a hard ethical rule, we keep an “Ethics overlay” always on; if the architecture is used in different contexts (education, warfare, therapy), we can swap out contextual overlays but leave the ethics overlay if needed.
+
+In summary, modular overlays act as flexible lenses that can be applied to the symbolic cognitive architecture, tailoring the interpretive layers and biases of the system. They allow for tailored cognition – modeling how two minds can function differently even with the same basic cognitive machinery. This feature not only broadens the range of individual differences we can simulate (beyond what static parameters alone can do) but also aligns with practical needs in AI for transparency (isolating biases) and adaptability. By preserving core functions while overlaying custom filters, we maintain a stable foundation (ensuring things like memory retrieval or logical reasoning still operate correctly) and only adjust the subjective “coloring” of cognition. This approach honors the complexity of human psychology, where indeed core faculties are relatively stable but our mind’s framing of reality can shift dramatically with context, mood, or culture – much like swapping lenses on a camera changes the image while the camera itself remains the same.
+Conclusion
+
+In this study, we constructed a comprehensive symbolic cognition architecture that maps out cognitive elements and their relationships, and we explored how this architecture can be used to simulate a wide variety of individual minds. We began by defining the core domains of cognition (Self, Thought, Intent, Action, World, Expression, Experience, Interpretation, Memory) and detailing the symbolic links between them as given by the Symbolic Cognition Grid. This provided a coherent structural model – essentially a blueprint of the mind’s organization – that emphasizes how each part of the mind influences others in a cyclic, integrated fashion.
+
+Building on this structure, we discussed ways to algorithmically implement and vary the architecture. By treating the model as a network of modules and processes, we can simulate mental activity as information flowing through the network (for example, from perception to interpretation to action, with feedback loops back to perception). Importantly, we can encode individual differences through parameter adjustments in this network. Drawing on cognitive psychology and AI research, we noted that varying parameters (like the strength of bias in interpretation, or the depth of reflection in thought) can lead to distinct behavioral profiles
+cdn.aaai.org
+cdn.aaai.org
+. This allows one unified architecture to emulate many “internal cognitive architectures” – one person’s mind might emphasize emotion-laden interpretation, another’s might lean on rational analysis, simply by tuning the model’s dials. We related this to psychological theories such as personal construct theory, which affirms that each person interprets the world through a unique mental framework
+verywellmind.com
+. Our model provides a formal way to represent those unique frameworks and to see how they yield different interactions with a shared reality.
+
+Next, by applying systems theory principles, we highlighted the dynamic nature of the cognitive architecture. The model is rife with feedback loops and opportunities for emergent behavior. We saw that it naturally accounts for phenomena like self-stabilizing patterns (a consistent identity or worldview arising from iterative self-reference and feedback) and runaway biases (e.g. negative thought loops feeding on themselves) – patterns that are well-known in psychology and are now understood as emergent properties of brain networks
+worthylab.org
+frontiersin.org
+. By conceptualizing the cognitive architecture as a system, we gain insight into how and why certain mental phenomena occur: a small change in one part of the system can cascade through feedback loops to have large effects, or multiple small interactions can synchronize into a larger emergent property (like coordinated oscillatory brain activity supporting working memory
+worthylab.org
+or a coherent self-narrative forming from many memory traces
+mdpi.com
+). This systems view ensures our simulation is not static or linear, but capable of the kind of adaptive, nonlinear behavior real cognition exhibits.
+
+We then integrated neuroscience insights, aligning each piece of the symbolic model with biological analogs. This helped verify that our symbolic relationships aren’t fanciful; they correspond to real neural pathways and processes. Memory’s reconstructive nature, emotion’s interplay with cognition via limbic circuits, perception’s top-down and bottom-up flow, the role of the default mode network in self and narrative – all these examples show the model is grounded in current cognitive neuroscience
+en.wikipedia.org
+frontiersin.org
+mdpi.com
+. This grounding not only provides confidence in the model’s validity, but it also guided us in identifying subtle aspects like the need for an attention mechanism or the presence of implicit biases (since we know, for instance, that unconscious emotional bias in the amygdala can affect conscious interpretation
+frontiersin.org
+). The neuroscientific perspective thereby acted as a reality check and a source of enrichment for the theoretical model.
+
+We identified some missing elements that could further refine the architecture. In particular, we noted that attention (the selective tuning of cognitive resources) and unconscious processes (automatic, unreported cognition) are not explicitly represented, yet they play a critical role in human psychology. We discussed how these might be incorporated – either as new modules or as refinements of existing links – to better capture the full complexity of the mind. We also mentioned embodiment and social context as areas where additional structure could be added. While adding every detail could overcomplicate the model, acknowledging these elements is important. For example, in any practical simulation, one would need to simulate attentional limits (an agent cannot process infinite stimuli at once) and one would benefit from simulating implicit biases (since real agents have them). Fortunately, the modular nature of the architecture means such additions can be made without dismantling the whole system; one can plug in an attention module or a subconscious layer and connect it into the existing network.
+
+Finally, we proposed the concept of modular overlays – a flexible mechanism to adjust the model’s interpretive layers to simulate specific cognitive filters or states. This concept is particularly powerful for tailoring the architecture to different scenarios or individuals. By separating out things like cultural biases, mood biases, or ethical constraints into overlays, we keep the core cognitive machinery constant while allowing targeted transformations. This approach not only mirrors how human minds can switch states (the same person can perceive things very differently when happy vs sad, or can adopt a different outlook after moving to a new culture), but it also provides a tool for developers to ensure certain properties in AI systems. For instance, an AI could have a permanent “ethical overlay” that guarantees some level of moral reasoning is always applied, or could use a “perspective overlay” to empathize with a user’s mood by temporarily adopting a similar bias. We showed that these overlays align with recommendations in AI ethics: making biases explicit and adjustable rather than hidden
+langlois.ca
+langlois.ca
+. Moreover, the ease of swapping them enables rapid experimentation and personalization, which is useful both in research (testing how a scenario plays out under different psychological conditions) and in real-world AI deployment (tailoring behavior to users or contexts responsibly).
+
+In conclusion, the symbolic cognition structure described here offers a theoretically rich and structurally clear framework for understanding and simulating human-like cognition. It maps the essential ingredients of thought, emotion, action, and perception into an organized schema that is deeply informed by psychology (e.g. bias, belief, habit), and it does so in a way that is congenial to algorithmic implementation (modular, parameterized, and extensible). By integrating systems theory and neuroscience insights, the model not only captures static relationships but also the dynamic, emergent, and self-regulatory aspects of cognition – making it a living model rather than a static diagram. The capacity to simulate diverse internal architectures by tuning parameters or adding overlays speaks to the model’s descriptive power: it can potentially emulate the cognitive differences between individuals, from personality and mood to cultural worldview, in a principled way. This has far-reaching implications, from building more human-like AI (that can understand or mirror individual differences) to providing a sandbox for theorists to explore how certain cognitive phenomena might arise from structural changes.
+
+Ultimately, this research underscores that to simulate a mind, one must account for both the universal structure of cognition and the particular variations that give rise to individual psychology. A symbolic grid of cognition provides the universal skeleton; system dynamics breathe life into it; and tailored parameters and overlays provide the individual soul. Such a model is necessarily a simplification of the incredibly complex human mind, but it is a valuable step toward a holistic understanding – one that bridges the gap between high-level psychological theory and implementable computational design, while staying mindful of the ethical and practical dimensions of recreating elements of human cognition in artificial systems.
+
+Sources:
+
+    Newell, A. (1990). Unified Theories of Cognition. (Definition of cognitive architecture)
+    en.wikipedia.org
+    en.wikipedia.org
+    .
+
+    Hudlicka, E. et al. (2000). Modeling Individual Differences in Human Agents. AAAI Technical Report FS-00-03. (Parametric cognitive architecture for individual differences)
+    cdn.aaai.org
+    cdn.aaai.org
+    .
+
+    Cherry, K. (2023). George Kelly’s Personal Construct Theory. Verywell Mind. (Individuals have unique mental frameworks or constructs)
+    verywellmind.com
+    .
+
+    Miller, E. et al. (2024). Cognition is an emergent property. Current Opinion in Behavioral Sciences, 57, 101388. (Emergence and neural dynamics in cognition)
+    worthylab.org
+    worthylab.org
+    .
+
+    Langlois Lawyers (2023). Ethics in AI: Discriminatory Biases. (Cognitive biases as brain shortcuts; importance of addressing biases in AI)
+    langlois.ca
+    langlois.ca
+    .
+
+    Yang, F. et al. (2024). Neural mechanisms underlying negative cognitive bias in depression. Frontiers in Psychiatry, 15:1348474. (Amygdala-hippocampal loops, bias in interpretation and memory in depression)
+    frontiersin.org
+    frontiersin.org
+    .
+
+    Wikipedia. Reconstructive memory. (Memory influenced by perception, imagination, beliefs; encoding is constructive, leading to distortions)
+    en.wikipedia.org
+    en.wikipedia.org
+    .
+
+    Azarias, F. R. et al. (2025). The Journey of the Default Mode Network. Biology, 14(4), 395. (DMN constructs personal narrative and identity through self-referential processing)
+    mdpi.com
+    .
+
+    Symbolic Cognition Grid Atlas (User-provided). (Defined mappings between Self, Thought, Intent, Action, World, Expression, Experience, Interpretation, Memory)
+    file-pat2g9e4lxguxbx9nalwxs
+    file-pat2g9e4lxguxbx9nalwxs
+    .

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] EIDEUS DAWN // MEMORY LATTICE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dossier_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .lattice-graphic {
+            background: #050505;
+            border: 1px solid var(--border-color);
+            padding: 4rem;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .voxel-stack {
+            display: flex;
+            gap: 1rem;
+            perspective: 1000px;
+            justify-content: center;
+        }
+
+        .voxel-proxy {
+            width: 50px;
+            height: 50px;
+            border: 1px solid var(--accent-cyan);
+            position: relative;
+            transform: rotateX(20deg) rotateY(20deg);
+            background: rgba(0, 240, 255, 0.05);
+        }
+
+        .voxel-proxy::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--accent-cyan);
+            opacity: 0.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="dossier-layout reveal active">
+        <!-- Sidebar Navigation -->
+        <aside class="dossier-sidebar">
+            <div style="margin-bottom: 2rem;">
+                <a href="index.html"
+                    style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-cyan); text-decoration: none; display: flex; align-items: center; gap: 0.3rem;">
+                    <span>←</span> BACK TO TERMINAL
+                </a>
+            </div>
+
+            <ul class="tree-view">
+                <li class="tree-folder">
+                    <div class="tree-folder-label">Final Dawn of Eideus</div>
+                    <ul class="tree-children">
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Backend</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="dawn_backend.html">System Overview</a></li>
+                                <li class="tree-file"><a href="dawn_affinity.html">Affinity Gears</a></li>
+                                <li class="tree-file active"><a href="dawn_memory.html">Memory Lattice</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-file"><a href="dawn.html">Project Hub</a></li>
+                        <li class="tree-file"><a href="dawn_specs.html">Technical Specs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dossier-main">
+            <header style="margin-bottom: 4rem;">
+                <div class="card-tag">BACKEND // PERSISTENCE LAYER</div>
+                <h1 style="font-size: 3rem; letter-spacing: -1px; margin: 1rem 0;">MEMORY LATTICE</h1>
+                <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.8rem;">SUBJECT:
+                    Semantic 6D Voxtel Resolution & Persistence Algorithms</p>
+            </header>
+
+            <section>
+                <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 2rem;">The 6D Semantic
+                    Space</h2>
+                <p style="line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+                    The Memory Lattice is a proprietary vector persistence engine that stores every narrative turn as a
+                    high-dimensional voxel.
+                    These voxels are addressed using a 6D spatial key and 4D temporal key, enabling instant recursive
+                    lookups.
+                </p>
+
+                <div class="lattice-graphic">
+                    <div class="voxel-stack">
+                        <div class="voxel-proxy"></div>
+                        <div class="voxel-proxy"></div>
+                        <div class="voxel-proxy"></div>
+                        <div class="voxel-proxy" style="border-style: dashed; opacity: 0.5;"></div>
+                    </div>
+                </div>
+
+                <div
+                    style="padding: 2rem; border-left: 1px solid var(--accent-cyan); background: rgba(0, 240, 255, 0.02); margin-bottom: 4rem;">
+                    <h3
+                        style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); margin-bottom: 1.5rem;">
+                        // RETRIEVAL PIPELINE</h3>
+                    <ol
+                        style="list-style: none; padding: 0; color: var(--text-dim); font-size: 0.85rem; line-height: 1.8;">
+                        <li><strong style="color: var(--text-main);">1. Tag Matching</strong>: Initial filtering by
+                            semantic tags (keywords).</li>
+                        <li><strong style="color: var(--text-main);">2. Embedding Search</strong>: Cosine similarity
+                            analysis on the y+ (Embedding) face.</li>
+                        <li><strong style="color: var(--text-main);">3. Temporal Decay</strong>: Weighting recent events
+                            higher unless anchored by Narrative Importance.</li>
+                        <li><strong style="color: var(--text-main);">4. Spatial Heuristics</strong>: prioritizing
+                            memories from the same Region/District.</li>
+                    </ol>
+                </div>
+
+                <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 2rem;" id="xp">XP
+                    Ledger Ekonomi</h2>
+                <p style="line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+                    The **XP Ledger** is a sub-system of the persistence layer that tracks character progression.
+                    Experience is not just a number; it is a "Relational Asset" that unlocks new nodes in the memory
+                    lattice,
+                    allowing the AI to recognize the player's past successes as influential factors in future turns.
+                </p>
+                <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <li style="border: 1px solid var(--border-color); padding: 1.5rem;">
+                        <span
+                            style="display: block; font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-cyan); margin-bottom: 0.5rem;">//
+                            MODE: COMBAT</span>
+                        <span style="font-size: 0.8rem; color: var(--text-main);">Success-based award via White Wolf d10
+                            logic.</span>
+                    </li>
+                    <li style="border: 1px solid var(--border-color); padding: 1.5rem;">
+                        <span
+                            style="display: block; font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-cyan); margin-bottom: 0.5rem;">//
+                            MODE: DIALOGUE</span>
+                        <span style="font-size: 0.8rem; color: var(--text-main);">Complexity-weighted awards for
+                            semantic depth.</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tree-folder-label').forEach(label => {
+            label.addEventListener('click', () => {
+                label.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* --- EIDEUS DOSSIER TREE / EXPLORER --- */
+
+.dossier-layout {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 0;
+    /* Changed from 4rem to 0 to accommodate WIP banner */
+}
+
+.dossier-sidebar {
+    width: 300px;
+    border-right: 1px solid var(--border-color);
+    padding: 2rem;
+    background: rgba(10, 10, 10, 0.5);
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+}
+
+.dossier-main {
+    flex: 1;
+    padding: 4rem;
+    max-width: 1000px;
+}
+
+.tree-view {
+    list-style: none;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 0;
+    margin: 0;
+}
+
+.tree-folder {
+    margin: 0.5rem 0;
+}
+
+.tree-folder-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    padding: 0.2rem 0;
+    transition: color 0.2s;
+    user-select: none;
+}
+
+.tree-folder-label:hover {
+    color: var(--text-main);
+}
+
+.tree-folder-label::before {
+    content: '▼';
+    font-size: 0.6rem;
+    transition: transform 0.2s;
+    color: var(--accent-cyan);
+}
+
+.tree-folder.collapsed .tree-folder-label::before {
+    transform: rotate(-90deg);
+}
+
+.tree-folder.collapsed .tree-children {
+    display: none;
+}
+
+.tree-children {
+    padding-left: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    margin-left: 0.3rem;
+}
+
+.tree-file {
+    margin: 0.3rem 0;
+}
+
+.tree-file a {
+    color: var(--accent-steel);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+.tree-file a:hover {
+    color: var(--accent-cyan);
+}
+
+.tree-file.active a {
+    color: var(--accent-cyan);
+    font-weight: bold;
+}
+
+.tree-file a::before {
+    content: '📄';
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .dossier-layout {
+        flex-direction: column;
+    }
+
+    .dossier-sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+}

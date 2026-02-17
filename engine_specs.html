@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] G-YNTHETIC ENGINE // FUNCTIONAL SPECS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: var(--accent-cyan);
+        }
+
+        .spec-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 2rem;
+        }
+
+        .code-block {
+            background: #0a0a0a;
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--text-main);
+            margin: 2rem 0;
+            position: relative;
+            overflow-x: auto;
+        }
+
+        .code-block::before {
+            content: "INTERNAL_SOURCE_VIEW";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--accent-cyan);
+            color: #000;
+            font-size: 0.6rem;
+            padding: 2px 8px;
+            font-weight: bold;
+        }
+
+        .arc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 3rem 0;
+        }
+
+        .arc-card {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .arc-label {
+            font-family: var(--font-mono);
+            color: var(--accent-cyan);
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="container spec-container reveal active">
+        <header style="margin-bottom: 4rem;">
+            <div
+                style="display: flex; gap: 1rem; margin-bottom: 2rem; font-family: var(--font-mono); font-size: 0.7rem;">
+                <a href="index.html"
+                    style="color: var(--text-dim); text-decoration: none; transition: color 0.3s;">TERMINAL</a>
+                <span style="color: var(--accent-cyan);">></span>
+                <a href="engine.html"
+                    style="color: var(--text-dim); text-decoration: none; transition: color 0.3s;">ENGINE DOSSIER</a>
+            </div>
+            <div class="card-tag">FUNCTIONAL RECONSTRUCTION // T3</div>
+            <h1 style="font-size: 2.5rem; margin: 1rem 0;">G-YNTHETIC ENGINE CORE</h1>
+            <p style="color: var(--text-dim); font-weight: 300;">SYMBOLIC LOGIC & TRIADIC PROCESSING PIPELINE</p>
+        </header>
+
+        <section>
+            <h2 style="font-family: var(--font-header); font-size: 1.5rem; margin-bottom: 1.5rem;">1. THE 7 RHETORICAL
+                ARCS</h2>
+            <p style="color: var(--text-dim); line-height: 1.8;">
+                The engine decomposes all incoming semantic data into a 7-layer stack. This allows the AI to
+                differentiate
+                between the *action* being requested and the *value* or *intent* behind it.
+            </p>
+            <div class="arc-grid">
+                <div class="arc-card"><span class="arc-label">01. ESSENCE</span>Ontology & Identity</div>
+                <div class="arc-card"><span class="arc-label">02. FORM</span>Physical / Syntax Representation</div>
+                <div class="arc-card"><span class="arc-label">03. ACTION</span>Dynamic Logic / Vectors</div>
+                <div class="arc-card"><span class="arc-label">04. FRAME</span>Contextual Boundaries</div>
+                <div class="arc-card"><span class="arc-label">05. INTENT</span>Motivation / Goal State</div>
+                <div class="arc-card"><span class="arc-label">06. RELATION</span>Networked Dependencies</div>
+                <div class="arc-card"><span class="arc-label">07. VALUE</span>Priority & Ethical Weight</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="font-family: var(--font-header); font-size: 1.5rem; margin-bottom: 1.5rem;">2. THE TEMPORAL TRIAD
+            </h2>
+            <p style="color: var(--text-dim); line-height: 1.8;">
+                Processing occurs across three macro-temporal phases, ensuring logical consistency from perception to
+                inception.
+            </p>
+            <div class="code-block" style="color: var(--accent-cyan); border-color: var(--accent-cyan);">
+                // TEMPORAL PHASE ARCHITECTURE
+                // ---------------------------
+                // PHASE 1: ID_VERIFICATION (Ontological Check)
+                // PHASE 2: INCEPTION_LAYER (Vector Injection)
+                // PHASE 3: EXECUTION_GRID (Recursive Output)
+
+                [REDACTED] // PROPRIETARY LOGIC CONCEALED
+                // SEE: ARCHITECTURE_SPEC_V7.2 FOR AUTHENTICATED ACCESS
+            </div>
+        </section>
+
+        <section>
+            <h2 style="font-family: var(--font-header); font-size: 1.5rem; margin-bottom: 1.5rem;">3. RELEVANCE SCORING
+                (CORAL TPU)</h2>
+            <p style="color: var(--text-dim); line-height: 1.8;">
+                The engine benchmarks every arc against the loaded domain template using high-speed edge acceleration.
+            </p>
+            <div class="code-block" style="color: var(--accent-cyan); border-color: var(--accent-cyan);">
+                // TPU ACCELERATION PROTOCOL
+                // -------------------------
+                // INPUT: Arc_Embeddings, Template_Tensor
+                // PROCESS: Cosine_Similarity_Matrix * Weighting_Bias
+                // OUTPUT: Relevance_Score [-3.0 to +3.0]
+
+                [REDACTED] // PROPRIETARY LOGIC CONCEALED
+            </div>
+        </section>
+
+        <footer style="margin-top: 6rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+            <p style="font-size: 0.7rem; color: var(--text-dim);">SOURCE: DOC_SITE/DOMAIN-AGNOSTIC/ENGINE.PY</p>
+            <p style="font-size: 0.7rem; color: var(--accent-cyan); margin-top: 0.5rem;">// STRATEGIC INFRASTRUCTURE -
+                DO NOT DISTRIBUTE</p>
+        </footer>
+    </div>
+</body>
+
+</html>

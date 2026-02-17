@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] CITY SECURED // AI HIERARCHY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dossier_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: var(--accent-purple);
+        }
+
+        .hierarchy-level {
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            background: rgba(197, 86, 255, 0.01);
+        }
+
+        .level-tag {
+            position: absolute;
+            top: -0.5rem;
+            right: 2rem;
+            background: #0a0a0a;
+            border: 1px solid var(--accent-color);
+            padding: 0.2rem 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        .status-pill {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 2px;
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            margin-right: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .status-active {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border: 1px solid #10b981;
+        }
+
+        .status-failover {
+            background: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+            border: 1px solid #f59e0b;
+        }
+
+        .status-throttled {
+            background: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            border: 1px solid #ef4444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="dossier-layout reveal active">
+        <!-- Sidebar Navigation -->
+        <aside class="dossier-sidebar">
+            <div style="margin-bottom: 2rem;">
+                <a href="index.html"
+                    style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-purple); text-decoration: none; display: flex; align-items: center; gap: 0.3rem;">
+                    <span>←</span> BACK TO TERMINAL
+                </a>
+            </div>
+
+            <ul class="tree-view">
+                <li class="tree-folder">
+                    <div class="tree-folder-label">City SeCUReD</div>
+                    <ul class="tree-children">
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Core Architecture</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="secured_orchestration.html">Orchestration Pipeline</a>
+                                </li>
+                                <li class="tree-file active"><a href="secured_ai.html">AI Hierarchy</a></li>
+                                <li class="tree-file"><a href="secured_circadian.html">Circadian States</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Operational Modules</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="secured_scoring.html">PRISM Scoring</a></li>
+                                <li class="tree-file"><a href="secured_response.html">Emergency Response</a></li>
+                                <li class="tree-file"><a href="secured_resource.html">Supply & Allocation</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Safety & Strategic</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="secured_ethics.html">Ethical Oversight</a></li>
+                                <li class="tree-file"><a href="secured_siege.html">Siege Protocol</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-file"><a href="secured.html">Project Hub</a></li>
+                    </ul>
+                </li>
+                <li class="tree-folder collapsed">
+                    <div class="tree-folder-label">Cross-Domain Assets</div>
+                    <ul class="tree-children">
+                        <li class="tree-file"><a href="cubex_hub.html">CubeX³ Genesis</a></li>
+                        <li class="tree-file"><a href="engine.html">G-ynthetic Engine</a></li>
+                        <li class="tree-file"><a href="dawn.html">Eideus Dawn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dossier-main">
+            <div class="card-tag" style="color: var(--accent-purple); border-color: var(--accent-purple);">CORE
+                ARCHITECTURE // THEORETICAL SPECS</div>
+            <h1 style="font-size: 3rem; letter-spacing: -1px; margin: 1rem 0; color: var(--accent-purple);">MULT-TIER
+                CORTEX</h1>
+            <p style="color: var(--accent-purple); font-family: var(--font-mono); font-size: 0.8rem;">SUBJECT: Blueprint
+                Hierarchy & Recursive Logic</p>
+
+            <section>
+                <div class="hierarchy-level">
+                    <div class="level-tag">LEVEL 01 // STRATEGIC</div>
+                    <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 1rem;">PARENT AI
+                    </h2>
+                    <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        The high-level G-ynthetic Labs core that governs multi-city strategic objectives.
+                        It has direct override authority over all regional SeCUReD instances.
+                    </p>
+                    <span class="status-pill status-active">ACTIVE</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-steel);">//
+                        GLOBAL_DOMAIN_0</span>
+                </div>
+
+                <div class="hierarchy-level">
+                    <div class="level-tag">LEVEL 02 // OPERATIONAL</div>
+                    <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 1rem;">SECUReD
+                        MODULES</h2>
+                    <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        Specialized functional blocks (Response, Resource, Ethics) that handle domain-specific execution
+                        within a single urban lattice.
+                    </p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span class="status-pill status-active">CORE</span>
+                        <span class="status-pill status-failover">RESPONSE</span>
+                        <span class="status-pill status-active">ETHICS</span>
+                        <span class="status-pill status-throttled">RESOURCE</span>
+                    </div>
+                </div>
+
+                <div class="hierarchy-level">
+                    <div class="level-tag">LEVEL 03 // TACTICAL</div>
+                    <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 1rem;">SUBMODELS
+                    </h2>
+                    <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                        Lightweight, edge-deployed neural clusters that manage real-time IoT ingestion and local
+                        actuator response.
+                    </p>
+                    <p style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-main);">
+                        COUNT: 1,402 ACTIVE INSTANCES / 98.4% EFFICIENCY
+                    </p>
+                </div>
+
+                <div style="margin-top: 4rem;">
+                    <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 2rem;">FAILOVER
+                        DEGRADATION</h2>
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.8rem;">
+                        <thead>
+                            <tr
+                                style="text-align: left; border-bottom: 1px solid var(--border-color); color: var(--accent-purple); font-family: var(--font-mono);">
+                                <th style="padding: 1rem 0;">STATUS</th>
+                                <th>DESCRIPTION</th>
+                                <th>RESTRICTION</th>
+                            </tr>
+                        </thead>
+                        <tbody style="color: var(--text-dim); line-height: 2;">
+                            <tr>
+                                <td style="padding: 1rem 0;"><span style="color: #f59e0b;">FAILOVER</span></td>
+                                <td>Secondary logic-core active due to primary latency.</td>
+                                <td>Tactical only.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem 0;"><span style="color: #ef4444;">THROTTLED</span></td>
+                                <td>Computational resources limited to critical-safety only.</td>
+                                <td>No predictive gen.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 1rem 0;"><span style="color: var(--accent-steel);">OVERRIDDEN</span>
+                                </td>
+                                <td>Manual or Parent AI direct control state.</td>
+                                <td>Autonomous lock.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tree-folder-label').forEach(label => {
+            label.addEventListener('click', () => {
+                label.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+
+</html>

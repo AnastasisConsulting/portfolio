@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] EIDEUS DAWN // TECH SPECS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dossier_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .spec-section {
+            margin-bottom: 4rem;
+        }
+
+        .spec-section h2 {
+            font-family: var(--font-header);
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+            color: var(--accent-cyan);
+        }
+
+        .spec-section p {
+            line-height: 1.8;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        pre {
+            background: rgba(0, 240, 255, 0.02);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        code {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-main);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.8rem;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            color: var(--accent-cyan);
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="dossier-layout reveal active">
+        <!-- Sidebar Navigation -->
+        <aside class="dossier-sidebar">
+            <div style="margin-bottom: 2rem;">
+                <a href="index.html"
+                    style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-cyan); text-decoration: none; display: flex; align-items: center; gap: 0.3rem;">
+                    <span>←</span> BACK TO TERMINAL
+                </a>
+            </div>
+
+            <ul class="tree-view" id="nav-tree">
+                <!-- Copied from dawn.html for consistency -->
+                <li class="tree-folder collapsed">
+                    <div class="tree-folder-label">Domain Agnostic Systems</div>
+                    <ul class="tree-children">
+                        <li class="tree-file"><a href="engine_specs.html">Lattice Engine</a></li>
+                    </ul>
+                </li>
+                <li class="tree-folder">
+                    <div class="tree-folder-label">Final Dawn of Eideus</div>
+                    <ul class="tree-children">
+                        <li class="tree-folder collapsed">
+                            <div class="tree-folder-label">Backend</div>
+                            <ul class="tree-children">
+                                <li class="tree-folder collapsed">
+                                    <div class="tree-folder-label">Affinity</div>
+                                    <ul class="tree-children">
+                                        <li class="tree-file"><a href="dawn_affinity.html">Affinity Gears</a></li>
+                                        <li class="tree-file"><a href="dawn_affinity.html#fractal">Fractal Affinity</a>
+                                        </li>
+                                        <li class="tree-file"><a href="dawn_affinity.html#moss">M.O.S.S.</a></li>
+                                        <li class="tree-file"><a href="dawn_affinity.html#bolts">The Bolts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="tree-folder collapsed">
+                                    <div class="tree-folder-label">Persistence</div>
+                                    <ul class="tree-children">
+                                        <li class="tree-folder collapsed">
+                                            <div class="tree-folder-label">Memory</div>
+                                            <ul class="tree-children">
+                                                <li class="tree-file"><a href="dawn_memory.html">Lattice Algorithms</a>
+                                                </li>
+                                                <li class="tree-file"><a href="dawn_memory.html#xp">XP System Packet</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder collapsed">
+                            <div class="tree-folder-label">Developer Tools</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="dawn_devtools.html">Flight Controls</a></li>
+                                <li class="tree-file"><a href="dawn_devtools.html#keys">Key References</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder collapsed">
+                            <div class="tree-folder-label">Frontend</div>
+                            <ul class="tree-children">
+                                <li class="tree-folder collapsed">
+                                    <div class="tree-folder-label">Cast</div>
+                                    <ul class="tree-children">
+                                        <li class="tree-folder collapsed">
+                                            <div class="tree-folder-label">Main Cast</div>
+                                            <ul class="tree-children">
+                                                <li class="tree-file"><a href="dawn_cast.html#gm">Game Master</a></li>
+                                                <li class="tree-file"><a href="dawn_cast.html#lyra">Lyra</a></li>
+                                                <li class="tree-file"><a href="dawn_cast.html#navbot">NavBot</a></li>
+                                                <li class="tree-file"><a href="dawn_cast.html#vizzy">Vizzy The
+                                                        Consolidator</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="tree-file"><a href="dawn_frontend.html">Data Flow</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-file" id="review-link"><a href="#review">Claude-Sonnet Review</a></li>
+                        <li class="tree-file"><a href="dawn.html">Project Hub</a></li>
+                        <li class="tree-file active"><a href="dawn_specs.html">Technical Specs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dossier-main" style="max-width: 1200px;">
+            <header style="margin-bottom: 4rem;">
+                <div class="card-tag">F.R.A.C.C. ARCHITECTURE // LATTICE SPEC</div>
+                <h1 style="font-size: 2.5rem; letter-spacing: -1px; margin: 1rem 0;">FRACTAL LATTICE SPECIFICATION</h1>
+                <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.8rem;">REF: Final Dawn
+                    of Eideus — Holographic Projection Protocols.md</p>
+            </header>
+
+            <section class="spec-section">
+                <h2>1. MEMORY LATTICE ARCHITECTURE</h2>
+                <p>The memory lattice is a <strong>7x7x7 Holographic Voxel Cube</strong> designed for high-density
+                    semantic
+                    storage and retrieval. Every game entity is a projection of this data structure.</p>
+                <h3>1.1 Coordinate System</h3>
+                <pre><code>// Spatial Addressing Format (6 Dimensions)
+// ----------------------------------------
+// D1: GALAXY (Cluster ID)
+// D2: SYSTEM (Star ID)
+// D3: OBJECT (Planetary Body)
+// D4: CIVILIZATION (Cultural Layer)
+// D5: TERRITORY (City/Region)
+// D6: DISTRICT (Local Vector)
+
+[REDACTED] // EXACT HASHING ALGORITHM CONCEALED</code></pre>
+
+                <h3>1.2 Voxel Cube Structure</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Face</th>
+                            <th>Direction</th>
+                            <th>Content Type</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>x+</td>
+                            <td>Forward</td>
+                            <td>string</td>
+                            <td>LLM-generated narration text</td>
+                        </tr>
+                        <tr>
+                            <td>x-</td>
+                            <td>Backward</td>
+                            <td>string</td>
+                            <td>Parsed story events</td>
+                        </tr>
+                        <tr>
+                            <td>y+</td>
+                            <td>Up</td>
+                            <td>number[][]</td>
+                            <td>Embedding vectors (768-dim)</td>
+                        </tr>
+                        <tr>
+                            <td>y-</td>
+                            <td>Down</td>
+                            <td>string[]</td>
+                            <td>Semantic tags for retrieval</td>
+                        </tr>
+                        <tr>
+                            <td>z+</td>
+                            <td>Right</td>
+                            <td>EntityCard[]</td>
+                            <td>NPCs/entities present</td>
+                        </tr>
+                        <tr>
+                            <td>z-</td>
+                            <td>Left</td>
+                            <td>string</td>
+                            <td>LoreKey reference</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="spec-section">
+                <h2>2. TURN ENGINE PIPELINE</h2>
+                <p>The Turn Engine handles the recursive loop of player input, memory retrieval, and LLM generation.</p>
+                <div style="background: #111; padding: 2rem; border-left: 4px solid var(--accent-cyan);">
+                    <ol style="color: var(--text-dim); line-height: 2;">
+                        <li><strong style="color: var(--text-main);">Memory Retrieval</strong>: LLM decides which top-k
+                            voxels are relevant based on player text.</li>
+                        <li><strong style="color: var(--text-main);">Deterministic Resolution</strong>: Lookup loreEntry
+                            from z- face and active quests.</li>
+                        <li><strong style="color: var(--text-main);">Prompt Construction</strong>: Immutable lore blocks
+                            + Mutable memory stacks.</li>
+                        <li><strong style="color: var(--text-main);">LLM Generation</strong>: Gemma2:9b generates
+                            multi-recipient labeled sections.</li>
+                        <li><strong style="color: var(--text-main);">Post-Processing</strong>: Parsing labels and
+                            committing new voxels to the lattice.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="spec-section" id="review">
+                <h2>AI SYSTEM EVALUATION</h2>
+                <div style="padding: 2rem; border: 1px solid rgba(0,240,255,0.2); background: rgba(0,240,255,0.01);">
+                    <h3
+                        style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-cyan); margin-bottom: 1rem;">
+                        // CLAUDE-SONNET REVIEW SUMMARY</h3>
+                    <p style="font-style: italic; font-size: 0.9rem;">
+                        "The hierarchical state propagation and relational actuator represent a significant leap in
+                        deterministic AI storytelling.
+                        By anchoring emergent LLM curiosity to a rigid symbolic memory lattice, the <strong>F.R.A.C.C.
+                            Architecture</strong>
+                        avoids the common pitfalls of
+                        long-context hallucinations..."
+                    </p>
+                    <p style="font-size: 0.8rem;">Rating: <span style="color: var(--accent-cyan);">S-TIER ARCHITECTURE
+                            VALIDATED</span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tree-folder-label').forEach(label => {
+            label.addEventListener('click', () => {
+                label.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+
+</html>

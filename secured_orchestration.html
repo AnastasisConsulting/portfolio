@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] CITY SECURED // ORCHESTRATION</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dossier_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: var(--accent-purple);
+        }
+
+        .pipeline-step {
+            margin-bottom: 3rem;
+            position: relative;
+            padding-left: 3rem;
+            border-left: 1px solid rgba(197, 86, 255, 0.2);
+        }
+
+        .step-num {
+            position: absolute;
+            left: -1.5rem;
+            width: 3rem;
+            height: 3rem;
+            background: #0a0a0a;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-weight: bold;
+            font-size: 0.8rem;
+            border-radius: 50%;
+        }
+
+        .step-label {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .step-title {
+            font-family: var(--font-header);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-desc {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="dossier-layout reveal active">
+        <!-- Sidebar Navigation -->
+        <aside class="dossier-sidebar">
+            <div style="margin-bottom: 2rem;">
+                <a href="index.html"
+                    style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-purple); text-decoration: none; display: flex; align-items: center; gap: 0.3rem;">
+                    <span>←</span> BACK TO TERMINAL
+                </a>
+            </div>
+
+            <ul class="tree-view">
+                <li class="tree-folder">
+                    <div class="tree-folder-label">City SeCUReD</div>
+                    <ul class="tree-children">
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Core Architecture</div>
+                            <ul class="tree-children">
+                                <li class="tree-file active"><a href="secured_orchestration.html">Orchestration
+                                        Pipeline</a></li>
+                                <li class="tree-file"><a href="secured_ai.html">AI Hierarchy</a></li>
+                                <li class="tree-file"><a href="secured_circadian.html">Circadian States</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Operational Modules</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="secured_scoring.html">PRISM Scoring</a></li>
+                                <li class="tree-file"><a href="secured_response.html">Emergency Response</a></li>
+                                <li class="tree-file"><a href="secured_resource.html">Supply & Allocation</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Safety & Strategic</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="secured_ethics.html">Ethical Oversight</a></li>
+                                <li class="tree-file"><a href="secured_siege.html">Siege Protocol</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-file"><a href="secured.html">Project Hub</a></li>
+                    </ul>
+                </li>
+                <li class="tree-folder collapsed">
+                    <div class="tree-folder-label">Cross-Domain Assets</div>
+                    <ul class="tree-children">
+                        <li class="tree-file"><a href="cubex_hub.html">CubeX³ Genesis</a></li>
+                        <li class="tree-file"><a href="engine.html">G-ynthetic Engine</a></li>
+                        <li class="tree-file"><a href="dawn.html">Eideus Dawn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dossier-main">
+            <header style="margin-bottom: 4rem;">
+                <div class="card-tag" style="color: var(--accent-purple); border-color: var(--accent-purple);">CORE
+                    ARCHITECTURE // CONCEPTUAL MODEL</div>
+                <h1 style="font-size: 3rem; letter-spacing: -1px; margin: 1rem 0; color: var(--accent-purple);">DECISION
+                    ORCHESTRATION</h1>
+                <p style="color: var(--accent-purple); font-family: var(--font-mono); font-size: 0.8rem;">SUBJECT:
+                    Blueprint-Derived Decision Vectoring</p>
+            </header>
+
+            <!-- ORCHESTRATION DEMO -->
+            <div
+                style="margin-bottom: 4rem; border: 1px solid var(--border-color); position: relative; overflow: hidden;">
+                <img src="assets/secured-2.PNG"
+                    alt="Sentient Core — MEDICAL S2 anomaly, Consolidation phase, DEPLOYMENT stage"
+                    style="width: 100%; display: block; filter: brightness(0.95);">
+                <div
+                    style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                    <span
+                        style="font-family: var(--font-mono); font-size: 0.5rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 0.1em;">CONSOLIDATION
+                        PHASE · MEDICAL S2 · PIPELINE AT DEPLOYMENT · REGISTRY LOCKED</span>
+                </div>
+            </div>
+
+            <section>
+                <div class="pipeline-step">
+                    <div class="step-num">01</div>
+                    <span class="step-label">INGESTION</span>
+                    <h2 class="step-title">DATA INTAKE</h2>
+                    <p class="step-desc">SeCUReD multi-plexes millions of IoT sensors, CCTV streams, and utility metrics
+                        into a unified 4D semantic buffer.</p>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="step-num">02</div>
+                    <span class="step-label">VERIFICATION</span>
+                    <h2 class="step-title">SENSORY VERIFICATION</h2>
+                    <p class="step-desc">Cross-referencing incoming anomalies against historical noise patterns to
+                        prevent false-positive crisis triggers.</p>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="step-num">03</div>
+                    <span class="step-label">SCALAR_ANALYSIS</span>
+                    <h2 class="step-title">SCALAR CHECK</h2>
+                    <p class="step-desc">Calculating the potential area of effect and cascading probability for each
+                        detected incident.</p>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="step-num">04</div>
+                    <span class="step-label">HIERARCHY_REVIEW</span>
+                    <h2 class="step-title">PARENT AI REVIEW</h2>
+                    <p class="step-desc">Consulting the G-ynthetic Core for alignment with global strategic directives
+                        before local execution.</p>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="step-num">05</div>
+                    <span class="step-label">ETHICAL_CHECK</span>
+                    <h2 class="step-title">ETHICAL EVALUATION</h2>
+                    <p class="step-desc">Real-time audit via the Ethics Module to ensure response strategies comply with
+                        "City SeCUReD" human-concentric safety filters.</p>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="step-num">06</div>
+                    <span class="step-label">CONTEXT</span>
+                    <h2 class="step-title">MEMORY RECALL</h2>
+                    <p class="step-desc">Retrieving similar historical incidents from the Long-Term Memory (LTM) cache
+                        to inform strategy generation.</p>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="step-num">07</div>
+                    <span class="step-label">STRATEGY</span>
+                    <h2 class="step-title">STRATEGY GENERATION</h2>
+                    <p class="step-desc">The Imagination Engine generates multiple "What-If" clusters to identify the
+                        optimal path for crisis mitigation.</p>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="step-num">08</div>
+                    <span class="step-label">ALLOCATION</span>
+                    <h2 class="step-title">RESOURCE ALLOCATION</h2>
+                    <p class="step-desc">Dynamic routing of physical and digital resources (Emergency response, Power
+                        shunts, Network failovers).</p>
+                </div>
+
+                <div class="pipeline-step" style="border-left-color: var(--accent-purple);">
+                    <div class="step-num">09</div>
+                    <span class="step-label">EXECUTION</span>
+                    <h2 class="step-title">DEPLOYMENT</h2>
+                    <p class="step-desc">Final commit to real-world actuators or secondary autonomous agents for
+                        incident resolution.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tree-folder-label').forEach(label => {
+            label.addEventListener('click', () => {
+                label.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+
+</html>

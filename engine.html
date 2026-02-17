@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] G-YNTHETIC ENGINE // DOSSIER</title>
+    <meta name="description"
+        content="G-ynthetic Engine — 7x7x7 Holographic Memory Lattice. Symbolic Intelligence & Holographic Context Mapping.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --accent-color: var(--accent-cyan);
+        }
+
+        /* ---- VORTEX HERO ---- */
+        .vortex-hero {
+            position: relative;
+            width: 100%;
+            height: 420px;
+            margin: 3rem 0 4rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: #000;
+        }
+
+        .vortex-hero canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .vortex-label {
+            position: absolute;
+            bottom: 12px;
+            right: 16px;
+            font-family: var(--font-mono);
+            font-size: 0.5rem;
+            color: var(--accent-steel);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .vortex-label-left {
+            position: absolute;
+            top: 12px;
+            left: 16px;
+            font-family: var(--font-mono);
+            font-size: 0.5rem;
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            opacity: 0.6;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* ---- DOSSIER LAYOUT ---- */
+        .dossier-container {
+            padding: 4rem 10%;
+        }
+
+        .dossier-back {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .dossier-back:hover {
+            color: var(--accent-cyan);
+        }
+
+        .dossier-back span {
+            font-size: 1rem;
+        }
+
+        .dossier-tag {
+            font-family: var(--font-mono);
+            font-size: 0.55rem;
+            color: var(--accent-cyan);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .dossier-title {
+            font-size: 2.8rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            color: var(--text-bright, #f4f4f7);
+            margin-bottom: 0.5rem;
+        }
+
+        .dossier-subtitle {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .dossier-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .mission-brief p {
+            line-height: 1.8;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* ---- VAULT BOX ---- */
+        .vault-box {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(0, 228, 245, 0.02);
+            border: 1px solid rgba(0, 228, 245, 0.08);
+        }
+
+        .vault-box h3 {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+            letter-spacing: 0.1em;
+        }
+
+        .vault-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .vault-box li {
+            margin-bottom: 0.8rem;
+        }
+
+        .vault-box a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.78rem;
+            border-bottom: 1px dashed rgba(0, 228, 245, 0.3);
+            transition: border-color 0.3s ease, color 0.3s ease;
+        }
+
+        .vault-box a:hover {
+            color: var(--accent-cyan);
+            border-color: var(--accent-cyan);
+        }
+
+        .vault-box .clearance {
+            font-size: 0.55rem;
+            color: var(--text-dim);
+            margin-top: 1rem;
+            font-family: var(--font-mono);
+            letter-spacing: 0.05em;
+        }
+
+        /* ---- TECH SPECS ---- */
+        .tech-spec {
+            border-left: 1px solid var(--border-color);
+            padding-left: 2rem;
+        }
+
+        .spec-item {
+            margin-bottom: 2rem;
+        }
+
+        .spec-label {
+            font-family: var(--font-mono);
+            color: var(--accent-cyan);
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+        }
+
+        .spec-value {
+            font-size: 1.1rem;
+            margin-top: 0.4rem;
+            font-weight: 400;
+            color: var(--text-main);
+        }
+
+        /* ---- SPEC LINKS GRID ---- */
+        .docs-section {
+            margin-top: 5rem;
+            padding-top: 4rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .docs-title {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            letter-spacing: -0.01em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1px;
+            background: var(--border-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .spec-link {
+            display: block;
+            padding: 1.8rem;
+            border: none;
+            text-decoration: none;
+            background: var(--bg-color, #060608);
+            transition: background 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .spec-link::before {
+            content: "CONFIDENTIAL";
+            position: absolute;
+            top: 8px;
+            right: -28px;
+            background: var(--accent-cyan);
+            color: #000;
+            font-size: 0.45rem;
+            transform: rotate(45deg);
+            padding: 2px 30px;
+            font-weight: 700;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            letter-spacing: 0.05em;
+        }
+
+        .spec-link::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .spec-link:hover {
+            background: rgba(0, 228, 245, 0.03);
+        }
+
+        .spec-link:hover::before {
+            opacity: 1;
+        }
+
+        .spec-link:hover::after {
+            opacity: 1;
+        }
+
+        .spec-link-num {
+            display: block;
+            font-family: var(--font-mono);
+            font-size: 0.55rem;
+            color: var(--accent-cyan);
+            margin-bottom: 0.6rem;
+            letter-spacing: 0.12em;
+        }
+
+        .spec-link-title {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+        }
+
+        .spec-link-desc {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* ---- FOOTER ---- */
+        .dossier-footer {
+            margin-top: 6rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 3rem;
+            text-align: center;
+        }
+
+        .dossier-footer p {
+            font-family: var(--font-mono);
+            font-size: 0.55rem;
+            color: var(--accent-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.4;
+        }
+
+        @media (max-width: 768px) {
+            .dossier-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dossier-title {
+                font-size: 2rem;
+            }
+
+            .vortex-hero {
+                height: 280px;
+            }
+
+            .tech-spec {
+                border-left: none;
+                border-top: 1px solid var(--border-color);
+                padding-left: 0;
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="dossier-container">
+        <a href="index.html" class="dossier-back">
+            <span>←</span> BACK TO TERMINAL
+        </a>
+
+        <div class="dossier-tag">CORE INFRASTRUCTURE // CLASS-S</div>
+        <h1 class="dossier-title">G-YNTHETIC ENGINE</h1>
+        <p class="dossier-subtitle">Symbolic Intelligence & Holographic Context Mapping</p>
+
+        <!-- TWISTER SKITTLES — Vortex Visualizer -->
+        <div class="vortex-hero">
+            <span class="vortex-label-left">TWISTER SKITTLES // LIVE</span>
+            <canvas id="vortex-canvas"></canvas>
+            <span class="vortex-label">PARTICLE FIELD · 6K NODES · KINEMATIC SPINE</span>
+        </div>
+
+        <div class="dossier-grid">
+            <div class="mission-brief">
+                <h2
+                    style="font-size: 1.3rem; letter-spacing: -0.01em; margin-bottom: 1.5rem; font-weight: 500; text-transform: uppercase;">
+                    Mission
+                    Parameters</h2>
+                <p>
+                    The G-ynthetic Engine exists because we refused to accept that more parameters equal more
+                    intelligence.
+                    While the industry chases scale, we chased <strong>structure</strong>.
+                </p>
+                <p>
+                    <strong>The Zero-Bloat Principle:</strong> We condensed the entire core logic required for
+                    persistent, hallucination-free reasoning
+                    into a <strong>single page of executable code</strong>.
+                    This 7x7x7 Holographic Lattice is not a black box model; it is a deterministic scaffold that anchors
+                    LLM gradients into reality.
+                </p>
+                <p>
+                    <strong>Functional Architecture:</strong> The engine unifies the **Pre-Linguistic Inference Engine**
+                    (Symbolic Logic) and **Voxel Face Memory** (Holographic Context) into a cohesive singular output.
+                    It supports **3 distinct Orchestration Options** across **4 different LLM Providers**, ensuring
+                    sovereignty from any single model architecture.
+                </p>
+
+                <div class="vault-box">
+                    <h3>RELATED ASSETS // VAULT</h3>
+                    <ul>
+                        <li>
+                            <a href="docs.html">[PROPRIETARY] ARCHITECTURE_SPEC_V7.2.PDF</a>
+                        </li>
+                        <li>
+                            <a href="docs.html">[STRATEGIC] LATTICE_PROPAGATION_MODELS.JSON</a>
+                        </li>
+                    </ul>
+                    <p class="clearance">// ACCESS REQUIRES DEE-TIER 2+ CLEARANCE</p>
+                </div>
+            </div>
+
+            <div class="tech-spec">
+                <div class="spec-item">
+                    <span class="spec-label">Code Footprint</span>
+                    <div class="spec-value" style="color: var(--accent-cyan);">Single Executable Page (Core)</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Architecture</span>
+                    <div class="spec-value">Pre-Linguistic + Voxel Face Memory</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Context Matrix</span>
+                    <div class="spec-value">7x7x7 / 3x3x7 Holographic Latticing</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Orchestration</span>
+                    <div class="spec-value">3 Modes / 4 LLM Providers</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Output Density</span>
+                    <div class="spec-value">Infinite Recursive State Generation</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Security Tier</span>
+                    <div class="spec-value" style="color: var(--accent-cyan);">PATENT PENDING // DEE-TIER 2</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENGINE VISUALIZATION -->
+        <section style="margin-top: 6rem; margin-bottom: 6rem;">
+            <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                <h2 style="font-size: 1.8rem; letter-spacing: -1px;">SYSTEM VISUALIZATION</h2>
+                <p style="color: var(--text-dim); font-size: 0.8rem; font-family: var(--font-mono);">
+                    REF: SYMBOLIC_ENGINE_V3 // VOXEL_LATTICE_V9
+                </p>
+            </div>
+
+            <!-- Top Image: Pre-Linguistic Engine -->
+            <div style="margin-bottom: 2px;">
+                <div
+                    style="position: relative; overflow: hidden; background: #000; border: 1px solid var(--border-color);">
+                    <img src="assets/firing.PNG" alt="Pre-Linguistic Engine — Deconstructed arcs and cognition lattice"
+                        style="width: 100%; display: block; filter: brightness(0.95);">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                        <span
+                            style="font-family: var(--font-mono); font-size: 0.5rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em;">PRE-LINGUISTIC
+                            ENGINE · SYMBOLIC LOGIC · DECONSTRUCTED ARCS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Images: G-ynthetic Engine -->
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border-color); border: 1px solid var(--border-color);">
+                <div style="position: relative; overflow: hidden; background: #000;">
+                    <img src="assets/mem-vox-1.PNG" alt="G-Synthetic — Holographic memory lattice with node inspector"
+                        style="width: 100%; display: block; filter: brightness(0.95);">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                        <span
+                            style="font-family: var(--font-mono); font-size: 0.5rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em;">VOXEL
+                            FACE MEMORY · 7³ LATTICE INSPECTOR</span>
+                    </div>
+                </div>
+                <div style="position: relative; overflow: hidden; background: #000;">
+                    <img src="assets/versatility.PNG"
+                        alt="Neural Configuration — LLM pipeline with Gemma3:12b and nomic-embed"
+                        style="width: 100%; display: block; filter: brightness(0.95);">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                        <span
+                            style="font-family: var(--font-mono); font-size: 0.5rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em;">ORCHESTRATION
+                            PIPELINE · MULTI-PROVIDER CONFIG</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="docs-section">
+            <h2 class="docs-title">Internal Strategic Documents</h2>
+            <div class="spec-grid">
+                <a href="engine_specs.html" class="spec-link">
+                    <span class="spec-link-num">01 // LOGIC CORE</span>
+                    <span class="spec-link-title">Functional Reconstruction</span>
+                    <p class="spec-link-desc">7-pipeline triadic processing architecture.</p>
+                </a>
+                <a href="lattice_specs.html" class="spec-link">
+                    <span class="spec-link-num">02 // MEMORY</span>
+                    <span class="spec-link-title">Holographic Lattice</span>
+                    <p class="spec-link-desc">7x7x7 coordinate-based context mapping.</p>
+                </a>
+                <a href="rhetorical_arcs.html" class="spec-link">
+                    <span class="spec-link-num">03 // DECOMPOSITION</span>
+                    <span class="spec-link-title">The 7 Rhetorical Arcs</span>
+                    <p class="spec-link-desc">Semantic decomposition layer specifications.</p>
+                </a>
+                <a href="manifold_specs.html" class="spec-link">
+                    <span class="spec-link-num">04 // SYNTHESIS</span>
+                    <span class="spec-link-title">Output Manifold</span>
+                    <p class="spec-link-desc">Narrative synthesis and world-binding protocols.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="dossier-footer">
+            <p>G-YNTHETIC LABS // STRUCTURAL INTELLIGENCE DIVISION</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="vortexVisualizer.js"></script>
+</body>
+
+</html>

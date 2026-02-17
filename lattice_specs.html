@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] 7x7x7 HOLOGRAPHIC LATTICE // TECHNICAL SPECS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: var(--accent-cyan);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 8rem 2rem;
+        }
+
+        .lattice-viz {
+            width: 100%;
+            height: 300px;
+            background: #000;
+            border: 1px solid var(--border-color);
+            margin: 3rem 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .lattice-dot {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--accent-cyan);
+            opacity: 0.3;
+        }
+
+        .code-block {
+            background: #0a0a0a;
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--text-main);
+            margin: 2rem 0;
+            position: relative;
+            overflow-x: auto;
+        }
+
+        .shell-box {
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            margin: 2rem 0;
+            background: rgba(0, 240, 255, 0.02);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="container reveal active">
+        <header style="margin-bottom: 4rem;">
+            <div
+                style="display: flex; gap: 1rem; margin-bottom: 2rem; font-family: var(--font-mono); font-size: 0.7rem;">
+                <a href="index.html"
+                    style="color: var(--text-dim); text-decoration: none; transition: color 0.3s;">TERMINAL</a>
+                <span style="color: var(--accent-cyan);">></span>
+                <a href="engine.html"
+                    style="color: var(--text-dim); text-decoration: none; transition: color 0.3s;">ENGINE DOSSIER</a>
+            </div>
+            <div class="card-tag">SPATIAL SEMANTIC MEMORY // T3</div>
+            <h1 style="font-size: 2.5rem; margin: 1rem 0;">HOLOGRAPHIC LATTICE ARCHITECTURE</h1>
+            <p style="color: var(--text-dim); font-weight: 300;">7x7x7 COORDINATE MAPPING & NARRATIVE PERSISTENCE</p>
+        </header>
+
+        <section>
+            <h2 style="font-family: var(--font-header); font-size: 1.5rem;">1. THE 7-TIER COORDINATE SYSTEM</h2>
+            <p style="color: var(--text-dim); line-height: 1.8; margin-top: 1rem;">
+                Unlike traditional vector databases that use flat indexes, the Lattice maps context into a
+                3D grid (X, Y, Z) where each axis represents a fundamental logical dimension.
+            </p>
+            <div class="code-block">
+                def enc7(v: int) -> int:
+                return v + 3 # Maps -3..3 to 0..6
+
+                def make_key(t, x, y, z):
+                dx, dy, dz = enc7(x), enc7(y), enc7(z)
+                r = max(abs(x), abs(y), abs(z)) # Calculate Shell Depth
+                return f"T{t}-D{dx}{dy}{dz}-S{r}"
+            </div>
+        </section>
+
+        <div class="lattice-viz">
+            <div
+                style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-cyan); position: absolute; top: 1rem; left: 1rem;">
+                343 ACTIVE NODES PER TRANSFORM</div>
+            <!-- Simple dots to simulate a grid -->
+            <div class="lattice-dot" style="top: 30%; left: 40%;"></div>
+            <div class="lattice-dot" style="top: 35%; left: 45%;"></div>
+            <div class="lattice-dot" style="top: 40%; left: 50%;"></div>
+            <div class="lattice-dot" style="top: 45%; left: 55%;"></div>
+            <div class="lattice-dot" style="top: 50%; left: 60%;"></div>
+        </div>
+
+        <section>
+            <h2 style="font-family: var(--font-header); font-size: 1.5rem;">2. SHELL INFLUENCE & RECALL</h2>
+            <p style="color: var(--text-dim); line-height: 1.8; margin-top: 1rem;">
+                Memory is retrieved based on "Shell Depth" (S0-S3). Nodes closer to the origin (S0) exert the strongest
+                influence on current reasoning, while outer shells provide broader contextual nuance.
+            </p>
+            <div class="shell-box">
+                <h3
+                    style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-cyan); margin-bottom: 1rem;">
+                    LATTICE_NODE_META</h3>
+                <ul
+                    style="list-style: none; padding: 0; font-family: var(--font-mono); font-size: 0.8rem; line-height: 2;">
+                    <li>// NODE_ID: T0-D333-S0 (Absolute Origin)</li>
+                    <li>// PERSISTENCE: Recursive write-back enabled</li>
+                    <li>// TAGGING: Auto-semantic categorization</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer style="margin-top: 6rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+            <p style="font-size: 0.7rem; color: var(--text-dim);">SOURCE: DOC_SITE/DOMAIN-AGNOSTIC/MEMORY.PY</p>
+            <p style="font-size: 0.7rem; color: var(--accent-cyan); margin-top: 0.5rem;">// STRATEGIC ASSET - PATENT
+                PENDING</p>
+        </footer>
+    </div>
+</body>
+
+</html>

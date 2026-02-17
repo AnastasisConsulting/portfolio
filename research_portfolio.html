@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] G-YNTHETIC LABS | Research Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <style>
+        :root {
+            --accent-color: var(--accent-cyan);
+        }
+
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 2rem;
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .title-block h1 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-cyan);
+            letter-spacing: 0.2em;
+            margin-bottom: 0.5rem;
+        }
+
+        .title-block h2 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 300;
+        }
+
+        .back-link {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: var(--accent-cyan);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: var(--accent-cyan);
+            background: rgba(0, 240, 255, 0.02);
+            transform: translateY(-5px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .card-type {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: #666;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin: 0 0 1rem 0;
+            line-height: 1.3;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #888;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: auto;
+        }
+
+        .btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            padding: 0.6rem 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        .btn-primary {
+            background: rgba(0, 240, 255, 0.1);
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-cyan);
+            color: #000;
+        }
+
+        /* WATERMARK OVERLAY */
+        #download-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        #download-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .overlay-content {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .loader {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--accent-cyan);
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 2rem auto;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .blink {
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="title-block">
+                <h1>G-YNTHETIC LABS // INTELLECTUAL PROPERTY</h1>
+                <h2>The Axioms</h2>
+            </div>
+            <a href="index.html" class="back-link">← RETURN TO TERMINAL</a>
+        </header>
+
+        <!-- ARCHITECTURE DIAGRAM -->
+        <div class="reveal active"
+            style="margin-bottom: 4rem; border: 1px solid rgba(0, 240, 255, 0.1); padding: 1rem; background: rgba(0,20,20,0.5);">
+            <img src="assets/microRecurion.drawio.png" alt="Micro-Recursion Process Flow"
+                style="width: 100%; height: auto; display: block; opacity: 0.9;">
+            <div
+                style="font-family: 'JetBrains Mono'; font-size: 0.7rem; color: var(--accent-cyan); margin-top: 0.5rem; text-align: right;">
+                FIG 1.0 // MICRO-RECURSION PHASE SHIFT
+            </div>
+        </div>
+
+        <div class="grid">
+
+            <!-- F.R.A.C.C. -->
+            <div class="card">
+                <span class="card-type">CLAIM 01 // HIERARCHY > FLATNESS</span>
+                <h3>F.R.A.C.C. Framework</h3>
+                <p><strong>The Claim:</strong> Linear Chain-of-Thought is inefficient. Intelligence requires Fractal
+                    Recursion.
+                    <br><strong>The Proof:</strong> A hierarchical reasoning model that breaks complex strategic goals
+                    into atomic executable actions.
+                </p>
+                <div class="actions">
+                    <button
+                        onclick="downloadPDF('research/F.R.A.C.C. Cognitive Architecture Research.pdf', 'FRACC_Research_Secure.pdf')"
+                        class="btn btn-primary">ACQUIRE SECURE PDF</button>
+                </div>
+            </div>
+
+            <!-- Trililiquary -->
+            <div class="card">
+                <span class="card-type">CLAIM 02 // MANIFOLD NAVIGATION</span>
+                <h3>The Trililiquary</h3>
+                <p><strong>The Claim:</strong> Context loss is a geometry problem, not a token problem.
+                    <br><strong>The Proof:</strong> A "Slipstream Manifold" framework for frictionless state transitions
+                    in high-dimensional vector space.
+                </p>
+                <div class="actions">
+                    <button
+                        onclick="downloadPDF('research/Introducing-Trililiquary_A Slipstream Manifold Framework.pdf', 'Trililiquary_Manifold_Secure.pdf')"
+                        class="btn btn-primary">ACQUIRE SECURE PDF</button>
+                </div>
+            </div>
+
+            <!-- 4D Gradient -->
+            <div class="card">
+                <span class="card-type">CLAIM 03 // TEMPORAL ANCHORING</span>
+                <h3>Building a 4D Gradient</h3>
+                <p><strong>The Claim:</strong> Logic without time is hallucination.
+                    <br><strong>The Proof:</strong> Methodology for mapping semantic relationships into temporal vector
+                    spaces, creating a "time-aware" embedding structure.
+                </p>
+                <div class="actions">
+                    <a href="research/Building a 4D Gradient.docx" class="btn">DOWNLOAD RAW ASSET</a>
+                </div>
+            </div>
+
+            <!-- Symbolic Cognition -->
+            <div class="card">
+                <span class="card-type">CLAIM 04 // COMPRESSION</span>
+                <h3>Symbolic Cognition & High-Dimensional Thought</h3>
+                <p><strong>The Claim:</strong> Symbols are the ultimate compression algorithm for neural weights.
+                    <br><strong>The Proof:</strong> Frameworks demonstrating how symbolic logic acts as a lossless
+                    compression layer for high-dimensional thought.
+                </p>
+                <div class="actions">
+                    <a href="research/Symbolic Cognition and High-Dimensional Thought_ Frameworks and Insights.odt"
+                        class="btn">DOWNLOAD RAW ASSET</a>
+                </div>
+            </div>
+
+            <!-- Symbolic Cognitive Architecture -->
+            <div class="card">
+                <span class="card-type">CLAIM 05 // SIMULATION THEORY</span>
+                <h3>Simulating Diverse Minds</h3>
+                <p><strong>The Claim:</strong> To simulate a mind, you must simulate its bias.
+                    <br><strong>The Proof:</strong> Core thesis on simulating diverse cognitive patterns within a
+                    unified symbolic framework.
+                </p>
+                <div class="actions">
+                    <a href="research/Symbolic Cognitive Architecture for Simulating Diverse Minds" class="btn">DOWNLOAD
+                        RAW ASSET</a>
+                </div>
+            </div>
+
+            <!-- Pre-Linguistic Inference -->
+            <div class="card">
+                <span class="card-type">CLAIM 06 // EVOLUTIONARY BASIS</span>
+                <h3>Pre-Linguistic Inference</h3>
+                <p><strong>The Claim:</strong> Reasoning predates language. LLMs that only "speak" cannot "think".
+                    <br><strong>The Proof:</strong> A "Pre-Linguistic Scaffold" that forces AI to ideate before it
+                    tokenizes.
+                </p>
+                <div class="actions">
+                    <a href="research/Towards a Pre-Linguistic Inference Engine_ A Cross-Disciplinary Synthesis.odt"
+                        class="btn">DOWNLOAD RAW ASSET</a>
+                </div>
+            </div>
+
+            <!-- Oracle Mirage -->
+            <div class="card" style="border-color: var(--accent-purple);">
+                <span class="card-type" style="color: var(--accent-purple);">THE PROBLEM STATEMENT</span>
+                <h3>The Oracle Mirage</h3>
+                <p><strong>The Warning:</strong> Over-reliance on probabilistic models creates a societal "Mirror Trap".
+                    <br><strong>The Solution:</strong> Structural Grounding (The G-ynthetic Engine).
+                </p>
+                <div class="actions">
+                    <a href="research/The Oracle Mirage_ A Manifesto on LLMs’ Psychological and Societal Risks.odt"
+                        class="btn btn-dossier--purple">READ MANIFESTO</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div id="download-overlay">
+        <div class="overlay-content">
+            <div class="loader"></div>
+            <h2 style="color: var(--accent-cyan); font-family: 'JetBrains Mono'; margin-bottom: 1rem;">ENCRYPTING ASSET
+            </h2>
+            <p class="blink" style="color: #888; font-family: 'JetBrains Mono'; font-size: 0.8rem;">
+                APPLYING DIGITAL WATERMARK<br>
+                REGISTERING IP SIGNATURE...
+            </p>
+        </div>
+    </div>
+
+    <script>
+        async function downloadPDF(url, filename) {
+            const overlay = document.getElementById('download-overlay');
+            overlay.classList.add('active');
+
+            try {
+                // 1. Fetch existing PDF
+                const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer());
+
+                // 2. Load a PDFDocument from the existing PDF bytes
+                const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
+
+                // 3. Get all pages of the document
+                const pages = pdfDoc.getPages();
+                const font = await pdfDoc.embedFont(PDFLib.StandardFonts.HelveticaBold);
+
+                // 4. Draw diagonal watermark on each page
+                const text = 'G-YNTHETIC LABS // PATENT PENDING';
+                const fontSize = 30;
+
+                pages.forEach(page => {
+                    const { width, height } = page.getSize();
+                    page.drawText(text, {
+                        x: 50,
+                        y: height / 2,
+                        size: fontSize,
+                        font: font,
+                        color: PDFLib.rgb(0.7, 0.7, 0.7),
+                        opacity: 0.2, // Watermark effect
+                        rotate: PDFLib.degrees(45),
+                    });
+
+                    // Add Footer
+                    page.drawText('PROPRIETARY RESEARCH - DO NOT DISTRIBUTE', {
+                        x: 50,
+                        y: 30,
+                        size: 10,
+                        font: font,
+                        color: PDFLib.rgb(1, 0, 0),
+                        opacity: 0.4,
+                    });
+                });
+
+                // 5. Serialize the PDFDocument to bytes (a Uint8Array)
+                const watermarkedPdfBytes = await pdfDoc.save();
+
+                // 6. Trigger Download
+                const blob = new Blob([watermarkedPdfBytes], { type: 'application/pdf' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = filename;
+                link.click();
+
+            } catch (err) {
+                console.error("PDF Processing Error:", err);
+                alert("SECURE DOWNLOAD FAILED. PLEASE CONTACT ADMIN.");
+            } finally {
+                setTimeout(() => {
+                    overlay.classList.remove('active');
+                }, 1000); // Small delay for effect
+            }
+        }
+    </script>
+
+</body>
+
+</html>

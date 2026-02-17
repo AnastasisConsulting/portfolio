@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] CITY SECURED // PRISM SCORING</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dossier_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: var(--accent-purple);
+        }
+
+        .formula-container {
+            background: #080808;
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            margin: 3rem 0;
+            font-family: var(--font-mono);
+            text-align: center;
+        }
+
+        .score-box {
+            background: rgba(197, 86, 255, 0.05);
+            border: 1px solid var(--accent-color);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="dossier-layout reveal active">
+        <!-- Sidebar Navigation -->
+        <aside class="dossier-sidebar">
+            <div style="margin-bottom: 2rem;">
+                <a href="index.html"
+                    style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-purple); text-decoration: none; display: flex; align-items: center; gap: 0.3rem;">
+                    <span>←</span> BACK TO TERMINAL
+                </a>
+            </div>
+
+            <ul class="tree-view">
+                <li class="tree-folder">
+                    <div class="tree-folder-label">City SeCUReD</div>
+                    <ul class="tree-children">
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Core Architecture</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="secured_orchestration.html">Orchestration Pipeline</a>
+                                </li>
+                                <li class="tree-file"><a href="secured_ai.html">AI Hierarchy</a></li>
+                                <li class="tree-file"><a href="secured_circadian.html">Circadian States</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Operational Modules</div>
+                            <ul class="tree-children">
+                                <li class="tree-file active"><a href="secured_scoring.html">PRISM Scoring</a></li>
+                                <li class="tree-file"><a href="secured_response.html">Emergency Response</a></li>
+                                <li class="tree-file"><a href="secured_resource.html">Supply & Allocation</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-folder">
+                            <div class="tree-folder-label">Safety & Strategic</div>
+                            <ul class="tree-children">
+                                <li class="tree-file"><a href="secured_ethics.html">Ethical Oversight</a></li>
+                                <li class="tree-file"><a href="secured_siege.html">Siege Protocol</a></li>
+                            </ul>
+                        </li>
+                        <li class="tree-file"><a href="secured.html">Project Hub</a></li>
+                    </ul>
+                </li>
+                <li class="tree-folder collapsed">
+                    <div class="tree-folder-label">Cross-Domain Assets</div>
+                    <ul class="tree-children">
+                        <li class="tree-file"><a href="cubex_hub.html">CubeX³ Genesis</a></li>
+                        <li class="tree-file"><a href="engine.html">G-ynthetic Engine</a></li>
+                        <li class="tree-file"><a href="dawn.html">Eideus Dawn</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dossier-main">
+            <header style="margin-bottom: 4rem;">
+                <div class="card-tag" style="color: var(--accent-purple); border-color: var(--accent-purple);">
+                    CONCEPTUAL MODULE // PRISM</div>
+                <h1 style="font-size: 3rem; letter-spacing: -1px; margin: 1rem 0; color: var(--accent-purple);">PRISM
+                    SCORING</h1>
+                <p style="color: var(--accent-purple); font-family: var(--font-mono); font-size: 0.8rem;">SUBJECT:
+                    Predictive Risk & Impact Scalar Matrix Blueprint</p>
+            </header>
+
+            <section>
+                <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 2rem;">Risk Modeling
+                </h2>
+                <p style="line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+                    The PRISM (Predicting Risk & Impact Scalar Matrix) blueprint defines the logic core of SeCUReD's
+                    crisis response.
+                    It assigns a dynamic severity score to every detected incident, enabling the model to prioritize
+                    resource flows.
+                </p>
+
+                <div class="formula-container">
+                    <h3 style="font-size: 0.7rem; color: var(--accent-color); margin-bottom: 1.5rem;">// THE PRISM
+                        FORMULA</h3>
+                    <div style="font-size: 1.5rem; color: var(--text-main); letter-spacing: 2px;">
+                        SCORE = (S &times; P) + (V / C)<sup>E</sup>
+                    </div>
+                </div>
+
+                <div class="score-box">
+                    <h3
+                        style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-color); margin-bottom: 1.5rem;">
+                        // THEORETICAL BANDS</h3>
+                    <p style="color: var(--text-dim); font-size: 0.9rem; line-height: 1.6;">
+                        The Visual Aid simulation demonstrates how PRISM scores drive city-wide hardening protocols in
+                        real-time.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.tree-folder-label').forEach(label => {
+            label.addEventListener('click', () => {
+                label.parentElement.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+
+</html>

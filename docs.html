@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] G-YNTHETIC ARCHIVE | Secure Vault</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .vault-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .key-input-sector {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid var(--accent-cyan);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+        }
+
+        .key-input {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 1rem;
+            outline: none;
+            letter-spacing: 0.2em;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .folder-card {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .folder-card.locked {
+            opacity: 0.4;
+            filter: grayscale(1);
+            cursor: not-allowed;
+            border-style: dashed;
+        }
+
+        .folder-card.unlocked {
+            opacity: 1;
+            filter: none;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 15px rgba(132, 204, 22, 0.1);
+        }
+
+        .file-list {
+            margin-top: 1rem;
+            list-style: none;
+            font-size: 0.85rem;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .file-item {
+            padding: 0.4rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .file-item a {
+            color: var(--text-dim);
+            text-decoration: none;
+            pointer-events: none;
+        }
+
+        .unlocked .file-item a {
+            color: var(--accent-cyan);
+            pointer-events: auto;
+        }
+
+        .unlocked .file-item a:hover {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+
+        .lock-icon {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+
+        .status-msg {
+            margin-top: 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--accent-purple);
+        }
+
+        /* ANTI-EXFILTRATION LAYER */
+        body {
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .vault-container.blurred {
+            filter: blur(20px);
+            pointer-events: none;
+        }
+
+        /* WATERMARK LAYER */
+        .watermark {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 10001;
+            /* Above EVERYTHING including NDA and blur */
+            opacity: 0.12;
+            font-family: var(--font-mono);
+            font-size: 1.2rem;
+            color: #fff;
+            overflow: hidden;
+            background-color: transparent;
+        }
+
+        .watermark-text {
+            position: absolute;
+            transform: rotate(-25deg);
+            white-space: nowrap;
+            font-weight: bold;
+            text-shadow: 0 0 5px #000;
+        }
+
+        /* NDA GATEWAY */
+        #nda-gateway {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .nda-content {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        @media print {
+            body {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+    <div id="watermark" class="watermark"></div>
+
+    <div id="nda-gateway">
+        <div class="nda-content reveal active">
+            <h1 class="glitch-title" style="font-size: 1.5rem; color: var(--accent-cyan);">CONFIRM ACCESS AUTHORITY</h1>
+            <p style="color: var(--text-dim); margin: 2rem 0; font-size: 0.9rem; line-height: 1.6;">
+                The following archive contains **Patent-Pending** infrastructure specifications and proprietary research
+                property of G-ynthetic Labs. By proceeding, you acknowledge that access to this data is subject to
+                Active Non-Disclosure Agreements and intellectual property law. Any unauthorized reproduction
+                or exfiltration is detectable.
+            </p>
+            <div style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                <input type="checkbox" id="nda-confirm" style="width:20px; height:20px;">
+                <label for="nda-confirm" style="font-size: 0.7rem; color: var(--text-main);">I ACKNOWLEDGE ACCESS
+                    PROTOCOLS</label>
+            </div>
+            <button id="nda-btn" class="btn-primary" disabled style="opacity: 0.5;">DECRYPT GATEWAY</button>
+        </div>
+    </div>
+
+    <div id="main-vault" class="vault-container hidden">
+        <header style="height: auto; padding: 4rem 0;">
+            <h1 class="glitch-title" style="font-size: 2.5rem;">SECURE ARCHIVE</h1>
+            <p class="subtitle">Vault Tier: INITIALIZING</p>
+        </header>
+
+        <div class="key-input-sector reveal active">
+            <p class="section-subtitle">ENTER ACCESS KEY TO UNLOCK PROTECTED SECTORS</p>
+            <input type="password" class="key-input" id="access-key" placeholder="____-____-____" autocomplete="off">
+            <div id="status" class="status-msg">WAITING FOR INPUT...</div>
+        </div>
+
+        <div id="archive-root" class="archive-grid">
+            <!-- Populated by JS -->
+        </div>
+
+        <footer style="margin-top: 5rem;">
+            <a href="index.html" class="btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.7rem;">Return to
+                Terminal</a>
+            <p class="copyright">&copy; 2026 G-YNTHETIC LABS. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+
+    <script src="assets/docs-manifest.js"></script>
+    <script src="access-keys.js"></script>
+    <script>
+        const keyInput = document.getElementById('access-key');
+        const statusMsg = document.getElementById('status');
+        const archiveRoot = document.getElementById('archive-root');
+        const ndaBtn = document.getElementById('nda-btn');
+        const ndaConfirm = document.getElementById('nda-confirm');
+        const ndaGateway = document.getElementById('nda-gateway');
+        const mainVault = document.getElementById('main-vault');
+        const watermark = document.getElementById('watermark');
+
+        // NDA Logic
+        ndaConfirm.addEventListener('change', () => {
+            ndaBtn.disabled = !ndaConfirm.checked;
+            ndaBtn.style.opacity = ndaConfirm.checked  '1' : '0.5';
+        });
+
+        ndaBtn.addEventListener('click', () => {
+            ndaGateway.classList.add('hidden');
+            mainVault.classList.remove('hidden');
+        });
+
+        // Anti-Focus Logic
+        window.addEventListener('blur', () => mainVault.classList.add('blurred'));
+        window.addEventListener('focus', () => mainVault.classList.remove('blurred'));
+
+        // Watermark generator
+        function updateWatermark(key) {
+            watermark.innerHTML = '';
+            watermark.style.display = 'block';
+
+            // Create a denser, more structured grid of watermarks
+            const rows = 8;
+            const cols = 4;
+
+            for (let r = 0; r < rows; r++) {
+                for (let c = 0; c < cols; c++) {
+                    const span = document.createElement('span');
+                    span.className = 'watermark-text';
+                    span.textContent = `[ ${key} ] G-YNTHETIC LABS // PATENT PENDING`;
+
+                    // Staggered grid placement
+                    span.style.top = `${(r * 15) + (Math.random() * 5)}%`;
+                    span.style.left = `${(c * 25) + (Math.random() * 10)}%`;
+                    watermark.appendChild(span);
+                }
+            }
+        }
+
+        function renderArchive(activeKey = "") {
+            archiveRoot.innerHTML = '';
+
+            // Loop through tiers 0 to 3
+            [0, 1, 2, 3].forEach(level => {
+                const tier = DOCS_MANIFEST.levels[level];
+                if (!tier) return;
+
+                const isUnlocked = isLevelUnlocked(activeKey, level);
+
+                // GHOST VAULT: Only render the card if it is unlocked
+                if (!isUnlocked) return;
+
+                const card = document.createElement('div');
+                card.className = `folder-card reveal active unlocked`;
+
+                const groupedFiles = {};
+                tier.files.forEach(file => {
+                    const group = file.category || "General";
+                    if (!groupedFiles[group]) groupedFiles[group] = [];
+                    groupedFiles[group].push(file);
+                });
+
+                let fileListHTML = '';
+                Object.keys(groupedFiles).forEach(subCat => {
+                    fileListHTML += `<li style="font-weight:bold; color:var(--text-dim); margin-top:0.8rem; font-size:0.7rem;">// SECTION: ${subCat}</li>`;
+                    fileListHTML += groupedFiles[subCat].map(file => `
+                        <li class="file-item">
+                            <a href="${file.path}" target="_blank">${file.title}</a>
+                            <span style="color:rgba(255,255,255,0.2)">${file.extension}</span>
+                        </li>
+                    `).join('');
+                });
+
+                card.innerHTML = `
+                    <div style="display:flex; align-items:center; margin-bottom: 1rem;">
+                        <span class="lock-icon" style="color: var(--accent-cyan)">🗂️</span>
+                        <h3 style="margin:0; font-size: 0.9rem; color: var(--text-main)">${tier.name}</h3>
+                    </div>
+                    <div class="card-tag" style="font-size: 0.6rem;">
+                        ACCESS AUTHORIZED
+                    </div>
+                    <ul class="file-list">
+                        ${fileListHTML || '<li>NO ASSETS IN THIS SECTOR</li>'}
+                    </ul>
+                `;
+
+                archiveRoot.appendChild(card);
+            });
+        }
+
+        keyInput.addEventListener('input', (e) => {
+            const key = e.target.value.trim().toUpperCase();
+            if (key === "") {
+                statusMsg.textContent = "WAITING FOR INPUT...";
+                renderArchive("");
+                watermark.style.display = 'none';
+                return;
+            }
+
+            const secureKey = decodeSecureKey(key);
+            const isLegacy = ACCESS_KEYS[key] || (key === "ADMIN-OVERRIDE");
+
+            if (secureKey || isLegacy) {
+                if (secureKey) {
+                    const now = Math.floor(Date.now() / 1000);
+                    if (now > secureKey.expiry) {
+                        statusMsg.textContent = "KEY EXPIRED. CONTACT G-nthetic-Labs@proton.me FOR RE-AUTHORIZATION.";
+                        statusMsg.style.color = "var(--accent-purple)";
+                        renderArchive("");
+                        return;
+                    }
+                    statusMsg.textContent = `ACCESS GRANTED FOR [${secureKey.recipient}]. DECRYPTING TIERS...`;
+                } else {
+                    statusMsg.textContent = "LEGACY ACCESS GRANTED. DECRYPTING SECTORS...";
+                }
+
+                statusMsg.style.color = "var(--accent-green)";
+                updateWatermark(key);
+                renderArchive(key);
+            } else {
+                statusMsg.textContent = "INVALID KEY. ACCESS DENIED.";
+                statusMsg.style.color = "var(--accent-purple)";
+                renderArchive("");
+                watermark.style.display = 'none';
+            }
+        });
+
+        // Initial render
+        renderArchive("");
+    </script>
+</body>
+
+</html>

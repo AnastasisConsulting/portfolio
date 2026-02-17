@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[WIP] ORBITGEN-AI // DOSSIER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: var(--accent-cyan);
+        }
+
+        .dossier-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .tech-spec {
+            border-left: 1px solid var(--border-color);
+            padding-left: 2rem;
+        }
+
+        .spec-item {
+            margin-bottom: 2rem;
+        }
+
+        .spec-label {
+            font-family: var(--font-mono);
+            color: var(--accent-color);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+        }
+
+        .spec-value {
+            font-family: var(--font-header);
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="container container-padding reveal active">
+        <header style="margin-bottom: 4rem; position: relative;">
+            <a href="index.html"
+                style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-dim); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;">
+                <span style="font-size: 1.2rem;">←</span> BACK TO TERMINAL
+            </a>
+            <div class="card-tag" style="margin-bottom: 1rem;">ASSET PIPELINE // FORCE MULTIPLIER</div>
+            <h1 class="glitch-title" style="font-size: 3rem;">ORBITGEN-AI</h1>
+            <p class="subtitle" style="font-size: 0.9rem; color: var(--text-main); font-weight: 300;">FRACTAL WORLD
+                GENERATION & NARRATIVE SYNTHESIS</p>
+        </header>
+
+        <!-- ORBITGEN SHOWCASE -->
+        <section style="margin-bottom: 4rem;">
+            <div style="margin-bottom: 1.5rem;">
+                <span
+                    style="font-family: var(--font-mono); font-size: 0.55rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.12em;">GENERATION
+                    DEMO // FRACTAL SEED</span>
+                <h2
+                    style="font-size: 1.8rem; font-weight: 300; letter-spacing: -0.02em; text-transform: uppercase; margin-top: 0.5rem;">
+                    Procedural World Pipeline</h2>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: 1fr; gap: 2px; background: var(--border-color); border: 1px solid var(--border-color); margin-bottom: 2px;">
+                <div style="position: relative; overflow: hidden; background: #000;">
+                    <img src="assets/openning.PNG" alt="OrbitGen-AI — Procedural planet with atmospheric glow"
+                        style="width: 100%; display: block; filter: brightness(0.95);">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                        <span
+                            style="font-family: var(--font-mono); font-size: 0.5rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em;">PROCEDURAL
+                            PLANET · ATMOSPHERIC SCATTERING · TERRAIN NOISE</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border-color); border: 1px solid var(--border-color);">
+                <div style="position: relative; overflow: hidden; background: #000;">
+                    <img src="assets/world-bundles.PNG" alt="World Bundle — The Vangar Hegemony with 7x7 sector map"
+                        style="width: 100%; display: block; filter: brightness(0.95);">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                        <span
+                            style="font-family: var(--font-mono); font-size: 0.5rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em;">WORLD
+                            BUNDLE · VANGAR HEGEMONY · 7×7 SECTOR MAP</span>
+                    </div>
+                </div>
+                <div style="position: relative; overflow: hidden; background: #000;">
+                    <img src="assets/generated-1.PNG"
+                        alt="Fractal Cognition Engine with deconstructed arcs and cognition lattice"
+                        style="width: 100%; display: block; filter: brightness(0.95);">
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; right: 0; padding: 10px 14px; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                        <span
+                            style="font-family: var(--font-mono); font-size: 0.5rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em;">COGNITION
+                            LATTICE · DECONSTRUCTED ARCS · INPUT → OUTPUT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: flex-start;">
+                <p style="font-size: 0.85rem; color: var(--text-dim); line-height: 1.7; max-width: 600px;">
+                    Full-cycle world generation: from procedural planet creation with atmospheric scattering
+                    to civilization lore, NPC hierarchies, 7×7 sector maps, and quest chains — all from
+                    a single fractal seed in under 5 minutes.
+                </p>
+                <div style="text-align: right;">
+                    <div
+                        style="font-family: var(--font-mono); font-size: 0.55rem; color: var(--accent-steel); text-transform: uppercase; letter-spacing: 0.1em;">
+                        TECH STACK</div>
+                    <div
+                        style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--text-dim); margin-top: 0.3rem;">
+                        React · Three.js · Google AI Studio</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="dossier-grid">
+            <div class="mission-brief">
+                <h2 style="font-family: var(--font-header); letter-spacing: -1px; margin-bottom: 2rem;">SYSTEM
+                    CAPABILITIES</h2>
+                <p style="line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+                    OrbitGen-AI is the laboratory's primary force-multiplier for high-density world building. It
+                    automates
+                    the generation of interconnected world data—lore, quests, spatial maps, and NPC hierarchies—from a
+                    single
+                    fractal seed.
+                </p>
+                <div
+                    style="padding: 2rem; border: 1px solid var(--border-color); background: #111; margin-bottom: 2rem;">
+                    <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">
+                        // PIPELINE START: FRACTAL_SEED_8821<br>
+                        // GEN: 4,000 NPC BACKSTORIES (3.2 MIN)<br>
+                        // GEN: 12 SECTOR MAPS (1.1 MIN)<br>
+                        // STATUS: WORLD_DATA_SYNTHESIS COMPLETE.
+                    </p>
+                </div>
+                <p style="line-height: 1.8; color: var(--text-dim);">
+                    This system allows a "One-Man Army" approach to AAA-scale narrative design, ensuring perfect
+                    thematic coherence across all generated assets.
+                </p>
+            </div>
+
+            <div class="tech-spec">
+                <div class="spec-item">
+                    <span class="spec-label">Throughput</span>
+                    <div class="spec-value">5-Minute Full World Generation</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Consistency Engine</span>
+                    <div class="spec-value">Natural Language Architecture</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Asset Types</span>
+                    <div class="spec-value">Lore, Quests, NPCs, Spatial Maps</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Lab Integration</span>
+                    <div class="spec-value">Symbolic Engine V1.2 Bridge</div>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Security Tier</span>
+                    <div class="spec-value" style="color: var(--accent-cyan);">PROPRIETARY PIPELINE // DEE-TIER 2</div>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 2rem; background: rgba(0, 240, 255, 0.03); border: 1px solid rgba(0, 240, 255, 0.1);">
+                    <h3
+                        style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-cyan); margin-bottom: 1rem;">
+                        RELATED ASSETS</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;">
+                            <a href="docs.html"
+                                style="color: var(--text-main); text-decoration: none; font-size: 0.8rem; border-bottom: 1px dashed var(--accent-cyan);">[PROPRIETARY]
+                                PIPELINE_AUTOMATION_SPECS.PDF</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer
+            style="margin-top: 8rem; border-top: 1px solid var(--border-color); padding-top: 4rem; text-align: center;">
+            <p class="copyright" style="opacity: 0.3;">G-YNTHETIC LABS // NARRATIVE SYNTHESIS DIVISION</p>
+        </footer>
+    </div>
+</body>
+
+</html>
