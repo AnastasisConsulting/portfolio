@@ -1,7 +1,7 @@
 const DOCS_MANIFEST = {
   "levels": {
     "0": {
-      "name": "REVFLVRJRVIgMDogUFVCTElDIEFDQ0VTUw==",
+      "name": "REVGRU5TSUJMRSBQUklPUiBBUlQgRElTQ0xPU1VSRSAoVU5SRVNUUklDVEVEKQ==",
       "files": [
         {
           "title": "Y29nRW5nRGlhQ29sLnBuZw==",
@@ -1016,12 +1016,7 @@ const DOCS_MANIFEST = {
           "path": "U2ltdWxhdGlvbi9hZmZpbml0eV9rZXJuZWwucHk=",
           "extension": "LlBZ",
           "category": "QWZmaW5pdHkgU2ltdWxhdGlvbg=="
-        }
-      ]
-    },
-    "1": {
-      "name": "REVFLVRJRVIgMTogRVZBTFVBVE9SIENMRUFSQU5DRQ==",
-      "files": [
+        },
         {
           "title": "QlVTSU5FU1MgU0NBTElORyBNT0RFTC5tZA==",
           "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vQlVTSU5FU1NfU0NBTElOR19NT0RFTC5tZA==",
@@ -1087,12 +1082,7 @@ const DOCS_MANIFEST = {
           "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vVEVDSE5JQ0FMX0VYRUNVVElWRV9TVU1NQVJZLm1k",
           "extension": "Lk1E",
           "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
-        }
-      ]
-    },
-    "2": {
-      "name": "REVFLVRJRVIgMjogQ09SRSBJUCBQUk9URUNURUQ=",
-      "files": [
+        },
         {
           "title": "Q3ViZVheMyBBbGdvcml0aG0gQnJpZWY=",
           "path": "Y3ViZXhfYWxnb3JpdGhtc19pbnRlcm5hbC5odG1s",
@@ -1614,12 +1604,7 @@ const DOCS_MANIFEST = {
           "path": "cmVzZWFyY2gvU3ltYm9saWNfR3JpZF9BdGxhc19Gb3JtYXQudHh0",
           "extension": "LlRYVA==",
           "category": "cmVzZWFyY2g="
-        }
-      ]
-    },
-    "3": {
-      "name": "REVFLVRJRVIgMzogU1RSQVRFR0lDIElORlJBU1RSVUNUVVJF",
-      "files": [
+        },
         {
           "title": "cHJpdmFjeSBnYXVydW50ZWUuUE5H",
           "path": "RE9DUy9sZWdhbC9wcml2YWN5IGdhdXJ1bnRlZS5QTkc=",

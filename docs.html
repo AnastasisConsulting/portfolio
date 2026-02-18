@@ -180,36 +180,21 @@
 </head>
 
 <body oncontextmenu="return false;">
-    <div id="watermark" class="watermark"></div>
-
-    <div id="nda-gateway">
-        <div class="nda-content reveal active">
-            <h1 class="glitch-title" style="font-size: 1.5rem; color: var(--accent-cyan);">CONFIRM ACCESS AUTHORITY</h1>
-            <p style="color: var(--text-dim); margin: 2rem 0; font-size: 0.9rem; line-height: 1.6;">
-                The following archive contains **Patent-Pending** infrastructure specifications and proprietary research
-                property of G-ynthetic Labs. By proceeding, you acknowledge that access to this data is subject to
-                Active Non-Disclosure Agreements and intellectual property law. Any unauthorized reproduction
-                or exfiltration is detectable.
-            </p>
-            <div style="margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                <input type="checkbox" id="nda-confirm" style="width:20px; height:20px;">
-                <label for="nda-confirm" style="font-size: 0.7rem; color: var(--text-main);">I ACKNOWLEDGE ACCESS
-                    PROTOCOLS</label>
-            </div>
-            <button id="nda-btn" class="btn-primary" disabled style="opacity: 0.5;">DECRYPT GATEWAY</button>
-        </div>
-    </div>
-
-    <div id="main-vault" class="vault-container hidden">
+    <div id="main-vault" class="vault-container">
         <header style="height: auto; padding: 4rem 0;">
-            <h1 class="glitch-title" style="font-size: 2.5rem;">SECURE ARCHIVE</h1>
-            <p class="subtitle">Vault Tier: INITIALIZING</p>
+            <h1 class="glitch-title" style="font-size: 2.5rem;">PUBLIC DISCLOSURE</h1>
+            <p class="subtitle">UNRESTRICTED PRIOR ART ARCHIVE</p>
         </header>
 
-        <div class="key-input-sector reveal active">
-            <p class="section-subtitle">ENTER ACCESS KEY TO UNLOCK PROTECTED SECTORS</p>
-            <input type="password" class="key-input" id="access-key" placeholder="____-____-____" autocomplete="off">
-            <div id="status" class="status-msg">WAITING FOR INPUT...</div>
+        <div class="key-input-sector reveal active" style="border-color: var(--accent-green);">
+            <p class="section-subtitle" style="color: var(--accent-green); font-weight: bold;">ENABLING DISCLOSURE
+                ACTIVE</p>
+            <p style="font-size: 0.8rem; margin: 1rem 0; line-height: 1.6;">
+                This archive has been unsealed to serve as defensible prior art. All technical specifications,
+                architectural blueprints, and source code modules are now publicly accessible to ensure reproducibility.
+            </p>
+            <a href="REPRODUCTION_GUIDE.md" class="btn-primary"
+                style="display: inline-block; margin-top: 1rem; padding: 0.8rem 2rem;">VIEW REPRODUCTION GUIDE</a>
         </div>
 
         <div id="archive-root" class="archive-grid">
@@ -219,150 +204,69 @@
         <footer style="margin-top: 5rem;">
             <a href="index.html" class="btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.7rem;">Return to
                 Terminal</a>
-            <p class="copyright">&copy; 2026 G-YNTHETIC LABS. ALL RIGHTS RESERVED.</p>
+            <p class="copyright">&copy; 2026 G-YNTHETIC LABS. PUBLIC DISCLOSURE. ALL ASSETS UNRESTRICTED.</p>
         </footer>
     </div>
 
     <script src="assets/docs-manifest.js"></script>
-    <script src="access-keys.js"></script>
     <script>
-        const keyInput = document.getElementById('access-key');
-        const statusMsg = document.getElementById('status');
         const archiveRoot = document.getElementById('archive-root');
-        const ndaBtn = document.getElementById('nda-btn');
-        const ndaConfirm = document.getElementById('nda-confirm');
-        const ndaGateway = document.getElementById('nda-gateway');
-        const mainVault = document.getElementById('main-vault');
-        const watermark = document.getElementById('watermark');
 
-        // NDA Logic
-        ndaConfirm.addEventListener('change', () => {
-            ndaBtn.disabled = !ndaConfirm.checked;
-            ndaBtn.style.opacity = ndaConfirm.checked  '1' : '0.5';
-        });
-
-        ndaBtn.addEventListener('click', () => {
-            ndaGateway.classList.add('hidden');
-            mainVault.classList.remove('hidden');
-        });
-
-        // Anti-Focus Logic
-        window.addEventListener('blur', () => mainVault.classList.add('blurred'));
-        window.addEventListener('focus', () => mainVault.classList.remove('blurred'));
-
-        // Watermark generator
-        function updateWatermark(key) {
-            watermark.innerHTML = '';
-            watermark.style.display = 'block';
-
-            // Create a denser, more structured grid of watermarks
-            const rows = 8;
-            const cols = 4;
-
-            for (let r = 0; r < rows; r++) {
-                for (let c = 0; c < cols; c++) {
-                    const span = document.createElement('span');
-                    span.className = 'watermark-text';
-                    span.textContent = `[ ${key} ] G-YNTHETIC LABS // PATENT PENDING`;
-
-                    // Staggered grid placement
-                    span.style.top = `${(r * 15) + (Math.random() * 5)}%`;
-                    span.style.left = `${(c * 25) + (Math.random() * 10)}%`;
-                    watermark.appendChild(span);
-                }
-            }
-        }
-
-        function renderArchive(activeKey = "") {
+        function renderArchive() {
             archiveRoot.innerHTML = '';
 
-            // Loop through tiers 0 to 3
-            [0, 1, 2, 3].forEach(level => {
-                const tier = DOCS_MANIFEST.levels[level];
-                if (!tier) return;
+            // Only one level (0) exists now
+            const tier = DOCS_MANIFEST.levels["0"];
+            if (!tier) return;
 
-                const isUnlocked = isLevelUnlocked(activeKey, level);
+            const card = document.createElement('div');
+            card.className = `folder-card reveal active unlocked`;
+            card.style.gridColumn = "1 / -1"; // Full width for the unified list
 
-                // GHOST VAULT: Only render the card if it is unlocked
-                if (!isUnlocked) return;
-
-                const card = document.createElement('div');
-                card.className = `folder-card reveal active unlocked`;
-
-                const groupedFiles = {};
-                tier.files.forEach(file => {
-                    const group = file.category || "General";
-                    if (!groupedFiles[group]) groupedFiles[group] = [];
-                    groupedFiles[group].push(file);
-                });
-
-                let fileListHTML = '';
-                Object.keys(groupedFiles).forEach(subCat => {
-                    fileListHTML += `<li style="font-weight:bold; color:var(--text-dim); margin-top:0.8rem; font-size:0.7rem;">// SECTION: ${subCat}</li>`;
-                    fileListHTML += groupedFiles[subCat].map(file => `
-                        <li class="file-item">
-                            <a href="${file.path}" target="_blank">${file.title}</a>
-                            <span style="color:rgba(255,255,255,0.2)">${file.extension}</span>
-                        </li>
-                    `).join('');
-                });
-
-                card.innerHTML = `
-                    <div style="display:flex; align-items:center; margin-bottom: 1rem;">
-                        <span class="lock-icon" style="color: var(--accent-cyan)">🗂️</span>
-                        <h3 style="margin:0; font-size: 0.9rem; color: var(--text-main)">${tier.name}</h3>
-                    </div>
-                    <div class="card-tag" style="font-size: 0.6rem;">
-                        ACCESS AUTHORIZED
-                    </div>
-                    <ul class="file-list">
-                        ${fileListHTML || '<li>NO ASSETS IN THIS SECTOR</li>'}
-                    </ul>
-                `;
-
-                archiveRoot.appendChild(card);
+            const groupedFiles = {};
+            tier.files.forEach(file => {
+                const group = file.category || "General";
+                if (!groupedFiles[group]) groupedFiles[group] = [];
+                groupedFiles[group].push(file);
             });
+
+            let fileListHTML = '';
+            // Sort categories for better organization
+            const sortedCategories = Object.keys(groupedFiles).sort();
+
+            sortedCategories.forEach(subCat => {
+                fileListHTML += `
+                    <div style="margin-top: 2rem;">
+                        <h4 style="font-size: 0.7rem; color: var(--accent-cyan); letter-spacing: 2px; border-bottom: 1px solid rgba(0, 240, 255, 0.2); padding-bottom: 0.5rem;">// ${subCat.toUpperCase()}</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                `;
+                fileListHTML += groupedFiles[subCat].map(file => `
+                    <div class="file-item" style="background: rgba(255,255,255,0.02); padding: 0.8rem; border-left: 2px solid var(--accent-cyan);">
+                        <div style="display: flex; flex-direction: column;">
+                            <a href="${file.path}" target="_blank" style="font-family: var(--font-mono); font-size: 0.8rem; pointer-events: auto; color: var(--accent-cyan);">${file.title}</a>
+                            <span style="font-size: 0.6rem; color: rgba(255,255,255,0.3); margin-top: 0.3rem;">FORMAT: ${file.extension.replace('.', '')} // PUBLIC ACCESS</span>
+                        </div>
+                    </div>
+                `).join('');
+                fileListHTML += `</div></div>`;
+            });
+
+            card.innerHTML = `
+                <div style="display:flex; align-items:center; margin-bottom: 1rem;">
+                    <span class="lock-icon" style="color: var(--accent-green)">📂</span>
+                    <h3 style="margin:0; font-size: 1.2rem; color: var(--text-main)">${tier.name}</h3>
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-green); margin-bottom: 2rem;">
+                    [ STATUS: UNRESTRICTED ] [ TOTAL ASSETS: ${DOCS_MANIFEST.metadata.total_files} ]
+                </div>
+                ${fileListHTML || '<p>NO ASSETS IN THIS SECTOR</p>'}
+            `;
+
+            archiveRoot.appendChild(card);
         }
 
-        keyInput.addEventListener('input', (e) => {
-            const key = e.target.value.trim().toUpperCase();
-            if (key === "") {
-                statusMsg.textContent = "WAITING FOR INPUT...";
-                renderArchive("");
-                watermark.style.display = 'none';
-                return;
-            }
-
-            const secureKey = decodeSecureKey(key);
-            const isLegacy = ACCESS_KEYS[key] || (key === "ADMIN-OVERRIDE");
-
-            if (secureKey || isLegacy) {
-                if (secureKey) {
-                    const now = Math.floor(Date.now() / 1000);
-                    if (now > secureKey.expiry) {
-                        statusMsg.textContent = "KEY EXPIRED. CONTACT G-nthetic-Labs@proton.me FOR RE-AUTHORIZATION.";
-                        statusMsg.style.color = "var(--accent-purple)";
-                        renderArchive("");
-                        return;
-                    }
-                    statusMsg.textContent = `ACCESS GRANTED FOR [${secureKey.recipient}]. DECRYPTING TIERS...`;
-                } else {
-                    statusMsg.textContent = "LEGACY ACCESS GRANTED. DECRYPTING SECTORS...";
-                }
-
-                statusMsg.style.color = "var(--accent-green)";
-                updateWatermark(key);
-                renderArchive(key);
-            } else {
-                statusMsg.textContent = "INVALID KEY. ACCESS DENIED.";
-                statusMsg.style.color = "var(--accent-purple)";
-                renderArchive("");
-                watermark.style.display = 'none';
-            }
-        });
-
         // Initial render
-        renderArchive("");
+        renderArchive();
     </script>
 </body>
 
