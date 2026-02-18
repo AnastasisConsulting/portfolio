@@ -212,12 +212,26 @@
     <script>
         const archiveRoot = document.getElementById('archive-root');
 
+        function decode(str) {
+            try { return atob(str); } catch (e) { return str; }
+        }
+
         function renderArchive() {
             archiveRoot.innerHTML = '';
 
             // Only one level (0) exists now
-            const tier = DOCS_MANIFEST.levels["0"];
-            if (!tier) return;
+            const tierRaw = DOCS_MANIFEST.levels["0"];
+            if (!tierRaw) return;
+
+            const tier = {
+                name: decode(tierRaw.name),
+                files: tierRaw.files.map(f => ({
+                    title: decode(f.title),
+                    path: decode(f.path),
+                    extension: decode(f.extension),
+                    category: decode(f.category)
+                }))
+            };
 
             const card = document.createElement('div');
             card.className = `folder-card reveal active unlocked`;
