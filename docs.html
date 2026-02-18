@@ -182,92 +182,60 @@
 <body oncontextmenu="return false;">
     <div id="main-vault" class="vault-container">
         <header style="height: auto; padding: 4rem 0;">
-            <h1 class="glitch-title" style="font-size: 2.5rem;">PUBLIC DISCLOSURE</h1>
-            <p class="subtitle">UNRESTRICTED PRIOR ART ARCHIVE</p>
+            <h1 class="glitch-title" style="font-size: 2.5rem;">TECHNICAL DISCLOSURE</h1>
+            <p class="subtitle">DEFENSIBLE PRIOR ART // FULL ARCHITECTURAL UNSEAL</p>
         </header>
 
         <div class="key-input-sector reveal active" style="border-color: var(--accent-green);">
             <p class="section-subtitle" style="color: var(--accent-green); font-weight: bold;">ENABLING DISCLOSURE
                 ACTIVE</p>
-            <p style="font-size: 0.8rem; margin: 1rem 0; line-height: 1.6;">
-                This archive has been unsealed to serve as defensible prior art. All technical specifications,
-                architectural blueprints, and source code modules are now publicly accessible to ensure reproducibility.
+            <p style="font-size: 1rem; margin: 1.5rem 0; line-height: 1.8;">
+                G-ynthetic Labs has unsealed its core cognitive architecture to establish a definitive prior art
+                baseline.
+                This transparency ensures that the fundamental principles of **Fractal Template Reasoning** and
+                **Deterministic Inference Governance** remain in the public domain.
             </p>
-            <a href="REPRODUCTION_GUIDE.md" class="btn-primary"
-                style="display: inline-block; margin-top: 1rem; padding: 0.8rem 2rem;">VIEW REPRODUCTION GUIDE</a>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 3rem 0; text-align: left;">
+                <div
+                    style="background: rgba(132, 204, 22, 0.05); padding: 1.5rem; border: 1px solid var(--accent-green);">
+                    <h4 style="color: var(--accent-green);">REPRODUCTION READY</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Detailed guides for reconstructing the Engine,
+                        Memory Lattice, and Simulation environments.</p>
+                    <a href="REPRODUCTION_GUIDE.md"
+                        style="color: var(--accent-green); font-size: 0.75rem; text-decoration: none; font-weight: bold; display: block; margin-top: 1rem;">VIEW
+                        GUIDE &rarr;</a>
+                </div>
+                <div
+                    style="background: rgba(0, 240, 255, 0.05); padding: 1.5rem; border: 1px solid var(--accent-cyan);">
+                    <h4 style="color: var(--accent-cyan);">TECHNICAL VAULT</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Access 100+ raw files, source modules, and
+                        internal specifications in their original format.</p>
+                    <a href="archive.html"
+                        style="color: var(--accent-cyan); font-size: 0.75rem; text-decoration: none; font-weight: bold; display: block; margin-top: 1rem;">GO
+                        TO DEEP ARCHIVE &rarr;</a>
+                </div>
+            </div>
         </div>
 
-        <div id="archive-root" class="archive-grid">
-            <!-- Populated by JS -->
-        </div>
+        <section style="margin-top: 4rem; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 4rem;">
+            <h3 style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 1rem;">// DISCLOSURE PHASES
+            </h3>
+            <div style="margin-top: 2rem; font-size: 0.85rem; line-height: 1.8; color: var(--text-dim);">
+                <p>&bull; <strong>Phase 1:</strong> Extraction of core reproductive logic (Completed)</p>
+                <p>&bull; <strong>Phase 2:</strong> Removal of non-essential administrative/conceptual drafts
+                    (Completed)</p>
+                <p>&bull; <strong>Phase 3:</strong> Unrestricted Public Access to deep technical vault (Active)</p>
+            </div>
+        </section>
 
-        <footer style="margin-top: 5rem;">
+        <footer style="margin-top: 6rem;">
             <a href="index.html" class="btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.7rem;">Return to
                 Terminal</a>
             <p class="copyright">&copy; 2026 G-YNTHETIC LABS. PUBLIC DISCLOSURE. ALL ASSETS UNRESTRICTED.</p>
         </footer>
     </div>
-
-    <script src="assets/docs-manifest.js"></script>
-    <script>
-        const archiveRoot = document.getElementById('archive-root');
-
-        function renderArchive() {
-            archiveRoot.innerHTML = '';
-
-            // Only one level (0) exists now
-            const tier = DOCS_MANIFEST.levels["0"];
-            if (!tier) return;
-
-            const card = document.createElement('div');
-            card.className = `folder-card reveal active unlocked`;
-            card.style.gridColumn = "1 / -1"; // Full width for the unified list
-
-            const groupedFiles = {};
-            tier.files.forEach(file => {
-                const group = file.category || "General";
-                if (!groupedFiles[group]) groupedFiles[group] = [];
-                groupedFiles[group].push(file);
-            });
-
-            let fileListHTML = '';
-            // Sort categories for better organization
-            const sortedCategories = Object.keys(groupedFiles).sort();
-
-            sortedCategories.forEach(subCat => {
-                fileListHTML += `
-                    <div style="margin-top: 2rem;">
-                        <h4 style="font-size: 0.7rem; color: var(--accent-cyan); letter-spacing: 2px; border-bottom: 1px solid rgba(0, 240, 255, 0.2); padding-bottom: 0.5rem;">// ${subCat.toUpperCase()}</h4>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
-                `;
-                fileListHTML += groupedFiles[subCat].map(file => `
-                    <div class="file-item" style="background: rgba(255,255,255,0.02); padding: 0.8rem; border-left: 2px solid var(--accent-cyan);">
-                        <div style="display: flex; flex-direction: column;">
-                            <a href="${file.path}" target="_blank" style="font-family: var(--font-mono); font-size: 0.8rem; pointer-events: auto; color: var(--accent-cyan);">${file.title}</a>
-                            <span style="font-size: 0.6rem; color: rgba(255,255,255,0.3); margin-top: 0.3rem;">FORMAT: ${file.extension} // PUBLIC ACCESS</span>
-                        </div>
-                    </div>
-                `).join('');
-                fileListHTML += `</div></div>`;
-            });
-
-            card.innerHTML = `
-                <div style="display:flex; align-items:center; margin-bottom: 1rem;">
-                    <span class="lock-icon" style="color: var(--accent-green)">📂</span>
-                    <h3 style="margin:0; font-size: 1.2rem; color: var(--text-main)">${tier.name}</h3>
-                </div>
-                <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-green); margin-bottom: 2rem;">
-                    [ STATUS: UNRESTRICTED ] [ TOTAL ASSETS: ${DOCS_MANIFEST.metadata.total_files} ]
-                </div>
-                ${fileListHTML || '<p>NO ASSETS IN THIS SECTOR</p>'}
-            `;
-
-            archiveRoot.appendChild(card);
-        }
-
-        // Initial render
-        renderArchive();
-    </script>
 </body>
 
 </html>

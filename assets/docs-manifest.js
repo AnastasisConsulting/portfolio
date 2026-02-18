@@ -1,23 +1,17 @@
 const DOCS_MANIFEST = {
   "metadata": {
-    "total_files": 122,
+    "total_files": 117,
     "generated_at": 1739832000
   },
   "levels": {
     "0": {
-      "name": "DEFENSIBLE PRIOR ART DISCLOSURE (UNRESTRICTED)",
+      "name": "PURE TECHNICAL DISCLOSURE (UNRESTRICTED)",
       "files": [
         {
           "title": "cogEngDiaCol.png",
           "path": "Engine/cogEngDiaCol.png",
           "extension": "PNG",
           "category": "Technical Diagrams"
-        },
-        {
-          "title": "engine detailed walkthrough 1.odt",
-          "path": "Engine/engine detailed walkthrough 1.odt",
-          "extension": "ODT",
-          "category": "Internal Specifications"
         },
         {
           "title": "engine.py",
@@ -476,18 +470,6 @@ const DOCS_MANIFEST = {
           "category": "Python Core Logic"
         },
         {
-          "title": "env_writer.py",
-          "path": "Engine/gynthetic_engine/utils/env_writer.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "resize_images.py",
-          "path": "Engine/gynthetic_engine/utils/resize_images.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
           "title": "LatticeVisualizer.tsx",
           "path": "Memory/LatticeVisualizer.tsx",
           "extension": "TSX",
@@ -590,12 +572,6 @@ const DOCS_MANIFEST = {
           "category": "Python Core Logic"
         },
         {
-          "title": "engine detailed walkthrough 1.odt",
-          "path": "domain-agnostic/engine detailed walkthrough 1.odt",
-          "extension": "ODT",
-          "category": "Internal Specifications"
-        },
-        {
           "title": "engine.py",
           "path": "domain-agnostic/engine.py",
           "extension": "PY",
@@ -642,12 +618,6 @@ const DOCS_MANIFEST = {
           "path": "domain-agnostic/1029_memory_lattice/lattice_nodes.yaml",
           "extension": "YAML",
           "category": "General Assets"
-        },
-        {
-          "title": "engine detailed walkthrough 1.odt",
-          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/engine detailed walkthrough 1.odt",
-          "extension": "ODT",
-          "category": "Internal Specifications"
         },
         {
           "title": "example_usage.py",

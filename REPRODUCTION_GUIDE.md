@@ -52,4 +52,4 @@ Instead of linear token history, memories are stored as coordinates `(t, x, y, z
 
 ---
 **PUBLIC DISCLOSURE: DEFENSIBLE PRIOR ART**
-*This document, paired with the unsealed source code in the archive, constitutes a complete technical disclosure.*
+*This document, paired with the unsealed source code in the [DEEP TECHNICAL ARCHIVE](archive.html), constitutes a complete technical disclosure.*
