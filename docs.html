@@ -213,7 +213,16 @@
         const archiveRoot = document.getElementById('archive-root');
 
         function decode(str) {
-            try { return atob(str); } catch (e) { return str; }
+            if (!str) return "";
+            try {
+                // Handle potential URL-safe base64 and missing padding
+                let b64 = str.trim().replace(/-/g, '+').replace(/_/g, '/');
+                while (b64.length % 4) b64 += '=';
+                return atob(b64);
+            } catch (e) {
+                // Return original if not valid base64
+                return str;
+            }
         }
 
         function renderArchive() {
