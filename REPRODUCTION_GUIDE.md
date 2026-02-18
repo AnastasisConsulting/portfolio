@@ -4,6 +4,8 @@ This document serves as the bridging technical guide required to reproduce the c
 
 ## 1. Core Architectural Pillars
 
+![3D Fractal Recursion Core](assets/cogEngDiaCol.png)
+
 The G-ynthetic ecosystem relies on three integrated layers:
 1.  **G-ynthetic Engine**: The cognitive core focusing on high-density decomposition.
 2.  **Memory Lattice**: A 7x7x7 holographic voxel grid for non-linear state management.
@@ -17,6 +19,9 @@ The input phase requires collapsing unstructured user prompts into 7 canonical r
 - **Implementation**: Utilize an LLM (e.g., GPT-4 or Gemini) with a system prompt that enforces strict JSON output of these 7 keys. See `gynthetic_engine/intake/decomposition_engine.py`.
 
 ### B. Triadic Processing
+
+![Temporal Triadic Phase Diagram](assets/TrililiquaryDiagram.png)
+
 Once decomposed, the arcs must be processed through the "Temporal Triadic" logic:
 - **Risk / Reward / Relation** roles are mapped across 3 phases (Input/Identity/Inception).
 - **Scoring**: Permutate all 6 possible mappings to find the highest semantic resonance.
