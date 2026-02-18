@@ -219,7 +219,18 @@ function initVisualizer() {
   scene.add(points);
   scene.add(lines);
 
+  let isVisible = true;
+  const observer = new IntersectionObserver((entries) => {
+    isVisible = entries[0].isIntersecting;
+  }, { threshold: 0 });
+  observer.observe(container);
+
   function animate(time) {
+    if (!isVisible) {
+      requestAnimationFrame(animate);
+      return;
+    }
+
     requestAnimationFrame(animate);
     time *= 0.001; // Convert to seconds
 
