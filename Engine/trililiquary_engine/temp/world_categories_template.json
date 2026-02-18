@@ -1,0 +1,116 @@
+{
+  "Anomalous": {
+    "1. Environment": {
+      "definition": "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+      "spheres": []
+    },
+    "2. Geography & Boundaries": {
+      "definition": "Spatial layout, zones, travel limitations, and structural logic of the world.",
+      "spheres": []
+    },
+    "3. Power Structures": {
+      "definition": "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+      "spheres": []
+    },
+    "4. Social Order": {
+      "definition": "Class, caste, kinship, community, faction dynamics, and societal organization.",
+      "spheres": []
+    },
+    "5. History & Myth": {
+      "definition": "Origins, wars, lost civilizations, timeline logic, and collective memory or belief.",
+      "spheres": []
+    },
+    "6. Technology & Tools": {
+      "definition": "Level and type of technology: analog, futuristic, arcane, biotech, etc.",
+      "spheres": []
+    },
+    "7. Belief & Knowledge Systems": {
+      "definition": "Religion, science, education, ideology, and pathways to truth.",
+      "spheres": []
+    },
+    "8. Language & Symbol": {
+      "definition": "Forms of communication, sacred symbols, alphabets, or coded systems of meaning.",
+      "spheres": []
+    },
+    "9. Physics & Laws of Reality": {
+      "definition": "Fundamental rules of matter, time, energy, and metaphysics \u2014 or their manipulation.",
+      "spheres": []
+    }
+  },
+  "Hybrid": {
+    "1. Environment": {
+      "definition": "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+      "spheres": []
+    },
+    "2. Geography & Boundaries": {
+      "definition": "Spatial layout, zones, travel limitations, and structural logic of the world.",
+      "spheres": []
+    },
+    "3. Power Structures": {
+      "definition": "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+      "spheres": []
+    },
+    "4. Social Order": {
+      "definition": "Class, caste, kinship, community, faction dynamics, and societal organization.",
+      "spheres": []
+    },
+    "5. History & Myth": {
+      "definition": "Origins, wars, lost civilizations, timeline logic, and collective memory or belief.",
+      "spheres": []
+    },
+    "6. Technology & Tools": {
+      "definition": "Level and type of technology: analog, futuristic, arcane, biotech, etc.",
+      "spheres": []
+    },
+    "7. Belief & Knowledge Systems": {
+      "definition": "Religion, science, education, ideology, and pathways to truth.",
+      "spheres": []
+    },
+    "8. Language & Symbol": {
+      "definition": "Forms of communication, sacred symbols, alphabets, or coded systems of meaning.",
+      "spheres": []
+    },
+    "9. Physics & Laws of Reality": {
+      "definition": "Fundamental rules of matter, time, energy, and metaphysics \u2014 or their manipulation.",
+      "spheres": []
+    }
+  },
+  "Grounded": {
+    "1. Environment": {
+      "definition": "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+      "spheres": []
+    },
+    "2. Geography & Boundaries": {
+      "definition": "Spatial layout, zones, travel limitations, and structural logic of the world.",
+      "spheres": []
+    },
+    "3. Power Structures": {
+      "definition": "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+      "spheres": []
+    },
+    "4. Social Order": {
+      "definition": "Class, caste, kinship, community, faction dynamics, and societal organization.",
+      "spheres": []
+    },
+    "5. History & Myth": {
+      "definition": "Origins, wars, lost civilizations, timeline logic, and collective memory or belief.",
+      "spheres": []
+    },
+    "6. Technology & Tools": {
+      "definition": "Level and type of technology: analog, futuristic, arcane, biotech, etc.",
+      "spheres": []
+    },
+    "7. Belief & Knowledge Systems": {
+      "definition": "Religion, science, education, ideology, and pathways to truth.",
+      "spheres": []
+    },
+    "8. Language & Symbol": {
+      "definition": "Forms of communication, sacred symbols, alphabets, or coded systems of meaning.",
+      "spheres": []
+    },
+    "9. Physics & Laws of Reality": {
+      "definition": "Fundamental rules of matter, time, energy, and metaphysics \u2014 or their manipulation.",
+      "spheres": []
+    }
+  }
+}

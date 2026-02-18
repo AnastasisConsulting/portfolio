@@ -1,0 +1,130 @@
+{
+  "transforms": [
+    {
+      "phase": "input",
+      "name": "InputTransform",
+      "modifiers": [
+        {
+          "name": "Input Mod A",
+          "elements": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ]
+        },
+        {
+          "name": "Input Mod B",
+          "elements": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "name": "Input Mod C",
+          "elements": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "identity",
+      "name": "IdentityTransform",
+      "modifiers": [
+        {
+          "name": "Identity Mod A",
+          "elements": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ]
+        },
+        {
+          "name": "Identity Mod B",
+          "elements": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "name": "Identity Mod C",
+          "elements": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "inception",
+      "name": "InceptionTransform",
+      "modifiers": [
+        {
+          "name": "Inception Mod A",
+          "elements": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ]
+        },
+        {
+          "name": "Inception Mod B",
+          "elements": [
+            "B1",
+            "B2",
+            "B3",
+            "B4",
+            "B5",
+            "B6",
+            "B7"
+          ]
+        },
+        {
+          "name": "Inception Mod C",
+          "elements": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5",
+            "C6",
+            "C7"
+          ]
+        }
+      ]
+    }
+  ]
+}

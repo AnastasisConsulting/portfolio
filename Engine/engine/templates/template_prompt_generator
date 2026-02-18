@@ -1,0 +1,70 @@
+# prompt_combiner.py
+import random
+import os
+
+# NOTE: You must paste all 343 sentences from Part 1 into these lists.
+# I have included only a few examples here for readability.
+WORLD_STATE_SENTENCES = [
+    "The current geopolitical landscape and its defining traits; The key actors (states, coalitions, corporations, movements); Macro forces moving the board (tech, climate, demography, finance).",
+    "Borders, blocs, and institutions that shape the map; Organization/command structures and capability stacks; Vectors and gradients (rates, corridors, chokepoints, supply chains).",
+    "How power flows: governance, trade, conflict, and culture; What each faction does to project influence or survive; Mechanisms translating force into outcomes (policy, markets, war).",
+    # ... PASTE ALL 343 WORLD STATE SENTENCES HERE ...
+]
+
+CHARACTER_SENTENCES = [
+    "Protagonist identity and core trait set; Key supporting characters and foils; Ambient personalities populating the world.",
+    "Role, archetype, capabilities, and limitations; Their roles, domains of competence, quirks; Types, professions, micro-cultures, and patterns.",
+    "What they do in the world; signature actions and skills; How they enable/impede the protagonist; Services, obstacles, and color they provide.",
+    # ... PASTE ALL 343 CHARACTER SENTENCES HERE ...
+]
+
+STORY_SENTENCES = [
+    "The premise and initial condition; The central struggle crystallized; The decisive break and new equilibrium.",
+    "Exposition structure; viewpoint; scene scaffolding; Escalation pattern; midpoint reversals; subplots; Climax mechanics and denouement cadence.",
+    "What kicks the motion: inciting beat and early tactics; Trials, schemes, and counters; resource exchanges; Final actions and consequences; debts settled.",
+    # ... PASTE ALL 343 STORY SENTENCES HERE ...
+]
+
+
+def generate_prompts(num_prompts: int = 2500) -> list[str]:
+    """Generates a specified number of unique, one-sentence prompts."""
+    
+    print(f"Generating {num_prompts} unique prompts...")
+    unique_prompts = set()
+
+    # The total number of possibilities is 343*343*343, so getting 2500 unique is easy.
+    if num_prompts > len(WORLD_STATE_SENTENCES) * len(CHARACTER_SENTENCES) * len(STORY_SENTENCES):
+        raise ValueError("Cannot generate more unique prompts than there are possible combinations.")
+
+    while len(unique_prompts) < num_prompts:
+        world = random.choice(WORLD_STATE_SENTENCES)
+        char = random.choice(CHARACTER_SENTENCES)
+        story = random.choice(STORY_SENTENCES)
+
+        # Combine the three parts into a single, cohesive prompt sentence
+        full_prompt = (
+            f"In a world where {world}, a hero's journey unfolds, "
+            f"focusing on {char}, all driven by the narrative that {story}"
+        )
+        
+        unique_prompts.add(full_prompt)
+
+    print("Prompt generation complete.")
+    return list(unique_prompts)
+
+if __name__ == "__main__":
+    PROMPTS_TO_GENERATE = 2500
+    OUTPUT_FILENAME = "one_sentence_prompts.txt"
+    
+    # Ensure the lists are not empty before proceeding
+    if not all([WORLD_STATE_SENTENCES, CHARACTER_SENTENCES, STORY_SENTENCES]):
+        print("Error: Please paste the full sentence lists into the script.")
+    else:
+        prompts = generate_prompts(PROMPTS_TO_GENERATE)
+        try:
+            with open(OUTPUT_FILENAME, "w", encoding="utf-8") as f:
+                for line in prompts:
+                    f.write(line + "\n")
+            print(f"Successfully saved {len(prompts)} unique prompts to '{os.path.abspath(OUTPUT_FILENAME)}'")
+        except IOError as e:
+            print(f"Error: Could not write to file {OUTPUT_FILENAME}. Reason: {e}")

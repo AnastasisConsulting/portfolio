@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[WIP] G-YNTHETIC ENGINE // FUNCTIONAL SPECS</title>
+    <title>G-YNTHETIC ENGINE // PRIOR ART DISCLOSURE</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +71,8 @@
 </head>
 
 <body>
-    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="wip-banner" style="background: var(--accent-cyan); color: #000; font-weight: bold;">[!] PUBLIC
+        DISCLOSURE // DEFENSIBLE PRIOR ART // FULL ARCHITECTURAL UNSEAL</div>
     <div class="container spec-container reveal active">
         <header style="margin-bottom: 4rem;">
             <div
@@ -104,6 +105,18 @@
                 <div class="arc-card"><span class="arc-label">06. RELATION</span>Networked Dependencies</div>
                 <div class="arc-card"><span class="arc-label">07. VALUE</span>Priority & Ethical Weight</div>
             </div>
+            <div class="code-block" style="border-top: 1px solid var(--accent-cyan);">
+                // HIGH-DENSITY DECOMPOSITION LOGIC
+                // --------------------------------
+                SYSTEM_PROMPT = """
+                Extract 7 canonical rhetorical arcs:
+                - Essence, Form, Action, Frame, Intent, Relation, Value
+                Respond only in valid JSON.
+                """
+                def decompose_prompt(user_input):
+                # Logic to collapse token window into 7-tier stack
+                return openai.ChatCompletion.create(messages=[{"role":"system", "content":SYSTEM_PROMPT}, ...])
+            </div>
         </section>
 
         <section>
@@ -120,8 +133,17 @@
                 // PHASE 2: INCEPTION_LAYER (Vector Injection)
                 // PHASE 3: EXECUTION_GRID (Recursive Output)
 
-                [REDACTED] // PROPRIETARY LOGIC CONCEALED
-                // SEE: ARCHITECTURE_SPEC_V7.2 FOR AUTHENTICATED ACCESS
+                def process_triad(self, phase_index: int, arc_data: Dict[str, dict]):
+                # CANONICAL TRIADIC PROCESSING
+                for phase_index, phase_name in enumerate(MACRO_PHASES):
+                processor = PhaseProcessor(llm_interface, modifier_matrix, user_input)
+                results = processor.process(phase_index, arc_data)
+                all_phase_results[phase_name] = results
+
+                def evaluate_permutations(self, triad: Dict[str, Dict]):
+                # DEFENSIBLE PRIOR ART: ROLE MAPPING
+                role_perms = list(itertools.permutations(["Risk", "Reward", "Relation"]))
+                # ... scoring logic for all 6 permutations ...
             </div>
         </section>
 
@@ -138,14 +160,19 @@
                 // PROCESS: Cosine_Similarity_Matrix * Weighting_Bias
                 // OUTPUT: Relevance_Score [-3.0 to +3.0]
 
-                [REDACTED] // PROPRIETARY LOGIC CONCEALED
+                def score_relevance(self, arc_text: str, template_text: str) -> float:
+                # COSINE SIMILARITY SCORING VIA TPU
+                embeddings = self.coral_interface.embed([arc_text, template_text])
+                dot_product = np.dot(embeddings[0], embeddings[1])
+                norm = np.linalg.norm(embeddings[0]) * np.linalg.norm(embeddings[1])
+                return (dot_product / norm) * 3.0
             </div>
         </section>
 
         <footer style="margin-top: 6rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
             <p style="font-size: 0.7rem; color: var(--text-dim);">SOURCE: DOC_SITE/DOMAIN-AGNOSTIC/ENGINE.PY</p>
-            <p style="font-size: 0.7rem; color: var(--accent-cyan); margin-top: 0.5rem;">// STRATEGIC INFRASTRUCTURE -
-                DO NOT DISTRIBUTE</p>
+            <p style="font-size: 0.7rem; color: var(--accent-cyan); margin-top: 0.5rem;">// PUBLIC DISCLOSURE:
+                DEFENSIBLE PRIOR ART AS OF FEB 2026</p>
         </footer>
     </div>
 </body>

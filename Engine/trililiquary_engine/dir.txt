@@ -1,0 +1,222 @@
+notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$  tree
+.
+├── BU
+│   └── ui
+│       ├── Dashboard.py
+│       ├── Dashboard.ui
+│       ├── LLM_Config.py
+│       ├── LLM_Config.ui
+│       ├── Trace_Audits.py
+│       ├── Trace_Audits.ui
+│       ├── Trililiquarium.ui
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── Dashboard.cpython-313.pyc
+│       │   ├── __init__.cpython-313.pyc
+│       │   ├── enter_key_filter.cpython-313.pyc
+│       │   ├── newEngine.cpython-313.pyc
+│       │   ├── template_editor.cpython-313.pyc
+│       │   └── template_editor_controller.cpython-313.pyc
+│       ├── template_editor.py
+│       ├── template_editor.ui
+│       ├── trililiquarium.py
+│       └── untitled.ui
+├── LLM_Config_launcher.py
+├── __pycache__
+│   ├── LLM_Config_launcher.cpython-311.pyc
+│   ├── LLM_Config_launcher.cpython-312.pyc
+│   ├── LLM_Config_launcher.cpython-313.pyc
+│   ├── conductor_engine.cpython-312.pyc
+│   ├── page_switcher.cpython-311.pyc
+│   ├── page_switcher.cpython-312.pyc
+│   ├── page_switcher.cpython-313.pyc
+│   ├── triad_controller.cpython-311.pyc
+│   ├── triad_controller.cpython-312.pyc
+│   ├── triad_controller.cpython-313.pyc
+│   ├── trililiquarium_controller.cpython-311.pyc
+│   ├── trililiquarium_controller.cpython-312.pyc
+│   ├── trililiquarium_controller.cpython-313.pyc
+│   ├── trililiquarium_manager.cpython-311.pyc
+│   ├── trililiquarium_manager.cpython-312.pyc
+│   └── trililiquarium_manager.cpython-313.pyc
+├── assembly
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   └── triadic_output_builder.cpython-312.pyc
+│   └── triadic_output_builder.py
+├── backups
+├── conductor.py
+├── conductor_engine.py
+├── custom_widgets
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── clickable_image_label.cpython-311.pyc
+│   │   ├── clickable_image_label.cpython-312.pyc
+│   │   └── clickable_image_label.cpython-313.pyc
+│   └── clickable_image_label.py
+├── dashboard_controller.py
+├── decomposer_packager.py
+├── dir.txt
+├── dir_struct.py
+├── docs
+│   ├── The 7 Rhetorical Arcs.docx
+│   └── engine merchanics.odt
+├── intake
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── arc_struct.cpython-311.pyc
+│   │   ├── arc_struct.cpython-312.pyc
+│   │   └── arc_struct.cpython-313.pyc
+│   ├── arc_struct.py
+│   ├── decomposition_engine.py
+│   └── sanity_checker.py
+├── llm_helpers
+│   ├── __pycache__
+│   │   ├── openai_interface.cpython-311.pyc
+│   │   ├── openai_interface.cpython-312.pyc
+│   │   └── openai_interface.cpython-313.pyc
+│   └── openai_interface.py
+├── main.py
+├── output
+│   ├── __init__.py
+│   ├── output_llm_bridge.py
+│   └── synthesis_prompt.py
+├── page_switcher.py
+├── phases
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── identity_phase.cpython-311.pyc
+│   │   ├── identity_phase.cpython-312.pyc
+│   │   ├── identity_phase.cpython-313.pyc
+│   │   ├── inception_phase.cpython-311.pyc
+│   │   ├── inception_phase.cpython-312.pyc
+│   │   ├── inception_phase.cpython-313.pyc
+│   │   ├── input_phase.cpython-311.pyc
+│   │   ├── input_phase.cpython-312.pyc
+│   │   └── input_phase.cpython-313.pyc
+│   ├── identity_phase.py
+│   ├── inception_phase.py
+│   └── input_phase.py
+├── pipelines
+│   ├── __iniy__.py
+│   ├── __pycache__
+│   │   ├── modifier_matrix.cpython-311.pyc
+│   │   ├── modifier_matrix.cpython-312.pyc
+│   │   ├── modifier_matrix.cpython-313.pyc
+│   │   ├── transform_loader.cpython-311.pyc
+│   │   ├── transform_loader.cpython-312.pyc
+│   │   └── transform_loader.cpython-313.pyc
+│   ├── modifier_matrix.py
+│   ├── pipeline_rank_controller.py
+│   ├── transform_loader.py
+│   └── triad_assembler.py
+├── saves
+│   └── test.json
+├── secrets
+│   ├── composer.env
+│   ├── conductor.env
+│   └── decomposer.env
+├── section 2 notes.odt
+├── synthesis_engine.py
+├── temp
+│   ├── business_template.json
+│   ├── default_transform_template.json
+│   ├── energetic_architecture
+│   ├── gaming_template.json
+│   ├── military_template.json
+│   ├── structured_transforms.json
+│   ├── test_modc_template.json
+│   ├── world_builder.json
+│   └── world_categories_template.json
+├── templates
+│   ├── hq_testing
+│   │   ├── high_quality_test_dataset.json
+│   │   ├── identity_phase
+│   │   │   ├── description.txt
+│   │   │   └── image.png
+│   │   ├── inception_phase
+│   │   │   ├── description.txt
+│   │   │   └── image.png
+│   │   └── input_phase
+│   │       ├── description.txt
+│   │       └── image.png
+│   ├── identity_phase
+│   │   ├── description.txt
+│   │   └── image.png
+│   ├── inception_phase
+│   │   ├── description.txt
+│   │   └── image.png
+│   ├── input_phase
+│   │   ├── description.txt
+│   │   └── image.png
+│   ├── test_dataset
+│   │   ├── identity_phase
+│   │   │   ├── description.txt
+│   │   │   ├── image.png
+│   │   │   └── landscape_Mapping.txt
+│   │   ├── images
+│   │   ├── inception_phase
+│   │   │   ├── Mythic Architectures.txt
+│   │   │   ├── description.txt
+│   │   │   └── image.png
+│   │   ├── input_phase
+│   │   │   ├── Cultural Encoding.txt
+│   │   │   ├── description.txt
+│   │   │   └── image.png
+│   │   └── working_transform_template.json
+│   └── user.json
+├── transforms
+│   └── default_transform_template.json
+├── triad_controller.py
+├── trililiquarium_controller.py
+├── trililiquarium_manager.py
+├── ui
+│   ├── __pycache__
+│   │   ├── enter_key_filter.cpython-311.pyc
+│   │   ├── enter_key_filter.cpython-312.pyc
+│   │   ├── enter_key_filter.cpython-313.pyc
+│   │   ├── newEngine.cpython-311.pyc
+│   │   ├── newEngine.cpython-312.pyc
+│   │   ├── newEngine.cpython-313.pyc
+│   │   ├── template_editor_controller.cpython-311.pyc
+│   │   ├── template_editor_controller.cpython-312.pyc
+│   │   └── template_editor_controller.cpython-313.pyc
+│   ├── assistant_creator.py
+│   ├── bg.png
+│   ├── composer.py
+│   ├── composer.ui
+│   ├── composerWindow.py
+│   ├── conducterWindow.py
+│   ├── conductor.py
+│   ├── conductor.ui
+│   ├── decomposer.py
+│   ├── decomposer.ui
+│   ├── decomposerWindow.py
+│   ├── enter_key_filter.py
+│   ├── idiot_light_controller.py
+│   ├── newEngine.py
+│   ├── newEngine.ui
+│   ├── submitForm.ui
+│   ├── template_editor_controller.py
+│   └── untitled.ui
+└── utils
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-312.pyc
+    │   └── env_writer.cpython-312.pyc
+    ├── env_writer.py
+    └── resize_images.py
+
+41 directories, 176 files
+notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$ 
+

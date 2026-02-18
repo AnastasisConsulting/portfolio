@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Conductor</class>
+ <widget class="QWidget" name="Conductor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Conductor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1e1e1e;
+    color: #d0d0d0;
+    font-family: &quot;JetBrains Mono&quot;, &quot;Fira Code&quot;, &quot;Consolas&quot;, monospace;
+    font-size: 12pt;
+    border: none;
+}
+
+QGroupBox {
+    border: 1px solid #444;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 3px;
+    font-weight: bold;
+    color: #89f7fe;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 2px;
+}
+
+QFrame {
+    border: 1px solid #333;
+    background-color: #121212;
+    border-radius: 2px;
+}
+
+QLabel {
+    color: #a0a0a0;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #89f7fe;
+}
+
+QComboBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QComboBox:hover {
+    border: 1px solid #89f7fe;
+}
+
+QSpinBox, QDoubleSpinBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button,
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background-color: #2e2e2e;
+    border: none;
+}
+
+QPushButton {
+    background-color: #2d2d2d;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+    border: 1px solid #89f7fe;
+    color: #89f7fe;
+}
+
+QPushButton:pressed {
+    background-color: #1b1b1b;
+    border: 1px solid #f50;
+    color: #f50;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background-color: #1e1e1e;
+    border: none;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle {
+    background: #333;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:hover {
+    background: #89f7fe;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPushButton" name="conductorAPI_SaveBtn">
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="outputLLM_API_KeyLabel">
+     <property name="text">
+      <string>API_Key</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="outputLLM_API_KeyLE"/>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="nameLabel">
+          <property name="text">
+           <string>Agent Name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="agentNameLE"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="agentID_Label">
+          <property name="text">
+           <string>Agent ID</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="agentID_LE"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="promptLabel">
+        <property name="text">
+         <string>System Prompt</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="systemPromptTE"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="cancelBtn">
+          <property name="text">
+           <string>Cancel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="updateBtn">
+          <property name="text">
+           <string>Update</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

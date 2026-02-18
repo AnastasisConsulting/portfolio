@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[WIP] 7x7x7 HOLOGRAPHIC LATTICE // TECHNICAL SPECS</title>
+    <title>7x7x7 HOLOGRAPHIC LATTICE // PRIOR ART DISCLOSURE</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,7 +66,8 @@
 </head>
 
 <body>
-    <div class="wip-banner">[!] WORK IN PROGRESS // EXPERIMENTAL PROTOTYPE ACTIVE // RESEARCH DATA SUBJECT TO CHANGE</div>
+    <div class="wip-banner" style="background: var(--accent-cyan); color: #000; font-weight: bold;">[!] PUBLIC
+        DISCLOSURE // DEFENSIBLE PRIOR ART // FULL ARCHITECTURAL UNSEAL</div>
     <div class="container reveal active">
         <header style="margin-bottom: 4rem;">
             <div
@@ -96,7 +97,12 @@
                 dx, dy, dz = enc7(x), enc7(y), enc7(z)
                 r = max(abs(x), abs(y), abs(z)) # Calculate Shell Depth
                 return f"T{t}-D{dx}{dy}{dz}-S{r}"
-            </div>
+
+                def neighbors6(node_id: int) -> List[int]:
+                # SPATIAL ADJACENCY LOGIC
+                t, x, y, z = parts_from_node_id(node_id)
+                for xx, yy, zz in ((x-1,y,z),(x+1,y,z),...):
+                if -3 <= xx <=3: res.append(node_id_from_parts(t, enc7(xx), ...)) </div>
         </section>
 
         <div class="lattice-viz">
@@ -125,15 +131,16 @@
                     style="list-style: none; padding: 0; font-family: var(--font-mono); font-size: 0.8rem; line-height: 2;">
                     <li>// NODE_ID: T0-D333-S0 (Absolute Origin)</li>
                     <li>// PERSISTENCE: Recursive write-back enabled</li>
-                    <li>// TAGGING: Auto-semantic categorization</li>
+                    <li>// RECALL: def recall(self, key, limit=3): ...</li>
+                    <li>// TAGGING: Auto-semantic categorization (y- face)</li>
                 </ul>
             </div>
         </section>
 
         <footer style="margin-top: 6rem; border-top: 1px solid var(--border-color); padding-top: 4rem;">
             <p style="font-size: 0.7rem; color: var(--text-dim);">SOURCE: DOC_SITE/DOMAIN-AGNOSTIC/MEMORY.PY</p>
-            <p style="font-size: 0.7rem; color: var(--accent-cyan); margin-top: 0.5rem;">// STRATEGIC ASSET - PATENT
-                PENDING</p>
+            <p style="font-size: 0.7rem; color: var(--accent-cyan); margin-top: 0.5rem;">// PUBLIC DISCLOSURE:
+                DEFENSIBLE PRIOR ART AS OF FEB 2026</p>
         </footer>
     </div>
 </body>

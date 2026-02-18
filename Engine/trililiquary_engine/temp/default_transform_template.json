@@ -1,0 +1,117 @@
+{
+  "transforms": [
+    {
+      "name": "Anomalous",
+      "modifiers": [
+        {
+          "name": "1. Environment",
+          "elements": [
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "2. Geography & Boundaries",
+          "elements": [
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "3. Power Structures",
+          "elements": [
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "4. Social Order",
+          "elements": [
+            "Class, caste, kinship, community, faction dynamics, and societal organization.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "5. History & Myth",
+          "elements": [
+            "Origins, wars, lost civilizations, timeline logic, and collective memory or belief.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "6. Technology & Tools",
+          "elements": [
+            "Level and type of technology: analog, futuristic, arcane, biotech, etc.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "7. Belief & Knowledge Systems",
+          "elements": [
+            "Religion, science, education, ideology, and pathways to truth.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "8. Language & Symbol",
+          "elements": [
+            "Forms of communication, sacred symbols, alphabets, or coded systems of meaning.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "name": "9. Physics & Laws of Reality",
+          "elements": [
+            "Fundamental rules of matter, time, energy, and metaphysics \u2014 or their manipulation.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

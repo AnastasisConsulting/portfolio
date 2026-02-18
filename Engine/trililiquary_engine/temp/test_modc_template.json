@@ -1,0 +1,127 @@
+{
+  "transforms": [
+    {
+      "name": "Input Mapping",
+      "modifiers": [
+        {
+          "name": "Mod A - Spark Grid",
+          "elements": [
+            "shard",
+            "flux",
+            "pulse",
+            "arc",
+            "signal",
+            "wave",
+            "glyph"
+          ]
+        },
+        {
+          "name": "Mod B - Tone Gate",
+          "elements": [
+            "wave",
+            "echo",
+            "signal",
+            "cycle",
+            "map",
+            "shard",
+            "pulse"
+          ]
+        },
+        {
+          "name": "Mod C - Myth Kernel",
+          "elements": [
+            "node",
+            "scale",
+            "pulse",
+            "thread",
+            "origin",
+            "glyph",
+            "signal"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Identity Channels",
+      "modifiers": [
+        {
+          "name": "Mod A - Signal Web",
+          "elements": [
+            "glyph",
+            "signal",
+            "arc",
+            "origin",
+            "wave",
+            "cycle",
+            "scale"
+          ]
+        },
+        {
+          "name": "Mod B - Field Vault",
+          "elements": [
+            "echo",
+            "locus",
+            "shard",
+            "node",
+            "pulse",
+            "signal",
+            "thread"
+          ]
+        },
+        {
+          "name": "Mod C - Echo Bloom",
+          "elements": [
+            "map",
+            "thread",
+            "locus",
+            "cycle",
+            "flux",
+            "signal",
+            "shard"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inception Weave",
+      "modifiers": [
+        {
+          "name": "Mod A - Thought Frame",
+          "elements": [
+            "glyph",
+            "signal",
+            "map",
+            "pulse",
+            "echo",
+            "flux",
+            "arc"
+          ]
+        },
+        {
+          "name": "Mod B - Glyph Forge",
+          "elements": [
+            "pulse",
+            "arc",
+            "signal",
+            "echo",
+            "wave",
+            "scale",
+            "shard"
+          ]
+        },
+        {
+          "name": "Mod C - Pattern Bloom",
+          "elements": [
+            "shard",
+            "wave",
+            "echo",
+            "flux",
+            "map",
+            "arc",
+            "locus"
+          ]
+        }
+      ]
+    }
+  ]
+}

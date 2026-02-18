@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LLM_ConfigurationWidget</class>
+ <widget class="QWidget" name="LLM_ConfigurationWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>797</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LLM Configuration</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1e1e1e;
+    color: #d0d0d0;
+    font-family: &quot;JetBrains Mono&quot;, &quot;Fira Code&quot;, &quot;Consolas&quot;, monospace;
+    font-size: 12pt;
+    border: none;
+}
+
+QGroupBox {
+    border: 1px solid #444;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 3px;
+    font-weight: bold;
+    color: #89f7fe;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 2px;
+}
+
+QFrame {
+    border: 1px solid #333;
+    background-color: #121212;
+    border-radius: 2px;
+}
+
+QLabel {
+    color: #a0a0a0;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #89f7fe;
+}
+
+QComboBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QComboBox:hover {
+    border: 1px solid #89f7fe;
+}
+
+QSpinBox, QDoubleSpinBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button,
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background-color: #2e2e2e;
+    border: none;
+}
+
+QPushButton {
+    background-color: #2d2d2d;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+    border: 1px solid #89f7fe;
+    color: #89f7fe;
+}
+
+QPushButton:pressed {
+    background-color: #1b1b1b;
+    border: 1px solid #f50;
+    color: #f50;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background-color: #1e1e1e;
+    border: none;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle {
+    background: #333;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:hover {
+    background: #89f7fe;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,1">
+   <item>
+    <widget class="QFrame" name="inputLLM_Frame">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="inputLLM_GB">
+        <property name="title">
+         <string>Decomposer</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QWidget" name="inputLLM_OverlayWidget" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,60,30,0">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QPushButton" name="loadDatasetBtn">
+                <property name="text">
+                 <string>Load Dataset</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="createAgent_DecomposerBtn">
+                <property name="text">
+                 <string>Create Agent</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="inputLLM_ResponseWindowFrame">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QTextEdit" name="inputLLM_ResponseWindowTE"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="inputLLM_UserInputFrame">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <widget class="QTextEdit" name="inputLLM_UserInputTE"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="mainMenuBtn">
+                <property name="text">
+                 <string>Main Menu</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="inputLLM_StopBtn">
+                <property name="text">
+                 <string>Stop</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="inputLLM_SendBtn">
+                <property name="text">
+                 <string>SEND</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="controllerFrame">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QFrame" name="inputLLM_ControllerFrame">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QGroupBox" name="inputLLM_ControllerGB">
+           <property name="title">
+            <string>Input Controls</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QLabel" name="inputLLM_ModelLabel">
+              <property name="text">
+               <string>Input Model</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="inputLLM_ModelCB">
+              <item>
+               <property name="text">
+                <string>GPT-4o</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Claude 3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Command R+</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gemini</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mistral</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mistral 7B</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>LLaMA 2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>GPT-3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Nous Hermes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mythomax</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="inputOpenAI_GB">
+              <property name="title">
+               <string>OpenAI </string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <item>
+                <widget class="QLabel" name="temperatureLabel">
+                 <property name="text">
+                  <string>Temperature</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="inputLLM_TemperatureSB">
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::UpDownArrows</enum>
+                 </property>
+                 <property name="decimals">
+                  <number>1</number>
+                 </property>
+                 <property name="minimum">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>0.500000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="inputLLM_TemperatureLabel">
+                 <property name="text">
+                  <string>Presence Penalty</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="inputLLM_PresencePenaltySB"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="inputLLM_FrequencyPenaltyLabel">
+                 <property name="text">
+                  <string>Frequency Penalty</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="inputLLM_FrequencyPenalySB"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="inputLLM_TopPLabel">
+                 <property name="text">
+                  <string>Top-P</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="inputLLM_TopKSB">
+                 <property name="decimals">
+                  <number>1</number>
+                 </property>
+                 <property name="minimum">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>0.500000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="inputLLM_TopKLabel">
+              <property name="text">
+               <string>Top-K</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="inputLLM_TopKSB_3">
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::UpDownArrows</enum>
+              </property>
+              <property name="minimum">
+               <number>20</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>60</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="inputLLM_MinTokensLabel">
+              <property name="text">
+               <string>Min. Tokens</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputLLM_MinTokensLE"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="inputLLM_MaxTokensLabel">
+              <property name="text">
+               <string>Max. Tokens</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputLLM_MaxTokenLE"/>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="inputLLM_PingBtn">
+              <property name="text">
+               <string>Input Ping</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="outputLLM_ControllerFrame">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QGroupBox" name="outputLLM_ControllerGB">
+           <property name="title">
+            <string>Output Controls</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="QLabel" name="outputLLM_ModelLabel">
+              <property name="text">
+               <string>Output Model</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="outputModelCB">
+              <item>
+               <property name="text">
+                <string>GPT-4o</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Claude 3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Command R+</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Gemini</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mistral</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mistral 7B</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>LLaMA 2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>GPT-3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Nous Hermes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Mythomax</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="outputLLM_OpenAI_GB">
+              <property name="title">
+               <string>OpenAI </string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_16">
+               <item>
+                <widget class="QLabel" name="outputLLM_TemperatureLabel">
+                 <property name="text">
+                  <string>Temperature</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="outputLLM_TemperatureSB"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="outputLLM_PresencePenaltyLabel">
+                 <property name="text">
+                  <string>Presence Penalty</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="outputLLM_PresencePenaltySB"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="outputLLM_FrequencPenaltyLabel">
+                 <property name="text">
+                  <string>Frequency Penalty</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QSpinBox" name="outputLLM_FrequencyPenaltySB"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="outputLLM_TopPLabel">
+                 <property name="text">
+                  <string>Top-P</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDoubleSpinBox" name="outputLLM_TopPSB">
+                 <property name="decimals">
+                  <number>1</number>
+                 </property>
+                 <property name="minimum">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>0.500000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="outputLL_TopKLabel">
+              <property name="text">
+               <string>Top-K</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="outputLLM_TopKSB">
+              <property name="minimum">
+               <number>20</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+              <property name="value">
+               <number>60</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="outputLLM_MinTokensLabel_2">
+              <property name="text">
+               <string>Min. Tokens</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="outputLLM_MinTkensLE_2"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="outputLLM_MaxTokensLabel_2">
+              <property name="text">
+               <string>Max. Tokens</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="outputLLM_MaxTokenLE_2"/>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="outputLLM_PingBtn">
+              <property name="text">
+               <string>Output Ping</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="outputLLM_Frame">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QGroupBox" name="outputLLM_GB">
+        <property name="title">
+         <string>Composer</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QWidget" name="outputLL_Widget" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_8" stretch="0,60,30">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QPushButton" name="saveOutputBtn">
+                <property name="text">
+                 <string>Save Output</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="createAgent_ComposerBtn">
+                <property name="text">
+                 <string>Create Agent</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="outputLLM_ResponseWindowFrame">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <widget class="QTextEdit" name="outputLLM_ResponseWindowTE"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="outputLLM_UserInputFrae">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_14">
+               <item>
+                <widget class="QTextEdit" name="outputLLM_UserInputTE"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="dashboardBtn">
+             <property name="text">
+              <string>Dashboard</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="outputLL_StopBtn">
+             <property name="text">
+              <string>Stop</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="outputLLM_SendBtn">
+             <property name="text">
+              <string>SEND</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

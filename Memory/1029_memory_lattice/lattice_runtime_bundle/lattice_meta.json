@@ -1,0 +1,11 @@
+{
+  "transform_count": 3,
+  "ticks_per_axis": 7,
+  "coords_range": [
+    -3,
+    3
+  ],
+  "total_nodes": 1029,
+  "address_format": "T{t}-D{dx}{dy}{dz}-S{r}",
+  "node_id_formula": "node_id = t*343 + (dx*49 + dy*7 + dz)"
+}

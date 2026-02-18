@@ -1,0 +1,139 @@
+{
+  "Transforms": [
+    {
+      "name": "Anomalous",
+      "phase": "Input",
+      "modifiers": [
+        {
+          "name": "1. Environment",
+          "pillar": "Input",
+          "elements": [
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies."
+          ]
+        },
+        {
+          "name": "2. Geography & Boundaries",
+          "pillar": "Identity",
+          "elements": [
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world."
+          ]
+        },
+        {
+          "name": "3. Power Structures",
+          "pillar": "Inception",
+          "elements": [
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hybrid",
+      "phase": "Identity",
+      "modifiers": [
+        {
+          "name": "1. Environment",
+          "pillar": "Input",
+          "elements": [
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies."
+          ]
+        },
+        {
+          "name": "2. Geography & Boundaries",
+          "pillar": "Identity",
+          "elements": [
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world."
+          ]
+        },
+        {
+          "name": "3. Power Structures",
+          "pillar": "Inception",
+          "elements": [
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grounded",
+      "phase": "Inception",
+      "modifiers": [
+        {
+          "name": "1. Environment",
+          "pillar": "Input",
+          "elements": [
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies.",
+            "Terrain, climate, weather systems, flora/fauna, and ecological anomalies."
+          ]
+        },
+        {
+          "name": "2. Geography & Boundaries",
+          "pillar": "Identity",
+          "elements": [
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world.",
+            "Spatial layout, zones, travel limitations, and structural logic of the world."
+          ]
+        },
+        {
+          "name": "3. Power Structures",
+          "pillar": "Inception",
+          "elements": [
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic.",
+            "Systems of governance, control, and authority \u2014 political, corporate, spiritual, algorithmic."
+          ]
+        }
+      ]
+    }
+  ]
+}

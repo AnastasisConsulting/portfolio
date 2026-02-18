@@ -1,0 +1,130 @@
+{
+  "transforms": [
+    {
+      "phase": "input",
+      "name": "Chronoscape Mapping",
+      "modifiers": [
+        {
+          "name": "Structural Echoes",
+          "elements": [
+            "origin",
+            "node",
+            "scale",
+            "map",
+            "glyph",
+            "flux",
+            "locus"
+          ]
+        },
+        {
+          "name": "Temporal Lens",
+          "elements": [
+            "pattern",
+            "echo",
+            "thread",
+            "resonance",
+            "scale",
+            "origin",
+            "flux"
+          ]
+        },
+        {
+          "name": "placeholder",
+          "elements": [
+            "origin",
+            "map",
+            "thread",
+            "signal",
+            "shard",
+            "node",
+            "echo"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "identity",
+      "name": "Cultural Encoding",
+      "modifiers": [
+        {
+          "name": "Cognitive Mesh",
+          "elements": [
+            "flux",
+            "arc",
+            "origin",
+            "glyph",
+            "echo",
+            "scale",
+            "cycle"
+          ]
+        },
+        {
+          "name": "Memory Hubs",
+          "elements": [
+            "shard",
+            "glyph",
+            "arc",
+            "resonance",
+            "origin",
+            "flux",
+            "map"
+          ]
+        },
+        {
+          "name": "placeholder",
+          "elements": [
+            "arc",
+            "origin",
+            "shard",
+            "echo",
+            "map",
+            "flux",
+            "glyph"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "inception",
+      "name": "Energetic Architectures",
+      "modifiers": [
+        {
+          "name": "testing",
+          "elements": [
+            "echo",
+            "pattern",
+            "thread",
+            "glyph",
+            "shard",
+            "map",
+            "node"
+          ]
+        },
+        {
+          "name": "Territory Code",
+          "elements": [
+            "arc",
+            "map",
+            "echo",
+            "locus",
+            "cycle",
+            "pattern",
+            "origin"
+          ]
+        },
+        {
+          "name": "placeholder",
+          "elements": [
+            "signal",
+            "map",
+            "testing",
+            "arc",
+            "pattern",
+            "cycle",
+            "thread"
+          ]
+        }
+      ]
+    }
+  ]
+}

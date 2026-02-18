@@ -1,0 +1,89 @@
+{
+  "Conscious": {
+    "Risk": {
+      "1. Instability": "Market volatility, structural change, or shifting client bases",
+      "2. Impact": "Operational failures, financial loss, or brand damage",
+      "3. Containment": "Limited mobility due to regulations, contracts, or resource caps",
+      "4. Deprivation": "Lack of capital, labor, supply, or data",
+      "5. Proximity": "Competitive encroachment or economic/geopolitical proximity threats",
+      "6. Obstruction": "Internal bottlenecks, bureaucracy, or misaligned incentives",
+      "7. Sensory Overload": "Information saturation, alerts, or too many KPIs at once"
+    },
+    "Relation": {
+      "1. Communication": "Interdepartmental messaging, stakeholder briefings, brand tone",
+      "2. Trust": "Partnership agreements, leadership confidence, public trust",
+      "3. Disclosure": "Investor updates, transparency obligations, PR management",
+      "4. Reciprocity": "Vendor-client feedback loops, B2B exchanges",
+      "5. Recognition": "Performance reviews, awards, media coverage",
+      "6. Cooperation": "Cross-functional teams, co-branded efforts",
+      "7. Boundaries": "Clear scopes of work, IP protection, legal frameworks"
+    },
+    "Reward": {
+      "1. Gain": "Revenue, profit, ROI, or customer base expansion",
+      "2. Clarity": "Strategic vision, dashboards, forecasting insights",
+      "3. Recognition": "Market visibility, press, investor applause",
+      "4. Mastery": "Operational efficiency, best-in-class execution",
+      "5. Access": "Licenses, new markets, client networks",
+      "6. Alignment": "Mission/brand coherence across actions and values",
+      "7. Progress": "Milestones achieved, scaling, expansion success"
+    }
+  },
+  "Sub-Conscious": {
+    "Risk": {
+      "1. Abandonment": "Fear of irrelevance, layoffs, or lost loyalty",
+      "2. Entrapment": "Locked into failing contracts or dated models",
+      "3. Predation": "Being quietly outmaneuvered by faster competitors",
+      "4. Imbalance": "Workforce burnout, culture mismatch, misalignment",
+      "5. Isolation": "Siloed teams, communication gaps, internal cold wars",
+      "6. Repetition": "Endless loops of non-innovative output",
+      "7. Disintegration": "Collapse of brand identity or values over time"
+    },
+    "Relation": {
+      "1. Attachment": "Sentimental ties to legacy systems, people, or routines",
+      "2. Mirroring": "Adopting culture/identity from market or competitors",
+      "3. Enmeshment": "Blurred lines between leader and company identity",
+      "4. Resonance": "Emotional cues that influence internal alignment",
+      "5. Abandonment Sensitivity": "Overreacting to churn or negative feedback",
+      "6. Unspoken Expectation": "Cultural inertia, unvoiced norms or politics",
+      "7. Energetic Memory": "Historic traumas \u2014 past crashes, scandals, failures"
+    },
+    "Reward": {
+      "1. Safety": "Consistent revenue, brand protection, stakeholder calm",
+      "2. Belonging": "Strong team identity, inclusive culture, internal trust",
+      "3. Relief": "Resolved tension \u2014 lawsuits closed, pressure off",
+      "4. Soothing": "Crisis mitigation, stress relief strategies",
+      "5. Recognition (Unspoken)": "Silent nods of respect, earned influence",
+      "6. Continuity": "Unbroken tradition, culture, or leadership legacy",
+      "7. Permission": "Internal buy-in for bold actions or reinvention"
+    }
+  },
+  "Ego": {
+    "Risk": {
+      "1. Diminishment": "Losing title, authority, or influence in hierarchy",
+      "2. Disempowerment": "Being bypassed or made redundant by automation or politics",
+      "3. Exposure": "Public failure, scandal, or leadership error",
+      "4. Loss of Control": "Company direction shifts away from one\u2019s vision",
+      "5. Dependence": "Being propped up by others or seen as replaceable",
+      "6. Disapproval": "Board criticism, public backlash, stakeholder revolt",
+      "7. Contradiction": "Incongruent personal brand vs. organizational behavior"
+    },
+    "Relation": {
+      "1. Recognition": "Being spotlighted in reports, press, or keynote roles",
+      "2. Hierarchy": "Chains of command, board roles, prestige signaling",
+      "3. Influence": "Swaying company culture, investor mood, or strategy",
+      "4. Dependency": "Gatekeeping resources, holding approvals or access",
+      "5. Rivalry": "Executive competition, political maneuvering",
+      "6. Possession": "Treating projects, teams, or brand as extensions of self",
+      "7. Projection": "Blaming subordinates or rivals for internal conflict"
+    },
+    "Reward": {
+      "1. Dominance": "Controlling strategy, markets, or internal direction",
+      "2. Admiration": "Being publicly praised, awarded, or referenced",
+      "3. Influence": "Shaping industry discourse or investor focus",
+      "4. Legacy": "Founding narrative, named contributions, succession influence",
+      "5. Validation": "Echoes of praise, alignment with personal narrative",
+      "6. Autonomy": "Freedom to act without restriction or approval",
+      "7. Exclusivity": "Private equity access, boardroom leverage, elite inner circles"
+    }
+  }
+}

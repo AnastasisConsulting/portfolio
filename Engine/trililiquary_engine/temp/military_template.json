@@ -1,0 +1,89 @@
+{
+  "Conscious": {
+    "Risk": {
+      "1. Instability": "Unstable terrain, crumbling cover, unpredictable allies or enemies",
+      "2. Impact": "Direct injury, gunfire, explosives, kinetic trauma",
+      "3. Containment": "Being pinned, flanked, or cornered without exit",
+      "4. Deprivation": "Ammo shortage, medical supply loss, food/water scarcity",
+      "5. Proximity": "Close-quarters combat or risk of enemy breach",
+      "6. Obstruction": "Broken equipment, blocked routes, friendly fire lines",
+      "7. Sensory Overload": "Flashbangs, screaming, alarms, HUD saturation"
+    },
+    "Relation": {
+      "1. Communication": "Comms, hand signals, squad-level intel sharing",
+      "2. Trust": "Confidence in unit cohesion and chain of command",
+      "3. Disclosure": "Mission briefings, intelligence leaks, or misdirection",
+      "4. Reciprocity": "Covering fire, medical support, shared objectives",
+      "5. Recognition": "Medals, ranks, field promotions",
+      "6. Cooperation": "Fireteam tactics, synchronized breaching",
+      "7. Boundaries": "Rules of engagement, ROE zones, leadership hierarchy"
+    },
+    "Reward": {
+      "1. Gain": "Territory secured, mission success, gear acquisition",
+      "2. Clarity": "Confirmed objectives, intel gathered, situational awareness",
+      "3. Recognition": "Command praise, public honor, military distinction",
+      "4. Mastery": "Improved marksmanship, tactical fluency, mission adaptability",
+      "5. Access": "Advanced loadouts, airstrikes, recon tools",
+      "6. Alignment": "Mission congruence with values, protection of civilians or allies",
+      "7. Progress": "Advancement through campaign, leveling, or strategic goals"
+    }
+  },
+  "Sub-Conscious": {
+    "Risk": {
+      "1. Abandonment": "Being left behind in combat or forgotten by command",
+      "2. Entrapment": "Caught in kill zones, mines, or collapsing buildings",
+      "3. Predation": "Snipers, ambushes, unseen drones",
+      "4. Imbalance": "Feeling outgunned, outnumbered, or emotionally fatigued",
+      "5. Isolation": "Radio silence, separated from squad",
+      "6. Repetition": "Flashbacks, trauma loops, d\u00e9j\u00e0 vu scenarios",
+      "7. Disintegration": "Loss of self in chaos, breakdown of mental state"
+    },
+    "Relation": {
+      "1. Attachment": "Bonds with squadmates, commanders, or fallen comrades",
+      "2. Mirroring": "Absorbing unit morale, mimicry under stress",
+      "3. Enmeshment": "Losing self in role or identity of 'soldier'",
+      "4. Resonance": "Emotional sync with environment \u2014 fear, anger, resolve",
+      "5. Abandonment Sensitivity": "Heightened panic when separated from team",
+      "6. Unspoken Expectation": "Knowing what to do without orders",
+      "7. Energetic Memory": "Haunting sense of previous missions or kills"
+    },
+    "Reward": {
+      "1. Safety": "Extraction secured, enemy eliminated, base reinforced",
+      "2. Belonging": "Being part of the unit, understood without speaking",
+      "3. Relief": "Surviving an assault, finding cover, getting resupplied",
+      "4. Soothing": "Night watch calm, campfire talk, trusted rituals",
+      "5. Recognition (Unspoken)": "Silent nods, shared trauma, earned respect",
+      "6. Continuity": "Living to fight another day, identity as a soldier preserved",
+      "7. Permission": "Emotional release \u2014 to cry, rest, rage, or act"
+    }
+  },
+  "Ego": {
+    "Risk": {
+      "1. Diminishment": "Rank loss, dishonorable conduct, demotion",
+      "2. Disempowerment": "Ignored orders, sidelined in strategy",
+      "3. Exposure": "Cowardice revealed, failure captured on cam or log",
+      "4. Loss of Control": "Chaos outpacing planning, being overruled",
+      "5. Dependence": "Relying on weaker allies or foreign support",
+      "6. Disapproval": "Criticism from command or peers",
+      "7. Contradiction": "Orders violating personal code or image"
+    },
+    "Relation": {
+      "1. Recognition": "Public valorization, commendations, viral clips",
+      "2. Hierarchy": "Respect based on chain of command and authority",
+      "3. Influence": "Ability to direct action, sway battlefield decisions",
+      "4. Dependency": "Team leaning on player\u2019s leadership or kill count",
+      "5. Rivalry": "Kill count competition, leadership clashes",
+      "6. Possession": "Weapon personalization, call-sign branding, turf defense",
+      "7. Projection": "Blaming new recruits, foreign troops, 'the brass'"
+    },
+    "Reward": {
+      "1. Dominance": "Tactical superiority, killstreaks, decisive leadership",
+      "2. Admiration": "Respect from squad, stream audiences, and command",
+      "3. Influence": "Control over squad strategy or broader tactical picture",
+      "4. Legacy": "Campaign record, memorials, historical role",
+      "5. Validation": "Medals, XP streaks, killcam highlights",
+      "6. Autonomy": "Rogue ops, lone wolf play, rule-bending advantage",
+      "7. Exclusivity": "Access to elite missions, special gear, restricted zones"
+    }
+  }
+}

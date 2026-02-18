@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Audits</class>
+ <widget class="QWidget" name="Audits">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1226</width>
+    <height>785</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Audit</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1e1e1e;
+    color: #d0d0d0;
+    font-family: &quot;JetBrains Mono&quot;, &quot;Fira Code&quot;, &quot;Consolas&quot;, monospace;
+    font-size: 12pt;
+    border: none;
+}
+
+QGroupBox {
+    border: 1px solid #444;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 3px;
+    font-weight: bold;
+    color: #89f7fe;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 2px;
+}
+
+QFrame {
+    border: 1px solid #333;
+    background-color: #121212;
+    border-radius: 2px;
+}
+
+QLabel {
+    color: #a0a0a0;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #89f7fe;
+}
+
+QComboBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QComboBox:hover {
+    border: 1px solid #89f7fe;
+}
+
+QSpinBox, QDoubleSpinBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button,
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background-color: #2e2e2e;
+    border: none;
+}
+
+QPushButton {
+    background-color: #2d2d2d;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+    border: 1px solid #89f7fe;
+    color: #89f7fe;
+}
+
+QPushButton:pressed {
+    background-color: #1b1b1b;
+    border: 1px solid #f50;
+    color: #f50;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background-color: #1e1e1e;
+    border: none;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle {
+    background: #333;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:hover {
+    background: #89f7fe;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string>Engine</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="title">
+            <string>Intake Manifold</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_14">
+           <property name="title">
+            <string>Pipelines</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_15">
+           <property name="title">
+            <string>Output Funnel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>Arcs</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>Decomposition</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QGroupBox" name="groupBox_12">
+           <property name="title">
+            <string>Triadic Summation</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QGroupBox" name="groupBox_13">
+           <property name="title">
+            <string>Final Output</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="title">
+         <string>Triads</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QGroupBox" name="groupBox_19">
+           <property name="title">
+            <string>1rst Triadic Pairing</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_20">
+           <property name="title">
+            <string>2nd Triadic Pairing</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_21">
+           <property name="title">
+            <string>3rd Triadic Pairing</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Dataset</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="title">
+            <string>Transforms</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_10">
+           <property name="title">
+            <string>Modifiers</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_11">
+           <property name="title">
+            <string>Elements</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="title">
+         <string>Agents</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QGroupBox" name="groupBox_16">
+           <property name="title">
+            <string>Decomposer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_17">
+           <property name="title">
+            <string>Curator</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_18">
+           <property name="title">
+            <string>Composer</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="title">
+         <string>Telemetry</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QGroupBox" name="groupBox_22">
+           <property name="title">
+            <string>Checkpoint 1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_23">
+           <property name="title">
+            <string>Checkpoint 2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_24">
+           <property name="title">
+            <string>Checkpoint 3</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

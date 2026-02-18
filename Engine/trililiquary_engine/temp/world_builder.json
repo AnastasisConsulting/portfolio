@@ -1,0 +1,127 @@
+{
+  "transforms": [
+    {
+      "name": "Primordial Spark",
+      "modifiers": [
+        {
+          "name": "Signal Genesis",
+          "elements": [
+            "ignition of base impulse",
+            "first-form signal scaffolding",
+            "catalysis of emergent motion",
+            "birth-boundary registration",
+            "initialization of systemic flow",
+            "coherent pulse propagation",
+            "emergence of structural meaning"
+          ]
+        },
+        {
+          "name": "Origin Instability",
+          "elements": [
+            "unstable inception node",
+            "distortion in formative layers",
+            "erratic signal ignition",
+            "boundary slip uncertainty",
+            "loss of original coherence",
+            "origin conflict interference",
+            "hazard in conceptual launch"
+          ]
+        },
+        {
+          "name": "Foundational Patterning",
+          "elements": [
+            "latent architecture seed",
+            "proto-structural rhythm map",
+            "repetition-informed cascade",
+            "embedded field encoding",
+            "shaping of systemic logic",
+            "root-form loop harmonics",
+            "foundational pattern integrity"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mythic Substrate",
+      "modifiers": [
+        {
+          "name": "Symbolic Anchor",
+          "elements": [
+            "myth-seeded origin glyph",
+            "embedded archetype contour",
+            "cyclical return signal",
+            "bounded sacred enclosure",
+            "anchoring across traditions",
+            "ancestral lineage tether",
+            "cultural root-state coherence"
+          ]
+        },
+        {
+          "name": "Heroic Dissonance",
+          "elements": [
+            "unstable legacy resonance",
+            "narrative fracture echo",
+            "myth-clash behavioral feedback",
+            "paradox of origin disruption",
+            "challenge to inherited fate",
+            "divergence from tribal law",
+            "risk of identity breakdown"
+          ]
+        },
+        {
+          "name": "Sacred Resolution",
+          "elements": [
+            "revelation of core pattern",
+            "symbolic coherence pulse",
+            "healing mythos fusion",
+            "harmonic reconciliation field",
+            "emergence of sacred alignment",
+            "ritual unification gesture",
+            "integrity through ancestral synthesis"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Temporal Inversion",
+      "modifiers": [
+        {
+          "name": "Chrono Disruption",
+          "elements": [
+            "fracturing of linear sequence",
+            "spiraling timeline breach",
+            "reverse-trigger memory leak",
+            "paradox-tension compression",
+            "destabilization of future roots",
+            "inversion from prior paths",
+            "collapse risk in causal fabric"
+          ]
+        },
+        {
+          "name": "Temporal Harmony",
+          "elements": [
+            "time-loop stabilization node",
+            "recursive coherence alignment",
+            "temporal resonance uplift",
+            "continuity braid integrity",
+            "preservation of causal identity",
+            "alignment with ancestral flows",
+            "legacy-locked resilience pulse"
+          ]
+        },
+        {
+          "name": "Chrono Convergence",
+          "elements": [
+            "convergence of displaced epochs",
+            "echo-fold structural overlay",
+            "synchronous emergence cascade",
+            "layered moment dilation",
+            "union of all time-threads",
+            "cross-temporal integration point",
+            "collective timeline continuity"
+          ]
+        }
+      ]
+    }
+  ]
+}

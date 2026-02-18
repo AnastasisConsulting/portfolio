@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IOGB</class>
+ <widget class="QWidget" name="IOGB">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>I/O View</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- GLOBAL DARK THEME --- */
+QWidget {
+    background-color: #588182;  /* Deep black background */
+    color: #0c0c0c;             /* High contrast off-white text */
+    font-family: &quot;Roboto Mono&quot;, &quot;Consolas&quot;, monospace;
+    font-size: 14px;
+}
+
+/* --- FRAMES --- */
+QFrame {
+    background-color: #101010;  /* Slightly off-black for depth */
+    border: 2px solid #222222;  /* High contrast yet subtle */
+    border-radius: 4px;
+}
+
+/* --- GROUP BOXES --- */
+QGroupBox {
+    border: 2px solid #0a0a0a; /* Slightly brighter for separation */
+    border-radius: 8px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #60ffe8;  /* Muted neon purple */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 4px;
+    color: #60ffe8;
+    background-color: #0a0a0a;
+}
+
+/* --- TEXT FIELDS --- */
+QTextEdit, QLineEdit {
+    background-color: #151515;
+    border: 2px solid #333333;
+    border-radius: 3px;
+    color: #e0e0e0;
+    padding: 6px;
+    selection-background-color: #4feeff; /* Highlight */
+}
+
+/* --- BUTTONS --- */
+QPushButton {
+    background-color: #181818;
+    border: 2px solid #444444;
+    border-radius: 5px;
+    padding: 6px;
+    font-weight: bold;
+    color: #E0E0E0;
+    transition: all 0.2s ease-in-out;
+}
+
+QPushButton:hover {
+    background-color: #222222;
+    border-color: #4feeff;
+}
+
+QPushButton:pressed {
+    background-color: #4feeff;
+    color: #0a0a0a;
+}
+
+/* --- SPACERS --- */
+QSpacerItem {
+    background-color: transparent;
+}
+
+/* --- MAIN FRAME HIGH CONTRAST --- */
+QFrame#mainFrame {
+    border: 3px solid #BB86FC;
+    background-color: #0d0d0d;
+}
+
+/* --- GROUP BOX FRAME --- */
+QFrame#GBFrame {
+    border: 3px solid #444444;
+    background-color: #131313;
+}
+
+/* --- TEXT BOXES &amp; INPUT FIELDS --- */
+QTextEdit {
+    background-color: #121212;
+    border: 2px solid #2d2d2d;
+    border-radius: 5px;
+    color: #e0e0e0;
+    selection-background-color: #BB86FC;
+}
+
+/* --- INPUT FIELDS --- */
+QLineEdit {
+    background-color: #121212;
+    border: 2px solid #444;
+    color: #e0e0e0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+QLineEdit:focus {
+    border-color: #BB86FC;
+    background-color: #181818;
+}
+
+/* --- DYSTOPIAN BUTTONS --- */
+QPushButton#pauseGptPlayBtn {
+    background-color: #660000; /* Deep red for danger */
+    border: 2px solid #aa0000;
+    color: #e0e0e0;
+}
+
+QPushButton#pauseGptPlayBtn:hover {
+    background-color: #880000;
+    border-color: #ff0000;
+}
+
+QPushButton#pauseGptPlayBtn:pressed {
+    background-color: #ff0000;
+    color: #0a0a0a;
+}
+
+/* --- SEND BUTTON (CYBERPUNK GREEN) --- */
+QPushButton#sendBtn {
+    background-color: #004400;
+    border: 2px solid #00aa00;
+    color: #e0e0e0;
+}
+
+QPushButton#sendBtn:hover {
+    background-color: #006600;
+    border-color: #00ff00;
+}
+
+QPushButton#sendBtn:pressed {
+    background-color: #00ff00;
+    color: #0a0a0a;
+}
+
+/* --- HIGHLIGHT VALID MOVES (FOR CHESS) --- */
+QPushButton[validmove=&quot;true&quot;] {
+    background-color: #007722;
+    border: 2px solid #00cc44;
+}
+
+/* --- ERROR STATES --- */
+QLineEdit:focus, QTextEdit:focus {
+    border: 2px solid #60ffe8;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="mainFrame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="IO_GB">
+        <property name="title">
+         <string>IO  LLM</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QFrame" name="GBFrame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4" stretch="70,20,10">
+            <item>
+             <widget class="QTextEdit" name="gptResponseWindow">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="userInputTextEdit"/>
+            </item>
+            <item>
+             <widget class="QWidget" name="btnWidget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cancelBn">
+                 <property name="styleSheet">
+                  <string notr="true">/* --- GLOBAL DARK THEME --- */
+QWidget {
+    background-color: #0a0a0a;  /* Deep black background */
+    color: #0a0a0a;             /* High contrast off-white text */
+    font-family: &quot;Roboto Mono&quot;, &quot;Consolas&quot;, monospace;
+    font-size: 14px;
+}
+
+/* --- FRAMES --- */
+QFrame {
+    background-color: #101010;  /* Slightly off-black for depth */
+    border: 2px solid #222222;  /* High contrast yet subtle */
+    border-radius: 4px;
+}
+
+/* --- GROUP BOXES --- */
+QGroupBox {
+    border: 2px solid #0a0a0a; /* Slightly brighter for separation */
+    border-radius: 8px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #BB86FC;  /* Muted neon purple */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 4px;
+    color: #BB86FC;
+    background-color: #0a0a0a;
+}
+
+/* --- TEXT FIELDS --- */
+QTextEdit, QLineEdit {
+    background-color: #151515;
+    border: 2px solid #333333;
+    border-radius: 3px;
+    color: #e0e0e0;
+    padding: 6px;
+    selection-background-color: #BB86FC; /* Highlight */
+}
+
+/* --- BUTTONS --- */
+QPushButton {
+    background-color: #181818;
+    border: 2px solid #444444;
+    border-radius: 5px;
+    padding: 6px;
+    font-weight: bold;
+    color: #E0E0E0;
+    transition: all 0.2s ease-in-out;
+}
+
+QPushButton:hover {
+    background-color: #222222;
+    border-color: #BB86FC;
+}
+
+QPushButton:pressed {
+    background-color: #BB86FC;
+    color: #0a0a0a;
+}
+
+/* --- SPACERS --- */
+QSpacerItem {
+    background-color: transparent;
+}
+
+/* --- MAIN FRAME HIGH CONTRAST --- */
+QFrame#mainFrame {
+    border: 3px solid #BB86FC;
+    background-color: #0d0d0d;
+}
+
+/* --- GROUP BOX FRAME --- */
+QFrame#GBFrame {
+    border: 3px solid #444444;
+    background-color: #131313;
+}
+
+/* --- TEXT BOXES &amp; INPUT FIELDS --- */
+QTextEdit {
+    background-color: #121212;
+    border: 2px solid #2d2d2d;
+    border-radius: 5px;
+    color: #e0e0e0;
+    selection-background-color: #BB86FC;
+}
+
+/* --- INPUT FIELDS --- */
+QLineEdit {
+    background-color: #121212;
+    border: 2px solid #444;
+    color: #e0e0e0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+QLineEdit:focus {
+    border-color: #BB86FC;
+    background-color: #181818;
+}
+
+/* --- DYSTOPIAN BUTTONS --- */
+QPushButton#pauseGptPlayBtn {
+    background-color: #660000; /* Deep red for danger */
+    border: 2px solid #aa0000;
+    color: #e0e0e0;
+}
+
+QPushButton#pauseGptPlayBtn:hover {
+    background-color: #880000;
+    border-color: #ff0000;
+}
+
+QPushButton#pauseGptPlayBtn:pressed {
+    background-color: #ff0000;
+    color: #0a0a0a;
+}
+
+/* --- SEND BUTTON (CYBERPUNK GREEN) --- */
+QPushButton#sendBtn {
+    background-color: #004400;
+    border: 2px solid #00aa00;
+    color: #e0e0e0;
+}
+
+QPushButton#sendBtn:hover {
+    background-color: #006600;
+    border-color: #00ff00;
+}
+
+QPushButton#sendBtn:pressed {
+    background-color: #00ff00;
+    color: #0a0a0a;
+}
+
+/* --- HIGHLIGHT VALID MOVES (FOR CHESS) --- */
+QPushButton[validmove=&quot;true&quot;] {
+    background-color: #007722;
+    border: 2px solid #00cc44;
+}
+
+/* --- ERROR STATES --- */
+QLineEdit:focus, QTextEdit:focus {
+    border: 2px solid #ff4444;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Caneel</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="sendBtn">
+                 <property name="text">
+                  <string>Send</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

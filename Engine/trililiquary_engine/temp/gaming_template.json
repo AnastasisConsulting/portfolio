@@ -1,0 +1,89 @@
+{
+  "Conscious": {
+    "Risk": {
+      "1. Instability": "Unreliable footing, terrain hazards, or unstable systems in real time gameplay",
+      "2. Impact": "Immediate damage, injury, or mechanical failure",
+      "3. Containment": "Traps, lockdowns, limited map mobility",
+      "4. Deprivation": "Lack of resources: ammo, health, stamina, mana",
+      "5. Proximity": "Close-range threat or hostile detection zone",
+      "6. Obstruction": "Blocked path, cover breach, inaccessible area",
+      "7. Sensory Overload": "Flashbangs, screen clutter, panic effects"
+    },
+    "Relation": {
+      "1. Communication": "Player pings, callouts, or NPC dialogue choices",
+      "2. Trust": "Reliance on AI or teammate behavior",
+      "3. Disclosure": "Choosing what to reveal in multiplayer or narrative branches",
+      "4. Reciprocity": "Trade, cooperation, and team mechanics",
+      "5. Recognition": "Scoreboards, rankings, or achievements",
+      "6. Cooperation": "Shared objectives and coordinated action",
+      "7. Boundaries": "Defining zones of control or ally/enemy status"
+    },
+    "Reward": {
+      "1. Gain": "Loot, currency, XP, or collectibles",
+      "2. Clarity": "Map updates, quest markers, solved puzzles",
+      "3. Recognition": "Leaderboard placement, rare cosmetics, visible prestige",
+      "4. Mastery": "Skill unlocks, execution precision, higher difficulty wins",
+      "5. Access": "Unlocking new areas, weapons, characters",
+      "6. Alignment": "Character build or faction choice that fits player goals",
+      "7. Progress": "Level advancement, completed missions, campaign growth"
+    }
+  },
+  "Sub-Conscious": {
+    "Risk": {
+      "1. Abandonment": "Being left behind by teammates or disconnected",
+      "2. Entrapment": "Unavoidable traps or unescapable loops",
+      "3. Predation": "Ambushed or stalked by unseen AI/player",
+      "4. Imbalance": "Power disparity felt but not seen",
+      "5. Isolation": "Cut off from party or reinforcements",
+      "6. Repetition": "Looping mechanics or softlocks",
+      "7. Disintegration": "Loss of gear, stats, or form from cumulative threat"
+    },
+    "Relation": {
+      "1. Attachment": "Bonding with characters or favorite items",
+      "2. Mirroring": "Imitating enemy tactics or emotional tone shifts",
+      "3. Enmeshment": "Player identity fusing with avatar",
+      "4. Resonance": "Emotional pull from music or tone shifts",
+      "5. Abandonment Sensitivity": "Fear of betrayal or losing a companion",
+      "6. Unspoken Expectation": "Reading game design 'language' or strategy without tutorial",
+      "7. Energetic Memory": "Residual tension from past losses or intense fights"
+    },
+    "Reward": {
+      "1. Safety": "Securing checkpoints, health zones, or hiding spots",
+      "2. Belonging": "Feeling aligned with faction or community",
+      "3. Relief": "End of difficult boss, tension break moment",
+      "4. Soothing": "Safe music, base-building, healing rituals",
+      "5. Recognition (Unspoken)": "Environmental storytelling validation",
+      "6. Continuity": "Narrative flow or character consistency",
+      "7. Permission": "Freedom to play how you want without penalty"
+    }
+  },
+  "Ego": {
+    "Risk": {
+      "1. Diminishment": "Losing rank, gear, or reputation points",
+      "2. Disempowerment": "Being nerfed, benched, or outplayed publicly",
+      "3. Exposure": "Being seen failing or acting foolishly",
+      "4. Loss of Control": "Match momentum shifting against player",
+      "5. Dependence": "Needing to rely on weaker players or systems",
+      "6. Disapproval": "Chat toxicity, downvotes, or rejection",
+      "7. Contradiction": "Playing against type or inconsistent choices"
+    },
+    "Relation": {
+      "1. Recognition": "Twitch clips, MVP medals, visible emotes",
+      "2. Hierarchy": "Tiers, divisions, ELO, badges",
+      "3. Influence": "Leading team direction or strategy",
+      "4. Dependency": "Command role or resource control",
+      "5. Rivalry": "Head-to-head duels, kill-trading",
+      "6. Possession": "Owning rare gear, mounts, skins",
+      "7. Projection": "Judging others as noobs or threats to ego"
+    },
+    "Reward": {
+      "1. Dominance": "Winning, controlling, or humiliating opponents",
+      "2. Admiration": "Fanbase, followers, or party respect",
+      "3. Influence": "Shaping meta or team comps",
+      "4. Legacy": "Account history, prestige, player lore",
+      "5. Validation": "Upvotes, likes, shoutouts",
+      "6. Autonomy": "Solo wins, build independence",
+      "7. Exclusivity": "Limited-time rewards, OG status, founder perks"
+    }
+  }
+}

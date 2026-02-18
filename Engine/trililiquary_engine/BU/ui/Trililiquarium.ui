@@ -1,0 +1,3286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2540</width>
+    <height>877</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Trililiquarium</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #1e1e1e;
+    color: #d0d0d0;
+    border: none;
+}
+
+QGroupBox {
+    border: 1px solid #444;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 3px;
+    font-weight: bold;
+    color: #89f7fe;
+}
+
+QFrame {
+    border: 1px solid #333;
+    background-color: #121212;
+    border-radius: 2px;
+}
+
+QLabel {
+    color: #a0a0a0;
+}
+
+QLineEdit, QTextEdit {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 1px solid #89f7fe;
+}
+
+QComboBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QComboBox:hover {
+    border: 1px solid #89f7fe;
+}
+
+QSpinBox, QDoubleSpinBox {
+    background-color: #262626;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button,
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background-color: #2e2e2e;
+    border: none;
+}
+
+QPushButton {
+    background-color: #2d2d2d;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #3e3e3e;
+    border: 1px solid #89f7fe;
+    color: #89f7fe;
+}
+
+QPushButton:pressed {
+    background-color: #1b1b1b;
+    border: 1px solid #f50;
+    color: #f50;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background-color: #1e1e1e;
+    border: none;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle {
+    background: #333;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:hover {
+    background: #89f7fe;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+QListWidget {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+    color: #e1faff;
+    background-color: rgba(30, 30, 30, 180);
+    padding: 4px;
+}
+
+QListWidget::item {
+    padding: 4px 8px;
+    margin: 2px 0;
+    font-size: 14px;  /* or larger as preferred */
+    color: #e0f8ff;    /* optional for better visibility */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="controllerFrame">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="25,50,25">
+       <item>
+        <widget class="QFrame" name="rhetoricalArcsFrame">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <widget class="QFrame" name="inputManifoldFrame">
+            <property name="font">
+             <font>
+              <family>Tempus Sans ITC</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_15">
+             <item>
+              <widget class="QLabel" name="essenceLabel">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Essence</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="essenceTE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="formLabel">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Form</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="formTE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="actionLabel">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Action</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="actionTE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="frameLabel">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Frame</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="frameTE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="intentLabel">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Intent</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="intentTE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="relationalArcLabel">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Relation</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="relationTE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="valueLabel">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Value</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="valueTE"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="engineCoreFrame">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="25,25,50">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="leftMargin">
+           <number>3</number>
+          </property>
+          <property name="topMargin">
+           <number>3</number>
+          </property>
+          <property name="rightMargin">
+           <number>3</number>
+          </property>
+          <property name="bottomMargin">
+           <number>3</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="transformsHorLO">
+            <item>
+             <widget class="QGroupBox" name="transformsGB">
+              <property name="font">
+               <font>
+                <family>Poor Richard</family>
+                <pointsize>24</pointsize>
+                <weight>75</weight>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="title">
+               <string>Trililiquary 3 x 9 x 63 (^3) Big Block</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,95">
+               <property name="spacing">
+                <number>3</number>
+               </property>
+               <property name="leftMargin">
+                <number>3</number>
+               </property>
+               <property name="topMargin">
+                <number>40</number>
+               </property>
+               <property name="rightMargin">
+                <number>3</number>
+               </property>
+               <property name="bottomMargin">
+                <number>3</number>
+               </property>
+               <item>
+                <widget class="QGroupBox" name="phasesGB">
+                 <property name="font">
+                  <font>
+                   <family>Perpetua</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <italic>true</italic>
+                   <bold>true</bold>
+                   <underline>false</underline>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>Phases</string>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <property name="spacing">
+                   <number>3</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>18</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>3</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>3</number>
+                  </property>
+                  <item>
+                   <widget class="QPushButton" name="inputPhaseBtn">
+                    <property name="text">
+                     <string>Input</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="identityPhaseBtn">
+                    <property name="text">
+                     <string>Identity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="inceptionPhaseBtn">
+                    <property name="text">
+                     <string>Inception</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QStackedWidget" name="transformsStackedWidget">
+                 <property name="currentIndex">
+                  <number>0</number>
+                 </property>
+                 <widget class="QWidget" name="inputPhaseTransformPage_0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QWidget" name="inputPhaseWidget" native="true">
+                     <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,80">
+                      <property name="leftMargin">
+                       <number>9</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="inputPhase_TransformDynamicLabel">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QTextEdit" name="inputPhase_TransformDynamicTE"/>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="identityPhase_TransformPage_1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_18">
+                   <item>
+                    <widget class="QWidget" name="identityPhaseWidget" native="true">
+                     <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,80">
+                      <item>
+                       <widget class="QLabel" name="identityPhase_TransformDynamicLabel">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QTextEdit" name="identityPhase_TransformDynamicTE"/>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                 <widget class="QWidget" name="inceptionPhase_TransformPage_2">
+                  <layout class="QHBoxLayout" name="horizontalLayout_20">
+                   <item>
+                    <widget class="QWidget" name="inceptionPhaseWidget" native="true">
+                     <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="0,80">
+                      <item>
+                       <widget class="QLabel" name="inceptionPhase_TransformDynamicLabel">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QTextEdit" name="inceptionPhase_TransformDynamicTE"/>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="modifiersGB">
+            <property name="font">
+             <font>
+              <family>Lucida Fax</family>
+              <pointsize>18</pointsize>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,30,30,31">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>20</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QGroupBox" name="arcsRB_GB">
+               <property name="title">
+                <string>Arcs</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QRadioButton" name="firstArcRB">
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="secondArcRB">
+                  <property name="text">
+                   <string>2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="thirdArcRB">
+                  <property name="text">
+                   <string>3</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="fourthArcRB">
+                  <property name="text">
+                   <string>4</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="fifthArcRB">
+                  <property name="text">
+                   <string>5</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="sixthArcRB">
+                  <property name="text">
+                   <string>6</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="seventhArcRB">
+                  <property name="text">
+                   <string>7</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="triadsWidget" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_23">
+                <item>
+                 <widget class="QGroupBox" name="triadBtnsGB">
+                  <property name="font">
+                   <font>
+                    <family>Perpetua</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="title">
+                   <string>Triads</string>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_28">
+                   <property name="spacing">
+                    <number>3</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>18</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>3</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="computeFirstTriadBtn">
+                     <property name="text">
+                      <string>First</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="computeSecondTriadBtn">
+                     <property name="text">
+                      <string>Second</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="computeThirdTriadBtn">
+                     <property name="text">
+                      <string>Third</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="modifierInputGB">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="title">
+                <string>Input Modifier</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_26">
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>25</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="modifierInputLabel">
+                  <property name="text">
+                   <string>Placeholder</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="modifierInputCB">
+                  <item>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Risk</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Reward</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Relation</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="modifierIdentityGB">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="title">
+                <string>Identity Modifier</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_27">
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>25</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="modifierIdentityLabel">
+                  <property name="text">
+                   <string>Placeholder</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="modifieridentityCB">
+                  <item>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Risk</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Reward</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Relation</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="modifierInceptionGB">
+               <property name="font">
+                <font>
+                 <family>Segoe UI</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="title">
+                <string>Inception Modifier</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_25">
+                <property name="spacing">
+                 <number>3</number>
+                </property>
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>25</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="modifierInceptionLabel">
+                  <property name="text">
+                   <string>Placeholder</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="modifierInceptionCB">
+                  <item>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Risk</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Reward</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Relation</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="pipelinesGB">
+            <property name="title">
+             <string/>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,70">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="leftMargin">
+              <number>1</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>1</number>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="ranksWidget" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QGroupBox" name="pillarRanksGB">
+                  <property name="font">
+                   <font>
+                    <family>Perpetua</family>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="title">
+                   <string>Ranks</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="flat">
+                   <bool>false</bool>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <property name="spacing">
+                    <number>6</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>18</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>3</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QWidget" name="pillarRanksWidget" native="true">
+                     <layout class="QVBoxLayout" name="verticalLayout_20">
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_7">
+                        <property name="minimum">
+                         <number>1</number>
+                        </property>
+                        <property name="maximum">
+                         <number>7</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_6">
+                        <property name="minimum">
+                         <number>1</number>
+                        </property>
+                        <property name="maximum">
+                         <number>7</number>
+                        </property>
+                        <property name="value">
+                         <number>2</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_5">
+                        <property name="minimum">
+                         <number>1</number>
+                        </property>
+                        <property name="maximum">
+                         <number>7</number>
+                        </property>
+                        <property name="value">
+                         <number>3</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_4">
+                        <property name="minimum">
+                         <number>1</number>
+                        </property>
+                        <property name="maximum">
+                         <number>7</number>
+                        </property>
+                        <property name="value">
+                         <number>4</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_3">
+                        <property name="minimum">
+                         <number>1</number>
+                        </property>
+                        <property name="maximum">
+                         <number>7</number>
+                        </property>
+                        <property name="value">
+                         <number>5</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_2">
+                        <property name="minimum">
+                         <number>1</number>
+                        </property>
+                        <property name="maximum">
+                         <number>7</number>
+                        </property>
+                        <property name="value">
+                         <number>6</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QSpinBox" name="spinBox_1">
+                        <property name="minimum">
+                         <number>1</number>
+                        </property>
+                        <property name="maximum">
+                         <number>7</number>
+                        </property>
+                        <property name="value">
+                         <number>7</number>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="processingPipelineGB">
+               <property name="font">
+                <font>
+                 <family>MV Boli</family>
+                 <pointsize>16</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="title">
+                <string>Processing Pipelines</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="33,0,33,0,33,0">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <property name="leftMargin">
+                 <number>1</number>
+                </property>
+                <property name="topMargin">
+                 <number>25</number>
+                </property>
+                <property name="rightMargin">
+                 <number>1</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>1</number>
+                </property>
+                <item>
+                 <widget class="QGroupBox" name="inputPhaseGB">
+                  <property name="title">
+                   <string>Input Phase</string>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_30">
+                   <property name="topMargin">
+                    <number>20</number>
+                   </property>
+                   <item>
+                    <widget class="QStackedWidget" name="inputPhaseStackedWidget">
+                     <property name="frameShape">
+                      <enum>QFrame::NoFrame</enum>
+                     </property>
+                     <property name="midLineWidth">
+                      <number>1</number>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <widget class="QWidget" name="inputPhasePage01">
+                      <layout class="QVBoxLayout" name="verticalLayout_12">
+                       <item>
+                        <widget class="QListWidget" name="inputPhasePage01_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Input Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="inputPhasePage02">
+                      <layout class="QHBoxLayout" name="horizontalLayout_14">
+                       <item>
+                        <widget class="QListWidget" name="inputPhasePage02_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Identity Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="inputPhasePage03">
+                      <layout class="QVBoxLayout" name="verticalLayout_13">
+                       <item>
+                        <widget class="QListWidget" name="inputPhasePage03_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Inception Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="inceptionPL_SensorWidget" native="true">
+                  <layout class="QVBoxLayout" name="verticalLayout_45">
+                   <item>
+                    <spacer name="verticalSpacer_7">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_8">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_9">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_10">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_11">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_12">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_13">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_14">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_9">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>35</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="identityPhaseGB">
+                  <property name="title">
+                   <string>Identity Phase</string>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_29">
+                   <property name="topMargin">
+                    <number>20</number>
+                   </property>
+                   <item>
+                    <widget class="QStackedWidget" name="identityPhaseStackedWidget">
+                     <property name="frameShape">
+                      <enum>QFrame::NoFrame</enum>
+                     </property>
+                     <property name="midLineWidth">
+                      <number>1</number>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <widget class="QWidget" name="identityPhasePage01">
+                      <layout class="QVBoxLayout" name="verticalLayout_14">
+                       <item>
+                        <widget class="QListWidget" name="identityPhasePage01_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Input Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="identityPhasePage02">
+                      <layout class="QHBoxLayout" name="horizontalLayout_15">
+                       <item>
+                        <widget class="QListWidget" name="identityPhasePage02_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Identity Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="identityPhasePage03">
+                      <layout class="QVBoxLayout" name="verticalLayout_4">
+                       <item>
+                        <widget class="QListWidget" name="identityPhasePage03_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Inception Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="inceptionPL_SensorWidget_2" native="true">
+                  <layout class="QVBoxLayout" name="verticalLayout_46">
+                   <item>
+                    <spacer name="verticalSpacer_10">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_15">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_16">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_17">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_18">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_19">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_20">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_21">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_11">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>35</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="inceptionPhaseGP">
+                  <property name="title">
+                   <string>Inception Phase</string>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <property name="topMargin">
+                    <number>20</number>
+                   </property>
+                   <item>
+                    <widget class="QStackedWidget" name="inceptionPhaseStackedWidget">
+                     <property name="frameShape">
+                      <enum>QFrame::NoFrame</enum>
+                     </property>
+                     <property name="midLineWidth">
+                      <number>1</number>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <widget class="QWidget" name="inceptionPhasePage01">
+                      <layout class="QVBoxLayout" name="verticalLayout_10">
+                       <item>
+                        <widget class="QListWidget" name="inceptionPhasePage01_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <property name="modelColumn">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Input Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="inceptionPhasePage02">
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
+                       <item>
+                        <widget class="QListWidget" name="inceptionPhasePage02_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Identity Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="inceptionPhasePage03">
+                      <layout class="QVBoxLayout" name="verticalLayout_11">
+                       <item>
+                        <widget class="QListWidget" name="inceptionPhasePage03_List">
+                         <property name="font">
+                          <font>
+                           <family>Segoe UI</family>
+                           <pointsize>-1</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="spacing">
+                          <number>8</number>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Inception Pillar</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_1</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_2</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_3</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_4</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_5</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_6</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>placeholder_7</string>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <pointsize>12</pointsize>
+                            <italic>true</italic>
+                           </font>
+                          </property>
+                          <property name="textAlignment">
+                           <set>AlignCenter</set>
+                          </property>
+                          <property name="flags">
+                           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QWidget" name="inceptionPL_SensorWidget_3" native="true">
+                  <layout class="QVBoxLayout" name="verticalLayout_47">
+                   <item>
+                    <spacer name="verticalSpacer_12">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_22">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_23">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_24">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_25">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_26">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_27">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="inception_sensor_28">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: black;
+border-radius: 10px;
+min-width: 20px;
+min-height: 20px;
+</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_13">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Fixed</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>35</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="finalOutputPromptFrame">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mini Prompts</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="outputManifoldFrame">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_17">
+             <item>
+              <widget class="QLabel" name="outputRank1Label">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Rank 1</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="rank1TE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="outputRank2Label">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Rank 2</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="rank2TE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="outputRank3Label">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Rank 3</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="rank3TE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="outputRank4Label">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Rank 4</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="rank4TE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="outputRank5Label">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Rank 5</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="rank5TE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="outputRank6Label">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Rank 6</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="rank6TE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="outputRank7Label">
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Rank 7</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="rank7TE">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2540</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionOpen_Recent"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionImport"/>
+    <addaction name="actionExport_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuAudits">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionRun_Audit"/>
+    <addaction name="actionLoad_Audit"/>
+    <addaction name="actionTemplateEditor"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <widget class="QMenu" name="menuTemplates">
+     <property name="title">
+      <string>Templates</string>
+     </property>
+     <addaction name="actionBusiness"/>
+     <addaction name="actionCharacterDevelopment"/>
+     <addaction name="actionEducation"/>
+     <addaction name="actionExploration"/>
+     <addaction name="actionFinance_2"/>
+     <addaction name="actionGameDevelopment"/>
+     <addaction name="actionHumanResource"/>
+     <addaction name="actionNarrativeGeneration"/>
+     <addaction name="actionResearchDevelopment"/>
+     <addaction name="actionTalentAquistion"/>
+    </widget>
+    <addaction name="actionWalkthrough"/>
+    <addaction name="menuTemplates"/>
+    <addaction name="actionTipsTricks"/>
+    <addaction name="actionRanks"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout_2"/>
+    <addaction name="actionContact_3"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuAudits"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionOpen_Recent">
+   <property name="text">
+    <string>Open Recent</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As..</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="actionExport_As">
+   <property name="text">
+    <string>Export As</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionLLM_Options">
+   <property name="text">
+    <string>LLM Configuration</string>
+   </property>
+  </action>
+  <action name="actionRun_Audit">
+   <property name="text">
+    <string>Dashboard</string>
+   </property>
+  </action>
+  <action name="actionLoad_Audit">
+   <property name="text">
+    <string>Model Configuration</string>
+   </property>
+  </action>
+  <action name="actionContact">
+   <property name="text">
+    <string>Run Audits</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Load Audits</string>
+   </property>
+  </action>
+  <action name="actionContact_2">
+   <property name="text">
+    <string>Contact</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionWalkthrough">
+   <property name="text">
+    <string>Walkthrough</string>
+   </property>
+  </action>
+  <action name="actionTipsTricks">
+   <property name="text">
+    <string>Tips n Tricks</string>
+   </property>
+  </action>
+  <action name="actionRanks">
+   <property name="text">
+    <string>Ranks</string>
+   </property>
+  </action>
+  <action name="actionAbout_2">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionContact_3">
+   <property name="text">
+    <string>Contact</string>
+   </property>
+  </action>
+  <action name="actionAuditsGuide">
+   <property name="text">
+    <string>Audits Guide</string>
+   </property>
+  </action>
+  <action name="actionTemplateEditor">
+   <property name="text">
+    <string>Template Editor</string>
+   </property>
+  </action>
+  <action name="actionBusiness">
+   <property name="text">
+    <string>Business</string>
+   </property>
+  </action>
+  <action name="actionCharacterDevelopment">
+   <property name="text">
+    <string>Character Development</string>
+   </property>
+  </action>
+  <action name="actionEducation">
+   <property name="text">
+    <string>Education</string>
+   </property>
+  </action>
+  <action name="actionFinance">
+   <property name="text">
+    <string>Finance</string>
+   </property>
+  </action>
+  <action name="actionExploration">
+   <property name="text">
+    <string>Exploration</string>
+   </property>
+  </action>
+  <action name="actionFinance_2">
+   <property name="text">
+    <string>Finance</string>
+   </property>
+  </action>
+  <action name="actionGameDevelopment">
+   <property name="text">
+    <string>Game Development</string>
+   </property>
+  </action>
+  <action name="actionHumanResource">
+   <property name="text">
+    <string>Human Resource</string>
+   </property>
+  </action>
+  <action name="actionNarrativeGeneration">
+   <property name="text">
+    <string>Narrative Generation</string>
+   </property>
+  </action>
+  <action name="actionResearchDevelopment">
+   <property name="text">
+    <string>Research/Development</string>
+   </property>
+  </action>
+  <action name="actionTalentAquistion">
+   <property name="text">
+    <string>Talent Aquistion</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
