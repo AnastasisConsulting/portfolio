@@ -1,6 +1,6 @@
 const DOCS_MANIFEST = {
   "metadata": {
-    "total_files": 134,
+    "total_files": 126,
     "generated_at": 1739832000
   },
   "levels": {
@@ -224,12 +224,6 @@ const DOCS_MANIFEST = {
           "category": "Python Core Logic"
         },
         {
-          "title": "__init__.py",
-          "path": "Engine/gynthetic_engine/assembly/__init__.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
           "title": "Dashboard.py",
           "path": "Engine/gynthetic_engine/BU/ui/Dashboard.py",
           "extension": "PY",
@@ -278,12 +272,6 @@ const DOCS_MANIFEST = {
           "category": "General Assets"
         },
         {
-          "title": "__init__.py",
-          "path": "Engine/gynthetic_engine/BU/ui/__init__.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
           "title": "main.py",
           "path": "Engine/gynthetic_engine/demos/tavern_memory_demo/main.py",
           "extension": "PY",
@@ -326,12 +314,6 @@ const DOCS_MANIFEST = {
           "category": "Python Core Logic"
         },
         {
-          "title": "__init__.py",
-          "path": "Engine/gynthetic_engine/intake/__init__.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
           "title": "openai_interface.py",
           "path": "Engine/gynthetic_engine/llm_helpers/openai_interface.py",
           "extension": "PY",
@@ -344,24 +326,6 @@ const DOCS_MANIFEST = {
           "category": "Python Core Logic"
         },
         {
-          "title": "synthesis_prompt.py",
-          "path": "Engine/gynthetic_engine/output/synthesis_prompt.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "__init__.py",
-          "path": "Engine/gynthetic_engine/output/__init__.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "identity_phase.py",
-          "path": "Engine/gynthetic_engine/phases/identity_phase.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
           "title": "inception_phase.py",
           "path": "Engine/gynthetic_engine/phases/inception_phase.py",
           "extension": "PY",
@@ -370,12 +334,6 @@ const DOCS_MANIFEST = {
         {
           "title": "input_phase.py",
           "path": "Engine/gynthetic_engine/phases/input_phase.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "__init__.py",
-          "path": "Engine/gynthetic_engine/phases/__init__.py",
           "extension": "PY",
           "category": "Python Core Logic"
         },
@@ -526,12 +484,6 @@ const DOCS_MANIFEST = {
         {
           "title": "resize_images.py",
           "path": "Engine/gynthetic_engine/utils/resize_images.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "__init__.py",
-          "path": "Engine/gynthetic_engine/utils/__init__.py",
           "extension": "PY",
           "category": "Python Core Logic"
         },
