@@ -22,7 +22,7 @@
     <div class="nav-logo">G-YNTHETIC <span>LABS</span></div>
     <ul class="nav-links">
       <li><a href="#vision">Foundation</a></li>
-      <li><a href="#products">Projects</a></li>
+      <li><a href="#core-tech">Projects</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#cognition">Architecture</a></li>
       <li><a href="#ai-problems">Problem Space</a></li>
@@ -63,7 +63,7 @@
             // Ease-out expo
             const eased = 1 - Math.pow(1 - progress, 4);
             const current = Math.round(eased * target);
-            el.textContent = isInteger  current.toLocaleString() : current;
+            el.textContent = isInteger ? current.toLocaleString() : current;
             if (progress < 1) requestAnimationFrame(tick);
         }
         requestAnimationFrame(tick);
@@ -147,14 +147,14 @@
     // ============================================================
     let ticking = false;
     const header = document.querySelector('header');
-    const headerHeight = header  header.offsetHeight : 500;
+    const headerHeight = header ? header.offsetHeight : 500;
 
     function onScroll() {
         if (!ticking) {
             requestAnimationFrame(() => {
                 const scrollY = window.scrollY;
                 const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const progress = docHeight > 0  (scrollY / docHeight) * 100 : 0;
+                const progress = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
 
                 // Update progress bar width
                 progressBar.style.width = progress + '%';

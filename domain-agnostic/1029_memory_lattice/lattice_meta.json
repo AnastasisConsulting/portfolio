@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "axes": [
+    "X",
+    "Y",
+    "Z"
+  ],
+  "tick_values": [
+    -3,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    3
+  ],
+  "enc7": "tick + 3 \u2192 digit 0..6",
+  "decode": "digit - 3 \u2192 tick -3..3",
+  "node_id_formula": "node_id = transform*343 + (dx*49 + dy*7 + dz)",
+  "plane_id_formula": "plane_id = axis_index*7 + (tick+3), axis_index(X,Y,Z)=(0,1,2)",
+  "serpentine": "row-even L\u2192R, row-odd R\u2192L",
+  "block_sizes": {
+    "per_transform": 343,
+    "total": 1029
+  },
+  "neighbors": "6-connected within same transform (\u00b11 step per axis, bounds -3..3)",
+  "color_mapping": "R,G,B from normalized ticks of X,Y,Z respectively"
+}

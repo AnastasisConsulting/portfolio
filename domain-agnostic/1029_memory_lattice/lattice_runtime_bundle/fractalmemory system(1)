@@ -1,0 +1,66 @@
+Fractal Memory System
+
+
+using the metaphor of a 7x7x7 hypercube superimposed into 3 states (each state having a different axis in the increasing vertically posiion) we get 1029 nodes that only require 343 discrete points in space.
+
+[
+  {
+    "node_id": 0,
+    "transform": 0,
+    "coords": {
+      "x": -3,
+      "y": -3,
+      "z": -3
+    },
+    "digits": {
+      "dx": 0,
+      "dy": 0,
+      "dz": 0
+    },
+    "polarity": {
+      "px": -1,
+      "py": -1,
+      "pz": -1
+    },
+    "shell_linf": 3,
+    "color": "#000000",
+    "neighbors6": [
+      49,
+      7,
+      1
+    ],
+    "key": "T0-D000-S3"
+  },
+
+
+  The above is one node in the lattice. All 1029 nodes as a blank template aree inside the file rpg_nexus/core/lattice/lattice_nodes.json
+
+  {
+  "transform_count": 3,
+  "ticks_per_axis": 7,
+  "coords_range": [
+    -3,
+    3
+  ],
+  "total_nodes": 1029,
+  "address_format": "T{t}-D{dx}{dy}{dz}-S{r}",
+  "node_id_formula": "node_id = t*343 + (dx*49 + dy*7 + dz)"
+}
+
+
+This is the rpg_nexus/core/lattice/lattice_meta.json
+
+rpg_nexus/core/lattice/key_to_id_lookup.json & rpg_nexus/core/lattice/id_to_key_lookup.json are quick lookup tables for the cube
+
+
+For thuis specific use case. I want 2 lattices. The first will be populated by the contents of the Galaxies_Folder. The dir is laid out just lijke a fractal template. for its 3 transforms we have the galaxies themselves. for each transforms 3 modifiers we have the 3 star systems per galaxy. For each modifiers 7 elements we have the actual explorable locations which are represented by the .json's in the dir.
+
+Each .json in Galaxies_Folder are themselves fractal templates. Containing 3 transforms for dynamic world builxding, character generation, and story telling with specific guidelines unique to each area. These match to the 63 layers of the 1029 node super imposed cube if we recall each state has a different axis increasing vertically so that's 7 tics per axis handle and all three states have a total of 9 axis handles. then we take each state and mentally separate them into 3 individual cubes. take the 7 tics of the vertical axis and make a slice of the other two into 7 slices of 49 nodes. then rotate to a different axis in the verticqal and slice it the same. Then opnce again for the remaing axis . Do this for all 3 cubes and you will end up with 63 slices. One for each locations
+
+Launching the app ioads the initial location or the save state from the players save file into memory along with (if applicable) the locations near neighbors nodes insuide its layer as the immediate preferencial memory then that whole layer and the last 7 nodes from the layer(location) the player visited just before the current one into a fresh memory cache. this helps with quests across locations.
+
+Now a full turn copnsists of the players input sent to the encoder for embeddings then the llm assigns at least 1 but no more than 7 associative tags (essence, form, frame, function, intent, relation, and value) of the input, then recalls any memories with similar tags for context and "likeness". Then (if applicable) picks at least one but no more than 3 of these to add to the prompt if relevant (the embeddings should help with deciding this) and renders output
+
+While the player is consuming the output and no major system resource using is happening the memory fior that turn is written to the lattice (starting at the lowest numerical coordinate for that locationas layer) with a time/date stamp as the chronological key. Then the full i/o text is stored with another key. Then the associative tags with another key but all at the same index value.
+
+Also all proper names (people, places, and things) will be cross index along with the associative tags across the entire lattice so that if the player asks "remember that npc from {location}? What was her name again?" The LLM can find the location layer and parse it fior proper names of female npc's. then lets say the memory is "The shop owners name is Lydia and her favorite color is blue" the LLM can respond "Oh yeah! Lydia! She was that shop owner. The opne who really likes blue things. I remember her."
