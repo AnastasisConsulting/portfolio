@@ -1,1670 +1,1777 @@
 const DOCS_MANIFEST = {
+  "metadata": {
+    "total_files": 294,
+    "generated_at": 1739832000
+  },
   "levels": {
     "0": {
-      "name": "REVGRU5TSUJMRSBQUklPUiBBUlQgRElTQ0xPU1VSRSAoVU5SRVNUUklDVEVEKQ==",
+      "name": "DEFENSIBLE PRIOR ART DISCLOSURE (UNRESTRICTED)",
       "files": [
         {
-          "title": "Y29nRW5nRGlhQ29sLnBuZw==",
-          "path": "ZG9tYWluLWFnbm9zdGljL2RpYWdyYW1zL2NvZ0VuZ0RpYUNvbC5wbmc=",
-          "extension": "LlBORw==",
-          "category": "ZGlhZ3JhbXM="
+          "title": "cogEngDiaCol.png",
+          "path": "Engine/cogEngDiaCol.png",
+          "extension": "PNG",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "Ry15bnRoZXRpYw==",
-          "path": "ZG9tYWluLWFnbm9zdGljL2RpYWdyYW1zL0cteW50aGV0aWMub2R0",
-          "extension": "Lk9EVA==",
-          "category": "ZGlhZ3JhbXM="
+          "title": "engine detailed walkthrough 1.odt",
+          "path": "Engine/engine detailed walkthrough 1.odt",
+          "extension": "ODT",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "UmVhbGl0eSBtb2RlbCBkaWFncmFtLnBuZw==",
-          "path": "ZG9tYWluLWFnbm9zdGljL2RpYWdyYW1zL1JlYWxpdHlfbW9kZWxfZGlhZ3JhbS5wbmc=",
-          "extension": "LlBORw==",
-          "category": "ZGlhZ3JhbXM="
+          "title": "engine.py",
+          "path": "Engine/engine.py",
+          "extension": "PY",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "R2FtZSBPcmcucG5n",
-          "path": "ZG9tYWluLWFnbm9zdGljL2RpYWdyYW1zL2RpYWdyYW1zL0dhbWUgT3JnLnBuZw==",
-          "extension": "LlBORw==",
-          "category": "ZGlhZ3JhbXM="
+          "title": "engine_orchastration.json",
+          "path": "Engine/engine_orchastration.json",
+          "extension": "JSON",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "Y29nRW5nRGlhQ29s",
-          "path": "RW5naW5lL2NvZ0VuZ0RpYUNvbC5wbmc=",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "G-ynthetic.odt",
+          "path": "Engine/G-ynthetic.odt",
+          "extension": "ODT",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "ZW5naW5lIGRldGFpbGVkIHdhbGt0aHJvdWdoIDE=",
-          "path": "RW5naW5lL2VuZ2luZSBkZXRhaWxlZCB3YWxrdGhyb3VnaCAxLm9kdA==",
-          "extension": "Lk9EVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Lattice3D.tsx",
+          "path": "Engine/Lattice3D.tsx",
+          "extension": "TSX",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "ZW5naW5l",
-          "path": "RW5naW5lL2VuZ2luZS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "main_engine.py",
+          "path": "Engine/main_engine.py",
+          "extension": "PY",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "ZW5naW5lX29yY2hhc3RyYXRpb24=",
-          "path": "RW5naW5lL2VuZ2luZV9vcmNoYXN0cmF0aW9uLmpzb24=",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Reality_model_diagram.png",
+          "path": "Engine/Reality_model_diagram.png",
+          "extension": "PNG",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "Ry15bnRoZXRpYw==",
-          "path": "RW5naW5lL0cteW50aGV0aWMub2R0",
-          "extension": "Lk9EVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Symbolic_Cognition_Grid_Populated.docx",
+          "path": "Engine/Symbolic_Cognition_Grid_Populated.docx",
+          "extension": "DOCX",
+          "category": "G-ynthetic Engine Core"
         },
         {
-          "title": "TGF0dGljZTNE",
-          "path": "RW5naW5lL0xhdHRpY2UzRC50c3g=",
-          "extension": "LlRTWA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "#coral_bootstrapper.py",
+          "path": "Engine/engine/#coral_bootstrapper.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "bWFpbl9lbmdpbmU=",
-          "path": "RW5naW5lL21haW5fZW5naW5lLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "engine.bk.py",
+          "path": "Engine/engine/engine.bk.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "UmVhbGl0eV9tb2RlbF9kaWFncmFt",
-          "path": "RW5naW5lL1JlYWxpdHlfbW9kZWxfZGlhZ3JhbS5wbmc=",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "engine.py",
+          "path": "Engine/engine/engine.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "U3ltYm9saWNfQ29nbml0aW9uX0dyaWRfUG9wdWxhdGVk",
-          "path": "RW5naW5lL1N5bWJvbGljX0NvZ25pdGlvbl9HcmlkX1BvcHVsYXRlZC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "engine_to_mem.txt",
+          "path": "Engine/engine/engine_to_mem.txt",
+          "extension": "TXT",
+          "category": "engine"
         },
         {
-          "title": "I2NvcmFsX2Jvb3RzdHJhcHBlcg==",
-          "path": "RW5naW5lL2VuZ2luZS8jY29yYWxfYm9vdHN0cmFwcGVyLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "fractal_engine.py",
+          "path": "Engine/engine/fractal_engine.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "ZW5naW5lLmJr",
-          "path": "RW5naW5lL2VuZ2luZS9lbmdpbmUuYmsucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "memory.py",
+          "path": "Engine/engine/memory.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "ZW5naW5l",
-          "path": "RW5naW5lL2VuZ2luZS9lbmdpbmUucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "new_fractal_engine.py",
+          "path": "Engine/engine/new_fractal_engine.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "ZW5naW5lX3RvX21lbQ==",
-          "path": "RW5naW5lL2VuZ2luZS9lbmdpbmVfdG9fbWVtLnR4dA==",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "one_third_engine.py",
+          "path": "Engine/engine/one_third_engine.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "ZnJhY3RhbF9lbmdpbmU=",
-          "path": "RW5naW5lL2VuZ2luZS9mcmFjdGFsX2VuZ2luZS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "run_encoder.py",
+          "path": "Engine/engine/run_encoder.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "bWVtb3J5",
-          "path": "RW5naW5lL2VuZ2luZS9tZW1vcnkucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "timeline_store.py",
+          "path": "Engine/engine/timeline_store.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "bmV3X2ZyYWN0YWxfZW5naW5l",
-          "path": "RW5naW5lL2VuZ2luZS9uZXdfZnJhY3RhbF9lbmdpbmUucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/engine/__init__.py",
+          "extension": "PY",
+          "category": "engine"
         },
         {
-          "title": "b25lX3RoaXJkX2VuZ2luZQ==",
-          "path": "RW5naW5lL2VuZ2luZS9vbmVfdGhpcmRfZW5naW5lLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "geo_char_story_template.json",
+          "path": "Engine/engine/templates/geo_char_story_template.json",
+          "extension": "JSON",
+          "category": "templates"
         },
         {
-          "title": "cnVuX2VuY29kZXI=",
-          "path": "RW5naW5lL2VuZ2luZS9ydW5fZW5jb2Rlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "prompt_generator.py",
+          "path": "Engine/engine/templates/prompt_generator.py",
+          "extension": "PY",
+          "category": "templates"
         },
         {
-          "title": "dGltZWxpbmVfc3RvcmU=",
-          "path": "RW5naW5lL2VuZ2luZS90aW1lbGluZV9zdG9yZS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "sentence_generator.py",
+          "path": "Engine/engine/templates/sentence_generator.py",
+          "extension": "PY",
+          "category": "templates"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2VuZ2luZS9fX2luaXRfXy5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "Z2VvX2NoYXJfc3RvcnlfdGVtcGxhdGU=",
-          "path": "RW5naW5lL2VuZ2luZS90ZW1wbGF0ZXMvZ2VvX2NoYXJfc3RvcnlfdGVtcGxhdGUuanNvbg==",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "cHJvbXB0X2dlbmVyYXRvcg==",
-          "path": "RW5naW5lL2VuZ2luZS90ZW1wbGF0ZXMvcHJvbXB0X2dlbmVyYXRvci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "c2VudGVuY2VfZ2VuZXJhdG9y",
-          "path": "RW5naW5lL2VuZ2luZS90ZW1wbGF0ZXMvc2VudGVuY2VfZ2VuZXJhdG9yLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "dGVtcGxhdGVfcHJvbXB0X2dlbmVyYXRvcg==",
-          "path": "RW5naW5lL2VuZ2luZS90ZW1wbGF0ZXMvdGVtcGxhdGVfcHJvbXB0X2dlbmVyYXRvcg==",
+          "title": "template_prompt_generator",
+          "path": "Engine/engine/templates/template_prompt_generator",
           "extension": "",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "category": "templates"
         },
         {
-          "title": "Y29uZHVjdG9y",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY29uZHVjdG9yLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "conductor.py",
+          "path": "Engine/gynthetic_engine/conductor.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "Y29uZHVjdG9yX2VuZ2luZQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY29uZHVjdG9yX2VuZ2luZS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "conductor_engine.py",
+          "path": "Engine/gynthetic_engine/conductor_engine.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "ZGFzaGJvYXJkX2NvbnRyb2xsZXI=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZGFzaGJvYXJkX2NvbnRyb2xsZXIucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "dashboard_controller.py",
+          "path": "Engine/gynthetic_engine/dashboard_controller.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "ZGVjb21wb3Nlcl9wYWNrYWdlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZGVjb21wb3Nlcl9wYWNrYWdlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "decomposer_packager.py",
+          "path": "Engine/gynthetic_engine/decomposer_packager.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "ZGly",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZGlyLnR4dA==",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "dir.txt",
+          "path": "Engine/gynthetic_engine/dir.txt",
+          "extension": "TXT",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "ZGlyX3N0cnVjdA==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZGlyX3N0cnVjdC5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "dir_struct.py",
+          "path": "Engine/gynthetic_engine/dir_struct.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "Z3ludGhldGljX2NvcmVfY29udHJvbGxlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZ3ludGhldGljX2NvcmVfY29udHJvbGxlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gynthetic_core_controller.py",
+          "path": "Engine/gynthetic_engine/gynthetic_core_controller.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "Z3ludGhldGljX2NvcmVfbWFuYWdlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZ3ludGhldGljX2NvcmVfbWFuYWdlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gynthetic_core_manager.py",
+          "path": "Engine/gynthetic_engine/gynthetic_core_manager.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "TExNX0NvbmZpZ19sYXVuY2hlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvTExNX0NvbmZpZ19sYXVuY2hlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "LLM_Config_launcher.py",
+          "path": "Engine/gynthetic_engine/LLM_Config_launcher.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "bWFpbg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvbWFpbi5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "main.py",
+          "path": "Engine/gynthetic_engine/main.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "bWVtb3J5X2FwaQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvbWVtb3J5X2FwaS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "memory_api.py",
+          "path": "Engine/gynthetic_engine/memory_api.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "cGFnZV9zd2l0Y2hlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGFnZV9zd2l0Y2hlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "page_switcher.py",
+          "path": "Engine/gynthetic_engine/page_switcher.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "c3ludGhlc2lzX2VuZ2luZQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvc3ludGhlc2lzX2VuZ2luZS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "synthesis_engine.py",
+          "path": "Engine/gynthetic_engine/synthesis_engine.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "VEVTVA==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvVEVTVC5QWQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "TEST.PY",
+          "path": "Engine/gynthetic_engine/TEST.PY",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "dHJpYWRpY19ldmFsdWF0b3I=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdHJpYWRpY19ldmFsdWF0b3IucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "triadic_evaluator.py",
+          "path": "Engine/gynthetic_engine/triadic_evaluator.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "dHJpYWRfY29udHJvbGxlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdHJpYWRfY29udHJvbGxlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "triad_controller.py",
+          "path": "Engine/gynthetic_engine/triad_controller.py",
+          "extension": "PY",
+          "category": "gynthetic_engine"
         },
         {
-          "title": "dHJpYWRpY19vdXRwdXRfYnVpbGRlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvYXNzZW1ibHkvdHJpYWRpY19vdXRwdXRfYnVpbGRlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "triadic_output_builder.py",
+          "path": "Engine/gynthetic_engine/assembly/triadic_output_builder.py",
+          "extension": "PY",
+          "category": "assembly"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvYXNzZW1ibHkvX19pbml0X18ucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/gynthetic_engine/assembly/__init__.py",
+          "extension": "PY",
+          "category": "assembly"
         },
         {
-          "title": "RGFzaGJvYXJk",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvRGFzaGJvYXJkLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Dashboard.py",
+          "path": "Engine/gynthetic_engine/BU/ui/Dashboard.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "RGFzaGJvYXJk",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvRGFzaGJvYXJkLnVp",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Dashboard.ui",
+          "path": "Engine/gynthetic_engine/BU/ui/Dashboard.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "Z3ludGhldGljX2NvcmU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvZ3ludGhldGljX2NvcmUucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gynthetic_core.py",
+          "path": "Engine/gynthetic_engine/BU/ui/gynthetic_core.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Z3ludGhldGljX2NvcmU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvZ3ludGhldGljX2NvcmUudWk=",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gynthetic_core.ui",
+          "path": "Engine/gynthetic_engine/BU/ui/gynthetic_core.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "TExNX0NvbmZpZw==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvTExNX0NvbmZpZy5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "LLM_Config.py",
+          "path": "Engine/gynthetic_engine/BU/ui/LLM_Config.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "TExNX0NvbmZpZw==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvTExNX0NvbmZpZy51aQ==",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "LLM_Config.ui",
+          "path": "Engine/gynthetic_engine/BU/ui/LLM_Config.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "dGVtcGxhdGVfZWRpdG9y",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvdGVtcGxhdGVfZWRpdG9yLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "template_editor.py",
+          "path": "Engine/gynthetic_engine/BU/ui/template_editor.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "dGVtcGxhdGVfZWRpdG9y",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvdGVtcGxhdGVfZWRpdG9yLnVp",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "template_editor.ui",
+          "path": "Engine/gynthetic_engine/BU/ui/template_editor.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "VHJhY2VfQXVkaXRz",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvVHJhY2VfQXVkaXRzLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Trace_Audits.py",
+          "path": "Engine/gynthetic_engine/BU/ui/Trace_Audits.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "VHJhY2VfQXVkaXRz",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvVHJhY2VfQXVkaXRzLnVp",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Trace_Audits.ui",
+          "path": "Engine/gynthetic_engine/BU/ui/Trace_Audits.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "dW50aXRsZWQ=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvdW50aXRsZWQudWk=",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "untitled.ui",
+          "path": "Engine/gynthetic_engine/BU/ui/untitled.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvQlUvdWkvX19pbml0X18ucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/gynthetic_engine/BU/ui/__init__.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Y2xpY2thYmxlX2ltYWdlX2xhYmVs",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvY2xpY2thYmxlX2ltYWdlX2xhYmVsLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "clickable_image_label.py",
+          "path": "Engine/gynthetic_engine/custom_widgets/clickable_image_label.py",
+          "extension": "PY",
+          "category": "custom_widgets"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvX19pbml0X18ucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/gynthetic_engine/custom_widgets/__init__.py",
+          "extension": "PY",
+          "category": "custom_widgets"
         },
         {
-          "title": "Y2xpY2thYmxlX2ltYWdlX2xhYmVsLmNweXRob24tMzEx",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvX19weWNhY2hlX18vY2xpY2thYmxlX2ltYWdlX2xhYmVsLmNweXRob24tMzExLnB5Yw==",
-          "extension": "LlBZQw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "main.py",
+          "path": "Engine/gynthetic_engine/demos/tavern_memory_demo/main.py",
+          "extension": "PY",
+          "category": "tavern_memory_demo"
         },
         {
-          "title": "Y2xpY2thYmxlX2ltYWdlX2xhYmVsLmNweXRob24tMzEy",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvX19weWNhY2hlX18vY2xpY2thYmxlX2ltYWdlX2xhYmVsLmNweXRob24tMzEyLnB5Yw==",
-          "extension": "LlBZQw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "tavern_gui.py",
+          "path": "Engine/gynthetic_engine/demos/tavern_memory_demo/tavern_gui.py",
+          "extension": "PY",
+          "category": "tavern_memory_demo"
         },
         {
-          "title": "Y2xpY2thYmxlX2ltYWdlX2xhYmVsLmNweXRob24tMzEz",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvX19weWNhY2hlX18vY2xpY2thYmxlX2ltYWdlX2xhYmVsLmNweXRob24tMzEzLnB5Yw==",
-          "extension": "LlBZQw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "default_transform_template.json",
+          "path": "Engine/gynthetic_engine/demos/tavern_memory_demo/transforms/default_transform_template.json",
+          "extension": "JSON",
+          "category": "transforms"
         },
         {
-          "title": "X19pbml0X18uY3B5dGhvbi0zMTE=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvX19weWNhY2hlX18vX19pbml0X18uY3B5dGhvbi0zMTEucHlj",
-          "extension": "LlBZQw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "engine merchanics.odt",
+          "path": "Engine/gynthetic_engine/docs/engine merchanics.odt",
+          "extension": "ODT",
+          "category": "docs"
         },
         {
-          "title": "X19pbml0X18uY3B5dGhvbi0zMTI=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvX19weWNhY2hlX18vX19pbml0X18uY3B5dGhvbi0zMTIucHlj",
-          "extension": "LlBZQw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "leading up to psu.odt",
+          "path": "Engine/gynthetic_engine/docs/leading up to psu.odt",
+          "extension": "ODT",
+          "category": "docs"
         },
         {
-          "title": "X19pbml0X18uY3B5dGhvbi0zMTM=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvY3VzdG9tX3dpZGdldHMvX19weWNhY2hlX18vX19pbml0X18uY3B5dGhvbi0zMTMucHlj",
-          "extension": "LlBZQw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "section 3 notes.odt",
+          "path": "Engine/gynthetic_engine/docs/section 3 notes.odt",
+          "extension": "ODT",
+          "category": "docs"
         },
         {
-          "title": "bWFpbg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZGVtb3MvdGF2ZXJuX21lbW9yeV9kZW1vL21haW4ucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "The 7 Rhetorical Arcs.docx",
+          "path": "Engine/gynthetic_engine/docs/The 7 Rhetorical Arcs.docx",
+          "extension": "DOCX",
+          "category": "docs"
         },
         {
-          "title": "dGF2ZXJuX2d1aQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZGVtb3MvdGF2ZXJuX21lbW9yeV9kZW1vL3RhdmVybl9ndWkucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "video gen template.odt",
+          "path": "Engine/gynthetic_engine/docs/video gen template.odt",
+          "extension": "ODT",
+          "category": "docs"
         },
         {
-          "title": "ZGVmYXVsdF90cmFuc2Zvcm1fdGVtcGxhdGU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZGVtb3MvdGF2ZXJuX21lbW9yeV9kZW1vL3RyYW5zZm9ybXMvZGVmYXVsdF90cmFuc2Zvcm1fdGVtcGxhdGUuanNvbg==",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "arc_struct.py",
+          "path": "Engine/gynthetic_engine/intake/arc_struct.py",
+          "extension": "PY",
+          "category": "intake"
         },
         {
-          "title": "ZW5naW5lIG1lcmNoYW5pY3M=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZG9jcy9lbmdpbmUgbWVyY2hhbmljcy5vZHQ=",
-          "extension": "Lk9EVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "decomposition_engine.py",
+          "path": "Engine/gynthetic_engine/intake/decomposition_engine.py",
+          "extension": "PY",
+          "category": "intake"
         },
         {
-          "title": "bGVhZGluZyB1cCB0byBwc3U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZG9jcy9sZWFkaW5nIHVwIHRvIHBzdS5vZHQ=",
-          "extension": "Lk9EVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "sanity_checker.py",
+          "path": "Engine/gynthetic_engine/intake/sanity_checker.py",
+          "extension": "PY",
+          "category": "intake"
         },
         {
-          "title": "c2VjdGlvbiAzIG5vdGVz",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZG9jcy9zZWN0aW9uIDMgbm90ZXMub2R0",
-          "extension": "Lk9EVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/gynthetic_engine/intake/__init__.py",
+          "extension": "PY",
+          "category": "intake"
         },
         {
-          "title": "VGhlIDcgUmhldG9yaWNhbCBBcmNz",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZG9jcy9UaGUgNyBSaGV0b3JpY2FsIEFyY3MuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "openai_interface.py",
+          "path": "Engine/gynthetic_engine/llm_helpers/openai_interface.py",
+          "extension": "PY",
+          "category": "llm_helpers"
         },
         {
-          "title": "dmlkZW8gZ2VuIHRlbXBsYXRl",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvZG9jcy92aWRlbyBnZW4gdGVtcGxhdGUub2R0",
-          "extension": "Lk9EVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "output_llm_bridge.py",
+          "path": "Engine/gynthetic_engine/output/output_llm_bridge.py",
+          "extension": "PY",
+          "category": "output"
         },
         {
-          "title": "YXJjX3N0cnVjdA==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvaW50YWtlL2FyY19zdHJ1Y3QucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "synthesis_prompt.py",
+          "path": "Engine/gynthetic_engine/output/synthesis_prompt.py",
+          "extension": "PY",
+          "category": "output"
         },
         {
-          "title": "ZGVjb21wb3NpdGlvbl9lbmdpbmU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvaW50YWtlL2RlY29tcG9zaXRpb25fZW5naW5lLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/gynthetic_engine/output/__init__.py",
+          "extension": "PY",
+          "category": "output"
         },
         {
-          "title": "c2FuaXR5X2NoZWNrZXI=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvaW50YWtlL3Nhbml0eV9jaGVja2VyLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "identity_phase.py",
+          "path": "Engine/gynthetic_engine/phases/identity_phase.py",
+          "extension": "PY",
+          "category": "phases"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvaW50YWtlL19faW5pdF9fLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "inception_phase.py",
+          "path": "Engine/gynthetic_engine/phases/inception_phase.py",
+          "extension": "PY",
+          "category": "phases"
         },
         {
-          "title": "b3BlbmFpX2ludGVyZmFjZQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvbGxtX2hlbHBlcnMvb3BlbmFpX2ludGVyZmFjZS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "input_phase.py",
+          "path": "Engine/gynthetic_engine/phases/input_phase.py",
+          "extension": "PY",
+          "category": "phases"
         },
         {
-          "title": "b3V0cHV0X2xsbV9icmlkZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvb3V0cHV0L291dHB1dF9sbG1fYnJpZGdlLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/gynthetic_engine/phases/__init__.py",
+          "extension": "PY",
+          "category": "phases"
         },
         {
-          "title": "c3ludGhlc2lzX3Byb21wdA==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvb3V0cHV0L3N5bnRoZXNpc19wcm9tcHQucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "modifier_matrix.py",
+          "path": "Engine/gynthetic_engine/pipelines/modifier_matrix.py",
+          "extension": "PY",
+          "category": "pipelines"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvb3V0cHV0L19faW5pdF9fLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "pipeline_rank_controller.py",
+          "path": "Engine/gynthetic_engine/pipelines/pipeline_rank_controller.py",
+          "extension": "PY",
+          "category": "pipelines"
         },
         {
-          "title": "aWRlbnRpdHlfcGhhc2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGhhc2VzL2lkZW50aXR5X3BoYXNlLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "transform_loader.py",
+          "path": "Engine/gynthetic_engine/pipelines/transform_loader.py",
+          "extension": "PY",
+          "category": "pipelines"
         },
         {
-          "title": "aW5jZXB0aW9uX3BoYXNl",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGhhc2VzL2luY2VwdGlvbl9waGFzZS5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "triad_assembler.py",
+          "path": "Engine/gynthetic_engine/pipelines/triad_assembler.py",
+          "extension": "PY",
+          "category": "pipelines"
         },
         {
-          "title": "aW5wdXRfcGhhc2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGhhc2VzL2lucHV0X3BoYXNlLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__iniy__.py",
+          "path": "Engine/gynthetic_engine/pipelines/__iniy__.py",
+          "extension": "PY",
+          "category": "pipelines"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGhhc2VzL19faW5pdF9fLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "business_template.json",
+          "path": "Engine/gynthetic_engine/temp/business_template.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "bW9kaWZpZXJfbWF0cml4",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGlwZWxpbmVzL21vZGlmaWVyX21hdHJpeC5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "default_transform_template.json",
+          "path": "Engine/gynthetic_engine/temp/default_transform_template.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "cGlwZWxpbmVfcmFua19jb250cm9sbGVy",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGlwZWxpbmVzL3BpcGVsaW5lX3JhbmtfY29udHJvbGxlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "dHJhbnNmb3JtX2xvYWRlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGlwZWxpbmVzL3RyYW5zZm9ybV9sb2FkZXIucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "dHJpYWRfYXNzZW1ibGVy",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGlwZWxpbmVzL3RyaWFkX2Fzc2VtYmxlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "X19pbml5X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvcGlwZWxpbmVzL19faW5peV9fLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "YnVzaW5lc3NfdGVtcGxhdGU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC9idXNpbmVzc190ZW1wbGF0ZS5qc29u",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "ZGVmYXVsdF90cmFuc2Zvcm1fdGVtcGxhdGU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC9kZWZhdWx0X3RyYW5zZm9ybV90ZW1wbGF0ZS5qc29u",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
-        },
-        {
-          "title": "ZW5lcmdldGljX2FyY2hpdGVjdHVyZQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC9lbmVyZ2V0aWNfYXJjaGl0ZWN0dXJl",
+          "title": "energetic_architecture",
+          "path": "Engine/gynthetic_engine/temp/energetic_architecture",
           "extension": "",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "category": "temp"
         },
         {
-          "title": "Z2FtaW5nX3RlbXBsYXRl",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC9nYW1pbmdfdGVtcGxhdGUuanNvbg==",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gaming_template.json",
+          "path": "Engine/gynthetic_engine/temp/gaming_template.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "bWlsaXRhcnlfdGVtcGxhdGU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC9taWxpdGFyeV90ZW1wbGF0ZS5qc29u",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "military_template.json",
+          "path": "Engine/gynthetic_engine/temp/military_template.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "c3RydWN0dXJlZF90cmFuc2Zvcm1z",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC9zdHJ1Y3R1cmVkX3RyYW5zZm9ybXMuanNvbg==",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "structured_transforms.json",
+          "path": "Engine/gynthetic_engine/temp/structured_transforms.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "dGVzdF9tb2RjX3RlbXBsYXRl",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC90ZXN0X21vZGNfdGVtcGxhdGUuanNvbg==",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "test_modc_template.json",
+          "path": "Engine/gynthetic_engine/temp/test_modc_template.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "d29ybGRfYnVpbGRlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC93b3JsZF9idWlsZGVyLmpzb24=",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "world_builder.json",
+          "path": "Engine/gynthetic_engine/temp/world_builder.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "d29ybGRfY2F0ZWdvcmllc190ZW1wbGF0ZQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcC93b3JsZF9jYXRlZ29yaWVzX3RlbXBsYXRlLmpzb24=",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "world_categories_template.json",
+          "path": "Engine/gynthetic_engine/temp/world_categories_template.json",
+          "extension": "JSON",
+          "category": "temp"
         },
         {
-          "title": "dXNlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3VzZXIuanNvbg==",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "user.json",
+          "path": "Engine/gynthetic_engine/templates/user.json",
+          "extension": "JSON",
+          "category": "templates"
         },
         {
-          "title": "aGlnaF9xdWFsaXR5X3Rlc3RfZGF0YXNldA==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2hxX3Rlc3RpbmcvaGlnaF9xdWFsaXR5X3Rlc3RfZGF0YXNldC5qc29u",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "high_quality_test_dataset.json",
+          "path": "Engine/gynthetic_engine/templates/hq_testing/high_quality_test_dataset.json",
+          "extension": "JSON",
+          "category": "hq_testing"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2hxX3Rlc3RpbmcvaWRlbnRpdHlfcGhhc2UvZGVzY3JpcHRpb24udHh0",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/hq_testing/identity_phase/description.txt",
+          "extension": "TXT",
+          "category": "identity_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2hxX3Rlc3RpbmcvaWRlbnRpdHlfcGhhc2UvaW1hZ2UucG5n",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/hq_testing/identity_phase/image.png",
+          "extension": "PNG",
+          "category": "identity_phase"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2hxX3Rlc3RpbmcvaW5jZXB0aW9uX3BoYXNlL2Rlc2NyaXB0aW9uLnR4dA==",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/hq_testing/inception_phase/description.txt",
+          "extension": "TXT",
+          "category": "inception_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2hxX3Rlc3RpbmcvaW5jZXB0aW9uX3BoYXNlL2ltYWdlLnBuZw==",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/hq_testing/inception_phase/image.png",
+          "extension": "PNG",
+          "category": "inception_phase"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2hxX3Rlc3RpbmcvaW5wdXRfcGhhc2UvZGVzY3JpcHRpb24udHh0",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/hq_testing/input_phase/description.txt",
+          "extension": "TXT",
+          "category": "input_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2hxX3Rlc3RpbmcvaW5wdXRfcGhhc2UvaW1hZ2UucG5n",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/hq_testing/input_phase/image.png",
+          "extension": "PNG",
+          "category": "input_phase"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2lkZW50aXR5X3BoYXNlL2Rlc2NyaXB0aW9uLnR4dA==",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/identity_phase/description.txt",
+          "extension": "TXT",
+          "category": "identity_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2lkZW50aXR5X3BoYXNlL2ltYWdlLnBuZw==",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/identity_phase/image.png",
+          "extension": "PNG",
+          "category": "identity_phase"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2luY2VwdGlvbl9waGFzZS9kZXNjcmlwdGlvbi50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/inception_phase/description.txt",
+          "extension": "TXT",
+          "category": "inception_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2luY2VwdGlvbl9waGFzZS9pbWFnZS5wbmc=",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/inception_phase/image.png",
+          "extension": "PNG",
+          "category": "inception_phase"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2lucHV0X3BoYXNlL2Rlc2NyaXB0aW9uLnR4dA==",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/input_phase/description.txt",
+          "extension": "TXT",
+          "category": "input_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL2lucHV0X3BoYXNlL2ltYWdlLnBuZw==",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/input_phase/image.png",
+          "extension": "PNG",
+          "category": "input_phase"
         },
         {
-          "title": "d29ya2luZ190cmFuc2Zvcm1fdGVtcGxhdGU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC93b3JraW5nX3RyYW5zZm9ybV90ZW1wbGF0ZS5qc29u",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "working_transform_template.json",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/working_transform_template.json",
+          "extension": "JSON",
+          "category": "test_dataset"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pZGVudGl0eV9waGFzZS9kZXNjcmlwdGlvbi50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/identity_phase/description.txt",
+          "extension": "TXT",
+          "category": "identity_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pZGVudGl0eV9waGFzZS9pbWFnZS5wbmc=",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/identity_phase/image.png",
+          "extension": "PNG",
+          "category": "identity_phase"
         },
         {
-          "title": "bGFuZHNjYXBlX01hcHBpbmc=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pZGVudGl0eV9waGFzZS9sYW5kc2NhcGVfTWFwcGluZy50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "landscape_Mapping.txt",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/identity_phase/landscape_Mapping.txt",
+          "extension": "TXT",
+          "category": "identity_phase"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pbmNlcHRpb25fcGhhc2UvZGVzY3JpcHRpb24udHh0",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/inception_phase/description.txt",
+          "extension": "TXT",
+          "category": "inception_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pbmNlcHRpb25fcGhhc2UvaW1hZ2UucG5n",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/inception_phase/image.png",
+          "extension": "PNG",
+          "category": "inception_phase"
         },
         {
-          "title": "TXl0aGljIEFyY2hpdGVjdHVyZXM=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pbmNlcHRpb25fcGhhc2UvTXl0aGljIEFyY2hpdGVjdHVyZXMudHh0",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Mythic Architectures.txt",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/inception_phase/Mythic Architectures.txt",
+          "extension": "TXT",
+          "category": "inception_phase"
         },
         {
-          "title": "Q3VsdHVyYWwgRW5jb2Rpbmc=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pbnB1dF9waGFzZS9DdWx0dXJhbCBFbmNvZGluZy50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "Cultural Encoding.txt",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/input_phase/Cultural Encoding.txt",
+          "extension": "TXT",
+          "category": "input_phase"
         },
         {
-          "title": "ZGVzY3JpcHRpb24=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pbnB1dF9waGFzZS9kZXNjcmlwdGlvbi50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "description.txt",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/input_phase/description.txt",
+          "extension": "TXT",
+          "category": "input_phase"
         },
         {
-          "title": "aW1hZ2U=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdGVtcGxhdGVzL3Rlc3RfZGF0YXNldC9pbnB1dF9waGFzZS9pbWFnZS5wbmc=",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "image.png",
+          "path": "Engine/gynthetic_engine/templates/test_dataset/input_phase/image.png",
+          "extension": "PNG",
+          "category": "input_phase"
         },
         {
-          "title": "ZGVmYXVsdF90cmFuc2Zvcm1fdGVtcGxhdGU=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdHJhbnNmb3Jtcy9kZWZhdWx0X3RyYW5zZm9ybV90ZW1wbGF0ZS5qc29u",
-          "extension": "LkpTT04=",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "default_transform_template.json",
+          "path": "Engine/gynthetic_engine/transforms/default_transform_template.json",
+          "extension": "JSON",
+          "category": "transforms"
         },
         {
-          "title": "YXNzaXN0YW50X2NyZWF0b3I=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvYXNzaXN0YW50X2NyZWF0b3IucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "assistant_creator.py",
+          "path": "Engine/gynthetic_engine/ui/assistant_creator.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Ymc=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvYmcucG5n",
-          "extension": "LlBORw==",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "bg.png",
+          "path": "Engine/gynthetic_engine/ui/bg.png",
+          "extension": "PNG",
+          "category": "ui"
         },
         {
-          "title": "Y29tcG9zZXI=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvY29tcG9zZXIucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "composer.py",
+          "path": "Engine/gynthetic_engine/ui/composer.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Y29tcG9zZXI=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvY29tcG9zZXIudWk=",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "composer.ui",
+          "path": "Engine/gynthetic_engine/ui/composer.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "Y29tcG9zZXJXaW5kb3c=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvY29tcG9zZXJXaW5kb3cucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "composerWindow.py",
+          "path": "Engine/gynthetic_engine/ui/composerWindow.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Y29uZHVjdGVyV2luZG93",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvY29uZHVjdGVyV2luZG93LnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "conducterWindow.py",
+          "path": "Engine/gynthetic_engine/ui/conducterWindow.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Y29uZHVjdG9y",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvY29uZHVjdG9yLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "conductor.py",
+          "path": "Engine/gynthetic_engine/ui/conductor.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Y29uZHVjdG9y",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvY29uZHVjdG9yLnVp",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "conductor.ui",
+          "path": "Engine/gynthetic_engine/ui/conductor.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "ZGVjb21wb3Nlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvZGVjb21wb3Nlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "decomposer.py",
+          "path": "Engine/gynthetic_engine/ui/decomposer.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "ZGVjb21wb3Nlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvZGVjb21wb3Nlci51aQ==",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "decomposer.ui",
+          "path": "Engine/gynthetic_engine/ui/decomposer.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "ZGVjb21wb3NlcldpbmRvdw==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvZGVjb21wb3NlcldpbmRvdy5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "decomposerWindow.py",
+          "path": "Engine/gynthetic_engine/ui/decomposerWindow.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "ZW50ZXJfa2V5X2ZpbHRlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvZW50ZXJfa2V5X2ZpbHRlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "enter_key_filter.py",
+          "path": "Engine/gynthetic_engine/ui/enter_key_filter.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Z3B0Mg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvZ3B0Mi5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gpt2.py",
+          "path": "Engine/gynthetic_engine/ui/gpt2.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "Z3B0Mg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvZ3B0Mi51aQ==",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gpt2.ui",
+          "path": "Engine/gynthetic_engine/ui/gpt2.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "Z3B0Ml9jb250cm9sbGVy",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvZ3B0Ml9jb250cm9sbGVyLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "gpt2_controller.py",
+          "path": "Engine/gynthetic_engine/ui/gpt2_controller.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "aWRpb3RfbGlnaHRfY29udHJvbGxlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvaWRpb3RfbGlnaHRfY29udHJvbGxlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "idiot_light_controller.py",
+          "path": "Engine/gynthetic_engine/ui/idiot_light_controller.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "bmV3RW5naW5l",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvbmV3RW5naW5lLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "newEngine.py",
+          "path": "Engine/gynthetic_engine/ui/newEngine.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "bmV3RW5naW5l",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvbmV3RW5naW5lLnVp",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "newEngine.ui",
+          "path": "Engine/gynthetic_engine/ui/newEngine.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "c3VibWl0Rm9ybQ==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvc3VibWl0Rm9ybS51aQ==",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "submitForm.ui",
+          "path": "Engine/gynthetic_engine/ui/submitForm.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "dGVtcGxhdGVfZWRpdG9yX2NvbnRyb2xsZXI=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvdGVtcGxhdGVfZWRpdG9yX2NvbnRyb2xsZXIucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "template_editor_controller.py",
+          "path": "Engine/gynthetic_engine/ui/template_editor_controller.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "dWlfcGFyc2Vy",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvdWlfcGFyc2VyLnB5",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "ui_parser.py",
+          "path": "Engine/gynthetic_engine/ui/ui_parser.py",
+          "extension": "PY",
+          "category": "ui"
         },
         {
-          "title": "dW50aXRsZWQ=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdWkvdW50aXRsZWQudWk=",
-          "extension": "LlVJ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "untitled.ui",
+          "path": "Engine/gynthetic_engine/ui/untitled.ui",
+          "extension": "UI",
+          "category": "ui"
         },
         {
-          "title": "ZW52X3dyaXRlcg==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdXRpbHMvZW52X3dyaXRlci5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "env_writer.py",
+          "path": "Engine/gynthetic_engine/utils/env_writer.py",
+          "extension": "PY",
+          "category": "utils"
         },
         {
-          "title": "cmVzaXplX2ltYWdlcw==",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdXRpbHMvcmVzaXplX2ltYWdlcy5weQ==",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "resize_images.py",
+          "path": "Engine/gynthetic_engine/utils/resize_images.py",
+          "extension": "PY",
+          "category": "utils"
         },
         {
-          "title": "X19pbml0X18=",
-          "path": "RW5naW5lL2d5bnRoZXRpY19lbmdpbmUvdXRpbHMvX19pbml0X18ucHk=",
-          "extension": "LlBZ",
-          "category": "Ry15bnRoZXRpYyBFbmdpbmUgQ29yZQ=="
+          "title": "__init__.py",
+          "path": "Engine/gynthetic_engine/utils/__init__.py",
+          "extension": "PY",
+          "category": "utils"
         },
         {
-          "title": "TGF0dGljZVZpc3VhbGl6ZXI=",
-          "path": "TWVtb3J5L0xhdHRpY2VWaXN1YWxpemVyLnRzeA==",
-          "extension": "LlRTWA==",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "LatticeVisualizer.tsx",
+          "path": "Memory/LatticeVisualizer.tsx",
+          "extension": "TSX",
+          "category": "G-ynthetic Memory Core"
         },
         {
-          "title": "bGF0dGljZV9jcmF3bGVy",
-          "path": "TWVtb3J5L2xhdHRpY2VfY3Jhd2xlci5weQ==",
-          "extension": "LlBZ",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_crawler.py",
+          "path": "Memory/lattice_crawler.py",
+          "extension": "PY",
+          "category": "G-ynthetic Memory Core"
         },
         {
-          "title": "bWVtb3J5",
-          "path": "TWVtb3J5L21lbW9yeS5weQ==",
-          "extension": "LlBZ",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "memory.py",
+          "path": "Memory/memory.py",
+          "extension": "PY",
+          "category": "G-ynthetic Memory Core"
         },
         {
-          "title": "bWVtb3J5TGF0dGljZVNlcnZpY2U=",
-          "path": "TWVtb3J5L21lbW9yeUxhdHRpY2VTZXJ2aWNlLnRz",
-          "extension": "LlRT",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "memoryLatticeService.ts",
+          "path": "Memory/memoryLatticeService.ts",
+          "extension": "TS",
+          "category": "G-ynthetic Memory Core"
         },
         {
-          "title": "Tm9kZURldGFpbA==",
-          "path": "TWVtb3J5L05vZGVEZXRhaWwudHN4",
-          "extension": "LlRTWA==",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "NodeDetail.tsx",
+          "path": "Memory/NodeDetail.tsx",
+          "extension": "TSX",
+          "category": "G-ynthetic Memory Core"
         },
         {
-          "title": "dXNlTWVtb3J5Q29yZQ==",
-          "path": "TWVtb3J5L3VzZU1lbW9yeUNvcmUudHM=",
-          "extension": "LlRT",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "useMemoryCore.ts",
+          "path": "Memory/useMemoryCore.ts",
+          "extension": "TS",
+          "category": "G-ynthetic Memory Core"
         },
         {
-          "title": "bGF0dGljZV9tZXRh",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9tZXRhLmpzb24=",
-          "extension": "LkpTT04=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_meta.json",
+          "path": "Memory/1029_memory_lattice/lattice_meta.json",
+          "extension": "JSON",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "bGF0dGljZV9ub2Rlcw==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ub2Rlcy5qc29u",
-          "extension": "LkpTT04=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_nodes.json",
+          "path": "Memory/1029_memory_lattice/lattice_nodes.json",
+          "extension": "JSON",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "bGF0dGljZV9ub2Rlcw==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ub2Rlcy55YW1s",
-          "extension": "LllBTUw=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_nodes.yaml",
+          "path": "Memory/1029_memory_lattice/lattice_nodes.yaml",
+          "extension": "YAML",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "bGF0dGljZV9ydW50aW1lX2J1bmRsZQ==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS56aXA=",
-          "extension": "LlpJUA==",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_runtime_bundle.zip",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle.zip",
+          "extension": "ZIP",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "ZXhhbXBsZV91c2FnZQ==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9leGFtcGxlX3VzYWdlLnB5",
-          "extension": "LlBZ",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "example_usage.py",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/example_usage.py",
+          "extension": "PY",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "aWRfdG9fa2V5X2xvb2t1cA==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9pZF90b19rZXlfbG9va3VwLmpzb24=",
-          "extension": "LkpTT04=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "id_to_key_lookup.json",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/id_to_key_lookup.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "a2V5X3RvX2lkX2xvb2t1cA==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9rZXlfdG9faWRfbG9va3VwLmpzb24=",
-          "extension": "LkpTT04=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "key_to_id_lookup.json",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/key_to_id_lookup.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "bGF0dGljZV9tZXRh",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9sYXR0aWNlX21ldGEuanNvbg==",
-          "extension": "LkpTT04=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_meta.json",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/lattice_meta.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "bGF0dGljZV9ub2Rlcw==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9sYXR0aWNlX25vZGVzLmpzb24=",
-          "extension": "LkpTT04=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_nodes.json",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/lattice_nodes.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "bGF0dGljZV9ub2Rlcw==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9sYXR0aWNlX25vZGVzLnlhbWw=",
-          "extension": "LllBTUw=",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "lattice_nodes.yaml",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/lattice_nodes.yaml",
+          "extension": "YAML",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "bWVtb3J5X2FwaQ==",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9tZW1vcnlfYXBpLnB5",
-          "extension": "LlBZ",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "title": "memory_api.py",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/memory_api.py",
+          "extension": "PY",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "b3BlbmFpXzUgbW9kZWwgaGVscCB0aWNrZXQ=",
-          "path": "TWVtb3J5LzEwMjlfbWVtb3J5X2xhdHRpY2UvbGF0dGljZV9ydW50aW1lX2J1bmRsZS9vcGVuYWlfNSBtb2RlbCBoZWxwIHRpY2tldA==",
+          "title": "openai_5 model help ticket",
+          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/openai_5 model help ticket",
           "extension": "",
-          "category": "TWVtb3J5IExhdHRpY2UgSW5mcmFzdHJ1Y3R1cmU="
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "YWZmaW5pdHlfa2VybmVs",
-          "path": "U2ltdWxhdGlvbi9hZmZpbml0eV9rZXJuZWwucHk=",
-          "extension": "LlBZ",
-          "category": "QWZmaW5pdHkgU2ltdWxhdGlvbg=="
+          "title": "affinity_kernel.py",
+          "path": "Simulation/affinity_kernel.py",
+          "extension": "PY",
+          "category": "G-ynthetic Simulation Core"
         },
         {
-          "title": "QlVTSU5FU1MgU0NBTElORyBNT0RFTC5tZA==",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vQlVTSU5FU1NfU0NBTElOR19NT0RFTC5tZA==",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "engine detailed walkthrough 1.odt",
+          "path": "domain-agnostic/engine detailed walkthrough 1.odt",
+          "extension": "ODT",
+          "category": "Domain Agnostic Foundation"
         },
         {
-          "title": "Q09ORklERU5USUFMSVRZIEJSSUVGLm1k",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vQ09ORklERU5USUFMSVRZX0JSSUVGLm1k",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "engine.py",
+          "path": "domain-agnostic/engine.py",
+          "extension": "PY",
+          "category": "Domain Agnostic Foundation"
         },
         {
-          "title": "REVNTyBBTkQgUElUQ0ggU0NSSVBULm1k",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vREVNT19BTkRfUElUQ0hfU0NSSVBULm1k",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "Intake Side.drawio.png",
+          "path": "domain-agnostic/Intake Side.drawio.png",
+          "extension": "PNG",
+          "category": "Domain Agnostic Foundation"
         },
         {
-          "title": "RFVBTCBVU0UgUkVBTElUWS5tZA==",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vRFVBTF9VU0VfUkVBTElUWS5tZA==",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "memory.py",
+          "path": "domain-agnostic/memory.py",
+          "extension": "PY",
+          "category": "Domain Agnostic Foundation"
         },
         {
-          "title": "RkVBVFVSRVMgU0hFRVQubWQ=",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vRkVBVFVSRVNfU0hFRVQubWQ=",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "Output Manifold.docx",
+          "path": "domain-agnostic/Output Manifold.docx",
+          "extension": "DOCX",
+          "category": "Domain Agnostic Foundation"
         },
         {
-          "title": "RklOQU5DSUFMIFJFQUxJVFkgQ0hFQ0subWQ=",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vRklOQU5DSUFMX1JFQUxJVFlfQ0hFQ0subWQ=",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "The 7 Rhetorical Arcs.docx",
+          "path": "domain-agnostic/The 7 Rhetorical Arcs.docx",
+          "extension": "DOCX",
+          "category": "Domain Agnostic Foundation"
         },
         {
-          "title": "Rk9VTkRFUiBQUk9GSUxFIFNUUkFURUdZLm1k",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vRk9VTkRFUl9QUk9GSUxFX1NUUkFURUdZLm1k",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "lattice_meta.json",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_meta.json",
+          "extension": "JSON",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "R0NQIFNVUlZJVkFMIEdVSURFLm1k",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vR0NQX1NVUlZJVkFMX0dVSURFLm1k",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "lattice_nodes.json",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_nodes.json",
+          "extension": "JSON",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "UkVBRFkgVE8gTEFVTkNILm1k",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vUkVBRFlfVE9fTEFVTkNILm1k",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "lattice_nodes.yaml",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_nodes.yaml",
+          "extension": "YAML",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "UkVTRUFSQ0ggVEhFU0lTLm1k",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vUkVTRUFSQ0hfVEhFU0lTLm1k",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "lattice_runtime_bundle.zip",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle.zip",
+          "extension": "ZIP",
+          "category": "1029_memory_lattice"
         },
         {
-          "title": "VEVDSE5JQ0FMIEVYRUNVVElWRSBTVU1NQVJZLm1k",
-          "path": "RE9DUy9Hb29nbGVfQWNjZWxlcmF0b3JfQXBwbGljYXRpb24vVEVDSE5JQ0FMX0VYRUNVVElWRV9TVU1NQVJZLm1k",
-          "extension": "Lk1E",
-          "category": "R29vZ2xlIEFjY2VsZXJhdG9yIEFwcGxpY2F0aW9u"
+          "title": "engine detailed walkthrough 1.odt",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/engine detailed walkthrough 1.odt",
+          "extension": "ODT",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "Q3ViZVheMyBBbGdvcml0aG0gQnJpZWY=",
-          "path": "Y3ViZXhfYWxnb3JpdGhtc19pbnRlcm5hbC5odG1s",
-          "extension": "LkhUTUw=",
-          "category": "Q3ViZVheMw=="
+          "title": "example_usage.py",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/example_usage.py",
+          "extension": "PY",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "Ym90IGNtZHMgMi5QTkc=",
-          "path": "RE9DUy9kZXYvYm90X2NtZHNfMi5QTkc=",
-          "extension": "LlBORw==",
-          "category": "ZGV2"
+          "title": "fractalmemory system(1)",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/fractalmemory system(1)",
+          "extension": "",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "Ym90IGNvbW1hbmRzLlBORw==",
-          "path": "RE9DUy9kZXYvYm90X2NvbW1hbmRzLlBORw==",
-          "extension": "LlBORw==",
-          "category": "ZGV2"
+          "title": "id_to_key_lookup.json",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/id_to_key_lookup.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "cGVyc2lzdGVudCBib3QgY29tbWFuZHMuUE5H",
-          "path": "RE9DUy9kZXYvcGVyc2lzdGVudF9ib3RfY29tbWFuZHMuUE5H",
-          "extension": "LlBORw==",
-          "category": "ZGV2"
+          "title": "key_to_id_lookup.json",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/key_to_id_lookup.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "NyBSaGV0b3JpY2FsIEFyY3MudHh0",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvNyBSaGV0b3JpY2FsIEFyY3MudHh0",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "lattice_meta.json",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/lattice_meta.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "QURT",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvQURTLnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "lattice_nodes.json",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/lattice_nodes.json",
+          "extension": "JSON",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "QXVkaXQudHh0",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvQXVkaXQudHh0",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "lattice_nodes.yaml",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/lattice_nodes.yaml",
+          "extension": "YAML",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "Q2VydGlmaWNhdGlvbiBvZiBNaWNybyBFbnRpdHkgU3RhdHVzIGZpeGVk",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvQ2VydGlmaWNhdGlvbiBvZiBNaWNybyBFbnRpdHkgU3RhdHVzX2ZpeGVkLnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "memory_api.py",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/memory_api.py",
+          "extension": "PY",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "Q292ZXIgUGFnZS50eHQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvQ292ZXJfUGFnZS50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "openai_5 model help ticket",
+          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/openai_5 model help ticket",
+          "extension": "",
+          "category": "lattice_runtime_bundle"
         },
         {
-          "title": "SW5wdXQgT3V0cHV0IExMTXMuZHJhd2lv",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvSW5wdXRfT3V0cHV0X0xMTXMuZHJhd2lv",
-          "extension": "LkRSQVdJTw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Affinity Simulation.png",
+          "path": "domain-agnostic/diagrams/Affinity Simulation.png",
+          "extension": "PNG",
+          "category": "diagrams"
         },
         {
-          "title": "SW50YWtlIFNpZGUuZHJhd2lv",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvSW50YWtlIFNpZGUuZHJhd2lv",
-          "extension": "LkRSQVdJTw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Affinity_Sim.png",
+          "path": "domain-agnostic/diagrams/Affinity_Sim.png",
+          "extension": "PNG",
+          "category": "diagrams"
         },
         {
-          "title": "UHJvdmlzaW9uYWwgUGF0ZW50IFNwZWNpZmljYXRpb24gRklYRUQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJvdmlzaW9uYWxfUGF0ZW50X1NwZWNpZmljYXRpb25fRklYRUQuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "cogEngDiaCol.png",
+          "path": "domain-agnostic/diagrams/cogEngDiaCol.png",
+          "extension": "PNG",
+          "category": "diagrams"
         },
         {
-          "title": "U2xpcHN0cmVhbSBncmFkaWVudA==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvU2xpcHN0cmVhbV9ncmFkaWVudC5wZGY=",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "G-ynthetic.odt",
+          "path": "domain-agnostic/diagrams/G-ynthetic.odt",
+          "extension": "ODT",
+          "category": "diagrams"
         },
         {
-          "title": "VGhlIFRyaWxpbGlxdWFyeS50eHQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvVGhlIFRyaWxpbGlxdWFyeS50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Reality_model_diagram.png",
+          "path": "domain-agnostic/diagrams/Reality_model_diagram.png",
+          "extension": "PNG",
+          "category": "diagrams"
         },
         {
-          "title": "VGlsaWxpcXVhcml1bS50eHQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvVGlsaWxpcXVhcml1bS50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Relational_Cast.png",
+          "path": "domain-agnostic/diagrams/Relational_Cast.png",
+          "extension": "PNG",
+          "category": "diagrams"
         },
         {
-          "title": "Q292ZXIgUGFnZQ==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL0NvdmVyX1BhZ2UuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Game Org.png",
+          "path": "domain-agnostic/diagrams/diagrams/Game Org.png",
+          "extension": "PNG",
+          "category": "diagrams"
         },
         {
-          "title": "ZW5naW5lLnFyYw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL2VuZ2luZS5xcmM=",
-          "extension": "LlFSQw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Building a 4D Gradient.docx",
+          "path": "research/Building a 4D Gradient.docx",
+          "extension": "DOCX",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "ZjY0NzRmMWIxMGJlZTc1YzU4NjU1MmE4MjhjZmJlODQxMTI1NTNjOGEwYjU3ZDBjMWI2YTE0NDc1MjUxYmRkMi0yMDI1LTAzLTMxLTAyLTEyLTU3LWNjODdlM2M1YWM4NDQyYjA5ZGI5MGFiNWZiNWJhNTMwLnppcA==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL2Y2NDc0ZjFiMTBiZWU3NWM1ODY1NTJhODI4Y2ZiZTg0MTEyNTUzYzhhMGI1N2QwYzFiNmExNDQ3NTI1MWJkZDItMjAyNS0wMy0zMS0wMi0xMi01Ny1jYzg3ZTNjNWFjODQ0MmIwOWRiOTBhYjVmYjViYTUzMC56aXA=",
-          "extension": "LlpJUA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "F.R.A.C.C. Cognitive Architecture Research.pdf",
+          "path": "research/F.R.A.C.C. Cognitive Architecture Research.pdf",
+          "extension": "PDF",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "TXkgUGF0ZW50",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL015IFBhdGVudC5wZGY=",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Introducing-Trililiquary_A Slipstream Manifold Framework.pdf",
+          "path": "research/Introducing-Trililiquary_A Slipstream Manifold Framework.pdf",
+          "extension": "PDF",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "cGF0ZW50IHJlY2VpcHQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL3BhdGVudCByZWNlaXB0LnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "research part 1.docx",
+          "path": "research/research part 1.docx",
+          "extension": "DOCX",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "UHJvdmlzaW9uYWwgUGF0ZW50IFNwZWNpZmljYXRpb24=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1Byb3Zpc2lvbmFsIFBhdGVudCBTcGVjaWZpY2F0aW9uLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "research part 2.docx",
+          "path": "research/research part 2.docx",
+          "extension": "DOCX",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "U2xpcHN0cmVhbSBncmFkaWVudC5kcmF3aW8=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1NsaXBzdHJlYW1fZ3JhZGllbnQuZHJhd2lvLnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Spontaneous Association.docx",
+          "path": "research/Spontaneous Association.docx",
+          "extension": "DOCX",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "U2xpcHN0cmVhbSBHcmFkaWVudC5odG1s",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1NsaXBzdHJlYW1fR3JhZGllbnQuaHRtbA==",
-          "extension": "LkhUTUw=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Symbolic Cognition and High-Dimensional Thought_ Frameworks and Insights.odt",
+          "path": "research/Symbolic Cognition and High-Dimensional Thought_ Frameworks and Insights.odt",
+          "extension": "ODT",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "U2xpcHN0cmVhbSBncmFkaWVudC5wbmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1NsaXBzdHJlYW1fZ3JhZGllbnQucG5n",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Symbolic Cognitive Architecture for Simulating Diverse Minds",
+          "path": "research/Symbolic Cognitive Architecture for Simulating Diverse Minds",
+          "extension": "",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "U2xpcHN0cmVhbSBHcmFkaWVudC5zdmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1NsaXBzdHJlYW1fR3JhZGllbnQuc3Zn",
-          "extension": "LlNWRw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Symbolic_Grid_Atlas_Format.txt",
+          "path": "research/Symbolic_Grid_Atlas_Format.txt",
+          "extension": "TXT",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbS5kcmF3aW8=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1RyaWxpbGlxdWFyeURpYWdyYW0uZHJhd2lvLnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "The Oracle Mirage_ A Manifesto on LLMs\u2019 Psychological and Societal Risks.odt",
+          "path": "research/The Oracle Mirage_ A Manifesto on LLMs\u2019 Psychological and Societal Risks.odt",
+          "extension": "ODT",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbS5odG1s",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1RyaWxpbGlxdWFyeURpYWdyYW0uaHRtbA==",
-          "extension": "LkhUTUw=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Towards a Pre-Linguistic Inference Engine_ A Cross-Disciplinary Synthesis.odt",
+          "path": "research/Towards a Pre-Linguistic Inference Engine_ A Cross-Disciplinary Synthesis.odt",
+          "extension": "ODT",
+          "category": "G-ynthetic research Core"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbQ==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1RyaWxpbGlxdWFyeURpYWdyYW0ucGRm",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "bot_cmds_2.PNG",
+          "path": "DOCS/dev/bot_cmds_2.PNG",
+          "extension": "PNG",
+          "category": "dev"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbS5wbmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1RyaWxpbGlxdWFyeURpYWdyYW0ucG5n",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "bot_commands.PNG",
+          "path": "DOCS/dev/bot_commands.PNG",
+          "extension": "PNG",
+          "category": "dev"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbS5zdmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1RyaWxpbGlxdWFyeURpYWdyYW0uc3Zn",
-          "extension": "LlNWRw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "persistent_bot_commands.PNG",
+          "path": "DOCS/dev/persistent_bot_commands.PNG",
+          "extension": "PNG",
+          "category": "dev"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbVRlbXBsYXRlLnBuZw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL1RyaWxpbGlxdWFyeURpYWdyYW1UZW1wbGF0ZS5wbmc=",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "BUSINESS_SCALING_MODEL.md",
+          "path": "DOCS/Google_Accelerator_Application/BUSINESS_SCALING_MODEL.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "dHR0LnFyYw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvaW1hZ2VzL3R0dC5xcmM=",
-          "extension": "LlFSQw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "CONFIDENTIALITY_BRIEF.md",
+          "path": "DOCS/Google_Accelerator_Application/CONFIDENTIALITY_BRIEF.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "UGlwZWxpbmUgT3ZlcnZpZXc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1BpcGVsaW5lIE92ZXJ2aWV3LmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "DEMO_AND_PITCH_SCRIPT.md",
+          "path": "DOCS/Google_Accelerator_Application/DEMO_AND_PITCH_SCRIPT.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "UG9ydGxhbmQgU3RhdGUgVW5pdmVyc2l0eSBNYWlsIC0gRmlsbWluZyBhdCBQU1U=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1BvcnRsYW5kIFN0YXRlIFVuaXZlcnNpdHkgTWFpbCAtIEZpbG1pbmcgYXQgUFNVLnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "DUAL_USE_REALITY.md",
+          "path": "DOCS/Google_Accelerator_Application/DUAL_USE_REALITY.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "UG9ydGxhbmQgU3RhdGUgVW5pdmVyc2l0eSBNYWlsIC0gSHVtYmxlIFJlcXVlc3Q=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1BvcnRsYW5kIFN0YXRlIFVuaXZlcnNpdHkgTWFpbCAtIEh1bWJsZSBSZXF1ZXN0LnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "FEATURES_SHEET.md",
+          "path": "DOCS/Google_Accelerator_Application/FEATURES_SHEET.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "UG90ZW50aWFs",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1BvdGVudGlhbC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "FINANCIAL_REALITY_CHECK.md",
+          "path": "DOCS/Google_Accelerator_Application/FINANCIAL_REALITY_CHECK.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "ICAgVGhlIFRyaWxpbGlxdWFyeSBFbmdpbmUgVGVjaCBPdmVydmlldw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL19fIFRoZSBUcmlsaWxpcXVhcnkgRW5naW5lX1RlY2ggT3ZlcnZpZXcuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "FOUNDER_PROFILE_STRATEGY.md",
+          "path": "DOCS/Google_Accelerator_Application/FOUNDER_PROFILE_STRATEGY.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "c2xpZGUgMS5wbmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1dlc3MncyBFbWFpbC9wb3dlcnBvaW50L3NsaWRlIDEucG5n",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "GCP_SURVIVAL_GUIDE.md",
+          "path": "DOCS/Google_Accelerator_Application/GCP_SURVIVAL_GUIDE.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "c2xpZGUgMi5wbmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1dlc3MncyBFbWFpbC9wb3dlcnBvaW50L3NsaWRlIDIucG5n",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "READY_TO_LAUNCH.md",
+          "path": "DOCS/Google_Accelerator_Application/READY_TO_LAUNCH.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "c2xpZGUgMy5wbmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1dlc3MncyBFbWFpbC9wb3dlcnBvaW50L3NsaWRlIDMucG5n",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "RESEARCH_THESIS.md",
+          "path": "DOCS/Google_Accelerator_Application/RESEARCH_THESIS.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "VGhlIFRyaWxpbGlxdWFyeS5wcHR4",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvUHJlc2VudGF0aW9uL1dlc3MncyBFbWFpbC9wb3dlcnBvaW50L1RoZSBUcmlsaWxpcXVhcnkucHB0eA==",
-          "extension": "LlBQVFg=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "TECHNICAL_EXECUTIVE_SUMMARY.md",
+          "path": "DOCS/Google_Accelerator_Application/TECHNICAL_EXECUTIVE_SUMMARY.md",
+          "extension": "MD",
+          "category": "Google_Accelerator_Application"
         },
         {
-          "title": "d2Fsa3Rocm91Z2g=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC93YWxrdGhyb3VnaC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "privacy gauruntee.PNG",
+          "path": "DOCS/legal/privacy gauruntee.PNG",
+          "extension": "PNG",
+          "category": "legal"
         },
         {
-          "title": "ICAgVGhlIFRyaWxpbGlxdWFyeSBNYW5pZmVzdG8=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9fXyBUaGUgVHJpbGlsaXF1YXJ5IE1hbmlmZXN0by5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "saftey confirmation.PNG",
+          "path": "DOCS/legal/saftey confirmation.PNG",
+          "extension": "PNG",
+          "category": "legal"
         },
         {
-          "title": "VEhFIFRSSUxJTElRVUFSWQ==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC8ub2xkL1RIRSBUUklMSUxJUVVBUlkuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "saftey confirmation2.PNG",
+          "path": "DOCS/legal/saftey confirmation2.PNG",
+          "extension": "PNG",
+          "category": "legal"
         },
         {
-          "title": "dHJpYS1heGlhbCBzdHJhdGVnaWMgaW5mZXJlbmNlIGVuZ2luZQ==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC8ub2xkL3RyaWEtYXhpYWwgc3RyYXRlZ2ljIGluZmVyZW5jZSBlbmdpbmUuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": ".$Intake Side.drawio.bkp",
+          "path": "DOCS/Provisional Patent/.$Intake Side.drawio.bkp",
+          "extension": "BKP",
+          "category": "Provisional Patent"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5IFN1YmNhdGVnb3JpZXMueGxzeA==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC8ub2xkL1RyaWxpbGlxdWFyeV9TdWJjYXRlZ29yaWVzLnhsc3g=",
-          "extension": "LlhMU1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "7 Rhetorical Arcs.txt",
+          "path": "DOCS/Provisional Patent/7 Rhetorical Arcs.txt",
+          "extension": "TXT",
+          "category": "Provisional Patent"
         },
         {
-          "title": "VHJpbGxpcXVhcnkgQ3Jvc3MgQXhpcyBHcm91cHM=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC8ub2xkL1RyaWxsaXF1YXJ5X0Nyb3NzX0F4aXNfR3JvdXBzLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "ADS.pdf",
+          "path": "DOCS/Provisional Patent/ADS.pdf",
+          "extension": "PDF",
+          "category": "Provisional Patent"
         },
         {
-          "title": "ICAgVHJpbGlxdWFyeSBPdmVydmlldw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC8ub2xkL19fIFRyaWxpcXVhcnkgT3ZlcnZpZXcuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Audit.txt",
+          "path": "DOCS/Provisional Patent/Audit.txt",
+          "extension": "TXT",
+          "category": "Provisional Patent"
         },
         {
-          "title": "ZW5naW5lIGRpYWdyYW0uYm1w",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9kcmF3aW5ncy9lbmdpbmUgZGlhZ3JhbS5ibXA=",
-          "extension": "LkJNUA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Certification of Micro Entity Status_fixed.pdf",
+          "path": "DOCS/Provisional Patent/Certification of Micro Entity Status_fixed.pdf",
+          "extension": "PDF",
+          "category": "Provisional Patent"
         },
         {
-          "title": "ZW5naW5lIGRpYWdyYW0uanBlZw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9kcmF3aW5ncy9lbmdpbmUgZGlhZ3JhbS5qcGVn",
-          "extension": "LkpQRUc=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Cover_Page.txt",
+          "path": "DOCS/Provisional Patent/Cover_Page.txt",
+          "extension": "TXT",
+          "category": "Provisional Patent"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5IEVuZ2luZSBCbG9jayBEaWFncmFtLmRyYXdpbw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9kcmF3aW5ncy9UcmlsaWxpcXVhcnkgRW5naW5lIEJsb2NrIERpYWdyYW0uZHJhd2lv",
-          "extension": "LkRSQVdJTw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Input_Output_LLMs.drawio",
+          "path": "DOCS/Provisional Patent/Input_Output_LLMs.drawio",
+          "extension": "DRAWIO",
+          "category": "Provisional Patent"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbS5odG1s",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9kcmF3aW5ncy9UcmlsaWxpcXVhcnlEaWFncmFtLmh0bWw=",
-          "extension": "LkhUTUw=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Intake Side.drawio",
+          "path": "DOCS/Provisional Patent/Intake Side.drawio",
+          "extension": "DRAWIO",
+          "category": "Provisional Patent"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5RGlhZ3JhbS5zdmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9kcmF3aW5ncy9UcmlsaWxpcXVhcnlEaWFncmFtLnN2Zw==",
-          "extension": "LlNWRw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Provisional_Patent_Specification_FIXED.docx",
+          "path": "DOCS/Provisional Patent/Provisional_Patent_Specification_FIXED.docx",
+          "extension": "DOCX",
+          "category": "Provisional Patent"
         },
         {
-          "title": "dHJpbCBjb25jZXB0IGFydC5wbmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9kcmF3aW5ncy90cmlsX2NvbmNlcHRfYXJ0LnBuZw==",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Slipstream_gradient.pdf",
+          "path": "DOCS/Provisional Patent/Slipstream_gradient.pdf",
+          "extension": "PDF",
+          "category": "Provisional Patent"
         },
         {
-          "title": "VW50aXRsZWQgRGlhZ3JhbS5kcmF3aW8=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9kcmF3aW5ncy9VbnRpdGxlZCBEaWFncmFtLmRyYXdpbw==",
-          "extension": "LkRSQVdJTw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "The Trililiquary.txt",
+          "path": "DOCS/Provisional Patent/The Trililiquary.txt",
+          "extension": "TXT",
+          "category": "Provisional Patent"
         },
         {
-          "title": "SW50cm9kdWNpbmctVHJpbGlsaXF1YXJ5IEEgU2xpcHN0cmVhbSBNYW5pZm9sZCBGcmFtZXdvcms=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9lbWFpbC9JbnRyb2R1Y2luZy1UcmlsaWxpcXVhcnlfQSBTbGlwc3RyZWFtIE1hbmlmb2xkIEZyYW1ld29yay5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Tililiquarium.txt",
+          "path": "DOCS/Provisional Patent/Tililiquarium.txt",
+          "extension": "TXT",
+          "category": "Provisional Patent"
         },
         {
-          "title": "Y29udGFjdHM=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9lbWFpbC9jb250YWN0cy9jb250YWN0cy5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Cover_Page.docx",
+          "path": "DOCS/Provisional Patent/images/Cover_Page.docx",
+          "extension": "DOCX",
+          "category": "images"
         },
         {
-          "title": "TWluZCBNYXAgb2YgVHJpbGlsaXF1YXkgRW5naW5l",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9leGFtcGxlcy9NaW5kIE1hcCBvZiBUcmlsaWxpcXVheSBFbmdpbmUuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "engine.qrc",
+          "path": "DOCS/Provisional Patent/images/engine.qrc",
+          "extension": "QRC",
+          "category": "images"
         },
         {
-          "title": "UFJPSkVDVCBQUk9NUFQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9leGFtcGxlcy9QUk9KRUNUIFBST01QVC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "f6474f1b10bee75c586552a828cfbe84112553c8a0b57d0c1b6a14475251bdd2-2025-03-31-02-12-57-cc87e3c5ac8442b09db90ab5fb5ba530.zip",
+          "path": "DOCS/Provisional Patent/images/f6474f1b10bee75c586552a828cfbe84112553c8a0b57d0c1b6a14475251bdd2-2025-03-31-02-12-57-cc87e3c5ac8442b09db90ab5fb5ba530.zip",
+          "extension": "ZIP",
+          "category": "images"
         },
         {
-          "title": "VGhlIFRyaWxpbGlxdWFyeSBlbmdpbmUgZXhwbGFpbmVk",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9leGFtcGxlcy9UaGUgVHJpbGlsaXF1YXJ5IGVuZ2luZSBleHBsYWluZWQuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "My Patent.pdf",
+          "path": "DOCS/Provisional Patent/images/My Patent.pdf",
+          "extension": "PDF",
+          "category": "images"
         },
         {
-          "title": "ICAgQ3VzdG9tIEluc3RydWN0aW9ucyBQcm9tcHQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9leGFtcGxlcy9fXyBDdXN0b20gSW5zdHJ1Y3Rpb25zIFByb21wdC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "patent receipt.pdf",
+          "path": "DOCS/Provisional Patent/images/patent receipt.pdf",
+          "extension": "PDF",
+          "category": "images"
         },
         {
-          "title": "QWxwaGEtU3VuLXByaW1lIGd1aS50eHQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvQWxwaGEtU3VuLXByaW1lIGd1aS50eHQ=",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Provisional Patent Specification.docx",
+          "path": "DOCS/Provisional Patent/images/Provisional Patent Specification.docx",
+          "extension": "DOCX",
+          "category": "images"
         },
         {
-          "title": "bWFsZSBmZW1hbGUgbWVjaGFuaWNz",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvbWFsZV9mZW1hbGUgbWVjaGFuaWNzLm9kdA==",
-          "extension": "Lk9EVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Slipstream_gradient.drawio.pdf",
+          "path": "DOCS/Provisional Patent/images/Slipstream_gradient.drawio.pdf",
+          "extension": "PDF",
+          "category": "images"
         },
         {
-          "title": "UkVBRE1F",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvUkVBRE1FLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Slipstream_Gradient.html",
+          "path": "DOCS/Provisional Patent/images/Slipstream_Gradient.html",
+          "extension": "HTML",
+          "category": "images"
         },
         {
-          "title": "c2NoZW1hdGljcw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3Mvc2NoZW1hdGljcy5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Slipstream_gradient.png",
+          "path": "DOCS/Provisional Patent/images/Slipstream_gradient.png",
+          "extension": "PNG",
+          "category": "images"
         },
         {
-          "title": "VGhlIFRyaWxpbGlxdWFyeU9lcnZpZXc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvVGhlIFRyaWxpbGlxdWFyeU9lcnZpZXcuZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Slipstream_Gradient.svg",
+          "path": "DOCS/Provisional Patent/images/Slipstream_Gradient.svg",
+          "extension": "SVG",
+          "category": "images"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5IENvZ25pdGl2ZSBTY2FmZm9sZC5wbmc=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvVHJpbGlsaXF1YXJ5IENvZ25pdGl2ZSBTY2FmZm9sZC5wbmc=",
-          "extension": "LlBORw==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "TrililiquaryDiagram.drawio.pdf",
+          "path": "DOCS/Provisional Patent/images/TrililiquaryDiagram.drawio.pdf",
+          "extension": "PDF",
+          "category": "images"
         },
         {
-          "title": "VHJpbGxpcXVhcnkgUHJvamVjdA==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvVHJpbGxpcXVhcnkgUHJvamVjdC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "TrililiquaryDiagram.html",
+          "path": "DOCS/Provisional Patent/images/TrililiquaryDiagram.html",
+          "extension": "HTML",
+          "category": "images"
         },
         {
-          "title": "V2FycmVucyBOb3Rlcw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvV2FycmVucyBOb3Rlcy5vZHQ=",
-          "extension": "Lk9EVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "TrililiquaryDiagram.pdf",
+          "path": "DOCS/Provisional Patent/images/TrililiquaryDiagram.pdf",
+          "extension": "PDF",
+          "category": "images"
         },
         {
-          "title": "ICBTdWItUHJpbWVzIHRnbyBGYWN0b3JzLnR4dA==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvXyBTdWItUHJpbWVzIHRnbyBGYWN0b3JzLnR4dA==",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "TrililiquaryDiagram.png",
+          "path": "DOCS/Provisional Patent/images/TrililiquaryDiagram.png",
+          "extension": "PNG",
+          "category": "images"
         },
         {
-          "title": "ICAgVFJJTElMSVFVQVJZIEVOR0lORSBGVU5DVElPTkFMIFIudHh0",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvX18gVFJJTElMSVFVQVJZIEVOR0lORSBGVU5DVElPTkFMIFIudHh0",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "TrililiquaryDiagram.svg",
+          "path": "DOCS/Provisional Patent/images/TrililiquaryDiagram.svg",
+          "extension": "SVG",
+          "category": "images"
         },
         {
-          "title": "ICAxLiBBbHBoYSBQcmltZSBVSSBPcGVyYXRpb24udHh0",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3MvYWxwaGFzL18gMS4gQWxwaGEgUHJpbWUgVUkgT3BlcmF0aW9uLnR4dA==",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "TrililiquaryDiagramTemplate.png",
+          "path": "DOCS/Provisional Patent/images/TrililiquaryDiagramTemplate.png",
+          "extension": "PNG",
+          "category": "images"
         },
         {
-          "title": "c3VicHJpbWVzLnR4dA==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9tZWNoYW5pY3Mvc3ViLXByaW1lcy9zdWJwcmltZXMudHh0",
-          "extension": "LlRYVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "ttt.qrc",
+          "path": "DOCS/Provisional Patent/images/ttt.qrc",
+          "extension": "QRC",
+          "category": "images"
         },
         {
-          "title": "VHJpbGlsaXF1YXJ5IERldmVsb3BtZW50IENoZWNrbGlzdA==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9wcm90b3R5cGluZy9UcmlsaWxpcXVhcnkgRGV2ZWxvcG1lbnQgQ2hlY2tsaXN0LmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Pipeline Overview.docx",
+          "path": "DOCS/Provisional Patent/Presentation/Pipeline Overview.docx",
+          "extension": "DOCX",
+          "category": "Presentation"
         },
         {
-          "title": "ICAgU3lzdGVtIENvbXBvbmVudHM=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9wcm90b3R5cGluZy9fXyBTeXN0ZW0gQ29tcG9uZW50cy5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Portland State University Mail - Filming at PSU.pdf",
+          "path": "DOCS/Provisional Patent/Presentation/Portland State University Mail - Filming at PSU.pdf",
+          "extension": "PDF",
+          "category": "Presentation"
         },
         {
-          "title": "ICAgVHJpbGlsaXF1YXJ5IFJlZmluZWQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9wcm90b3R5cGluZy9fXyBUcmlsaWxpcXVhcnkgUmVmaW5lZC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Portland State University Mail - Humble Request.pdf",
+          "path": "DOCS/Provisional Patent/Presentation/Portland State University Mail - Humble Request.pdf",
+          "extension": "PDF",
+          "category": "Presentation"
         },
         {
-          "title": "SW50cm9kdWNpbmctVHJpbGlsaXF1YXJ5IEEgU2xpcHN0cmVhbSBNYW5pZm9sZCBGcmFtZXdvcms=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9wcm90b3R5cGluZy9zbGlwc3RyZWFtL0ludHJvZHVjaW5nLVRyaWxpbGlxdWFyeV9BIFNsaXBzdHJlYW0gTWFuaWZvbGQgRnJhbWV3b3JrLnBkZg==",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "Potential.docx",
+          "path": "DOCS/Provisional Patent/Presentation/Potential.docx",
+          "extension": "DOCX",
+          "category": "Presentation"
         },
         {
-          "title": "c3ltYmxpYyBlbmduZSBzaWRl",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9wcm90b3R5cGluZy9zeW1ib2xpYyBzdHJ1Y3R1cmUvc3ltYmxpYyBlbmduZSBzaWRlLm9kdA==",
-          "extension": "Lk9EVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "__ The Trililiquary Engine_Tech Overview.docx",
+          "path": "DOCS/Provisional Patent/Presentation/__ The Trililiquary Engine_Tech Overview.docx",
+          "extension": "DOCX",
+          "category": "Presentation"
         },
         {
-          "title": "8J+nsSBTeXN0ZW3igJNDb25zdHJ1Y3Rpb24gTWV0YXBob3IgTWFw",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9wcm90b3R5cGluZy9zeW1ib2xpYyBzdHJ1Y3R1cmUv8J+nsSBTeXN0ZW3igJNDb25zdHJ1Y3Rpb24gTWV0YXBob3IgTWFwLm9kdA==",
-          "extension": "Lk9EVA==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": ".~lock.Output Manifold.docx#",
+          "path": "DOCS/Provisional Patent/Presentation/engine components/.~lock.Output Manifold.docx#",
+          "extension": "DOCX#",
+          "category": "engine components"
         },
         {
-          "title": "SG93IElQIFZhbHVhdGlvbiBXb3Jrcw==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9yZXNlYXJjaCBwYXBlci9Ib3cgSVAgVmFsdWF0aW9uIFdvcmtzLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "slide 1.png",
+          "path": "DOCS/Provisional Patent/Presentation/Wess's Email/powerpoint/slide 1.png",
+          "extension": "PNG",
+          "category": "powerpoint"
         },
         {
-          "title": "bXVsdGktb2JqZWN0aXZlIHJlaW5mb3JjZW1lbnQ=",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9yZXNlYXJjaCBwYXBlci9tdWx0aS1vYmplY3RpdmUgcmVpbmZvcmNlbWVudC5wZGY=",
-          "extension": "LlBERg==",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "slide 2.png",
+          "path": "DOCS/Provisional Patent/Presentation/Wess's Email/powerpoint/slide 2.png",
+          "extension": "PNG",
+          "category": "powerpoint"
         },
         {
-          "title": "VGhlIFRyaWxpbGlxdWFyeQ==",
-          "path": "RE9DUy9Qcm92aXNpb25hbCBQYXRlbnQvcHJvamVjdC9yZXNlYXJjaCBwYXBlci9UaGUgVHJpbGlsaXF1YXJ5LmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "UHJvdmlzaW9uYWwgUGF0ZW50"
+          "title": "slide 3.png",
+          "path": "DOCS/Provisional Patent/Presentation/Wess's Email/powerpoint/slide 3.png",
+          "extension": "PNG",
+          "category": "powerpoint"
         },
         {
-          "title": "QnVpbGRpbmcgYSA0RCBHcmFkaWVudA==",
-          "path": "cmVzZWFyY2gvQnVpbGRpbmcgYSA0RCBHcmFkaWVudC5kb2N4",
-          "extension": "LkRPQ1g=",
-          "category": "cmVzZWFyY2g="
+          "title": "The Trililiquary.pptx",
+          "path": "DOCS/Provisional Patent/Presentation/Wess's Email/powerpoint/The Trililiquary.pptx",
+          "extension": "PPTX",
+          "category": "powerpoint"
         },
         {
-          "title": "cmVzZWFyY2ggcGFydCAx",
-          "path": "cmVzZWFyY2gvcmVzZWFyY2ggcGFydCAxLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "cmVzZWFyY2g="
+          "title": "walkthrough.docx",
+          "path": "DOCS/Provisional Patent/project/walkthrough.docx",
+          "extension": "DOCX",
+          "category": "project"
         },
         {
-          "title": "cmVzZWFyY2ggcGFydCAy",
-          "path": "cmVzZWFyY2gvcmVzZWFyY2ggcGFydCAyLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "cmVzZWFyY2g="
+          "title": "__ The Trililiquary Manifesto.docx",
+          "path": "DOCS/Provisional Patent/project/__ The Trililiquary Manifesto.docx",
+          "extension": "DOCX",
+          "category": "project"
         },
         {
-          "title": "U3BvbnRhbmVvdXMgQXNzb2NpYXRpb24=",
-          "path": "cmVzZWFyY2gvU3BvbnRhbmVvdXMgQXNzb2NpYXRpb24uZG9jeA==",
-          "extension": "LkRPQ1g=",
-          "category": "cmVzZWFyY2g="
+          "title": "THE TRILILIQUARY.docx",
+          "path": "DOCS/Provisional Patent/project/.old/THE TRILILIQUARY.docx",
+          "extension": "DOCX",
+          "category": ".old"
         },
         {
-          "title": "U3ltYm9saWMgR3JpZCBBdGxhcyBGb3JtYXQudHh0",
-          "path": "cmVzZWFyY2gvU3ltYm9saWNfR3JpZF9BdGxhc19Gb3JtYXQudHh0",
-          "extension": "LlRYVA==",
-          "category": "cmVzZWFyY2g="
+          "title": "tria-axial strategic inference engine.docx",
+          "path": "DOCS/Provisional Patent/project/.old/tria-axial strategic inference engine.docx",
+          "extension": "DOCX",
+          "category": ".old"
         },
         {
-          "title": "cHJpdmFjeSBnYXVydW50ZWUuUE5H",
-          "path": "RE9DUy9sZWdhbC9wcml2YWN5IGdhdXJ1bnRlZS5QTkc=",
-          "extension": "LlBORw==",
-          "category": "bGVnYWw="
+          "title": "Trililiquary_Subcategories.xlsx",
+          "path": "DOCS/Provisional Patent/project/.old/Trililiquary_Subcategories.xlsx",
+          "extension": "XLSX",
+          "category": ".old"
         },
         {
-          "title": "c2FmdGV5IGNvbmZpcm1hdGlvbi5QTkc=",
-          "path": "RE9DUy9sZWdhbC9zYWZ0ZXkgY29uZmlybWF0aW9uLlBORw==",
-          "extension": "LlBORw==",
-          "category": "bGVnYWw="
+          "title": "Trilliquary_Cross_Axis_Groups.docx",
+          "path": "DOCS/Provisional Patent/project/.old/Trilliquary_Cross_Axis_Groups.docx",
+          "extension": "DOCX",
+          "category": ".old"
         },
         {
-          "title": "c2FmdGV5IGNvbmZpcm1hdGlvbjIuUE5H",
-          "path": "RE9DUy9sZWdhbC9zYWZ0ZXkgY29uZmlybWF0aW9uMi5QTkc=",
-          "extension": "LlBORw==",
-          "category": "bGVnYWw="
+          "title": "__ Triliquary Overview.docx",
+          "path": "DOCS/Provisional Patent/project/.old/__ Triliquary Overview.docx",
+          "extension": "DOCX",
+          "category": ".old"
         },
         {
-          "title": "ZW5naW5lIGRldGFpbGVkIHdhbGt0aHJvdWdoIDE=",
-          "path": "ZG9tYWluLWFnbm9zdGljLy4vZW5naW5lIGRldGFpbGVkIHdhbGt0aHJvdWdoIDEub2R0",
-          "extension": "Lk9EVA==",
-          "category": "ZG9tYWluIGFnbm9zdGlj"
+          "title": "engine diagram.bmp",
+          "path": "DOCS/Provisional Patent/project/drawings/engine diagram.bmp",
+          "extension": "BMP",
+          "category": "drawings"
         },
         {
-          "title": "ZW5naW5l",
-          "path": "ZG9tYWluLWFnbm9zdGljLy4vZW5naW5lLnB5",
-          "extension": "LlBZ",
-          "category": "ZG9tYWluIGFnbm9zdGlj"
+          "title": "engine diagram.jpeg",
+          "path": "DOCS/Provisional Patent/project/drawings/engine diagram.jpeg",
+          "extension": "JPEG",
+          "category": "drawings"
         },
         {
-          "title": "SW50YWtlIFNpZGUuZHJhd2lvLnBuZw==",
-          "path": "ZG9tYWluLWFnbm9zdGljLy4vSW50YWtlIFNpZGUuZHJhd2lvLnBuZw==",
-          "extension": "LlBORw==",
-          "category": "ZG9tYWluIGFnbm9zdGlj"
+          "title": "Trililiquary Engine Block Diagram.drawio",
+          "path": "DOCS/Provisional Patent/project/drawings/Trililiquary Engine Block Diagram.drawio",
+          "extension": "DRAWIO",
+          "category": "drawings"
         },
         {
-          "title": "bWVtb3J5",
-          "path": "ZG9tYWluLWFnbm9zdGljLy4vbWVtb3J5LnB5",
-          "extension": "LlBZ",
-          "category": "ZG9tYWluIGFnbm9zdGlj"
+          "title": "TrililiquaryDiagram.html",
+          "path": "DOCS/Provisional Patent/project/drawings/TrililiquaryDiagram.html",
+          "extension": "HTML",
+          "category": "drawings"
         },
         {
-          "title": "T3V0cHV0IE1hbmlmb2xk",
-          "path": "ZG9tYWluLWFnbm9zdGljLy4vT3V0cHV0IE1hbmlmb2xkLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "ZG9tYWluIGFnbm9zdGlj"
+          "title": "TrililiquaryDiagram.svg",
+          "path": "DOCS/Provisional Patent/project/drawings/TrililiquaryDiagram.svg",
+          "extension": "SVG",
+          "category": "drawings"
         },
         {
-          "title": "VGhlIDcgUmhldG9yaWNhbCBBcmNz",
-          "path": "ZG9tYWluLWFnbm9zdGljLy4vVGhlIDcgUmhldG9yaWNhbCBBcmNzLmRvY3g=",
-          "extension": "LkRPQ1g=",
-          "category": "ZG9tYWluIGFnbm9zdGlj"
+          "title": "tril_concept_art.png",
+          "path": "DOCS/Provisional Patent/project/drawings/tril_concept_art.png",
+          "extension": "PNG",
+          "category": "drawings"
+        },
+        {
+          "title": "Untitled Diagram.drawio",
+          "path": "DOCS/Provisional Patent/project/drawings/Untitled Diagram.drawio",
+          "extension": "DRAWIO",
+          "category": "drawings"
+        },
+        {
+          "title": "Introducing-Trililiquary_A Slipstream Manifold Framework.docx",
+          "path": "DOCS/Provisional Patent/project/email/Introducing-Trililiquary_A Slipstream Manifold Framework.docx",
+          "extension": "DOCX",
+          "category": "email"
+        },
+        {
+          "title": "contacts.docx",
+          "path": "DOCS/Provisional Patent/project/email/contacts/contacts.docx",
+          "extension": "DOCX",
+          "category": "contacts"
+        },
+        {
+          "title": "Mind Map of Trililiquay Engine.docx",
+          "path": "DOCS/Provisional Patent/project/examples/Mind Map of Trililiquay Engine.docx",
+          "extension": "DOCX",
+          "category": "examples"
+        },
+        {
+          "title": "PROJECT PROMPT.docx",
+          "path": "DOCS/Provisional Patent/project/examples/PROJECT PROMPT.docx",
+          "extension": "DOCX",
+          "category": "examples"
+        },
+        {
+          "title": "The Trililiquary engine explained.docx",
+          "path": "DOCS/Provisional Patent/project/examples/The Trililiquary engine explained.docx",
+          "extension": "DOCX",
+          "category": "examples"
+        },
+        {
+          "title": "__ Custom Instructions Prompt.docx",
+          "path": "DOCS/Provisional Patent/project/examples/__ Custom Instructions Prompt.docx",
+          "extension": "DOCX",
+          "category": "examples"
+        },
+        {
+          "title": "Alpha-Sun-prime gui.txt",
+          "path": "DOCS/Provisional Patent/project/mechanics/Alpha-Sun-prime gui.txt",
+          "extension": "TXT",
+          "category": "mechanics"
+        },
+        {
+          "title": "male_female mechanics.odt",
+          "path": "DOCS/Provisional Patent/project/mechanics/male_female mechanics.odt",
+          "extension": "ODT",
+          "category": "mechanics"
+        },
+        {
+          "title": "README.docx",
+          "path": "DOCS/Provisional Patent/project/mechanics/README.docx",
+          "extension": "DOCX",
+          "category": "mechanics"
+        },
+        {
+          "title": "schematics.docx",
+          "path": "DOCS/Provisional Patent/project/mechanics/schematics.docx",
+          "extension": "DOCX",
+          "category": "mechanics"
+        },
+        {
+          "title": "The TrililiquaryOerview.docx",
+          "path": "DOCS/Provisional Patent/project/mechanics/The TrililiquaryOerview.docx",
+          "extension": "DOCX",
+          "category": "mechanics"
+        },
+        {
+          "title": "Trililiquary Cognitive Scaffold.png",
+          "path": "DOCS/Provisional Patent/project/mechanics/Trililiquary Cognitive Scaffold.png",
+          "extension": "PNG",
+          "category": "mechanics"
+        },
+        {
+          "title": "Trilliquary Project.docx",
+          "path": "DOCS/Provisional Patent/project/mechanics/Trilliquary Project.docx",
+          "extension": "DOCX",
+          "category": "mechanics"
+        },
+        {
+          "title": "Warrens Notes.odt",
+          "path": "DOCS/Provisional Patent/project/mechanics/Warrens Notes.odt",
+          "extension": "ODT",
+          "category": "mechanics"
+        },
+        {
+          "title": "_ Sub-Primes tgo Factors.txt",
+          "path": "DOCS/Provisional Patent/project/mechanics/_ Sub-Primes tgo Factors.txt",
+          "extension": "TXT",
+          "category": "mechanics"
+        },
+        {
+          "title": "__ TRILILIQUARY ENGINE FUNCTIONAL R.txt",
+          "path": "DOCS/Provisional Patent/project/mechanics/__ TRILILIQUARY ENGINE FUNCTIONAL R.txt",
+          "extension": "TXT",
+          "category": "mechanics"
+        },
+        {
+          "title": "_ 1. Alpha Prime UI Operation.txt",
+          "path": "DOCS/Provisional Patent/project/mechanics/alphas/_ 1. Alpha Prime UI Operation.txt",
+          "extension": "TXT",
+          "category": "alphas"
+        },
+        {
+          "title": "subprimes.txt",
+          "path": "DOCS/Provisional Patent/project/mechanics/sub-primes/subprimes.txt",
+          "extension": "TXT",
+          "category": "sub-primes"
+        },
+        {
+          "title": "Trililiquary Development Checklist.docx",
+          "path": "DOCS/Provisional Patent/project/prototyping/Trililiquary Development Checklist.docx",
+          "extension": "DOCX",
+          "category": "prototyping"
+        },
+        {
+          "title": "__ System Components.docx",
+          "path": "DOCS/Provisional Patent/project/prototyping/__ System Components.docx",
+          "extension": "DOCX",
+          "category": "prototyping"
+        },
+        {
+          "title": "__ Trililiquary Refined.docx",
+          "path": "DOCS/Provisional Patent/project/prototyping/__ Trililiquary Refined.docx",
+          "extension": "DOCX",
+          "category": "prototyping"
+        },
+        {
+          "title": "Introducing-Trililiquary_A Slipstream Manifold Framework.pdf",
+          "path": "DOCS/Provisional Patent/project/prototyping/slipstream/Introducing-Trililiquary_A Slipstream Manifold Framework.pdf",
+          "extension": "PDF",
+          "category": "slipstream"
+        },
+        {
+          "title": "symblic engne side.odt",
+          "path": "DOCS/Provisional Patent/project/prototyping/symbolic structure/symblic engne side.odt",
+          "extension": "ODT",
+          "category": "symbolic structure"
+        },
+        {
+          "title": "\ud83e\uddf1 System\u2013Construction Metaphor Map.odt",
+          "path": "DOCS/Provisional Patent/project/prototyping/symbolic structure/\ud83e\uddf1 System\u2013Construction Metaphor Map.odt",
+          "extension": "ODT",
+          "category": "symbolic structure"
+        },
+        {
+          "title": "How IP Valuation Works.docx",
+          "path": "DOCS/Provisional Patent/project/research paper/How IP Valuation Works.docx",
+          "extension": "DOCX",
+          "category": "research paper"
+        },
+        {
+          "title": "multi-objective reinforcement.pdf",
+          "path": "DOCS/Provisional Patent/project/research paper/multi-objective reinforcement.pdf",
+          "extension": "PDF",
+          "category": "research paper"
+        },
+        {
+          "title": "The Trililiquary.docx",
+          "path": "DOCS/Provisional Patent/project/research paper/The Trililiquary.docx",
+          "extension": "DOCX",
+          "category": "research paper"
         }
       ]
     }
-  },
-  "metadata": {
-    "total_files": 276,
-    "timestamp": "2026-02-17",
-    "is_scrambled": true
   }
 };

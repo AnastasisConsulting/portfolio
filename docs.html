@@ -212,35 +212,12 @@
     <script>
         const archiveRoot = document.getElementById('archive-root');
 
-        function decode(str) {
-            if (!str) return "";
-            try {
-                // Handle potential URL-safe base64 and missing padding
-                let b64 = str.trim().replace(/-/g, '+').replace(/_/g, '/');
-                while (b64.length % 4) b64 += '=';
-                return atob(b64);
-            } catch (e) {
-                // Return original if not valid base64
-                return str;
-            }
-        }
-
         function renderArchive() {
             archiveRoot.innerHTML = '';
 
             // Only one level (0) exists now
-            const tierRaw = DOCS_MANIFEST.levels["0"];
-            if (!tierRaw) return;
-
-            const tier = {
-                name: decode(tierRaw.name),
-                files: tierRaw.files.map(f => ({
-                    title: decode(f.title),
-                    path: decode(f.path),
-                    extension: decode(f.extension),
-                    category: decode(f.category)
-                }))
-            };
+            const tier = DOCS_MANIFEST.levels["0"];
+            if (!tier) return;
 
             const card = document.createElement('div');
             card.className = `folder-card reveal active unlocked`;
@@ -267,7 +244,7 @@
                     <div class="file-item" style="background: rgba(255,255,255,0.02); padding: 0.8rem; border-left: 2px solid var(--accent-cyan);">
                         <div style="display: flex; flex-direction: column;">
                             <a href="${file.path}" target="_blank" style="font-family: var(--font-mono); font-size: 0.8rem; pointer-events: auto; color: var(--accent-cyan);">${file.title}</a>
-                            <span style="font-size: 0.6rem; color: rgba(255,255,255,0.3); margin-top: 0.3rem;">FORMAT: ${file.extension.replace('.', '')} // PUBLIC ACCESS</span>
+                            <span style="font-size: 0.6rem; color: rgba(255,255,255,0.3); margin-top: 0.3rem;">FORMAT: ${file.extension} // PUBLIC ACCESS</span>
                         </div>
                     </div>
                 `).join('');
