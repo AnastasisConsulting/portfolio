@@ -1,6 +1,6 @@
 const DOCS_MANIFEST = {
   "metadata": {
-    "total_files": 183,
+    "total_files": 134,
     "generated_at": 1739832000
   },
   "levels": {
@@ -120,30 +120,6 @@ const DOCS_MANIFEST = {
           "path": "Engine/engine/__init__.py",
           "extension": "PY",
           "category": "Python Core Logic"
-        },
-        {
-          "title": "geo_char_story_template.json",
-          "path": "Engine/engine/templates/geo_char_story_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "prompt_generator.py",
-          "path": "Engine/engine/templates/prompt_generator.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "sentence_generator.py",
-          "path": "Engine/engine/templates/sentence_generator.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "template_prompt_generator",
-          "path": "Engine/engine/templates/template_prompt_generator",
-          "extension": "",
-          "category": "General Assets"
         },
         {
           "title": "conductor.py",
@@ -290,18 +266,6 @@ const DOCS_MANIFEST = {
           "category": "General Assets"
         },
         {
-          "title": "template_editor.py",
-          "path": "Engine/gynthetic_engine/BU/ui/template_editor.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "template_editor.ui",
-          "path": "Engine/gynthetic_engine/BU/ui/template_editor.ui",
-          "extension": "UI",
-          "category": "General Assets"
-        },
-        {
           "title": "Trace_Audits.py",
           "path": "Engine/gynthetic_engine/BU/ui/Trace_Audits.py",
           "extension": "PY",
@@ -310,12 +274,6 @@ const DOCS_MANIFEST = {
         {
           "title": "Trace_Audits.ui",
           "path": "Engine/gynthetic_engine/BU/ui/Trace_Audits.ui",
-          "extension": "UI",
-          "category": "General Assets"
-        },
-        {
-          "title": "untitled.ui",
-          "path": "Engine/gynthetic_engine/BU/ui/untitled.ui",
           "extension": "UI",
           "category": "General Assets"
         },
@@ -338,26 +296,8 @@ const DOCS_MANIFEST = {
           "category": "Python Core Logic"
         },
         {
-          "title": "default_transform_template.json",
-          "path": "Engine/gynthetic_engine/demos/tavern_memory_demo/transforms/default_transform_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
           "title": "engine merchanics.odt",
           "path": "Engine/gynthetic_engine/docs/engine merchanics.odt",
-          "extension": "ODT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "leading up to psu.odt",
-          "path": "Engine/gynthetic_engine/docs/leading up to psu.odt",
-          "extension": "ODT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "section 3 notes.odt",
-          "path": "Engine/gynthetic_engine/docs/section 3 notes.odt",
           "extension": "ODT",
           "category": "Internal Specifications"
         },
@@ -365,12 +305,6 @@ const DOCS_MANIFEST = {
           "title": "The 7 Rhetorical Arcs.docx",
           "path": "Engine/gynthetic_engine/docs/The 7 Rhetorical Arcs.docx",
           "extension": "DOCX",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "video gen template.odt",
-          "path": "Engine/gynthetic_engine/docs/video gen template.odt",
-          "extension": "ODT",
           "category": "Internal Specifications"
         },
         {
@@ -446,64 +380,10 @@ const DOCS_MANIFEST = {
           "category": "Python Core Logic"
         },
         {
-          "title": "modifier_matrix.py",
-          "path": "Engine/gynthetic_engine/pipelines/modifier_matrix.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "pipeline_rank_controller.py",
-          "path": "Engine/gynthetic_engine/pipelines/pipeline_rank_controller.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "transform_loader.py",
-          "path": "Engine/gynthetic_engine/pipelines/transform_loader.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "triad_assembler.py",
-          "path": "Engine/gynthetic_engine/pipelines/triad_assembler.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "__iniy__.py",
-          "path": "Engine/gynthetic_engine/pipelines/__iniy__.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "business_template.json",
-          "path": "Engine/gynthetic_engine/temp/business_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "default_transform_template.json",
-          "path": "Engine/gynthetic_engine/temp/default_transform_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
           "title": "energetic_architecture",
           "path": "Engine/gynthetic_engine/temp/energetic_architecture",
           "extension": "",
           "category": "General Assets"
-        },
-        {
-          "title": "gaming_template.json",
-          "path": "Engine/gynthetic_engine/temp/gaming_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "military_template.json",
-          "path": "Engine/gynthetic_engine/temp/military_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
         },
         {
           "title": "structured_transforms.json",
@@ -512,170 +392,8 @@ const DOCS_MANIFEST = {
           "category": "Internal Specifications"
         },
         {
-          "title": "test_modc_template.json",
-          "path": "Engine/gynthetic_engine/temp/test_modc_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
           "title": "world_builder.json",
           "path": "Engine/gynthetic_engine/temp/world_builder.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "world_categories_template.json",
-          "path": "Engine/gynthetic_engine/temp/world_categories_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "user.json",
-          "path": "Engine/gynthetic_engine/templates/user.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "high_quality_test_dataset.json",
-          "path": "Engine/gynthetic_engine/templates/hq_testing/high_quality_test_dataset.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/hq_testing/identity_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/hq_testing/identity_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/hq_testing/inception_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/hq_testing/inception_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/hq_testing/input_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/hq_testing/input_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/identity_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/identity_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/inception_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/inception_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/input_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/input_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "working_transform_template.json",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/working_transform_template.json",
-          "extension": "JSON",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/identity_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/identity_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "landscape_Mapping.txt",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/identity_phase/landscape_Mapping.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/inception_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/inception_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "Mythic Architectures.txt",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/inception_phase/Mythic Architectures.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "Cultural Encoding.txt",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/input_phase/Cultural Encoding.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "description.txt",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/input_phase/description.txt",
-          "extension": "TXT",
-          "category": "Internal Specifications"
-        },
-        {
-          "title": "image.png",
-          "path": "Engine/gynthetic_engine/templates/test_dataset/input_phase/image.png",
-          "extension": "PNG",
-          "category": "Technical Diagrams"
-        },
-        {
-          "title": "default_transform_template.json",
-          "path": "Engine/gynthetic_engine/transforms/default_transform_template.json",
           "extension": "JSON",
           "category": "Internal Specifications"
         },
@@ -794,22 +512,10 @@ const DOCS_MANIFEST = {
           "category": "General Assets"
         },
         {
-          "title": "template_editor_controller.py",
-          "path": "Engine/gynthetic_engine/ui/template_editor_controller.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
           "title": "ui_parser.py",
           "path": "Engine/gynthetic_engine/ui/ui_parser.py",
           "extension": "PY",
           "category": "Python Core Logic"
-        },
-        {
-          "title": "untitled.ui",
-          "path": "Engine/gynthetic_engine/ui/untitled.ui",
-          "extension": "UI",
-          "category": "General Assets"
         },
         {
           "title": "env_writer.py",
