@@ -184,11 +184,88 @@
     });
 
     // ============================================================
+    // STEALTH VISITOR COUNTER — Secret key 'GLABS'
+    // ============================================================
+    const COUNTER_KEY = 'gynthetic_labs_v5';
+    let keyBuffer = '';
+
+    // Hidden Hit Request
+    async function trackVisit() {
+        try {
+            // Using a simple public counter API (CounterAPI.dev)
+            await fetch(`https://api.counterapi.dev/v1/gynthetic-labs/visits/up`);
+        } catch (e) {
+            console.error('Telemetry offline');
+        }
+    }
+
+    async function getVisitCount() {
+        try {
+            const res = await fetch(`https://api.counterapi.dev/v1/gynthetic-labs/visits`);
+            const data = await res.json();
+            return data.count || 'ERR';
+        } catch (e) {
+            return 'OFFLINE';
+        }
+    }
+
+    function showAdminDashboard(count) {
+        let dashboard = document.getElementById('admin-dash');
+        if (!dashboard) {
+            dashboard = document.createElement('div');
+            dashboard.id = 'admin-dash';
+            Object.assign(dashboard.style, {
+                position: 'fixed',
+                bottom: '20px',
+                right: '20px',
+                background: '#060608',
+                border: '1px solid #00e4f5',
+                padding: '1.5rem',
+                zIndex: '10001',
+                fontFamily: 'JetBrains Mono, monospace',
+                fontSize: '0.8rem',
+                color: '#00e4f5',
+                boxShadow: '0 0 20px rgba(0, 228, 245, 0.2)',
+                display: 'none'
+            });
+            document.body.appendChild(dashboard);
+        }
+
+        dashboard.innerHTML = `
+            <div style="border-bottom: 1px solid rgba(0,228,245,0.2); margin-bottom: 1rem; padding-bottom: 0.5rem; font-weight: bold;">[ SYSTEM DIAGNOSTICS ]</div>
+            <div>STATUS: <span style="color: #84cc16">OPERATIONAL</span></div>
+            <div style="margin-top: 0.5rem;">TOTAL VISITORS: <span style="font-size: 1.2rem;">${count}</span></div>
+            <div style="margin-top: 1rem; font-size: 0.6rem; color: #8a8a96;">ESC TO CLOSE</div>
+        `;
+        dashboard.style.display = 'block';
+    }
+
+    document.addEventListener('keydown', async (e) => {
+        if (e.key === 'Escape') {
+            const dash = document.getElementById('admin-dash');
+            if (dash) dash.style.display = 'none';
+        }
+
+        keyBuffer += e.key.toUpperCase();
+        if (keyBuffer.length > 5) keyBuffer = keyBuffer.slice(-5);
+
+        if (keyBuffer === 'GLABS') {
+            const count = await getVisitCount();
+            showAdminDashboard(count);
+            keyBuffer = '';
+        }
+    });
+
+    // ============================================================
     // INIT
     // ============================================================
     document.addEventListener('DOMContentLoaded', () => {
+        // Track unique visit
+        trackVisit();
+
         // Reveal animations
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
 
         // Section glow
         document.querySelectorAll('section').forEach(el => glowObserver.observe(el));
