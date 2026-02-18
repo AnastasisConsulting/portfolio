@@ -1,6 +1,6 @@
 const DOCS_MANIFEST = {
   "metadata": {
-    "total_files": 126,
+    "total_files": 122,
     "generated_at": 1739832000
   },
   "levels": {
@@ -290,6 +290,12 @@ const DOCS_MANIFEST = {
           "category": "Internal Specifications"
         },
         {
+          "title": "leading up to psu.odt",
+          "path": "Engine/gynthetic_engine/docs/leading up to psu.odt",
+          "extension": "ODT",
+          "category": "Internal Specifications"
+        },
+        {
           "title": "The 7 Rhetorical Arcs.docx",
           "path": "Engine/gynthetic_engine/docs/The 7 Rhetorical Arcs.docx",
           "extension": "DOCX",
@@ -310,12 +316,6 @@ const DOCS_MANIFEST = {
         {
           "title": "sanity_checker.py",
           "path": "Engine/gynthetic_engine/intake/sanity_checker.py",
-          "extension": "PY",
-          "category": "Python Core Logic"
-        },
-        {
-          "title": "openai_interface.py",
-          "path": "Engine/gynthetic_engine/llm_helpers/openai_interface.py",
           "extension": "PY",
           "category": "Python Core Logic"
         },
@@ -542,12 +542,6 @@ const DOCS_MANIFEST = {
           "category": "General Assets"
         },
         {
-          "title": "lattice_runtime_bundle.zip",
-          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle.zip",
-          "extension": "ZIP",
-          "category": "General Assets"
-        },
-        {
           "title": "example_usage.py",
           "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/example_usage.py",
           "extension": "PY",
@@ -588,12 +582,6 @@ const DOCS_MANIFEST = {
           "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/memory_api.py",
           "extension": "PY",
           "category": "Python Core Logic"
-        },
-        {
-          "title": "openai_5 model help ticket",
-          "path": "Memory/1029_memory_lattice/lattice_runtime_bundle/openai_5 model help ticket",
-          "extension": "",
-          "category": "General Assets"
         },
         {
           "title": "affinity_kernel.py",
@@ -656,12 +644,6 @@ const DOCS_MANIFEST = {
           "category": "General Assets"
         },
         {
-          "title": "lattice_runtime_bundle.zip",
-          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle.zip",
-          "extension": "ZIP",
-          "category": "General Assets"
-        },
-        {
           "title": "engine detailed walkthrough 1.odt",
           "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/engine detailed walkthrough 1.odt",
           "extension": "ODT",
@@ -714,12 +696,6 @@ const DOCS_MANIFEST = {
           "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/memory_api.py",
           "extension": "PY",
           "category": "Python Core Logic"
-        },
-        {
-          "title": "openai_5 model help ticket",
-          "path": "domain-agnostic/1029_memory_lattice/lattice_runtime_bundle/openai_5 model help ticket",
-          "extension": "",
-          "category": "General Assets"
         },
         {
           "title": "Affinity Simulation.png",
