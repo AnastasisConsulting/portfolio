@@ -5,7 +5,7 @@ import json
 from PySide6.QtWidgets import QFileDialog, QMessageBox, QWidget, QStackedWidget, QPushButton, QLineEdit
 from PIL import Image
 from custom_widgets.clickable_image_label import ClickableImageLabel
-from trililiquarium_manager import TrililiquariumManager
+from gynthetic_core_manager import gynthetic_coreManager
 from PySide6.QtCore import QObject
 from ui.newEngine import Ui_MainWindow
 from page_switcher import DebugPageSwitcher
@@ -55,7 +55,7 @@ class TemplateEditorController:
         except Exception as e:
             QMessageBox.critical(None, "Load Error", f"Failed to load template: {e}")
         try:
-            manager = TrililiquariumManager.get()
+            manager = gynthetic_coreManager.get()
             manager.initialize(self.window.ui, data)
             print("✅ Loaded template wired into TrililiquariumEngine.")
         except Exception as e:
@@ -259,9 +259,9 @@ class TemplateEditorController:
             debug_switcher.activateWindow()
 
     def apply_to_engine(self, template_data, asset_base_path):
-        from trililiquarium_manager import TrililiquariumManager
+        from gynthetic_core_manager import gynthetic_coreManager
 
-        engine = TrililiquariumManager.get()
+        engine = gynthetic_coreManager.get()
 
         if engine is None:
             print("❌ TrililiquariumManager instance is None.")

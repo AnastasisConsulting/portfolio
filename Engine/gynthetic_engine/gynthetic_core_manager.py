@@ -1,10 +1,10 @@
 # trililiquarium_manager.py
 
-from trililiquarium_controller import TrililiquariumController
+from gynthetic_core_controller import gynthetic_coreController
 from triad_controller import TriadController
 
 
-class TrililiquariumManager:
+class gynthetic_coreManager:
     _instance = None
 
     def __init__(self):
@@ -15,7 +15,7 @@ class TrililiquariumManager:
     @classmethod
     def get(cls):
         if cls._instance is None:
-            cls._instance = TrililiquariumManager()
+            cls._instance = gynthetic_coreManager()
         return cls._instance
 
     def initialize(self, ui, template_data, asset_base_path="templates"):
@@ -25,7 +25,7 @@ class TrililiquariumManager:
         self.ui = ui
 
         # Hook core logic
-        self.controller = TrililiquariumController(
+        self.controller = gynthetic_coreController(
             ui=ui,
             template_data=template_data,
             asset_base_path=asset_base_path

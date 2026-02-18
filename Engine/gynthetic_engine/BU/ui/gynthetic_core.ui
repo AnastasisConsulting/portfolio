@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Trililiquarium</string>
+   <string>gynthetic_core</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget {
@@ -337,7 +337,7 @@ QListWidget::item {
                </font>
               </property>
               <property name="title">
-               <string>Trililiquary 3 x 9 x 63 (^3) Big Block</string>
+               <string>Gynthetic 3 x 9 x 63 (^3) Big Block</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>

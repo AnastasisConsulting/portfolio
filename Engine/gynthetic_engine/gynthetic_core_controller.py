@@ -7,7 +7,7 @@ from ui.assistant_creator import create_and_save_assistant
 from PySide6.QtCore import Qt
 import os
 
-class TrililiquariumController:
+class gynthetic_coreController:
     def __init__(self, ui, template_data, asset_base_path="templates"):
         self.ui = ui
         self.template_data = template_data

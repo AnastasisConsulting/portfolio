@@ -1736,7 +1736,7 @@ class Ui_MainWindow(object):
         self.intentLabel.setText(_translate("MainWindow", "Intent"))
         self.relationalArcLabel.setText(_translate("MainWindow", "Relation"))
         self.valueLabel.setText(_translate("MainWindow", "Value"))
-        self.transformsGB.setTitle(_translate("MainWindow", "Trililiquary 3 x 9 x 63 (^3) Big Block"))
+        self.transformsGB.setTitle(_translate("MainWindow", "G-ynthetic 3 x 9 x 63 (^3) Big Block"))
         self.phasesGB.setTitle(_translate("MainWindow", "Phases"))
         self.inputPhaseBtn.setText(_translate("MainWindow", "Input"))
         self.identityPhaseBtn.setText(_translate("MainWindow", "Identity"))

@@ -10,7 +10,7 @@ from ui.newEngine import Ui_MainWindow
 from ui.template_editor_controller import TemplateEditorController
 from ui.assistant_creator import create_and_save_assistant
 from custom_widgets.clickable_image_label import ClickableImageLabel
-from trililiquarium_manager import TrililiquariumManager
+from gynthetic_core_manager import gynthetic_coreManager
 from llm_helpers.openai_interface import send_message_to_assistant, ping_assistant
 from ui.enter_key_filter import EnterKeyFilter
 
@@ -46,9 +46,9 @@ class LLMConfigWindow:
   
 
     def run_full_conductor(self):
-        from trililiquarium_manager import TrililiquariumManager
+        from gynthetic_core_manager import gynthetic_coreManager
         try:
-            manager = TrililiquariumManager.get()
+            manager = gynthetic_coreManager.get()
             if manager.triad_controller:
                 manager.triad_controller.run_conductor_for_all_arcs()
                 print("🚀 Full Conductor run triggered!")
@@ -176,7 +176,7 @@ class LLMConfigWindow:
         except Exception as e:
             print(f"❌ Centering error: {e}")
 
-    def populate_trililiquarium_fields(self, ui, data):
+    def populate_gynthetic_core_fields(self, ui, data):
         ui.essenceTE.setPlainText(data.get("Essence", ""))
         ui.formTE.setPlainText(data.get("Form", ""))
         ui.actionTE.setPlainText(data.get("Function", ""))

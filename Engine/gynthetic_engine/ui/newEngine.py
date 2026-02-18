@@ -4951,7 +4951,7 @@ class Ui_MainWindow(object):
         self.intentLabel.setText(QCoreApplication.translate("MainWindow", u"Intent", None))
         self.relationalArcLabel.setText(QCoreApplication.translate("MainWindow", u"Relation", None))
         self.valueLabel.setText(QCoreApplication.translate("MainWindow", u"Value", None))
-        self.transformsGB.setTitle(QCoreApplication.translate("MainWindow", u"Trililiquary 3 x 9 x 63 (^3) Big Block", None))
+        self.transformsGB.setTitle(QCoreApplication.translate("MainWindow", u"G-ynthetic 3 x 9 x 63 (^3) Big Block", None))
         self.phasesGB.setTitle(QCoreApplication.translate("MainWindow", u"Phases", None))
         self.inputPhaseBtn.setText(QCoreApplication.translate("MainWindow", u"Input", None))
         self.identityPhaseBtn.setText(QCoreApplication.translate("MainWindow", u"Identity", None))

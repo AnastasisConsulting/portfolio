@@ -8,12 +8,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")
 from tavern_gui import TavernWindow
 from synthesis_engine import run_synthesis_from_ui
 from pipelines.transform_loader import TransformLoader
-from trililiquarium_manager import TrililiquariumManager
+from gynthetic_core_manager import gynthetic_coreManager
 
 
 def tavern_engine_handler(user_input, character_name, memory_context):
     template_data = TransformLoader().load()  # Uses the default from the engine root
-    controller = TrililiquariumManager.get().initialize(ui=None, template_data=template_data)
+    controller = gynthetic_coreManager.get().initialize(ui=None, template_data=template_data)
 
     controller.get_priority_map_from_gui = lambda: {
         "essence": 1, "form": 2, "action": 3, "frame": 4,

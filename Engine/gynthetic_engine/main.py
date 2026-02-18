@@ -6,7 +6,7 @@ import json
 from PySide6.QtWidgets import QApplication, QMainWindow
 from ui.newEngine import Ui_MainWindow
 from PySide6.QtCore import QTimer
-from trililiquarium_controller import TrililiquariumController
+from gynthetic_core_controller import gynthetic_coreController
 from triad_controller import TriadController
 from ui.template_editor_controller import TemplateEditorController
 from LLM_Config_launcher import LLMConfigWindow
@@ -42,7 +42,7 @@ def main():
         template_data = loader.load()
 
     # GOOD (Scoped to page widgets)
-    self_controller = TrililiquariumController(
+    self_controller = gynthetic_coreController(
         ui=ui.mainEnginePage,  # <-- SCOPE TO mainEnginePage
         template_data=template_data,
         asset_base_path="templates/test_dataset"

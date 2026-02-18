@@ -1,4 +1,4 @@
-notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$  tree
+notchu@notchu-desktop:~/Desktop/New folder/gynthetic_engine$  tree
 .
 ├── BU
 │   └── ui
@@ -8,7 +8,7 @@ notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$  tree
 │       ├── LLM_Config.ui
 │       ├── Trace_Audits.py
 │       ├── Trace_Audits.ui
-│       ├── Trililiquarium.ui
+│       ├── gynthetic_core.ui
 │       ├── __init__.py
 │       ├── __pycache__
 │       │   ├── Dashboard.cpython-313.pyc
@@ -19,7 +19,7 @@ notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$  tree
 │       │   └── template_editor_controller.cpython-313.pyc
 │       ├── template_editor.py
 │       ├── template_editor.ui
-│       ├── trililiquarium.py
+│       ├── gynthetic_core.py
 │       └── untitled.ui
 ├── LLM_Config_launcher.py
 ├── __pycache__
@@ -33,12 +33,12 @@ notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$  tree
 │   ├── triad_controller.cpython-311.pyc
 │   ├── triad_controller.cpython-312.pyc
 │   ├── triad_controller.cpython-313.pyc
-│   ├── trililiquarium_controller.cpython-311.pyc
-│   ├── trililiquarium_controller.cpython-312.pyc
-│   ├── trililiquarium_controller.cpython-313.pyc
-│   ├── trililiquarium_manager.cpython-311.pyc
-│   ├── trililiquarium_manager.cpython-312.pyc
-│   └── trililiquarium_manager.cpython-313.pyc
+│   ├── gynthetic_core_controller.cpython-311.pyc
+│   ├── gynthetic_core_controller.cpython-312.pyc
+│   ├── gynthetic_core_controller.cpython-313.pyc
+│   ├── gynthetic_core_manager.cpython-311.pyc
+│   ├── gynthetic_core_manager.cpython-312.pyc
+│   └── gynthetic_core_manager.cpython-313.pyc
 ├── assembly
 │   ├── __init__.py
 │   ├── __pycache__
@@ -178,8 +178,8 @@ notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$  tree
 ├── transforms
 │   └── default_transform_template.json
 ├── triad_controller.py
-├── trililiquarium_controller.py
-├── trililiquarium_manager.py
+├── gynthetic_core_controller.py
+├── gynthetic_core_manager.py
 ├── ui
 │   ├── __pycache__
 │   │   ├── enter_key_filter.cpython-311.pyc
@@ -218,5 +218,5 @@ notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$  tree
     └── resize_images.py
 
 41 directories, 176 files
-notchu@notchu-desktop:~/Desktop/New folder/trililiquary_engine$ 
+notchu@notchu-desktop:~/Desktop/New folder/gynthetic_engine$ 
 

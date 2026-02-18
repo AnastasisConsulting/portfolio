@@ -9,7 +9,7 @@ from arc_struct import RhetoricalArcs
 
 # --- System Prompt for Arc Decomposition ---
 SYSTEM_PROMPT = """
-You are a decomposition engine. When given a single natural language prompt, extract the 7 canonical rhetorical arcs used in Trililiquary processing:
+You are a decomposition engine. When given a single natural language prompt, extract the 7 canonical rhetorical arcs used in G-ynthetic processing:
 
 - Essence
 - Form
