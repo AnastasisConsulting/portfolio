@@ -1,4 +1,4 @@
-# Enabling Disclosure: Reproduction Guide for the G-ynthetic Ecosystem
+# Enabling Disclosure: Reproduction Guide for the <span style="white-space: nowrap;">G-ynthetic Ecosystem</span>
 
 This document serves as the bridging technical guide required to reproduce the core functionality of the G-ynthetic Engine and its associated subsystems. This disclosure is intended to be **enabling** for individuals with sufficient skill in AI architecture, spatial computing, and system design.
 
@@ -11,7 +11,7 @@ The G-ynthetic ecosystem relies on three integrated layers:
 2.  **Memory Lattice**: A 7x7x7 holographic voxel grid for non-linear state management.
 3.  **Affinity Simulation**: A state propagation kernel for emergent social dynamics.
 
-## 2. Reproduction of the G-ynthetic Engine
+## 2. Reproduction of the <span style="white-space: nowrap;">G-ynthetic Engine</span>
 
 ### A. 7-Arc Decomposition
 The input phase requires collapsing unstructured user prompts into 7 canonical rhetorical arcs:
@@ -52,4 +52,4 @@ Instead of linear token history, memories are stored as coordinates `(t, x, y, z
 
 ---
 **PUBLIC DISCLOSURE: DEFENSIBLE PRIOR ART**
-*This document, paired with the unsealed source code in the [DEEP TECHNICAL ARCHIVE](archive.html), constitutes a complete technical disclosure.*
+*This document, paired with the unsealed source code in the [DEEP TECHNICAL ARCHIVE](archive.html), constitutes a complete <span style="white-space: nowrap;">G-YNTHETIC</span> technical disclosure.*
