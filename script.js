@@ -19,7 +19,7 @@
     const nav = document.createElement('nav');
     nav.className = 'site-nav';
     nav.innerHTML = `
-    <div class="nav-logo">G-YNTHETIC <span>LABS</span></div>
+    <div class="nav-logo" style="white-space: nowrap;">G-YNTHETIC LABS</div>
     <ul class="nav-links">
       <li><a href="#vision">Foundation</a></li>
       <li><a href="#core-tech">Projects</a></li>
