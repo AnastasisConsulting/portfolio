@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 /**
  * G-YNTHETIC LABS // HEADER VISUALIZER
  * Ported from Hypercube Lattice Visualizer (React/Three)

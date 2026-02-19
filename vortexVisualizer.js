@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 /**
  * G-YNTHETIC ENGINE // VORTEX VISUALIZER
  * Ported from neon-vortex TornadoCanvas (React/Three)
@@ -68,7 +70,7 @@
         colors[i * 3 + 1] = color.g;
         colors[i * 3 + 2] = color.b;
 
-        sizes[i] = Math.random() < 0.9  Math.random() * 0.25 : Math.random() * 0.6 + 0.4;
+        sizes[i] = Math.random() < 0.9 ? Math.random() * 0.25 : Math.random() * 0.6 + 0.4;
 
         particleData.push({
             angle: Math.random() * Math.PI * 2,
@@ -139,7 +141,7 @@
     function getSpineOffset(y, time) {
         const normY = y / CLOUD_BASE_Y;
         const lag = (1.0 - normY) * 1.2;
-        const ampDamp = y > CLOUD_BASE_Y  0.5 : 1.0;
+        const ampDamp = y > CLOUD_BASE_Y ? 0.5 : 1.0;
 
         const wx = Math.sin(time * 0.4 - lag) * WANDER * 20 * ampDamp;
         const wz = Math.cos(time * 0.3 - lag) * WANDER * 20 * ampDamp;
@@ -173,8 +175,8 @@
             const data = particleData[i];
 
             // Vertical movement
-            const currentSpeed = data.inCloud  data.baseSpeedY * 0.4 : data.baseSpeedY;
-            const actualSpeed = data.isDebris  currentSpeed * 2.5 : currentSpeed;
+            const currentSpeed = data.inCloud ? data.baseSpeedY * 0.4 : data.baseSpeedY;
+            const actualSpeed = data.isDebris ? currentSpeed * 2.5 : currentSpeed;
             data.y += actualSpeed;
 
             // Enter cloud
@@ -184,7 +186,7 @@
             }
 
             // Reset
-            const resetThreshold = data.isDebris  DEBRIS_MAX_Y : CLOUD_CEILING_Y;
+            const resetThreshold = data.isDebris ? DEBRIS_MAX_Y : CLOUD_CEILING_Y;
             if (data.y > resetThreshold) {
                 data.y = 0;
                 data.inCloud = false;
@@ -194,7 +196,7 @@
                 const debrisChance = DEBRIS_AMOUNT * 0.5;
                 data.isDebris = Math.random() < debrisChance;
 
-                const chaosAmp = data.isDebris  CHAOS * 4.0 : CHAOS * 2.0;
+                const chaosAmp = data.isDebris ? CHAOS * 4.0 : CHAOS * 2.0;
                 data.chaosOffset.set(
                     (Math.random() - 0.5) * chaosAmp,
                     (Math.random() - 0.5) * chaosAmp,

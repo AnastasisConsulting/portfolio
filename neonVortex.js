@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 /**
  * G-YNTHETIC LABS // NEON VORTEX HEADER
  * Ported from neon-vortex/components/TornadoCanvas.tsx

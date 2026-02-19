@@ -9,27 +9,58 @@
         content="Zero-Syntax Architecture firm. Structural Intelligence & High-Density Simulation.">
     <link rel="icon" href="assets/favicon.ico">
     <meta property="og:title" content="[WIP] G-ynthetic Labs | About">
-    <meta property="og:description" content="Zero-Syntax Architecture firm. Structural Intelligence & High-Density Simulation.">
+    <meta property="og:description"
+        content="Zero-Syntax Architecture firm. Structural Intelligence & High-Density Simulation.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://anastasisconsulting.github.io/portfolio/assets/opening-page-gynthetic.PNG">
+    <meta property="og:image"
+        content="https://anastasisconsulting.github.io/portfolio/assets/opening-page-gynthetic.PNG">
     <meta property="og:url" content="https://anastasisconsulting.github.io/portfolio/about.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Minimal overrides for about page if needed */
-        .bio-text {
-            border-left: 2px solid var(--accent-cyan);
-            padding-left: 1.5rem;
-            margin-top: 2rem;
-            color: var(--text-dim);
-            font-style: italic;
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[WIP] G-ynthetic Labs | About</title>
+        <meta name="description"
+            content="Zero-Syntax Architecture firm. Structural Intelligence & High-Density Simulation.">
+        <link rel="icon" href="assets/favicon.ico">
+        <meta property="og:title" content="[WIP] G-ynthetic Labs | About">
+        <meta property="og:description"
+            content="Zero-Syntax Architecture firm. Structural Intelligence & High-Density Simulation.">
+        <meta property="og:type" content="website">
+        <meta property="og:image"
+            content="https://anastasisconsulting.github.io/portfolio/assets/opening-page-gynthetic.PNG">
+        <meta property="og:url" content="https://anastasisconsulting.github.io/portfolio/about.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Minimal overrides for about page if needed */
+            .bio-text {
+                border-left: 2px solid var(--accent-cyan);
+                padding-left: 1.5rem;
+                margin-top: 2rem;
+                color: var(--text-dim);
+                font-style: italic;
+            }
+        </style>
+
+        <!-- Three.js ESM Support -->
+        <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.161.0/build/three.module.js"
+          }
         }
-    </style>
-</head>
+    </script>
+
+    </head>
 
 <body>
     <header style="height: 60vh; min-height: 400px;">
@@ -119,8 +150,7 @@
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
-    <script src="headerVisualizer.js"></script>
+    <script type="module" src="headerVisualizer.js"></script>
     <script src="script.js"></script>
 </body>
 

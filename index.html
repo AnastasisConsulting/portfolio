@@ -397,8 +397,23 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
-    <script src="headerVisualizer.js"></script>
+    <style>
+        :root {
+            --accent-color: var(--accent-purple);
+        }
+    </style>
+
+    <!-- Three.js ESM Support -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.161.0/build/three.module.js"
+          }
+        }
+    </script>
+    <!-- Visualizer Systems -->
+    <script type="module" src="headerVisualizer.js"></script>
+    <script type="module" src="neonVortex.js"></script>
     <script src="script.js"></script>
 </body>
 
