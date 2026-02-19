@@ -24,9 +24,7 @@
       <li><a href="#vision">Foundation</a></li>
       <li><a href="#core-tech">Projects</a></li>
       <li><a href="#research">Research</a></li>
-      <li><a href="#cognition">Architecture</a></li>
       <li><a href="#ai-problems">Problem Space</a></li>
-      <li><a href="#business">Economics</a></li>
     </ul>
   `;
     document.body.prepend(nav);
@@ -279,6 +277,9 @@
         // Problem pulse
         initProblemPulse();
 
+        // Research Overlay
+        initResearchOverlay();
+
         // Initial scroll state
         onScroll();
 
@@ -290,8 +291,115 @@
     });
 
     // ============================================================
-    // HEADER PARALLAX — subtle depth on mouse
+    // RESEARCH OVERLAY (Sliding Glass Door)
     // ============================================================
+    const researchData = {
+        sae: {
+            title: "Spontaneous Association Experiment",
+            abstract: "The SAE explores the emergence of complex pattern recognition through the controlled injection of high-entropy noise into neural network dream states. By mimicking biological REM cycles, we hypothesize that 'synthetic dreaming' can prune redundant associations and strengthen non-obvious semantic links.",
+            url: "research_sae.html"
+        },
+        p1: {
+            title: "G-ynthetic Architecture Part 1",
+            abstract: "Initial specifications for a hierarchical state propagation engine. This paper outlines the move from linear token processing to a multi-dimensional holographic memory lattice, allowing for persistent context across extended inference sessions.",
+            url: "research_p1.html"
+        },
+        p2: {
+            title: "G-ynthetic Architecture Part 2",
+            abstract: "A critical analysis of the societal risks associated with distributed inference systems. Focuses on the erosion of individual accountability when decision-making is offloaded to black-box fractal recursive structures.",
+            url: "research_p2.html"
+        },
+        gradient: {
+            title: "Building a 4D Gradient",
+            abstract: "Technical framework for mapping semantic relationships into temporal vector spaces. By treating 'meaning' as a dynamic gradient rather than a static point, we enable more fluid and context-aware A.I. responses.",
+            url: "research_gradient.html"
+        },
+        atlas: {
+            title: "Symbolic Grid Atlas Format",
+            abstract: "A proposed interchange format for serializing and persisting 343-node holographic lattices. Atlas enables cross-platform cognitive state transfer, allowing an A.I.'s 'experience' to be portable and reproducible.",
+            url: "research_atlas.html"
+        },
+        fracc: {
+            title: "F.R.A.C.C. Cognitive Architecture",
+            abstract: "Fractal Recursive Adaptive Cognitive Chains (FRACC) provide a methodology for hierarchical reasoning. By nesting logical evaluators at every level of the recursive stack, we ensure that output remains grounded in first principles.",
+            url: "research_fracc.html"
+        },
+        oracle: {
+            title: "The Oracle Mirage",
+            abstract: "A philosophical manifesto warning against the 'Oracle Mirage'—the dangerous assumption that probabilistic language models possess inherent wisdom. Argues for deterministic scaffolding as an essential ethical constraint.",
+            url: "research_oracle.html"
+        },
+        prelinguistic: {
+            title: "Towards a Pre-Linguistic Inference Engine",
+            abstract: "A synthesis of cross-disciplinary frameworks for sub-symbolic reasoning. Explores how A.I. can move beyond language-first processing to a structural, coordinate-based inference model.",
+            url: "research_prelinguistic.html"
+        },
+        trililiquary: {
+            title: "Introducing Trililiquary",
+            abstract: "A framework for slipstream manifold architecture. This paper details the transition from discrete state changes to friction-less, continuous manifold transitions in cognitive engines.",
+            url: "research_trililiquary.html"
+        }
+    };
+
+    function initResearchOverlay() {
+        const overlay = document.getElementById('research-overlay');
+        const leftPanel = document.getElementById('overlay-left-panel');
+        const abstractContainer = document.getElementById('abstract-container');
+        const closeBtn = document.querySelector('.close-overlay');
+        const bgBlur = document.querySelector('.overlay-bg-blur');
+
+        if (!overlay) return;
+
+        document.querySelectorAll('.research-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const id = card.dataset.id;
+                const data = researchData[id];
+                if (!data) return;
+
+                // Clone card for left panel (excluding the button)
+                leftPanel.innerHTML = '';
+                const clone = card.cloneNode(true);
+                clone.querySelector('button')?.remove();
+                clone.style.width = '100%';
+                clone.style.maxWidth = '400px';
+                clone.style.margin = '0';
+                clone.style.cursor = 'default';
+                clone.style.transform = 'none';
+                leftPanel.appendChild(clone);
+
+                // Populate right panel
+                abstractContainer.innerHTML = `
+                    <div class="card-tag">Research Abstract // ${id.toUpperCase()}</div>
+                    <h2>${data.title}</h2>
+                    <p>${data.abstract}</p>
+                    <div style="margin-bottom: 2.5rem;">
+                        <a href="${data.url}" class="btn-primary">Decrypt Full Dossier →</a>
+                    </div>
+                    <div class="meta-info">
+                        Status: Peer Review Pending<br>
+                        Classification: IP 0${Object.keys(researchData).indexOf(id) + 1} // Public Disclosure
+                    </div>
+                `;
+
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                pauseMedia();
+            });
+        });
+
+        const closeOverlay = () => {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        const pauseMedia = () => {
+            document.querySelectorAll('video, audio').forEach(media => media.pause());
+        };
+
+        closeBtn.addEventListener('click', closeOverlay);
+        bgBlur.addEventListener('click', closeOverlay);
+    }
+
     if (header) {
         header.addEventListener('mousemove', (e) => {
             const x = (e.clientX / window.innerWidth - 0.5) * 10;

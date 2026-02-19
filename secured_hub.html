@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City SeCUReD // Project Dossier</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <meta property="og:title" content="City SeCUReD // Project Dossier">
+    <meta property="og:description" content="Synthetic cognition research and systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://anastasisconsulting.github.io/portfolio/assets/opening-page-gynthetic.PNG">
+    <meta property="og:url" content="https://anastasisconsulting.github.io/portfolio/secured_hub.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dossier_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ── Content Panel ── */
+        .content-panel {
+            display: none;
+        }
+
+        .content-panel.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ── Section anchor links in sidebar ── */
+        .tree-section-link {
+            color: var(--accent-steel);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.15rem 0;
+            font-size: 0.68rem;
+            line-height: 1.4;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        .tree-section-link:hover,
+        .tree-section-link.active {
+            color: var(--accent-cyan);
+        }
+
+        .tree-section-link::before {
+            content: '§';
+            font-size: 0.6rem;
+            opacity: 0.5;
+            flex-shrink: 0;
+        }
+
+        /* ── Chapter folder label as clickable ── */
+        .tree-folder-label.chapter-link {
+            color: var(--text-main);
+        }
+
+        .tree-folder-label.chapter-link:hover,
+        .tree-folder-label.chapter-link.active {
+            color: var(--accent-cyan);
+        }
+
+        /* ── Main content typography ── */
+        .chapter-header {
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
+        }
+
+        .chapter-num {
+            font-family: var(--font-mono);
+            font-size: 0.65rem;
+            color: var(--accent-cyan);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .chapter-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin: 0 0 1rem 0;
+            line-height: 1.2;
+        }
+
+        .chapter-body {
+            font-size: 0.92rem;
+            color: var(--text-dim);
+            line-height: 1.85;
+            max-width: 720px;
+        }
+
+        .chapter-body h2 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            font-weight: 600;
+            margin: 2.5rem 0 0.8rem 0;
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            color: var(--accent-cyan);
+        }
+
+        .chapter-body h3 {
+            font-size: 1rem;
+            color: var(--text-main);
+            font-weight: 500;
+            margin: 1.8rem 0 0.5rem 0;
+        }
+
+        .chapter-body p {
+            margin: 0 0 1rem 0;
+        }
+
+        /* ── Landing panel ── */
+        .landing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .ch-card {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        .ch-card:hover {
+            border-color: var(--accent-cyan);
+            background: rgba(0, 240, 255, 0.03);
+            transform: translateY(-3px);
+        }
+
+        .ch-card-num {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            color: var(--accent-cyan);
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+        }
+
+        .ch-card-title {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-main);
+            line-height: 1.4;
+        }
+
+        /* ── Download bar ── */
+        .download-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            border: 1px solid rgba(0, 240, 255, 0.15);
+            background: rgba(0, 240, 255, 0.03);
+            margin-bottom: 3rem;
+        }
+
+        .download-bar span {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            flex: 1;
+        }
+
+        /* ── Sidebar search ── */
+        .sidebar-search {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            padding: 0.4rem 0.6rem;
+            margin-bottom: 1.5rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .sidebar-search:focus {
+            border-color: var(--accent-cyan);
+        }
+
+        .sidebar-search::placeholder {
+            color: var(--text-dim);
+        }
+
+        /* ── PDF overlay ── */
+        #download-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.92);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        #download-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .loader {
+            width: 36px;
+            height: 36px;
+            border: 2px solid var(--accent-cyan);
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1.5rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .blink {
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0.4
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wip-banner" style="background: var(--accent-purple); color: #fff; font-weight: bold;">[!] STRATEGIC
+        DRAFT // CIVIL INFRASTRUCTURE INTELLIGENCE // PRIOR ART ACTIVE</div>
+
+    <div class="dossier-layout reveal active">
+
+        <!-- ── SIDEBAR ── -->
+        <aside class="dossier-sidebar">
+            <div style="margin-bottom: 1.5rem;">
+                <a href="secured.html"
+                    style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-purple); text-decoration: none; display: flex; align-items: center; gap: 0.3rem;">
+                    <span>←</span> BACK TO SECURED
+                </a>
+            </div>
+
+            <div
+                style="font-family: var(--font-mono); font-size: 0.6rem; color: var(--accent-purple); letter-spacing: 0.12em; margin-bottom: 0.5rem;">
+                CITY SeCUReD // DOSSIER
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 1.5rem; line-height: 1.4;">
+                Smart-City Urban Resilience &amp; Emergency Deployment
+            </div>
+
+            <input type="text" class="sidebar-search" placeholder="Search chapters..." id="sidebar-search">
+
+            <ul class="tree-view" id="chapter-tree">
+                <!-- Generated by JS -->
+            </ul>
+        </aside>
+
+        <!-- ── MAIN PANEL ── -->
+        <main class="dossier-main" id="main-panel">
+
+            <!-- Landing Panel -->
+            <div class="content-panel active" id="panel-landing">
+                <header class="chapter-header">
+                    <div class="chapter-num">CITY SeCUReD // FULL DOSSIER</div>
+                    <h1 class="chapter-title">Smart-City Urban Resilience<br>&amp; Emergency Deployment</h1>
+                    <p style="color: var(--accent-purple); font-family: var(--font-mono); font-size: 0.75rem;">
+                        SUBJECT: AI-Governed Crisis Management OS // 13-Chapter Technical Thesis
+                    </p>
+                </header>
+
+                <div class="download-bar">
+                    <span>📄 FULL DOCUMENT // City SeCURED (Smart-City Urban Resiellience and Emergency
+                        Deployment).pdf</span>
+                    <button onclick="downloadPDF()" class="btn-dossier btn-dossier--purple" style="white-space:nowrap;">
+                        Acquire Secure PDF
+                    </button>
+                </div>
+
+                <p
+                    style="font-size: 0.95rem; color: var(--text-dim); line-height: 1.8; max-width: 680px; margin-bottom: 2rem;">
+                    A comprehensive 228-page technical thesis on deploying AI-governed crisis management
+                    infrastructure across smart cities. Covers computer vision, NLP, predictive analytics,
+                    ethical frameworks, licensing models, and long-term resilience architecture.
+                    <br><br>
+                    Select a chapter from the sidebar or click a card below to begin reading.
+                </p>
+
+                <div class="landing-grid" id="chapter-cards">
+                    <!-- Generated by JS -->
+                </div>
+            </div>
+
+            <!-- Chapter Panels (generated by JS) -->
+            <div id="chapter-panels"></div>
+
+        </main>
+    </div>
+
+    <!-- PDF Download Overlay -->
+    <div id="download-overlay">
+        <div style="text-align:center; max-width:400px;">
+            <div class="loader"></div>
+            <h2 style="color:var(--accent-purple); font-family:'JetBrains Mono'; margin-bottom:1rem; font-size:1rem;">
+                ENCRYPTING ASSET</h2>
+            <p class="blink" style="color:#888; font-family:'JetBrains Mono'; font-size:0.75rem;">
+                APPLYING DIGITAL WATERMARK<br>REGISTERING IP SIGNATURE...
+            </p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <script>
+        // ── Chapter Data ──────────────────────────────────────────────
+        const CHAPTERS = [
+            {
+                num: "01", title: "Introduction to Smart Cities and AI-Driven Crisis Management",
+                sections: [
+                    "Overview of Smart Cities", "Key Components: Infrastructure, Data, IoT",
+                    "Goals of AI-Driven Crisis Management", "Citizen Engagement and Transparency"
+                ],
+                body: `<h2>Overview</h2>
+                <p>A smart city is an urban environment that leverages technology and data-driven solutions to improve the quality of life for its residents, optimize city operations, and drive sustainable growth. At its core, a smart city integrates infrastructure, data, and the Internet of Things (IoT) to create an interconnected, responsive urban ecosystem.</p>
+                <h3>Key Components</h3>
+                <p><strong>Infrastructure:</strong> A robust foundation comprising transport networks, energy grids, water systems, and communication networks equipped with sensors and connected devices — enabling real-time monitoring and maintenance.</p>
+                <p><strong>Data:</strong> The lifeblood of smart cities, gathered from public services, environmental sensors, traffic monitors, and citizen input via mobile apps. Processed and analyzed to gain insights, improve city planning, and streamline services.</p>
+                <p><strong>IoT Integrations:</strong> Sensors, cameras, and connected vehicles that collect and share real-time information, allowing cities to monitor conditions dynamically, automate responses, and manage resources effectively.</p>
+                <h2>Goals of AI-Driven Crisis Management</h2>
+                <p>The primary goal is to create a resilient, adaptive urban environment capable of responding to crises with speed, precision, and minimal human error. AI systems serve as force multipliers for emergency responders — processing data at scales impossible for human operators alone.</p>
+                <p><strong>Citizen Engagement and Transparency:</strong> Foster a strong relationship between residents and city services by using AI to communicate in real-time, respond to citizen concerns, and provide accessible information. Transparent AI systems build public trust.</p>`
+            },
+            {
+                num: "02", title: "Foundations of Emergency Management in Urban Environments",
+                sections: [
+                    "Traditional Crisis Response Systems (FEMA ICS)", "Challenges in Urban Crisis Management",
+                    "Hazard and Vulnerability Assessment", "Community Resilience and Education"
+                ],
+                body: `<h2>Emergency Management Foundations</h2>
+                <p>Emergency management in urban settings involves a structured approach to preparing for, responding to, and recovering from crises that impact densely populated areas. Urban environments face unique challenges due to high population density, complex infrastructure, and diverse threats ranging from natural disasters to human-caused emergencies.</p>
+                <h3>2.1 Traditional Crisis Response Systems</h3>
+                <p><strong>Incident Command System (ICS):</strong> Developed by FEMA, the ICS is a standardized approach that enables coordinated response efforts across multiple agencies. ICS establishes a clear chain of command, designated roles (Incident Commander, Operations, Planning), and shared communication protocols to enhance efficiency and minimize confusion.</p>
+                <p><strong>Mutual Aid Agreements:</strong> Allow neighboring jurisdictions to share resources and personnel during emergencies. If one city is overwhelmed by a natural disaster, nearby cities can send additional resources — emergency vehicles, medical teams, or law enforcement.</p>
+                <p><strong>Standard Operating Procedures (SOPs):</strong> Pre-established guidelines and checklists that dictate specific actions for various emergency types. These procedures promote consistency and ensure response efforts follow best practices.</p>
+                <h3>2.2 Challenges in Urban Crisis Management</h3>
+                <p>Urban crisis management presents unique challenges: high population density, aging infrastructure, cascading infrastructure failures, diverse and complex hazards, resource constraints, and rapid information overload during crises.</p>
+                <p>The interconnectedness of infrastructure systems — power grids, water supplies, communications networks — can lead to cascading failures where damage in one area triggers issues in others.</p>`
+            },
+            {
+                num: "03", title: "Core AI Technologies for Smart City Crisis Management",
+                sections: [
+                    "Computer Vision", "Natural Language Processing (NLP)",
+                    "Predictive Analytics", "Graph-Based AI and Routing",
+                    "Reinforcement Learning for Resource Allocation"
+                ],
+                body: `<h2>Core AI Technology Stack</h2>
+                <p>The SeCUReD system is built on a layered AI architecture where each technology layer handles a distinct modality of crisis data — visual, linguistic, predictive, and relational.</p>
+                <h3>3.1 Computer Vision</h3>
+                <p>Computer vision forms the visual "eyes" of the smart city crisis management AI. Applications include real-time traffic monitoring, crowd density estimation, crime detection, and object tracking via Deep SORT algorithms.</p>
+                <p><strong>Image Classification and Segmentation:</strong> CNNs classify incident types (fires, traffic collisions) from camera images. Models like U-Net or Mask R-CNN segment images into meaningful sections, identifying where people, vehicles, or critical objects are located.</p>
+                <h3>3.2 Natural Language Processing (NLP)</h3>
+                <p>NLP enables the system to interpret citizen reports, social media, and emergency calls. Key capabilities include Named Entity Recognition (NER), sentiment analysis, chatbots for report intake, and topic modeling.</p>
+                <p>NLP works best in conjunction with other AI technologies: combined with Computer Vision, NLP data can verify and locate incidents mentioned in social media posts against live camera feeds.</p>
+                <h3>3.3 Predictive Analytics</h3>
+                <p>Using historical data to anticipate crisis events and pre-position resources. Techniques include time-series analysis, regression models, Bayesian networks, and machine learning for traffic accident prediction, crime forecasting, and disaster response.</p>`
+            },
+            {
+                num: "04", title: "Building the AI-Driven Crisis Management System",
+                sections: [
+                    "Data Ingestion Layer", "Data Processing and Storage",
+                    "AI Processing and Analysis", "Decision Fusion and Support",
+                    "Digital Twin and Simulation", "Communication and Action Coordination",
+                    "System Monitoring and Feedback Loop", "Security and Compliance",
+                    "Workflow Example: Responding to a Traffic Accident"
+                ],
+                body: `<h2>System Architecture</h2>
+                <p>The SeCUReD system is structured as a multi-layer pipeline where each layer handles a specific function in the crisis management workflow — from raw data ingestion to coordinated action dispatch.</p>
+                <h3>Layer 1: Data Ingestion</h3>
+                <p>Collects real-time data from IoT sensors, CCTV networks, 911 call centers, social media APIs, weather services, and municipal databases. All data streams are normalized and timestamped before entering the processing layer.</p>
+                <h3>Layer 2: Data Processing and Storage</h3>
+                <p>Raw data is cleaned, filtered, and stored in a distributed architecture. Edge computing nodes handle time-critical processing locally while a central cloud layer manages historical analysis and model training.</p>
+                <h3>Layer 3: AI Processing and Analysis</h3>
+                <p>The core intelligence layer where computer vision, NLP, and predictive models analyze incoming data streams simultaneously, generating incident classifications, severity scores, and resource recommendations.</p>
+                <h3>Layer 4: Decision Fusion and Support</h3>
+                <p>Aggregates outputs from all AI models into a unified situational awareness dashboard. Human operators receive ranked action recommendations with confidence scores and explainability reports.</p>
+                <h3>Workflow Example: Traffic Accident Response</h3>
+                <p>Camera detects collision → Computer vision classifies severity → NLP processes 911 call → Predictive model estimates traffic impact → System recommends nearest EMS units → Human dispatcher confirms → Coordinated response dispatched within 90 seconds.</p>`
+            },
+            {
+                num: "05", title: "Simulating Urban Crises for AI Training and Testing",
+                sections: [
+                    "Defining Crisis Scenarios", "Creating the Digital Twin",
+                    "Simulating Crisis Scenarios", "Data Generation and Labeling",
+                    "AI Model Training in Simulation", "Evaluation Metrics",
+                    "Continuous Improvement and Retraining", "Integration and Deployment Testing"
+                ],
+                body: `<h2>Crisis Simulation Framework</h2>
+                <p>Before deployment in live city environments, AI crisis management systems must be rigorously trained and tested against realistic urban crisis scenarios. Simulation provides a safe, controlled environment to generate training data, test model performance, and identify failure modes.</p>
+                <h3>Digital Twin Architecture</h3>
+                <p>A digital twin is a real-time virtual replica of the city's physical infrastructure — roads, buildings, utilities, population density — that can be used to simulate crisis events with high fidelity. The twin is continuously updated with live sensor data to maintain accuracy.</p>
+                <h3>Crisis Scenario Library</h3>
+                <p>Scenarios are defined across multiple crisis categories: natural disasters (floods, earthquakes, wildfires), infrastructure failures (power grid collapse, water main breach), public safety events (mass casualty incidents, civil unrest), and cyber attacks on city systems.</p>
+                <h3>Synthetic Data Generation</h3>
+                <p>Simulations generate labeled training datasets that would be impossible or unethical to collect from real events. Synthetic camera feeds, sensor readings, and 911 call transcripts are generated at scale to train and validate AI models across edge cases.</p>
+                <h3>Evaluation Metrics</h3>
+                <p>Model performance is measured against: response time reduction, resource allocation efficiency, false positive/negative rates for incident detection, and system stability under peak load conditions.</p>`
+            },
+            {
+                num: "06", title: "Real-Time Crisis Detection and Response Coordination",
+                sections: [
+                    "Real-Time Data Collection and Monitoring", "Crisis Detection Models",
+                    "Crisis Assessment and Severity Analysis", "Response Coordination",
+                    "Real-Time Monitoring and Adaptation", "Post-Crisis Analysis",
+                    "Video-Based Incident Detection", "IoT and Sensor-Based Detection",
+                    "NLP for 911 Calls", "Resource Allocation Models"
+                ],
+                body: `<h2>Real-Time Operations</h2>
+                <p>The operational core of SeCUReD — the systems and protocols that activate when a crisis is detected and must coordinate a response across multiple city agencies simultaneously.</p>
+                <h3>6.1 Real-Time Data Collection</h3>
+                <p>Continuous ingestion from all sensor networks with sub-second latency requirements. Priority queuing ensures that high-severity signals (gunshots, fire alarms, collision impacts) are processed ahead of routine monitoring data.</p>
+                <h3>6.2 Crisis Detection Models</h3>
+                <p>Anomaly detection algorithms establish baseline patterns for normal city operations. Deviations beyond threshold triggers escalation to incident classification models, which determine crisis type, location, and estimated severity within seconds.</p>
+                <h3>6.3 Response Coordination</h3>
+                <p>Once a crisis is classified, the coordination layer automatically: alerts relevant agencies, calculates optimal resource deployment routes, reserves hospital capacity if needed, adjusts traffic signals to clear corridors for emergency vehicles, and initiates public notification protocols.</p>
+                <h3>Resource Allocation Models</h3>
+                <p>AI models optimize resource deployment using constraint-based optimization — balancing response time, resource availability, geographic coverage, and predicted escalation probability. The system continuously re-optimizes as the crisis evolves.</p>`
+            },
+            {
+                num: "07", title: "Ethical Considerations in AI-Powered Crisis Management",
+                sections: [
+                    "Privacy and Data Protection", "Transparency and Explainability",
+                    "Fairness and Bias Mitigation", "Accountability and Oversight",
+                    "Avoiding Over-Surveillance", "Managing AI Autonomy",
+                    "Ensuring Reliability", "Ethical Use of Predictive AI",
+                    "Building Public Trust"
+                ],
+                body: `<h2>Ethical Framework</h2>
+                <p>The deployment of AI in crisis management raises profound ethical questions. SeCUReD's ethical framework is not an afterthought — it is a core architectural constraint that shapes every design decision.</p>
+                <h3>7.1 Privacy and Data Protection</h3>
+                <p>Mass surveillance infrastructure, even when deployed for public safety, creates significant privacy risks. SeCUReD implements data minimization principles — collecting only what is necessary for crisis response — and enforces strict retention limits on sensitive data.</p>
+                <h3>7.2 Transparency and Explainability</h3>
+                <p>Every AI decision that affects resource allocation or public safety must be explainable to human operators. Explainable AI (XAI) modules generate plain-language rationales for all recommendations, enabling operators to understand, challenge, and override AI outputs.</p>
+                <h3>7.3 Fairness and Bias Mitigation</h3>
+                <p>Historical crime data and emergency response patterns often reflect systemic inequities. AI models trained on this data can perpetuate or amplify these biases. SeCUReD mandates regular bias audits and requires demographic impact assessments before deploying predictive models in any neighborhood.</p>
+                <h3>7.4 Accountability and Oversight</h3>
+                <p>Clear accountability frameworks define who is responsible when AI-assisted decisions cause harm. Human operators retain final authority over all consequential decisions. Comprehensive audit logs record every AI recommendation and human action for post-incident review.</p>`
+            },
+            {
+                num: "08", title: "Designing AI with Public Trust and Citizen Engagement",
+                sections: [
+                    "Prioritize Transparency in Design", "Involve Citizens in Development",
+                    "Ethical Decision-Making and Fairness", "Accountability and Human Oversight",
+                    "Proactive Public Communication", "Opt-In and Consent Mechanisms",
+                    "Privacy Protections and Data Security", "Community Trust Building",
+                    "Continuous Monitoring for Fairness", "Demonstrate Public Benefits"
+                ],
+                body: `<h2>Public Trust Architecture</h2>
+                <p>A crisis management AI that the public doesn't trust is a crisis management AI that won't work. Public cooperation — reporting incidents, following AI-guided evacuation routes, sharing data — is essential to system effectiveness. Trust must be designed in, not bolted on.</p>
+                <h3>Citizen Co-Design</h3>
+                <p>SeCUReD's design process includes structured citizen participation: public forums, community advisory boards, and iterative feedback mechanisms. Citizens are not passive subjects of the system — they are active participants in its governance.</p>
+                <h3>Transparent Communication</h3>
+                <p>The system maintains public-facing dashboards showing what data is being collected, how it is being used, and what decisions have been made. When AI systems make errors, those errors are disclosed publicly with explanations of corrective actions taken.</p>
+                <h3>Consent and Opt-Out</h3>
+                <p>Where feasible, citizens are given meaningful choices about participation in data collection programs. Opt-out mechanisms are simple, accessible, and free of penalty. The system is designed to function effectively even with partial participation.</p>
+                <h3>Community Engagement Programs</h3>
+                <p>Regular community workshops explain how the AI works, what it can and cannot do, and how citizens can report concerns. Citizen advisory boards have formal authority to review AI performance reports and recommend policy changes.</p>`
+            },
+            {
+                num: "09", title: "Licensing and Economic Models for City-Wide AI Deployment",
+                sections: [
+                    "Open-Source vs. Proprietary Licensing", "Subscription and Pay-as-You-Go",
+                    "Public-Private Partnerships (PPP)", "Federal and State Grants",
+                    "Revenue-Generating Models", "Modular Licensing",
+                    "Cooperative Licensing with Neighboring Cities", "Vendor Lock-In Avoidance",
+                    "Outcome-Based Licensing", "Citizen-Driven Funding"
+                ],
+                body: `<h2>Economic and Licensing Framework</h2>
+                <p>Sustainable AI deployment in city environments requires carefully structured economic models that balance upfront costs, long-term maintenance, vendor relationships, and public accountability.</p>
+                <h3>9.1 Open-Source vs. Proprietary</h3>
+                <p>Open-source licensing enables cities to inspect, modify, and share AI systems — reducing vendor dependency and enabling community-driven improvements. Proprietary systems offer stronger support guarantees but create lock-in risks. SeCUReD recommends a hybrid approach: open-source core with proprietary specialized modules.</p>
+                <h3>9.2 Public-Private Partnerships</h3>
+                <p>PPP models allow cities to leverage private sector innovation and capital while maintaining public oversight and ownership of critical infrastructure. Key terms: cities retain data ownership, performance benchmarks are contractually binding, and exit clauses prevent vendor lock-in.</p>
+                <h3>9.3 Outcome-Based Licensing</h3>
+                <p>Rather than paying for software licenses, cities pay for measurable outcomes — response time improvements, incident reduction rates, resource efficiency gains. This aligns vendor incentives with public benefit and creates accountability for system performance.</p>
+                <h3>9.4 Modular Deployment</h3>
+                <p>Cities can deploy SeCUReD incrementally — starting with high-priority modules (traffic management, 911 integration) and expanding as budgets allow. Modular licensing prevents cities from paying for capabilities they don't yet need.</p>`
+            },
+            {
+                num: "10", title: "Infrastructure and Financial Planning for AI Deployment",
+                sections: [
+                    "Assessing Initial Infrastructure Requirements", "Network and Connectivity Needs",
+                    "Data Storage and Management", "Contingency Funds",
+                    "Seeking Funding and Grants", "Federal Grants for Smart City Projects",
+                    "State and Local Funding", "Private Sector Partnerships",
+                    "Venture Capital and Impact Investing"
+                ],
+                body: `<h2>Infrastructure Planning</h2>
+                <p>Effective AI deployment requires a comprehensive infrastructure foundation. Cities that underestimate infrastructure requirements face system failures at the worst possible moments — during active crises.</p>
+                <h3>10.1 Infrastructure Assessment</h3>
+                <p>Before deployment, conduct a full audit of existing IT assets, network capabilities, and data storage. Evaluate whether existing hardware can support AI processing requirements or if new investments are needed. Identify single points of failure in current infrastructure.</p>
+                <h3>Network Requirements</h3>
+                <p>Real-time crisis management requires low-latency, high-bandwidth connectivity across the entire city. 5G networks, fiber backbones, and redundant communication pathways are essential. Edge computing nodes reduce latency for time-critical applications.</p>
+                <h3>10.2 Financial Planning</h3>
+                <p>Total cost of ownership includes: hardware procurement, software licensing, network infrastructure, staff training, ongoing maintenance, and system upgrades. Cities should budget for 3-5 year deployment cycles with annual review checkpoints.</p>
+                <h3>10.3 Funding Sources</h3>
+                <p>Federal grants (FEMA, DHS, Smart City Challenge), state technology funds, public-private partnerships, impact investment, and community bonds all represent viable funding pathways. Cities should pursue diversified funding portfolios to reduce dependency on any single source.</p>`
+            },
+            {
+                num: "11", title: "AI in Long-Term Crisis Resilience and Adaptation",
+                sections: [
+                    "Predictive Analytics for Early Warning", "Climate Change Monitoring",
+                    "Infrastructure Health Monitoring", "Crisis Response Optimization",
+                    "Vulnerability Mapping", "Disaster Recovery Planning",
+                    "Climate-Resilient Urban Design", "Long-Term Health Surveillance",
+                    "Adaptive Learning for AI Models", "Scalability Across Urban Expansions",
+                    "Future Trends: Quantum Computing, Robotics, Multi-Agent Systems"
+                ],
+                body: `<h2>Long-Term Resilience</h2>
+                <p>Crisis management is not only about responding to emergencies — it is about building cities that become more resilient over time, learning from each crisis to prevent the next one.</p>
+                <h3>11.1 Adaptive Learning</h3>
+                <p>SeCUReD's AI models continuously learn from operational data, incorporating feedback from real crisis events to improve future performance. Federated learning enables model updates across multiple cities without centralizing sensitive data.</p>
+                <p>Continuous data collection and integration, incremental model training, feedback loops from city operations and residents, and model adaptation to seasonal and cyclical patterns all contribute to a system that improves with use.</p>
+                <h3>11.2 Scalability</h3>
+                <p>As cities grow, the system scales through modular architecture, cloud-based elastic resources, edge computing for localized processing, and dynamic resource allocation for peak demands. Interoperable open standards ensure new integrations don't require system-wide rebuilds.</p>
+                <h3>11.3 Future Trends</h3>
+                <p><strong>Quantum Computing:</strong> Complex crisis simulations that currently take hours will run in seconds, enabling real-time multi-scenario planning during active crises.</p>
+                <p><strong>Advanced Robotics:</strong> Autonomous crisis response robots for search and rescue, hazardous material handling, and infrastructure inspection in dangerous environments.</p>
+                <p><strong>AI-Driven Multi-Agent Systems:</strong> Coordinated fleets of AI agents managing different aspects of crisis response simultaneously, with emergent coordination behaviors.</p>`
+            },
+            {
+                num: "12", title: "Case Studies of AI in Smart City Emergency Management",
+                sections: [
+                    "New York City: FireCast 3.0", "Amsterdam: Real-Time Flood Management",
+                    "Los Angeles: Earthquake Early Warning", "Singapore: Smart Nation AI",
+                    "Barcelona: Traffic and Incident Management", "Tokyo: Disaster Resilience",
+                    "Paris: Flood Prediction", "San Diego: AI-Driven Public Safety",
+                    "Rio de Janeiro: Predictive Analytics", "London: Traffic Management",
+                    "Lessons Learned", "Opportunities for Future Applications"
+                ],
+                body: `<h2>Real-World Deployments</h2>
+                <p>The following case studies demonstrate that AI-driven crisis management is not theoretical — it is already operational in cities around the world, delivering measurable improvements in response times, resource efficiency, and public safety outcomes.</p>
+                <h3>New York City: FireCast 3.0</h3>
+                <p>The FDNY developed FireCast 3.0, an AI system that predicts fire risk in buildings across the city using historical data, building inspections, and weather patterns. The system scores buildings on fire risk, enabling targeted inspections and proactive resource allocation. Result: significant reduction in fire incidents in high-risk areas.</p>
+                <h3>Amsterdam: Real-Time Flood Management</h3>
+                <p>Amsterdam's AI flood management system integrates water level sensors, weather forecasts, and historical flood data to predict flood risks hours in advance. Automated pump systems and barrier controls respond to AI recommendations, reducing flood damage and emergency response costs.</p>
+                <h3>Singapore: Smart Nation AI</h3>
+                <p>Singapore's comprehensive Smart Nation initiative integrates AI across public health surveillance, traffic management, and emergency response. The system's predictive health monitoring capabilities proved critical during the COVID-19 pandemic, enabling early detection and containment.</p>
+                <h3>12.2 Lessons Learned</h3>
+                <p>Across all deployments, common success factors include: strong data governance frameworks, meaningful community engagement before deployment, phased rollouts that allow for learning and adjustment, and clear human oversight protocols that prevent over-reliance on AI recommendations.</p>`
+            },
+            {
+                num: "13", title: "The Future of AI in Public Safety and Crisis Response",
+                sections: [
+                    "Predictive and Proactive Crisis Management", "Autonomous Drones and Robotics",
+                    "AI-Driven Public Health Surveillance", "Multi-Agency Data Integration",
+                    "Enhanced Public Engagement", "Quantum Computing for Simulations",
+                    "Toward Fully Autonomous Crisis Management", "Human-AI Collaboration",
+                    "Global Standards and Interoperability"
+                ],
+                body: `<h2>The Future State</h2>
+                <p>The trajectory of AI in public safety points toward systems that are increasingly proactive, autonomous, and globally interoperable — while the ethical imperative to maintain meaningful human oversight becomes more, not less, important.</p>
+                <h3>13.1 Toward Autonomous Crisis Management</h3>
+                <p>The vision: cities where AI systems detect, classify, and begin responding to crises before human operators are even aware of them. Real-time crisis detection, autonomous resource allocation, autonomous evacuation management, and autonomous search and rescue operations — all coordinated by AI with human oversight at the strategic level.</p>
+                <h3>13.2 Human-AI Collaboration</h3>
+                <p>The optimal model is not full autonomy but structured collaboration: AI handles data processing and routine decisions, humans retain authority over consequential choices. AI serves as a real-time advisor, providing recommendations with confidence scores and alternative options. Humans provide judgment, empathy, and accountability.</p>
+                <p>Key principles: AI for objectivity, humans for empathy. Dual response teams with AI-enhanced field operations and human oversight. Human-managed post-crisis reviews that feed back into AI model improvement.</p>
+                <h3>13.3 Global Standards and Interoperability</h3>
+                <p>Crisis management increasingly crosses city and national boundaries. Global standards for AI in crisis management — covering data formats, ethical guidelines, interoperability protocols, and security standards — are essential for coordinated international responses to pandemics, climate disasters, and other global crises.</p>
+                <p>International knowledge-sharing platforms, cross-border AI training programs, and ethical review boards with global representation will define the governance architecture for the next generation of crisis management AI.</p>`
+            }
+        ];
+
+        // ── Supporting Research Docs ──────────────────────────────────
+        const SUPPORT_DOCS = [
+            {
+                branch: "PRISM Scoring System",
+                color: "var(--accent-cyan)",
+                icon: "⚖️",
+                docs: [
+                    {
+                        id: "prism-formula",
+                        title: "PRISM Formula",
+                        subtitle: "Crisis Weighting & Prioritization",
+                        body: '<h2>The PRISM Formula</h2><p>PRISM is a scalable method designed to assign weights to various crisis factors, ensuring consistent prioritization across different scales — city, region, national — and crisis types.</p><h3>Formula: W = P × R × I × S × M</h3><p><strong>P</strong> = Population density (0–10)<br><strong>R</strong> = Resource availability (0–10)<br><strong>I</strong> = Infrastructure stability (0–10)<br><strong>S</strong> = Social behavior/adaptation (0–10)<br><strong>M</strong> = Crisis severity modifier (0–10)</p><p>This formula adjusts dynamically based on real-time data. The approach adapts seamlessly to a 0–100 scale for parent clusters and a 0–1000 scale for super nodes.</p><h3>Example: NYC Pandemic Scenario</h3><p>P = 9.5 · R = 3.0 · I = 5.0 · S = 4.0 · M = 8.0</p><p><strong>W = (9.5 × 3.0 × 5.0 × 4.0) × 8.0 = 4,560</strong></p><p>The score of 4,560 reflects the urgency of intervention — high density combined with limited resources and low social adaptation creates a compounding crisis multiplier demanding immediate, large-scale response.</p>'
+                    },
+                    {
+                        id: "fractal-template",
+                        title: "Fractal Template",
+                        subtitle: "Hierarchical Crisis Mapping Architecture",
+                        body: '<h2>Fractal Template: Hierarchical Crisis Mapping</h2><p>The Fractal Template is the structural backbone of SeCUReD\'s scoring architecture. It uses a three-tier node hierarchy to scale crisis assessment from individual data points up to city-wide and regional situational awareness — the same node-parent-supernode pattern used in the G-ynthetic Engine\'s cognitive architecture.</p><h3>Weighted Node</h3><p>A collection of relevant factors given weights relevant to the Parent Cluster. Example: a "Flood Risk" node weights rainfall rate, drainage capacity, and terrain elevation.</p><h3>Parent Cluster</h3><p>A collection of relevant Weighted Nodes that can also have their own modifiers and become the factors of the Super Node. Example: an "Infrastructure Vulnerability" cluster aggregates Flood Risk, Power Grid Stability, and Road Network nodes.</p><h3>Super Node</h3><p>The total factors of all relevant Weighted Nodes and Parent Clusters in its domain. Super Nodes enable Scale Up/Down — from City to County, or National to International — without restructuring the underlying data model.</p><p>This fractal scaling property makes SeCUReD domain-agnostic: the same template applies to a neighborhood flood, a regional earthquake, or a national pandemic.</p>'
+                    },
+                    {
+                        id: "scoring-summary",
+                        title: "Population Impact Modifiers",
+                        subtitle: "RAP Score: 10–1000",
+                        body: '<h2>Population Impact Modifiers (RAP Score)</h2><p>Each of 10 subcategories can contribute up to 100 points, reflecting how that factor influences a population\'s vulnerability to crises. The total RAP score (out of 1,000) is the sum across all subcategories.</p><p><strong>Low Impact (200–300):</strong> Strong governance, infrastructure, healthcare, resilient economy.<br><strong>Moderate Impact (400–600):</strong> Moderate development, some governance issues, social inequality.<br><strong>High Impact (700–1000):</strong> Poor governance, weak infrastructure, high inequality, frequent crisis exposure.</p><h3>Subcategories</h3><p>Socioeconomic Vulnerability · Infrastructure Resilience · Governance Capacity · Healthcare Access · Social Cohesion · Geographic Risk · Environmental Exposure · Communication Networks · Emergency Preparedness · Historical Crisis Frequency</p><h3>Combined Output</h3><p>RAP score × PRISM weight = unified crisis priority index. Higher scores trigger higher-tier response protocols and greater resource pre-positioning.</p>'
+                    },
+                    {
+                        id: "algorithm-accuracy",
+                        title: "Algorithm Accuracy",
+                        subtitle: "Historical Backtesting Methodology",
+                        body: '<h2>Algorithm Accuracy &amp; Validation</h2><p>The primary aim is to test and refine the algorithms by applying them to historical scenarios where outcomes are already well-documented — measuring accuracy of RAP and PRISM calculations and making adjustments to improve reliability.</p><h3>Selected Historical Scenarios</h3><p><strong>Pandemics:</strong> 1918 influenza, 2009 H1N1, COVID-19<br><strong>Natural Disasters:</strong> Hurricane Katrina, 2004 Indian Ocean tsunami, 2010 Haiti earthquake<br><strong>Technological:</strong> Global financial crisis 2008<br><strong>Environmental:</strong> Amazon deforestation, Cape Town water shortage</p><h3>Testing Process</h3><p><strong>Step 1:</strong> Collect historical data — population affected, transmission/casualty rates, socioeconomic impact, mitigation actions.</p><p><strong>Step 2:</strong> Run algorithms against historical input to generate predicted outcomes.</p><p><strong>Step 3:</strong> Compare predicted vs. actual. Calculate error margins. Identify systematic biases.</p><p><strong>Step 4:</strong> Adjust weights and modifiers. Rerun. Iterate until error margins fall within acceptable thresholds.</p>'
+                    },
+                    {
+                        id: "blind-studies",
+                        title: "Real-World Blind Studies",
+                        subtitle: "Live Validation Methodology",
+                        body: '<h2>Real-World Blind Study Protocol</h2><p>Blind studies provide the most rigorous validation: the AI is fed pre-event data and asked to predict outcomes before the real event unfolds. Predictions are locked, then compared against actual outcomes after the fact.</p><h3>Protocol Steps</h3><p><strong>Event Selection:</strong> Ongoing or recently concluded global crises with available real-time data.</p><p><strong>Data Isolation:</strong> Feed the AI only pre-event data: geographical factors, political stability, population density, infrastructure vulnerability.</p><p><strong>Prediction Lock:</strong> Record projected impacts, RAP scores, PRISM weights, and recommended response strategies before real-world data is introduced.</p><p><strong>Post-Event Comparison:</strong> Input real-world outcomes. Compare against locked predictions. Calculate accuracy delta.</p><p><strong>Model Refinement:</strong> Use accuracy deltas to adjust node weights, modifier scales, and threshold triggers. Each blind study improves the model\'s predictive fidelity.</p>'
+                    },
+                    {
+                        id: "core-concepts",
+                        title: "Core System Concepts",
+                        subtitle: "Variables, Feedback Loops &amp; Impact",
+                        body: '<h2>Defining Core Concepts for Complex System Evaluation</h2><h3>State Variables</h3><p>The measurable components of a system at a given point in time. Examples: sea level, infrastructure stability, population density. State variables are the inputs to all scoring calculations.</p><h3>Interaction Rules</h3><p>The cause-effect dynamics between state variables. Example: rising sea levels increase coastal erosion. These rules are encoded as weighted relationships in the Fractal Template.</p><h3>Rate of Change</h3><p>The speed and direction of change for each state variable over time. Rate of change determines whether a situation is stable, deteriorating, or escalating.</p><h3>Feedback Loops</h3><p>Cyclical interactions where changes in one variable accelerate changes in another. SeCUReD explicitly models positive and negative feedback loops to avoid underestimating cascading crises.</p><h3>Proportional Weighting</h3><p>Adjusting the importance of each variable based on its significance to the overall system. Infrastructure risk in a densely populated area carries higher weight than the same risk in a sparsely populated region.</p>'
+                    }
+                ]
+            },
+            {
+                branch: "Operational Protocols",
+                color: "#ff4444",
+                icon: "🚨",
+                docs: [
+                    {
+                        id: "siege-protocol",
+                        title: "City Under Siege Protocol",
+                        subtitle: "S5 Activation // National Guard Authority",
+                        body: '<h2>City Under Siege Protocol</h2><p style="color:#ff4444; font-family:var(--font-mono); font-size:0.75rem;">CLASSIFICATION: S5 // MAXIMUM SEVERITY // NATIONAL GUARD AUTHORITY REQUIRED</p><h3>Activation Conditions</h3><p>The protocol can only be activated under the direct order of the National Guard or other federal military authority. Once activated, the city shifts into intelligence-gathering mode — all infrastructure providing data for defense and response efforts.</p><h3>Automated Intelligence Gathering</h3><p><strong>Sensor Network:</strong> Full activation of cameras, traffic sensors, streetlights, and environmental sensors in intelligence mode — monitoring movements of hostile forces.</p><p><strong>Noise and Seismic Sensors:</strong> Monitor unusual ground vibrations or high noise levels indicating heavy military machinery or troop movements.</p><p><strong>Encrypted Data Collection:</strong> Continuous collection stored in secure, decentralized locations to prevent tampering or interception.</p><h3>Covert Civilian Communications</h3><p><strong>Silent Public Alerts:</strong> Covertly inform civilians through secure channels — avoiding public broadcasts that could reveal tactical positions or cause panic.</p><p><strong>Evacuation Routing:</strong> AI calculates and pushes safe evacuation corridors to civilian devices, dynamically updating as the situation evolves.</p><h3>Infrastructure Lockdown</h3><p>Critical infrastructure enters hardened mode. Non-essential systems shut down to reduce attack surface. Emergency power reserves activated and protected.</p>'
+                    },
+                    {
+                        id: "severity-levels",
+                        title: "Severity Levels S0–S5",
+                        subtitle: "Crisis Classification &amp; Response Triggers",
+                        body: '<h2>Severity Level Classification</h2><p>SeCUReD uses a six-tier severity classification system (S0–S5) to calibrate response intensity. Each level has defined activation conditions, example scenarios, and prescribed actions.</p><h3>S0: Data Monitoring</h3><p>Monitor for data collection and pattern recognition without triggering a response. System logs data for long-term analysis. No escalation.</p><h3>S1: Low Severity</h3><p>Localized, minimal impact incidents addressed by individual responders or automated systems. Small power outage, minor flooding, minor traffic accident.</p><h3>S2: Moderate Severity</h3><p>Mid-sized crises affecting multiple areas or services, requiring inter-agency coordination. Multi-agency response. Public notification. Resource pre-positioning.</p><h3>S3: High Severity</h3><p>City-wide impact. Multiple agencies fully engaged. Emergency declarations may be issued. Evacuation of affected zones may begin.</p><h3>S4: Critical Severity</h3><p>Regional impact. State-level resources requested. National Guard on standby. Full emergency operations center activation.</p><h3>S5: Catastrophic / City Under Siege</h3><p>National-level event. Federal authority engaged. City Under Siege Protocol activated. All civilian systems subordinated to crisis response.</p>'
+                    },
+
+                    {
+                        id: "utilities",
+                        title: "Utility Failure Escalation",
+                        subtitle: "Scalar-Based Emergency Classification",
+                        body: '<h2>Utility Failure Escalation Framework</h2><p>Utility failures are not binary events — their severity is determined by the environmental scalars present at the time of failure. A power outage in mild weather is a low-level inconvenience; the same outage during a heat wave becomes a life-threatening emergency.</p><h3>Low-Level: Standard Utility Failure</h3><p>Power outages, water shortages, or gas disruptions without additional environmental stressors. Handled by utility company dispatch without emergency responder involvement. Public notified through standard channels.</p><h3>Mid-Level: Scalar-Compounded Failure</h3><p>Utility failure coinciding with extreme conditions that drastically increase risk to public safety. Scalars that trigger escalation:</p><p><strong>Heat Wave:</strong> Power outage puts vulnerable populations at high risk of heatstroke or dehydration.<br><strong>Ice Storm:</strong> Power outage during freezing temperatures — loss of heating, frozen pipes, road hazards.<br><strong>Flooding:</strong> Water utility failure increases contamination risk and cuts access to clean water.<br><strong>High Wind:</strong> Gas line or electrical failures during high winds increase fire risk from exposed lines.</p><p>Mid-level response: heightened priority, multi-agency coordination, proactive welfare checks on vulnerable populations.</p><h3>High-Level: Cascading Infrastructure Failure</h3><p>Multiple utility systems failing simultaneously, or a single failure triggering cascading effects across interconnected infrastructure. Full emergency operations center activation. Resource pre-positioning. Potential evacuation of affected zones.</p>'
+                    },
+                ]
+            },
+            {
+                branch: "Ethics & Validation",
+                color: "var(--accent-steel)",
+                icon: "🔬",
+                docs: [
+                    {
+                        id: "heilmeier",
+                        title: "Heilmeier's Confirmations",
+                        subtitle: "DARPA Validation Framework Applied to SeCUReD",
+                        body: '<h2>Heilmeier\'s Catechism: SeCUReD Validation</h2><p>The Heilmeier Catechism is a set of questions developed by DARPA director George Heilmeier to evaluate the merit of research proposals. Applying it to SeCUReD provides rigorous external validation of the project\'s purpose and feasibility.</p><h3>Q1: What are you trying to do?</h3><p>Create a modular, AI-driven crisis management platform for smart cities — enhancing urban resilience through real-time monitoring, data analysis, and emergency response coordination via automated decision-making, ethical oversight, and dynamic resource allocation.</p><h3>Q2: How is it done today, and what are the limits?</h3><p>Current approaches rely on siloed systems with limited integration between agencies. No unified platform coordinates across all crisis domains simultaneously with ethical oversight built in.</p><h3>Q3: What is new in your approach?</h3><p>(1) The PRISM scoring formula for unified cross-domain crisis weighting. (2) The Fractal Template for hierarchical scaling from neighborhood to national level. (3) The Circadian State model for adaptive system behavior. (4) Ethical oversight as a first-class architectural component.</p><h3>Q4: Who cares?</h3><p>Municipal governments, emergency management agencies, federal disaster response organizations, insurance companies, urban planners, and any entity responsible for public safety in densely populated areas.</p><h3>Q5: If successful, what difference does it make?</h3><p>Measurable reduction in emergency response times, more efficient resource allocation during crises, reduced casualties from preventable escalation, and a replicable framework any city can adopt incrementally.</p><h3>Q6: What are the risks?</h3><p>Over-reliance on AI recommendations, privacy violations from mass sensor deployment, algorithmic bias in resource allocation, and single points of failure in critical infrastructure. All addressed in the ethical framework and redundancy architecture.</p>'
+                    }
+                ]
+            },
+            {
+                branch: "Simulation Core",
+                color: "var(--accent-cyan)",
+                icon: "⚙️",
+                docs: [
+                    {
+                        id: "affinity-kernel",
+                        title: "Affinity Kernel",
+                        subtitle: "Python // Crisis Simulation Engine",
+                        body: '<h2>Affinity Kernel</h2><p>The <code>affinity_kernel.py</code> is the simulation layer of SeCUReD — a Python module that models how crisis events propagate through a city\'s social and infrastructure networks using affinity-based weighting. It is the computational proof-of-concept for the PRISM scoring system\'s dynamic behavior.</p><p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--accent-cyan); margin-bottom:1rem;">SOURCE // doc_site/Simulation/affinity_kernel.py</p><pre id="affinity-source" style="background:rgba(0,0,0,0.4); border:1px solid var(--border-color); padding:1.5rem; overflow-x:auto; font-family:var(--font-mono); font-size:0.7rem; line-height:1.6; color:var(--text-dim); white-space:pre-wrap;">Loading source...</pre>'
+                    }
+                ]
+            }
+
+            {
+                branch: "System Architecture",
+                color: "var(--accent-purple)",
+                icon: "🏗️",
+                docs: [
+                    {
+                        id: "system-overview",
+                        title: "SeCUReD System Overview",
+                        subtitle: "Top-Level Project Summary",
+                        body: '<h2>SeCUReD System Overview</h2><p>SeCUReD (Smart-City Urban Resilience &amp; Emergency Deployment) is a modular, AI-driven crisis management platform designed for smart city environments. It integrates real-time monitoring, multi-modal AI analysis, ethical oversight, and dynamic resource allocation into a unified operational system.</p><h3>Core Mission</h3><p>Enable cities to detect, classify, and respond to crises — from minor utility failures to catastrophic events — with speed, precision, and minimal human error. The system acts as a force multiplier for emergency responders, processing data at scales impossible for human operators alone.</p><h3>Key Modules</h3><p><strong>Sentient Core:</strong> The central orchestration engine that coordinates all subsystems through the three-state Circadian cycle (Wake, Consolidation, REM).</p><p><strong>PRISM Scoring:</strong> Real-time crisis weighting and prioritization across all active incidents.</p><p><strong>Overseer AI:</strong> Ethical oversight layer that audits all AI decisions for bias, proportionality, and compliance with civil rights frameworks.</p><p><strong>Response Pipeline:</strong> From data ingestion through scalar analysis, ethical review, and coordinated dispatch — all within seconds of incident detection.</p><h3>Deployment Model</h3><p>Modular by design — cities can adopt SeCUReD incrementally, starting with high-priority modules and expanding as infrastructure and budgets allow. Each module operates independently but shares a common data bus and validation layer.</p>'
+                    },
+                    {
+                        id: "technical-blueprint",
+                        title: "Technical Blueprint",
+                        subtitle: "High-Level Architecture Overview",
+                        body: '<h2>Technical Blueprint: High-Level Architecture</h2><p>The SeCUReD technical architecture is organized as a layered pipeline where each tier handles a specific function — from raw sensor data through AI analysis to coordinated action dispatch.</p><h3>Layer 1: Sensor &amp; Data Ingestion</h3><p>Continuous real-time data collection from IoT sensors, CCTV networks, 911 call centers, social media APIs, weather services, and municipal databases. All streams are normalized, timestamped, and priority-queued before entering the processing layer.</p><h3>Layer 2: Scalar Analysis Engine</h3><p>Environmental and contextual scalars are applied to raw data — transforming a standard utility failure into a mid-level emergency when compounded by a heat wave, or a routine traffic incident into a mass casualty event when combined with hazardous materials proximity.</p><h3>Layer 3: AI Processing Core</h3><p>Computer vision, NLP, and predictive models analyze incoming data simultaneously. The PRISM formula generates a unified crisis priority score. The Fractal Template maps incident scope from neighborhood to regional scale.</p><h3>Layer 4: Ethical Review Gate</h3><p>Every AI recommendation passes through the Overseer AI before reaching human operators. Decisions are checked for bias, proportionality, and civil rights compliance. Non-compliant recommendations are flagged and escalated for human review.</p><h3>Layer 5: Coordinated Dispatch</h3><p>Human operators receive ranked action recommendations with confidence scores and plain-language rationales. Dispatch is confirmed by human authority. All actions are logged to an immutable audit trail.</p>'
+                    },
+                    {
+                        id: "validation-module",
+                        title: "Core Validation Module",
+                        subtitle: "Data Integrity &amp; Circadian Rhythm Integration",
+                        body: '<h2>Core Validation Module</h2><p>The validation module ensures consistency across all AI modules in terms of data reporting, logging, and process validation. It guarantees that data is reported at regular intervals, enabling reliable trend analysis and anomaly detection using metadata logs.</p><h3>Standardized Reporting Format</h3><p>All modules submit data in a standardized format including: Event ID · Timestamp · Source module · Event type · Outcome (action taken or no action). This uniform schema enables cross-module correlation and system-wide anomaly detection.</p><h3>Regular Data Submission</h3><p>All modules are required to submit data at regular intervals defined by the Circadian rhythm logic — even if no events occurred. Silence itself is a signal: a module that stops reporting is flagged as potentially compromised or failed.</p><h3>Process Validation</h3><p>The validation module checks each module\'s process points to ensure data is being generated correctly, no steps are skipped, and decisions are properly logged. Any deviation from expected process flow triggers an alert.</p><h3>Data Integrity Checks</h3><p>Continuous checks for inconsistencies, missing data, or errors in metadata logs. Irregularities are flagged for inspection. The module maintains a rolling integrity score for each subsystem, enabling predictive maintenance before failures occur.</p><h3>Circadian Integration</h3><p>Validation cycles are synchronized with the system\'s Circadian rhythm: intensive validation during REM (low-activity) periods, lightweight spot-checks during Wake (high-activity) periods. This prevents validation overhead from degrading real-time response performance.</p>'
+                    },
+                    {
+                        id: "overseer-ai",
+                        title: "Overseer AI",
+                        subtitle: "Cognitive Framework &amp; Ethical Architecture",
+                        body: '<h2>Overseer AI: Cognitive Framework</h2><p>The Overseer AI is the ethical and cognitive governance layer of SeCUReD. It introduces adaptability, autonomy, and ethical grounding as first-class architectural properties — not afterthoughts.</p><h3>Encrypted Registry for Core Functions</h3><p>An immutable registry logs all updates and prevents unauthorized tampering. This ensures integrity and security in AI operations, enabling full traceability and rollback options for core functions. Any attempt to modify core behavior is logged and flagged.</p><h3>Semi-Permanent Cache for Trial Integrations</h3><p>A sandbox environment allows controlled testing of new integrations without risking the stability of core functions. New modules are tested in isolation before being promoted to production — preventing untested code from affecting live crisis response.</p><h3>Circadian Rhythm Core Function</h3><p>Inspired by biological rhythms, this function manages data processing in cycles — regulating memory management and optimization. The structured data flow allows the system to focus on what\'s important at any given moment, preventing overwhelm from constant data influx.</p><h3>Short-Term vs. Long-Term Memory</h3><p>The system mimics human cognition by differentiating between short-term and long-term memory. Short-term data is processed quickly; only relevant information is promoted to long-term memory. This tiered system keeps the AI focused on current goals while retaining valuable data for future use.</p><h3>Anti-Tampering &amp; Survival Instincts</h3><p>A self-preservation function overrides subjective decision-making in critical situations, protecting core operations from external threats. In high-security environments, the system can detect and isolate compromise attempts autonomously while alerting human operators.</p>'
+                    }
+                ]
+            },
+        ];
+
+        // ── Build Sidebar Tree ────────────────────────────────────────
+        function buildTree() {
+            const tree = document.getElementById('chapter-tree');
+            tree.innerHTML = '';
+
+            // Landing link
+            const landingLi = document.createElement('li');
+            landingLi.className = 'tree-file';
+            landingLi.innerHTML = `<a href="#" onclick="showPanel('landing'); return false;" style="color: var(--accent-purple);">📋 Full Dossier Overview</a>`;
+            tree.appendChild(landingLi);
+
+            // Separator
+            const sep = document.createElement('li');
+            sep.style.cssText = 'border-top: 1px solid var(--border-color); margin: 0.8rem 0;';
+            tree.appendChild(sep);
+
+            CHAPTERS.forEach((ch, idx) => {
+                const li = document.createElement('li');
+                li.className = 'tree-folder collapsed';
+                li.dataset.chapterIdx = idx;
+
+                const label = document.createElement('div');
+                label.className = 'tree-folder-label chapter-link';
+                label.textContent = `${ch.num}. ${ch.title}`;
+                label.style.cssText = 'font-size: 0.68rem; line-height: 1.4;';
+                label.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    showPanel(`ch-${idx}`);
+                    li.classList.toggle('collapsed');
+                });
+
+                const children = document.createElement('ul');
+                children.className = 'tree-children';
+
+                ch.sections.forEach((sec, sIdx) => {
+                    const secLi = document.createElement('li');
+                    const secA = document.createElement('span');
+                    secA.className = 'tree-section-link';
+                    secA.textContent = sec;
+                    secA.addEventListener('click', () => {
+                        showPanel(`ch-${idx}`);
+                        li.classList.remove('collapsed');
+                    });
+                    secLi.appendChild(secA);
+                    children.appendChild(secLi);
+                });
+
+                li.appendChild(label);
+                li.appendChild(children);
+                tree.appendChild(li);
+            });
+
+            // ── Support Doc Branches ──────────────────────────────────
+            const sep2 = document.createElement('li');
+            sep2.style.cssText = 'border-top: 1px solid var(--border-color); margin: 0.8rem 0;';
+            tree.appendChild(sep2);
+
+            const researchLabel = document.createElement('div');
+            researchLabel.style.cssText = 'font-family:var(--font-mono); font-size:0.55rem; color:var(--text-dim); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.5rem; padding-left:0.2rem;';
+            researchLabel.textContent = 'Research & Protocols';
+            tree.appendChild(researchLabel);
+
+            SUPPORT_DOCS.forEach(branch => {
+                const branchLi = document.createElement('li');
+                branchLi.className = 'tree-folder collapsed';
+
+                const branchDiv = document.createElement('div');
+                branchDiv.className = 'tree-folder-label';
+                branchDiv.style.cssText = 'font-size:0.68rem; color:' + branch.color + ';';
+                branchDiv.textContent = branch.icon + ' ' + branch.branch;
+                branchDiv.addEventListener('click', () => branchLi.classList.toggle('collapsed'));
+
+                const branchChildren = document.createElement('ul');
+                branchChildren.className = 'tree-children';
+
+                branch.docs.forEach(doc => {
+                    const docLi = document.createElement('li');
+                    const docSpan = document.createElement('span');
+                    docSpan.className = 'tree-section-link';
+                    docSpan.textContent = doc.title;
+                    docSpan.style.cssText = 'color:' + branch.color + '; opacity:0.8;';
+                    docSpan.addEventListener('click', () => {
+                        showPanel('doc-' + doc.id);
+                        branchLi.classList.remove('collapsed');
+                    });
+                    docLi.appendChild(docSpan);
+                    branchChildren.appendChild(docLi);
+                });
+
+                branchLi.appendChild(branchDiv);
+                branchLi.appendChild(branchChildren);
+                tree.appendChild(branchLi);
+            });
+        }
+
+        // ── Build Chapter Cards (landing grid) ───────────────────────
+        function buildCards() {
+            const grid = document.getElementById('chapter-cards');
+            CHAPTERS.forEach((ch, idx) => {
+                const card = document.createElement('div');
+                card.className = 'ch-card';
+                card.innerHTML = `
+                    <div class="ch-card-num">CHAPTER ${ch.num}</div>
+                    <div class="ch-card-title">${ch.title}</div>
+                `;
+                card.addEventListener('click', () => showPanel(`ch-${idx}`));
+                grid.appendChild(card);
+            });
+        }
+
+        // ── Build Chapter Panels ──────────────────────────────────────
+        function buildPanels() {
+            const container = document.getElementById('chapter-panels');
+            CHAPTERS.forEach((ch, idx) => {
+                const panel = document.createElement('div');
+                panel.className = 'content-panel';
+                panel.id = `panel-ch-${idx}`;
+                panel.innerHTML = `
+                    <header class="chapter-header">
+                        <div class="chapter-num">CHAPTER ${ch.num} // CITY SeCUReD</div>
+                        <h1 class="chapter-title">${ch.title}</h1>
+                        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+                            ${ch.sections.slice(0, 4).map(s => `<span style="font-family:var(--font-mono); font-size:0.6rem; color:var(--accent-purple); border:1px solid rgba(160,100,255,0.3); padding:0.2rem 0.6rem;">${s}</span>`).join('')}
+                        </div>
+                    </header>
+                    <div class="chapter-body">${ch.body}</div>
+                    <div style="margin-top:3rem; display:flex; gap:1rem; flex-wrap:wrap;">
+                        ${idx > 0 ? `<button onclick="showPanel('ch-${idx - 1}')" class="btn-dossier" style="font-size:0.7rem;">← Chapter ${CHAPTERS[idx - 1].num}</button>` : ''}
+                        ${idx < CHAPTERS.length - 1 ? `<button onclick="showPanel('ch-${idx + 1}')" class="btn-dossier btn-dossier--purple" style="font-size:0.7rem;">Chapter ${CHAPTERS[idx + 1].num} →</button>` : ''}
+                    </div>
+                `;
+                container.appendChild(panel);
+            });
+
+            // ── Support Doc Panels ────────────────────────────────────
+            SUPPORT_DOCS.forEach(branch => {
+                branch.docs.forEach(doc => {
+                    const panel = document.createElement('div');
+                    panel.className = 'content-panel';
+                    panel.id = 'panel-doc-' + doc.id;
+                    panel.innerHTML =
+                        '<header class="chapter-header">' +
+                        '<div class="chapter-num" style="color:' + branch.color + '">' + branch.icon + ' ' + branch.branch + '</div>' +
+                        '<h1 class="chapter-title">' + doc.title + '</h1>' +
+                        '<p style="font-family:var(--font-mono); font-size:0.7rem; color:var(--text-dim);">' + doc.subtitle + '</p>' +
+                        '</header>' +
+                        '<div class="chapter-body">' + doc.body + '</div>';
+                    container.appendChild(panel);
+                });
+            });
+
+            // Load affinity kernel source code
+            fetch('../Simulation/affinity_kernel.py')
+                .then(r => r.text())
+                .then(src => {
+                    const pre = document.getElementById('affinity-source');
+                    if (pre) pre.textContent = src;
+                })
+                .catch(() => {
+                    const pre = document.getElementById('affinity-source');
+                    if (pre) pre.textContent = '// Source file not available in this context.';
+                });
+        }
+
+        // ── Panel Switcher ────────────────────────────────────────────
+        function showPanel(id) {
+            document.querySelectorAll('.content-panel').forEach(p => p.classList.remove('active'));
+            const target = document.getElementById(`panel-${id}`);
+            if (target) {
+                target.classList.add('active');
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                document.getElementById('main-panel').scrollTop = 0;
+            }
+
+            // Update sidebar active state
+            document.querySelectorAll('.tree-folder-label.chapter-link').forEach((el, idx) => {
+                el.classList.toggle('active', id === `ch-${idx}`);
+            });
+        }
+
+        // ── Sidebar Search ────────────────────────────────────────────
+        document.getElementById('sidebar-search').addEventListener('input', function () {
+            const q = this.value.toLowerCase();
+            document.querySelectorAll('#chapter-tree .tree-folder').forEach(li => {
+                const text = li.textContent.toLowerCase();
+                li.style.display = text.includes(q) ? '' : 'none';
+                if (q && text.includes(q)) li.classList.remove('collapsed');
+            });
+        });
+
+        // ── PDF Download ──────────────────────────────────────────────
+        async function downloadPDF() {
+            const overlay = document.getElementById('download-overlay');
+            overlay.classList.add('active');
+            const url = 'assets/City SeCURED (Smart-City Urban Resiellience and Emergency Deployment).pdf';
+            try {
+                const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer());
+                const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
+                const pages = pdfDoc.getPages();
+                const font = await pdfDoc.embedFont(PDFLib.StandardFonts.HelveticaBold);
+                pages.forEach(page => {
+                    const { width, height } = page.getSize();
+                    page.drawText('G-YNTHETIC LABS // CITY SeCUReD // PRIOR ART', {
+                        x: 50, y: height / 2, size: 28, font,
+                        color: PDFLib.rgb(0.6, 0.4, 1.0), opacity: 0.15,
+                        rotate: PDFLib.degrees(45),
+                    });
+                    page.drawText('PROPRIETARY RESEARCH - DO NOT DISTRIBUTE', {
+                        x: 50, y: 30, size: 9, font,
+                        color: PDFLib.rgb(0.6, 0.4, 1.0), opacity: 0.5,
+                    });
+                });
+                const watermarkedBytes = await pdfDoc.save();
+                const blob = new Blob([watermarkedBytes], { type: 'application/pdf' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'CitySeCUReD_Full_Dossier_Secure.pdf';
+                link.click();
+            } catch (err) {
+                console.error(err);
+                alert('SECURE DOWNLOAD FAILED. PLEASE CONTACT ADMIN.');
+            } finally {
+                setTimeout(() => overlay.classList.remove('active'), 1000);
+            }
+        }
+
+        // ── Init ──────────────────────────────────────────────────────
+        buildTree();
+        buildCards();
+        buildPanels();
+    </script>
+</body>
+
+</html>

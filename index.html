@@ -7,20 +7,27 @@
     <title>[WIP] G-ynthetic Labs | William Wallace Morehead</title>
     <meta name="description"
         content="Zero-Syntax Architecture firm. Structural Intelligence & High-Density Simulation. 12 deployed AI-governed systems across 7 applied domains.">
+    <link rel="icon" href="assets/favicon.ico">
+    <meta property="og:title" content="[WIP] G-ynthetic Labs | William Wallace Morehead">
+    <meta property="og:description"
+        content="Zero-Syntax Architecture firm. Structural Intelligence & High-Density Simulation. 12 deployed AI-governed systems across 7 applied domains.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://anastasisconsulting.github.io/portfolio/assets/opening-page-gynthetic.PNG">
+    <meta property="og:url" content="https://anastasisconsulting.github.io/portfolio/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="wip-banner" style="background: var(--accent-cyan); color: #000; font-weight: bold;">[!] PUBLIC
-        DISCLOSURE // DEFENSIBLE PRIOR ART // FULL ARCHITECTURAL UNSEAL
-    </div>
+
     <header>
-        <canvas id="hypercube-header"></canvas>
+        <canvas id="header-lattice"
+            style="position:absolute; top:0; right:0; width:60%; height:100%; pointer-events:none; z-index:0;"></canvas>
         <div>
             <h1 class="lab-title" style="white-space: nowrap;">G-YNTHETIC LABS</h1>
             <p class="subtitle">Taking A.I. From Artificial Intelligence to <br><strong
@@ -83,9 +90,62 @@
                         <div class="metric" data-target="343">0</div>
                         <div class="metric-label">Node Persistent Memory Lattice</div>
                     </div>
+                    <div class="infographic-container">
+                        <img src="assets/cogEngDiaCol.png" alt="Horizontal Cognitive Engine Architecture"
+                            class="diag-img reveal"
+                            style="border: 1px solid var(--border-accent); padding: 1rem; background: rgba(0,0,0,0.3);">
+                        <div class="caption">Fig 1.0 // Horizontal Cognitive Engine Architecture</div>
+                    </div>
                 </div>
+    </section>
+
+    <!-- NEW Cinematic Briefings Section -->
+    <section id="cinematics">
+        <div class="section-header reveal">
+            <h2 class="section-title">Cinematic Briefings</h2>
+            <p class="section-subtitle">High-Density Architectural Visuals</p>
+        </div>
+
+        <div class="video-grid">
+            <div class="video-item reveal">
+                <div class="video-frame">
+                    <video controls poster="assets/opening-page-gynthetic.PNG">
+                        <source src="assets/Fractal_7D.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h4>7D Fractal Manifold // Simulation Brief</h4>
+                <p>A procedural visualization of high-dimensional state propagation.</p>
             </div>
-            <img src="assets/microRecurion.drawio.png" alt="Micro-Recursion Process Flow" class="diag-img">
+            <div class="video-item reveal">
+                <div class="video-frame">
+                    <video controls>
+                        <source src="assets/A_Cognitive_Scaffold.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h4>A Cognitive Scaffold</h4>
+                <p>Foundational principles of the G-ynthetic Engine logic core.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW Audio Briefing Section -->
+    <section id="podcast" style="background: var(--bg-elevated);">
+        <div class="section-header reveal">
+            <h2 class="section-title">Audio Briefing</h2>
+            <p class="section-subtitle">Deep-Dive Technical Discussion</p>
+        </div>
+
+        <div class="audio-player-container reveal">
+            <div class="audio-info">
+                <div class="card-tag">EXECUTIVE PODCAST // FEB 2026</div>
+                <h3>Solving AI Context Degradation with Fractal Geometry</h3>
+                <p>A 20-minute technical session on why standard token-windows fail and how coordinate-based memory
+                    persists context indefinitely.</p>
+            </div>
+            <audio controls style="width: 100%; margin-top: 1rem;">
+                <source src="assets/Solving_AI_Context_Degradation_With_Fractal_Geometry.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
     </section>
 
@@ -147,11 +207,11 @@
                     </div>
                     <a href="secured.html" class="btn-dossier btn-dossier--purple">Impact Dossier</a>
                 </div>
-                <p>
-                    <strong>Stabilizing Society's Backbone.</strong><br>
-                    A resilient infrastructure management OS designed for crisis scenarios.
-                    When human cognition is overwhelmed by entropy, SeCUReD maintains the grid.
-                </p>
+                <div class="video-container" style="margin-top: 2rem;">
+                    <video controls style="width: 100%; height: auto;">
+                        <source src="assets/SeCUReD__The_Autonomous_City.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div class="card-footer" style="color:var(--accent-purple);">Verifiable Outcome: Crisis Mitigation</div>
             </div>
 
@@ -210,131 +270,60 @@
             <p class="section-subtitle">Theoretical Foundations of Machine Curiosity</p>
         </div>
 
-        <ul class="research-list">
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">The Spontaneous Association Experiment (SAE)</h4>
-                    <a href="research_sae.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Thesis: Emergent pattern recognition through entropy injection in "Dream State"
-                    cycles.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">G-ynthetic Architecture Part 1</h4>
-                    <a href="research_p1.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Structure: Hierarchical state propagation and linear memory deconstruction.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">G-ynthetic Architecture Part 2</h4>
-                    <a href="research_p2.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Analysis: The psychological and societal risks of distributed inference
-                    systems.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">Building a 4D Gradient</h4>
-                    <a href="research_gradient.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Framework: Mapping semantic relationships into temporal vector spaces.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">Symbolic Grid Atlas Format</h4>
-                    <a href="research_atlas.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Spec: Serialized interchange format for lattice persistence.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">F.R.A.C.C. Cognitive Architecture Research</h4>
-                    <a href="research_fracc.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Framework: Fractal Recursive Adaptive Cognitive Chains for hierarchical
-                    reasoning.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">The Oracle Mirage</h4>
-                    <a href="research_oracle.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Manifesto: Psychological and societal risks of LLM over-reliance.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">Towards a Pre-Linguistic Inference Engine</h4>
-                    <a href="research_prelinguistic.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Synthesis: Cross-disciplinary framework for sub-symbolic reasoning.</p>
-            </li>
-            <li class="research-item reveal">
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <h4 class="research-title">Introducing Trililiquary</h4>
-                    <a href="research_trililiquary.html" class="btn-dossier">Decrypt Dossier</a>
-                </div>
-                <p class="research-meta">Framework: Slipstream manifold architecture for frictionless state transitions.
-                </p>
-            </li>
-        </ul>
-    </section>
-
-    <section id="cognition">
-        <div class="section-header reveal">
-            <h2 class="section-title">Cognitive Architecture</h2>
-            <p class="section-subtitle">The Universal Output Mechanism</p>
-        </div>
-
-        <div class="architecture-block reveal">
-            <div>
-                <h3 style="margin-bottom: 1rem; color: var(--accent-cyan);">THE FRACTAL TEMPLATE SYSTEM</h3>
-                <p style="font-size: 1.05rem; margin-bottom: 1.5rem; color: var(--text-main); font-weight: 400;">
-                    We confront the AI hallucination and accountability problem with a tailored compiler rendering
-                    outputs rather than generating them.
-                </p>
-                <p style="font-size: 0.88rem; margin-bottom: 2rem; color: var(--text-dim); line-height: 1.75;">
-                    Starting from Paul Ekman's "Truth Wizards" and micro-expressions research, we surmised that if
-                    universal outputs exist regardless of culture or language, a **universal BIOS** must too exist at
-                    the pre-linguistic level.
-                    <br><br>
-                    When we asked "Why 7" this led to **Miller's Law** (7 ± 2). Adding the **Triadic Law** for
-                    causality as first principles for temporal coherence and the universe's prime example of recursion
-                    (the fractal), we had our engine.
-                </p>
-
-                <h4
-                    style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-steel); text-transform: uppercase; margin-bottom: 1rem;">
-                    OUR PROCESS IS:</h4>
-                <ul class="econ-list" style="margin-bottom: 2rem;">
-                    <li><strong>Domain-Agnostic:</strong> 7-Arc Decomposition collapses any input into universal
-                        rhetorical primitives (Essence to Value), bypassing domain-specific bloat.</li>
-                    <li><strong>Model Agnostic:</strong> Logic resides in the deterministic Triadic Evaluator; LLMs are
-                        utilized solely as interchangeable rendering engines.</li>
-                    <li><strong>Linguistically Agnostic:</strong> Spatial coordinate mapping `(t, x, y, z)` anchors
-                        intent in a non-verbal 3D lattice, independent of syntax or language.</li>
-                    <li><strong>Universally Applicable:</strong> The Risk/Reward/Relation triadic phases provide a
-                        fundamental causality model for gaming, enterprise, or crisis management.</li>
-                    <li><strong>Easy to Understand:</strong> Spatial visualization of AI state through the 7x7x7 Voxel
-                        Grid makes the "Black Box" of inference human-parsable.</li>
-                    <li><strong>Highly Organized:</strong> Deterministic metadata tagging across 6-face nodes ensuring
-                        every memory has a persistent, addressable index.</li>
-                    <li><strong>Adaptable to Any Use Case:</strong> Modular integration via hooks like `useMemoryCore`
-                        allows deployment across standard web, local Python, or OS-level stacks.</li>
-                    <li><strong>Affordable:</strong> Hybrid edge/cloud topology resolves context locally via Cosine
-                        Similarity on Coral TPUs, cutting token overhead by ~80%.</li>
-                </ul>
+        <div class="research-grid">
+            <div class="research-card reveal" data-id="sae">
+                <div class="card-tag">IP 01 // SAE</div>
+                <h4>Spontaneous Association Experiment</h4>
+                <p>Emergent pattern recognition via entropy injection.</p>
+                <button class="btn-dossier">View Abstract</button>
             </div>
-            <div class="diag-img"
-                style="display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.5); border: 1px solid var(--accent-gray); aspect-ratio: 1; min-height: 300px;">
-                <div style="text-align: center;">
-                    <span
-                        style="font-size: 4.5rem; color: var(--accent-cyan); display: block; font-weight: 300; letter-spacing: -0.04em;">3D</span>
-                    <span
-                        style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent-steel); letter-spacing: 0.15em;">FRACTAL
-                        RECURSION</span>
-                </div>
+            <div class="research-card reveal" data-id="p1">
+                <div class="card-tag">IP 02 // ARCH_P1</div>
+                <h4>G-ynthetic Architecture P1</h4>
+                <p>Hierarchical state propagation & linear deconstruction.</p>
+                <button class="btn-dossier">View Abstract</button>
+            </div>
+            <div class="research-card reveal" data-id="p2">
+                <div class="card-tag">IP 03 // ARCH_P2</div>
+                <h4>G-ynthetic Architecture P2</h4>
+                <p>Psychological and societal risks of distributed inference.</p>
+                <button class="btn-dossier">View Abstract</button>
+            </div>
+            <div class="research-card reveal" data-id="gradient">
+                <div class="card-tag">IP 04 // 4D_GRAD</div>
+                <h4>Building a 4D Gradient</h4>
+                <p>Mapping semantic relationships to temporal vector spaces.</p>
+                <button class="btn-dossier">View Abstract</button>
+            </div>
+            <div class="research-card reveal" data-id="atlas">
+                <div class="card-tag">IP 05 // ATLAS</div>
+                <h4>Symbolic Grid Atlas</h4>
+                <p>Serialized interchange format for lattice persistence.</p>
+                <button class="btn-dossier">View Abstract</button>
+            </div>
+            <div class="research-card reveal" data-id="fracc">
+                <div class="card-tag">IP 06 // FRACC</div>
+                <h4>F.R.A.C.C. Framework</h4>
+                <p>Fractal Recursive Adaptive Cognitive Chains.</p>
+                <button class="btn-dossier">View Abstract</button>
+            </div>
+            <div class="research-card reveal" data-id="oracle">
+                <div class="card-tag" style="color: var(--accent-purple);">WARNING // ORACLE</div>
+                <h4>The Oracle Mirage</h4>
+                <p>Psychological risks of LLM over-reliance.</p>
+                <button class="btn-dossier btn-dossier--purple">View Abstract</button>
+            </div>
+            <div class="research-card reveal" data-id="prelinguistic">
+                <div class="card-tag">IP 08 // PRE_LING</div>
+                <h4>Pre-Linguistic Inference</h4>
+                <p>Towards sub-symbolic reasoning frameworks.</p>
+                <button class="btn-dossier">View Abstract</button>
+            </div>
+            <div class="research-card reveal" data-id="trililiquary">
+                <div class="card-tag">IP 09 // TRILI</div>
+                <h4>Introducing Trililiquary</h4>
+                <p>Slipstream manifold architecture for state transitions.</p>
+                <button class="btn-dossier">View Abstract</button>
             </div>
         </div>
     </section>
@@ -396,8 +385,6 @@
         <div class="footer-actions">
             <a href="about.html" class="btn-primary"
                 style="padding: 0.6rem 1.8rem; background: transparent; border: 1px solid var(--text-dim); margin-right: 1rem;">About</a>
-            <a href="docs.html" class="btn-primary" style="padding: 0.6rem 1.8rem;">Access Public
-                Archive</a>
             <a href="mailto:G-nthetic-Labs@proton.me" class="footer-email">G-nthetic-Labs@proton.me</a>
         </div>
         <div class="copyright">
@@ -405,6 +392,18 @@
             Art Active.
         </div>
     </footer>
+
+    <!-- Sliding Glass Door Overlay -->
+    <div id="research-overlay" class="glass-door-overlay">
+        <div class="overlay-bg-blur"></div>
+        <div class="door-container">
+            <div class="door-left" id="overlay-left-panel"></div>
+            <div class="door-right" id="overlay-right-panel">
+                <button class="close-overlay" title="Close Panel">×</button>
+                <div class="abstract-content" id="abstract-container"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
     <script src="headerVisualizer.js"></script>
