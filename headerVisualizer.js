@@ -173,8 +173,8 @@ void main() {
 }
 `;
 
-function initVisualizer() {
-  const container = document.getElementById('hypercube-header');
+function createLatticeInstance(canvasId) {
+  const container = document.getElementById(canvasId);
   if (!container) return;
 
   const width = container.clientWidth;
@@ -250,7 +250,7 @@ function initVisualizer() {
     lines.rotation.copy(points.rotation);
 
     // 3. "Swimming" (Flexing position in header space)
-    const swimX = 6.0 + Math.sin(time * 0.5) * 1.5;
+    const swimX = Math.sin(time * 0.5) * 1.5;
     const swimY = Math.cos(time * 0.4) * 0.8;
     points.position.set(swimX, swimY, 0);
     lines.position.set(swimX, swimY, 0);
@@ -273,4 +273,9 @@ function initVisualizer() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', initVisualizer);
+function initAllVisualizers() {
+  createLatticeInstance('header-lattice');
+  createLatticeInstance('lattice-section');
+}
+
+document.addEventListener('DOMContentLoaded', initAllVisualizers);

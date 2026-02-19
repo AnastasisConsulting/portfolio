@@ -4,209 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G-YNTHETIC ARCHIVE | Deep Technical Vault</title>
+    <title>G-YNTHETIC ARCHIVE | Redirect</title>
+    <meta http-equiv="refresh" content="0; url=docs.html#deep-archive">
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .vault-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .archive-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-
-        .folder-card {
-            background: var(--panel-bg);
-            border: 1px solid var(--border-color);
-            padding: 2rem;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .folder-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 2px;
-            height: 100%;
-            background: var(--accent-cyan);
-        }
-
-        .category-sector {
-            margin-top: 3rem;
-        }
-
-        .category-header {
-            font-size: 0.8rem;
-            color: var(--accent-cyan);
-            letter-spacing: 3px;
-            border-bottom: 1px solid rgba(0, 240, 255, 0.1);
-            padding-bottom: 0.75rem;
-            margin-bottom: 1.5rem;
-            font-family: var(--font-mono);
+        body {
             display: flex;
             align-items: center;
-        }
-
-        .category-header::before {
-            content: "// ";
-            opacity: 0.5;
-        }
-
-        .file-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-        }
-
-        .file-item {
-            background: rgba(255, 255, 255, 0.02);
-            padding: 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            display: flex;
-            flex-direction: column;
-            transition: all 0.2s ease;
-        }
-
-        .file-item:hover {
-            background: rgba(0, 240, 255, 0.05);
-            border-color: rgba(0, 240, 255, 0.2);
-        }
-
-        .file-link {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            word-break: break-all;
-            margin-bottom: 0.5rem;
-        }
-
-        .file-link:hover {
-            color: var(--text-main);
-            text-decoration: underline;
-        }
-
-        .file-meta {
-            font-size: 0.65rem;
-            color: rgba(255, 255, 255, 0.3);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .badge-unrestricted {
-            color: var(--accent-green);
-            border: 1px solid var(--accent-green);
-            padding: 2px 6px;
-            border-radius: 2px;
-            font-size: 0.55rem;
-        }
-
-        footer {
-            margin-top: 8rem;
-            padding: 4rem 0;
+            justify-content: center;
+            min-height: 100vh;
             text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2rem;
         }
     </style>
 </head>
 
-<body oncontextmenu="return false;">
-    <div class="vault-container">
-        <header style="margin-bottom: 4rem;">
-            <a href="docs.html"
-                style="color: var(--accent-cyan); text-decoration: none; font-family: var(--font-mono); font-size: 0.7rem;">&larr;
-                BACK TO DISCLOSURE OVERVIEW</a>
-            <h1 class="glitch-title" style="font-size: 3rem; margin-top: 2rem; white-space: nowrap;">G-YNTHETIC DEEP
-                TECHNICAL ARCHIVE</h1>
-            <p class="subtitle">UNFILTERED PRIOR ART // CORE REPRODUCTIVE LOGIC</p>
-        </header>
-
-        <div id="archive-root">
-            <div class="folder-card reveal active">
-                <div
-                    style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-green); margin-bottom: 1rem; white-space: nowrap;">
-                    [ NODE: CRYPTO_VAULT ] [ STATUS: UNSEALED ] [ TOTAL_FILES: <span id="file-count-dynamic">...</span>
-                    ]</div>
-                <p style="font-size: 0.9rem; margin-bottom: 2rem; color: var(--text-dim); line-height: 1.6;">
-                    The following assets represent the finalized technical core of G-ynthetic Labs. These files are
-                    provided in their raw, plain-text format to ensure absolute transparency and defensible prior art
-                    status.
-                </p>
-
-                <div id="file-listing">
-                    <!-- Populated by JS -->
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <div style="margin-bottom: 2rem;">
-                <a href="index.html" class="btn-primary" style="padding: 0.8rem 2.5rem;">Return to Terminal</a>
-            </div>
-            <p class="copyright">&copy; 2026 <span style="white-space: nowrap;">G-YNTHETIC LABS</span>. PUBLIC
-                DISCLOSURE. SOURCE UNSEALED.</p>
-        </footer>
+<body>
+    <div>
+        <p class="subtitle" style="margin-bottom: 1rem;">Redirecting to the unified disclosure archive...</p>
+        <a href="docs.html#deep-archive" class="btn-primary" style="padding: 0.6rem 1.5rem;">Open Archive</a>
     </div>
-
-    <script src="assets/docs-manifest.js"></script>
     <script>
-        const fileListing = document.getElementById('file-listing');
-        const countSpan = document.getElementById('file-count-dynamic');
-
-        function renderArchive() {
-            if (!window.DOCS_MANIFEST) return;
-
-            countSpan.textContent = DOCS_MANIFEST.metadata.total_files;
-            fileListing.innerHTML = '';
-
-            const tier = DOCS_MANIFEST.levels["0"];
-            if (!tier) return;
-
-            const groupedFiles = {};
-            tier.files.forEach(file => {
-                const group = file.category || "General Assets";
-                if (!groupedFiles[group]) groupedFiles[group] = [];
-                groupedFiles[group].push(file);
-            });
-
-            const sortedCategories = Object.keys(groupedFiles).sort();
-
-            sortedCategories.forEach(cat => {
-                const sector = document.createElement('div');
-                sector.className = 'category-sector';
-
-                let fileHTML = '';
-                groupedFiles[cat].forEach(file => {
-                    fileHTML += `
-                        <div class="file-item">
-                            <a href="${file.path}" target="_blank" class="file-link">${file.title}</a>
-                            <div class="file-meta">
-                                <span>TYPE: ${file.extension}</span>
-                                <span class="badge-unrestricted">UNRESTRICTED</span>
-                            </div>
-                        </div>
-                    `;
-                });
-
-                sector.innerHTML = `
-                    <h4 class="category-header">${cat.toUpperCase()}</h4>
-                    <div class="file-grid">
-                        ${fileHTML}
-                    </div>
-                `;
-                fileListing.appendChild(sector);
-            });
-        }
-
-        renderArchive();
+        window.location.replace('docs.html#deep-archive');
     </script>
 </body>
 

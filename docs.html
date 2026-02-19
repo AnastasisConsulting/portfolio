@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[WIP] G-YNTHETIC ARCHIVE | Secure Vault</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <meta property="og:title" content="[WIP] G-YNTHETIC ARCHIVE | Secure Vault">
+    <meta property="og:description" content="Synthetic cognition research and systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://anastasisconsulting.github.io/portfolio/assets/opening-page-gynthetic.PNG">
+    <meta property="og:url" content="https://anastasisconsulting.github.io/portfolio/docs.html">
     <link rel="stylesheet" href="styles.css">
     <style>
         .vault-container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
@@ -47,8 +53,20 @@
         .folder-card {
             background: var(--panel-bg);
             border: 1px solid var(--border-color);
-            padding: 1.5rem;
+            padding: 2rem;
             transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .folder-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: var(--accent-cyan);
         }
 
         .folder-card.locked {
@@ -108,6 +126,77 @@
             color: var(--accent-purple);
         }
 
+        .category-sector {
+            margin-top: 3rem;
+        }
+
+        .category-header {
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            letter-spacing: 3px;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-mono);
+            display: flex;
+            align-items: center;
+        }
+
+        .category-header::before {
+            content: "// ";
+            opacity: 0.5;
+        }
+
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .file-item {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.2s ease;
+        }
+
+        .file-item:hover {
+            background: rgba(0, 240, 255, 0.05);
+            border-color: rgba(0, 240, 255, 0.2);
+        }
+
+        .file-link {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            word-break: break-all;
+            margin-bottom: 0.5rem;
+        }
+
+        .file-link:hover {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+
+        .file-meta {
+            font-size: 0.65rem;
+            color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge-unrestricted {
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 0.55rem;
+        }
+
         /* ANTI-EXFILTRATION LAYER */
         body {
             user-select: none;
@@ -130,7 +219,6 @@
             height: 100vh;
             pointer-events: none;
             z-index: 10001;
-            /* Above EVERYTHING including NDA and blur */
             opacity: 0.12;
             font-family: var(--font-mono);
             font-size: 1.2rem;
@@ -193,8 +281,9 @@
             <p style="font-size: 1rem; margin: 1.5rem 0; line-height: 1.8;">
                 G-ynthetic Labs has unsealed its core cognitive architecture to establish a definitive prior art
                 baseline.
-                This transparency ensures that the fundamental principles of **Fractal Template Reasoning** and
-                **Deterministic Inference Governance** remain in the public domain.
+                This transparency ensures that the fundamental principles of <strong>Fractal Template Reasoning</strong>
+                and
+                <strong>Deterministic Inference Governance</strong> remain in the public domain.
             </p>
 
             <div
@@ -213,21 +302,34 @@
                     <h4 style="color: var(--accent-cyan);">TECHNICAL VAULT</h4>
                     <p style="font-size: 0.8rem; color: var(--text-dim);">Access 100+ raw files, source modules, and
                         internal specifications in their original format.</p>
-                    <a href="archive.html"
+                    <a href="#deep-archive"
                         style="color: var(--accent-cyan); font-size: 0.75rem; text-decoration: none; font-weight: bold; display: block; margin-top: 1rem;">GO
                         TO DEEP ARCHIVE &rarr;</a>
                 </div>
             </div>
         </div>
 
-        <section style="margin-top: 4rem; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 4rem;">
-            <h3 style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 1rem;">// DISCLOSURE PHASES
-            </h3>
-            <div style="margin-top: 2rem; font-size: 0.85rem; line-height: 1.8; color: var(--text-dim);">
-                <p>&bull; <strong>Phase 1:</strong> Extraction of core reproductive logic (Completed)</p>
-                <p>&bull; <strong>Phase 2:</strong> Removal of non-essential administrative/conceptual drafts
-                    (Completed)</p>
-                <p>&bull; <strong>Phase 3:</strong> Unrestricted Public Access to deep technical vault (Active)</p>
+        <section id="deep-archive" style="margin-top: 5rem;">
+            <header style="margin-bottom: 3rem;">
+                <h2 class="glitch-title" style="font-size: 2.2rem; margin-top: 0; white-space: nowrap;">G-YNTHETIC
+                    DEEP TECHNICAL ARCHIVE</h2>
+                <p class="subtitle">UNFILTERED PRIOR ART // CORE REPRODUCTIVE LOGIC</p>
+            </header>
+
+            <div class="folder-card reveal active">
+                <div
+                    style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-green); margin-bottom: 1rem; white-space: nowrap;">
+                    [ NODE: CRYPTO_VAULT ] [ STATUS: UNSEALED ] [ TOTAL_FILES: <span id="file-count-dynamic">...</span>
+                    ]</div>
+                <p style="font-size: 0.9rem; margin-bottom: 2rem; color: var(--text-dim); line-height: 1.6;">
+                    The following assets represent the finalized technical core of G-ynthetic Labs. These files are
+                    provided in their raw, plain-text format to ensure absolute transparency and defensible prior art
+                    status.
+                </p>
+
+                <div id="file-listing">
+                    <!-- Populated by JS -->
+                </div>
             </div>
         </section>
 
@@ -238,6 +340,59 @@
                 DISCLOSURE. ALL ASSETS UNRESTRICTED.</p>
         </footer>
     </div>
+
+    <script src="assets/docs-manifest.js"></script>
+    <script>
+        const fileListing = document.getElementById('file-listing');
+        const countSpan = document.getElementById('file-count-dynamic');
+
+        function renderArchive() {
+            if (!window.DOCS_MANIFEST || !fileListing || !countSpan) return;
+
+            countSpan.textContent = DOCS_MANIFEST.metadata.total_files;
+            fileListing.innerHTML = '';
+
+            const tier = DOCS_MANIFEST.levels["0"];
+            if (!tier) return;
+
+            const groupedFiles = {};
+            tier.files.forEach(file => {
+                const group = file.category || "General Assets";
+                if (!groupedFiles[group]) groupedFiles[group] = [];
+                groupedFiles[group].push(file);
+            });
+
+            const sortedCategories = Object.keys(groupedFiles).sort();
+
+            sortedCategories.forEach(cat => {
+                const sector = document.createElement('div');
+                sector.className = 'category-sector';
+
+                let fileHTML = '';
+                groupedFiles[cat].forEach(file => {
+                    fileHTML += `
+                        <div class="file-item">
+                            <a href="${file.path}" target="_blank" class="file-link">${file.title}</a>
+                            <div class="file-meta">
+                                <span>TYPE: ${file.extension}</span>
+                                <span class="badge-unrestricted">UNRESTRICTED</span>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                sector.innerHTML = `
+                    <h4 class="category-header">${cat.toUpperCase()}</h4>
+                    <div class="file-grid">
+                        ${fileHTML}
+                    </div>
+                `;
+                fileListing.appendChild(sector);
+            });
+        }
+
+        renderArchive();
+    </script>
 </body>
 
 </html>
